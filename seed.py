@@ -58,7 +58,7 @@ def load_tracks(query):
 def batch_genre_queries():
     """Batches genre queries in groups of ten"""
 
-    import pdb
+    # import pdb
 
     genres = Genre.query.all()
     genre_names = [] # list of genre names
@@ -68,8 +68,8 @@ def batch_genre_queries():
     start = 0
     end = 0
     for i in range(len(genre_names)/10):
-        print i
-        pdb.set_trace()
+        # print i
+        # pdb.set_trace()
 
         end += 10
         genre_query = genre_names[start:end]
