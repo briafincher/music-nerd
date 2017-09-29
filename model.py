@@ -42,17 +42,17 @@ class Genre(db.Model):
 #     genre_id = db.Column(db.Integer, db.ForeignKey('genres.genre_id'), nullable=False)
 
 
-# class Artist(db.Model):
-#     """Artist model"""
+class Artist(db.Model):
+    """Artist model"""
 
-#     __tablename__ = 'artists'
+    __tablename__ = 'artists'
 
-#     artist_id = db.Column(db.String(50), primary_key=True)
-#     name = db.Column(db.String(100), nullable=False)
-#     # images =
-#     popularity = db.Column(db.Integer, nullable=False)
+    artist_id = db.Column(db.String(50), primary_key=True)
+    name = db.Column(db.String(100), nullable=False)
+    # images =
+    popularity = db.Column(db.Integer, nullable=False)
 
-#     genres = db.relationship('Genre', secondary='artists_genres', backref='artists')
+    genres = db.relationship('Genre', secondary='artists_genres', backref='artists')
 
 
 # class ArtistGenre(db.Model):
@@ -72,7 +72,7 @@ class Track(db.Model):
 
     track_id = db.Column(db.String(50), primary_key=True)
     name = db.Column(db.String(250), nullable=False)
-    album_id = db.Column(db.String(50), nullable=False) # From simplified album object
+    album_id = db.Column(db.String(50), nullable=False)  # From simplified album object
     popularity = db.Column(db.Integer, nullable=False)
     href = db.Column(db.String(250), nullable=False)
     uri = db.Column(db.String(250), nullable=False)
@@ -88,19 +88,19 @@ class AudioFeatures(db.Model):
 
     audio_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     track_id = db.Column(db.String(50), db.ForeignKey('tracks.track_id'))
-    danceability = db.Column(db.Float, nullable=False)
-    energy = db.Column(db.Float, nullable=False)
-    key = db.Column(db.Integer, nullable=False)
-    loudness = db.Column(db.Float, nullable=False)
-    mode = db.Column(db.Integer, nullable=False)
-    speechiness = db.Column(db.Float, nullable=False)
-    acousticness = db.Column(db.Float, nullable=False)
-    instrumentalness = db.Column(db.Float, nullable=False)
-    liveness = db.Column(db.Float, nullable=False)
-    valence = db.Column(db.Float, nullable=False)
-    tempo = db.Column(db.Float, nullable=False)
-    duration_ms = db.Column(db.Integer, nullable=False)
-    time_signature = db.Column(db.Integer, nullable=False)
+    danceability = db.Column(db.Float, nullable=True)
+    energy = db.Column(db.Float, nullable=True)
+    key = db.Column(db.Integer, nullable=True)
+    loudness = db.Column(db.Float, nullable=True)
+    mode = db.Column(db.Integer, nullable=True)
+    speechiness = db.Column(db.Float, nullable=True)
+    acousticness = db.Column(db.Float, nullable=True)
+    instrumentalness = db.Column(db.Float, nullable=True)
+    liveness = db.Column(db.Float, nullable=True)
+    valence = db.Column(db.Float, nullable=True)
+    tempo = db.Column(db.Float, nullable=True)
+    duration_ms = db.Column(db.Integer, nullable=True)
+    time_signature = db.Column(db.Integer, nullable=True)
 
     db.relationship('Track', backref='audio_features')
 

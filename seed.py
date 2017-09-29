@@ -1,11 +1,8 @@
-from client_credentials_flow import genre_search
+from client_credentials_flow import genre_search, make_tracks, track_search
 from model import app, db, connect_to_db
 # from model import connect_to_db, app
-from model import Genre, Track 
+from model import Genre, Track, AudioFeatures
 #Album, AlbumGenre, Artist, ArtistGenre, Track, AudioFeatures
-
-
-
 
 # tracks = c.search['tracks']['items'] # list of track dictionaries
 
@@ -27,11 +24,11 @@ def load_genres():
 def load_tracks(query):
     """Loads tracks from each genre query"""
 
-    tracks = [] # list of all tracks returned from searches of all genres
+    tracks = []  # list of all tracks returned from searches of all genres
     for genre in query:
         search_results = genre_search(genre)
-        tracks.extend(search_results)
-        
+        results = make_tracks(search_results)
+        tracks.extend(results)
 
     for track in tracks:
         track_id = track['track_id']
@@ -41,14 +38,13 @@ def load_tracks(query):
         href = track['href']
         uri = track['uri']
 
-        if not Track.query.filter(Track.track_id == track_id).first(): 
-            new_track = Track(track_id=track_id, 
+        if not Track.query.filter(Track.track_id == track_id).first():
+            new_track = Track(track_id=track_id,
                               name=name,
                               album_id=album_id,
                               popularity=popularity,
                               href=href,
                               uri=uri)
-
 
             db.session.add(new_track)
 
@@ -61,8 +57,8 @@ def batch_genre_queries():
     # import pdb
 
     genres = Genre.query.all()
-    genre_names = [] # list of genre names
-    for genre in genres: 
+    genre_names = []  # list of genre names
+    for genre in genres:
         genre_names.append(genre.name)
 
     start = 0
@@ -77,18 +73,80 @@ def batch_genre_queries():
         start = end
 
 
+def load_audio_features(tracks):
+    """Loads audio features for each track"""
+
+    features = track_search(tracks)
+
+    for feature in features:
+        track_id = feature['track_id']
+        danceability = feature['danceability']
+        energy = feature['energy']
+        key = feature['key']
+        loudness = feature['loudness']
+        mode = feature['mode']
+        speechiness = feature['speechiness']
+        acousticness = feature['acousticness']
+        instrumentalness = feature['instrumentalness']
+        liveness = feature['liveness']
+        valence = feature['valence']
+        tempo = feature['tempo']
+        duration_ms = feature['duration_ms']
+        time_signature = feature['time_signature']
+
+        if not AudioFeatures.query.filter(AudioFeatures.track_id == track_id).first():
+            new_feature = AudioFeatures(track_id=track_id,
+                                        danceability=danceability,
+                                        energy=energy,
+                                        key=key,
+                                        loudness=loudness,
+                                        mode=mode,
+                                        speechiness=speechiness,
+                                        acousticness=acousticness,
+                                        instrumentalness=instrumentalness,
+                                        liveness=liveness,
+                                        valence=valence,
+                                        tempo=tempo,
+                                        duration_ms=duration_ms,
+                                        time_signature=time_signature)
+
+            db.session.add(new_feature)
+
+    db.session.commit()
+
+
+def batch_track_queries():
+    """Batches track audio feature queries in groups of 100"""
+
+    # import pdb
+
+    tracks = Track.query.all()
+    track_ids = []  # list of track ids
+    for track in tracks:
+        track_ids.append(track.track_id)
+
+    # print track_ids
+
+    repeats = len(track_ids) / 100 + 1
+    # print repeats
+
+    start = 0
+    end = 0
+    for i in range(repeats):
+        # print i
+        # pdb.set_trace()
+
+        end += 100
+        tracks_to_query = track_ids[start:end]
+        load_audio_features(tracks_to_query)
+        start = end
+
+
 if __name__ == '__main__':
     # init_app()
     connect_to_db(app)
     db.create_all()
 
-    load_genres()
-    batch_genre_queries()
-
-
-
-
-
-
-
-
+    # load_genres()
+    # batch_genre_queries()
+    # batch_track_queries()
