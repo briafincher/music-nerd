@@ -160,4 +160,4 @@ if __name__ == '__main__':
 
     # load_genres()
     # batch_genre_queries()
-    batch_track_queries()
+    # batch_track_queries()
