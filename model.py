@@ -104,7 +104,7 @@ class AudioFeatures(db.Model):
     duration_ms = db.Column(db.Integer, nullable=True)
     time_signature = db.Column(db.Integer, nullable=True)
 
-    db.relationship('Track', backref='audio_features')
+    track = db.relationship('Track', backref='audio_features')
 
 
 ###############################################################################
@@ -122,9 +122,3 @@ def connect_to_db(app):
     app.config['SQLALCHEMY_TRACK_MODFICATIONS'] = False
     db.app = app
     db.init_app(app)
-
-
-
-
-
-
