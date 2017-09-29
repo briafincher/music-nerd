@@ -107,6 +107,11 @@ class AudioFeatures(db.Model):
 
     track = db.relationship('Track', backref='audio_features')
 
+    def __repr__(self):
+        return '<Audio Features for track_id {}'.format(self.track_id)
+
+
+
 
 ###############################################################################
 # Helper functions
