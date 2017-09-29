@@ -53,6 +53,12 @@ def make_tracks(tracks):
     return tracks
 
 
+def artist_search(artists):
+    """Makes a search request to Spotify's API for the given artist"""
+
+    pass
+
+
 def track_search(tracks):
     """Makes a request to Spotify's API for tracks' audio features given list
     of track ids."""
