@@ -17,7 +17,7 @@ client_credentials_manager = SpotifyClientCredentials(client_id='aae1d1323f2548b
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 
-def genre_search(genre):
+def genre_search(genre, limit):
     """Makes a search request to Spotify's API for the given genre.
 
     Returns list of top ten tracks for that genre.
@@ -27,7 +27,7 @@ def genre_search(genre):
     genre_terms = genre.split(' ')
     query = '+'.join(genre_terms)
 
-    search = sp.search(q='genre:{}'.format(query), limit=10)
+    search = sp.search(q='genre:{}'.format(query), limit=limit)
 
     tracks_results = search['tracks']['items']  # list of Spotify track objects
 

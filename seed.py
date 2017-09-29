@@ -26,7 +26,7 @@ def load_tracks(query):
 
     tracks = []  # list of all tracks returned from searches of all genres
     for genre in query:
-        search_results = genre_search(genre)
+        search_results = genre_search(genre, 10)
         results = make_tracks(search_results)
         tracks.extend(results)
 

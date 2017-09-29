@@ -49,8 +49,10 @@ class Artist(db.Model):
 
     artist_id = db.Column(db.String(50), primary_key=True)
     name = db.Column(db.String(100), nullable=False)
-    # images =
-    popularity = db.Column(db.Integer, nullable=False)
+    images =
+    popularity = db.Column(db.Integer)
+    href =
+    uri =
 
     genres = db.relationship('Genre', secondary='artists_genres', backref='artists')
 
