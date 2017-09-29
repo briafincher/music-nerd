@@ -8,6 +8,7 @@ db = SQLAlchemy()
 
 ###############################################################################
 
+
 class Genre(db.Model):
     """Genre model"""
 
@@ -42,19 +43,19 @@ class Genre(db.Model):
 #     genre_id = db.Column(db.Integer, db.ForeignKey('genres.genre_id'), nullable=False)
 
 
-class Artist(db.Model):
-    """Artist model"""
+# class Artist(db.Model):
+#     """Artist model"""
 
-    __tablename__ = 'artists'
+#     __tablename__ = 'artists'
 
-    artist_id = db.Column(db.String(50), primary_key=True)
-    name = db.Column(db.String(100), nullable=False)
-    images =
-    popularity = db.Column(db.Integer)
-    href =
-    uri =
+#     artist_id = db.Column(db.String(50), primary_key=True)
+#     name = db.Column(db.String(100), nullable=False)
+#     images =
+#     popularity = db.Column(db.Integer)
+#     href =
+#     uri =
 
-    genres = db.relationship('Genre', secondary='artists_genres', backref='artists')
+#     genres = db.relationship('Genre', secondary='artists_genres', backref='artists')
 
 
 # class ArtistGenre(db.Model):
@@ -117,7 +118,7 @@ class AudioFeatures(db.Model):
 def connect_to_db(app):
     """Connect the database to a Flask app"""
 
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///music'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///music2'
     app.config['SQLALCHEMY_ECHO'] = False
     app.config['SQLALCHEMY_TRACK_MODFICATIONS'] = False
     db.app = app

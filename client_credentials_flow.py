@@ -36,7 +36,9 @@ def genre_search(genre, limit):
 
 def make_tracks(tracks):
     """Makes list of track objects"""
-    tracks = []  # list of tracks
+    # import pdb
+
+    tracks_list = []  # list of tracks
 
     for result in tracks:
         track = {
@@ -47,10 +49,11 @@ def make_tracks(tracks):
             'href': result['href'],
             'uri': result['uri']
         }
+        # pdb.set_trace()
+        # print track
+        tracks_list.append(track)
 
-        tracks.append(track)
-
-    return tracks
+    return tracks_list
 
 
 def artist_search(artists):
