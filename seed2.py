@@ -1,4 +1,4 @@
-from client_credentials_flow import genre_search, make_tracks, track_search
+from client_credentials_flow import genre_search, make_tracks, feature_search
 from model2 import app, db, connect_to_db
 # from model import connect_to_db, app
 from model2 import Genre, Track, AudioFeatures
@@ -87,7 +87,7 @@ def load_tracks(query):
 def load_audio_features(tracks):
     """Loads audio features for each track"""
 
-    features = track_search(tracks)
+    features = feature_search(tracks)
 
     for feature in features:
         track_id = feature['track_id']
