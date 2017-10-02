@@ -15,7 +15,7 @@ def get_genre_features(limit, offset=0):
 
     genre_features = {}
     for i, name in enumerate(genre_names):
-        print i
+        # print i
         tracks = genre_search(name, 50)
         # pdb.set_trace()
 
@@ -58,34 +58,74 @@ def create_dataframe(genre):
         af = genre[track]
 
         track_id.append(track)
-        danceability.append(af.danceability)
-        energy.append(af.energy)
-        key.append(af.key)
-        loudness.append(af.loudness)
-        mode.append(af.mode)
-        speechiness.append(af.speechiness)
-        acousticness.append(af.acousticness)
-        instrumentalness.append(af.instrumentalness)
-        liveness.append(af.liveness)
-        valence.append(af.valence)
-        tempo.append(af.tempo)
-        duration_ms.append(af.duration_ms)
-        time_signature.append(af.time_signature)
+        # pdb.set_trace()
+        try:
+            danceability.append(af.danceability)
+        except AttributeError:
+            danceability.append(None)
+        try:
+            energy.append(af.energy)
+        except AttributeError:
+            energy.append(None)
+        try:
+            key.append(af.key)
+        except AttributeError:
+            key.append(None)
+        try:
+            loudness.append(af.loudness)
+        except AttributeError:
+            loudness.append(None)
+        try:
+            mode.append(af.mode)
+        except AttributeError:
+            mode.append(None)
+        try:
+            speechiness.append(af.speechiness)
+        except AttributeError:
+            speechiness.append(None)
+        try:
+            acousticness.append(af.acousticness)
+        except AttributeError:
+            acousticness.append(None)
+        try:
+            instrumentalness.append(af.instrumentalness)
+        except AttributeError:
+            instrumentalness.append(None)
+        try:
+            liveness.append(af.liveness)
+        except AttributeError:
+            liveness.append(None)
+        try:
+            valence.append(af.valence)
+        except AttributeError:
+            valence.append(None)
+        try:
+            tempo.append(af.tempo)
+        except AttributeError:
+            tempo.append(None)
+        try:
+            duration_ms.append(af.duration_ms)
+        except AttributeError:
+            duration_ms.append(None)
+        try:
+            time_signature.append(af.time_signature)
+        except AttributeError:
+            time_signature.append(None)
 
-    data = {'track_id': pd.Series(track_id),
-            'danceability': pd.Series(danceability),
-            'energy': pd.Series(energy),
-            'key': pd.Series(key),
-            'loudness': pd.Series(loudness),
-            'mode': pd.Series(mode),
-            'speechiness': pd.Series(speechiness),
-            'acousticness': pd.Series(acousticness),
-            'instrumentalness': pd.Series(instrumentalness),
-            'liveness': pd.Series(liveness),
-            'valence': pd.Series(valence),
-            'tempo': pd.Series(tempo),
-            'duration_ms': pd.Series(duration_ms),
-            'time_signature': pd.Series(time_signature)}
+    data = {'track_id': track_id,
+            'danceability': danceability,
+            'energy': energy,
+            'key': key,
+            'loudness': loudness,
+            'mode': mode,
+            'speechiness': speechiness,
+            'acousticness': acousticness,
+            'instrumentalness': instrumentalness,
+            'liveness': liveness,
+            'valence': valence,
+            'tempo': tempo,
+            'duration_ms': duration_ms,
+            'time_signature': time_signature}
 
     df = pd.DataFrame(data, columns=['track_id',
                                      'danceability',
@@ -104,10 +144,10 @@ def create_dataframe(genre):
 
     return df
 
-# if __name__ == '__main__':
+if __name__ == '__main__':
     connect_to_db(app)
-    results = get_genre_features()
+    results = get_genre_features(10)
 
+    dataframes = {}
     for genre, features in results.iteritems():
-        print genre
-        df = create_dataframe(features)
+        dataframes[genre] = create_dataframe(features)
