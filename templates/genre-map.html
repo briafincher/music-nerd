@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<meta charset="utf-8">
+<style>
+
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+</style>
+<svg width='900' height='600'></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="/static/d3.js"></script>
+
+<table>
+<tr>
+    <th>Genre</th>
+    <th>Acousticness</th>
+    <th>Danceability</th>
+    <th>Duration</th>
+    <th>Energy</th>
+    <th>Instrumentalness</th>
+    <th>Key</th>
+    <th>Liveness</th>
+    <th>Loudness</th>
+    <th>Mode</th>
+    <th>Speechiness</th>
+    <th>Tempo</th>
+    <th>Time Signature</th>
+    <th>Valence</th>
+<tr>
+
+{% for genre in genres %}
+
+    <tr>
+        <td>{{ genre }}</td>
+        <td>{{ genres[genre]['acousticness'] }}</td>
+        <td>{{ genres[genre]['danceability'] }}</td>
+        <td>{{ genres[genre]['duration_ms'] }}</td>
+        <td>{{ genres[genre]['energy'] }}</td>
+        <td>{{ genres[genre]['instrumentalness'] }}</td>
+        <td>{{ genres[genre]['key'] }}</td>
+        <td>{{ genres[genre]['liveness'] }}</td>
+        <td>{{ genres[genre]['loudness'] }}</td>
+        <td>{{ genres[genre]['mode'] }}</td>
+        <td>{{ genres[genre]['speechiness'] }}</td>
+        <td>{{ genres[genre]['tempo'] }}</td>
+        <td>{{ genres[genre]['time_signature'] }}</td>
+        <td>{{ genres[genre]['valence'] }}</td>
+    </tr>
+{% endfor %}
+
+</table>
+
+{% endblock %}
+
