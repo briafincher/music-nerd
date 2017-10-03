@@ -186,36 +186,37 @@ if __name__ == '__main__':
     dataframes = {}
 
     offset = 0
-    for i in range(151):
-        stats = {}
-        print i
-        pdb.set_trace()
-        results = get_genre_features(10, offset)
-        offset += 10
+    offset = 1510
+    # for i in range(151):
+    stats = {}
+        # print i
+        # pdb.set_trace()
+    results = get_genre_features(10, offset)
+        # offset += 10
 
-        for genre, features in results.iteritems():
-            dataframes[genre] = create_dataframe(features)
+    for genre, features in results.iteritems():
+        dataframes[genre] = create_dataframe(features)
 
-        for genre, df in dataframes.iteritems():
-            mean = df.mean()
-            std = df.std()
-            stats[genre] = {'genre': genre,
-                            'danceability': mean.danceability,
-                            'energy': mean.energy,
-                            'key': mean.key,
-                            'loudness': mean.loudness,
-                            'mode': mean.modes,
-                            'speechiness': mean.speechiness,
-                            'acousticness': mean.acousticness,
-                            'instrumentalness': mean.instrumentalness,
-                            'liveness': mean.liveness,
-                            'valence': mean.valence,
-                            'tempo': mean.tempo,
-                            'duration_ms': mean.duration_ms,
-                            'time_signature': mean.time_signature
-                            }
+    for genre, df in dataframes.iteritems():
+        mean = df.mean()
+        std = df.std()
+        stats[genre] = {'genre': genre,
+                        'danceability': mean.danceability,
+                        'energy': mean.energy,
+                        'key': mean.key,
+                        'loudness': mean.loudness,
+                        'mode': mean.modes,
+                        'speechiness': mean.speechiness,
+                        'acousticness': mean.acousticness,
+                        'instrumentalness': mean.instrumentalness,
+                        'liveness': mean.liveness,
+                        'valence': mean.valence,
+                        'tempo': mean.tempo,
+                        'duration_ms': mean.duration_ms,
+                        'time_signature': mean.time_signature
+                        }
 
-        load_audio_aggregates(stats)
+    load_audio_aggregates(stats)
 
 
     # print stats
