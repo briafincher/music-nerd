@@ -111,7 +111,28 @@ class AudioFeatures(db.Model):
         return '<Audio Features for track_id {}'.format(self.track_id)
 
 
+class GenreAverages(db.Model):
+    """Model for genres' audio features averages"""
 
+    __tablename__ = 'genre_averages'
+
+    genre = db.Column(db.String(50), primary_key=True)
+    danceability = db.Column(db.Float)
+    energy = db.Column(db.Float)
+    key = db.Column(db.Float)
+    loudness = db.Column(db.Float)
+    mode = db.Column(db.Float)
+    speechiness = db.Column(db.Float)
+    acousticness = db.Column(db.Float)
+    instrumentalness = db.Column(db.Float)
+    liveness = db.Column(db.Float)
+    valence = db.Column(db.Float)
+    tempo = db.Column(db.Float)
+    duration_ms = db.Column(db.Float)
+    time_signature = db.Column(db.Float)
+
+    def __repr__(self):
+        return '<Audio features for genre {}'.format(self.genre)
 
 ###############################################################################
 # Helper functions
@@ -119,6 +140,7 @@ class AudioFeatures(db.Model):
 # def init_app():
 
 #     app = Flask(__name__)
+
 
 def connect_to_db(app):
     """Connect the database to a Flask app"""
