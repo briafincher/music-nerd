@@ -132,7 +132,7 @@ class GenreAverages(db.Model):
     time_signature = db.Column(db.Float)
 
     def __repr__(self):
-        return '<Audio features for genre {}'.format(self.genre)
+        return "<Audio features for genre '{}'>".format(self.genre)
 
 ###############################################################################
 # Helper functions
@@ -150,3 +150,6 @@ def connect_to_db(app):
     app.config['SQLALCHEMY_TRACK_MODFICATIONS'] = False
     db.app = app
     db.init_app(app)
+
+if __name__ == '__main__':
+    connect_to_db(app)
