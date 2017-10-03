@@ -3,7 +3,8 @@ from model2 import app, db, connect_to_db
 from model2 import Genre, Track, AudioFeatures
 import pdb
 import pandas as pd
-from seed2 import load_audio_features
+import numpy as np
+from seed2 import load_audio_features, load_audio_aggregates
 
 
 def get_genre_features(limit, offset=0):
@@ -46,7 +47,7 @@ def create_dataframe(genre):
     energy = []
     key = []
     loudness = []
-    mode = []
+    modes = []
     speechiness = []
     acousticness = []
     instrumentalness = []
@@ -96,62 +97,62 @@ def create_dataframe(genre):
         try:
             danceability.append(af.danceability)
         except AttributeError:
-            danceability.append('NaN')
+            danceability.append(np.nan)
         try:
             energy.append(af.energy)
         except AttributeError:
-            energy.append('NaN')
+            energy.append(np.nan)
         try:
             key.append(af.key)
         except AttributeError:
-            key.append('NaN')
+            key.append(np.nan)
         try:
             loudness.append(af.loudness)
         except AttributeError:
-            loudness.append('NaN')
+            loudness.append(np.nan)
         try:
-            mode.append(af.mode)
+            modes.append(af.mode)
         except AttributeError:
-            mode.append('NaN')
+            modes.append(np.nan)
         try:
             speechiness.append(af.speechiness)
         except AttributeError:
-            speechiness.append('NaN')
+            speechiness.append(np.nan)
         try:
             acousticness.append(af.acousticness)
         except AttributeError:
-            acousticness.append('NaN')
+            acousticness.append(np.nan)
         try:
             instrumentalness.append(af.instrumentalness)
         except AttributeError:
-            instrumentalness.append('NaN')
+            instrumentalness.append(np.nan)
         try:
             liveness.append(af.liveness)
         except AttributeError:
-            liveness.append('NaN')
+            liveness.append(np.nan)
         try:
             valence.append(af.valence)
         except AttributeError:
-            valence.append('NaN')
+            valence.append(np.nan)
         try:
             tempo.append(af.tempo)
         except AttributeError:
-            tempo.append('NaN')
+            tempo.append(np.nan)
         try:
             duration_ms.append(af.duration_ms)
         except AttributeError:
-            duration_ms.append('NaN')
+            duration_ms.append(np.nan)
         try:
             time_signature.append(af.time_signature)
         except AttributeError:
-            time_signature.append('NaN')
+            time_signature.append(np.nan)
 
     data = {'track_id': track_id,
             'danceability': danceability,
             'energy': energy,
             'key': key,
             'loudness': loudness,
-            'mode': mode,
+            'modes': modes,
             'speechiness': speechiness,
             'acousticness': acousticness,
             'instrumentalness': instrumentalness,
@@ -167,7 +168,7 @@ def create_dataframe(genre):
                                      'energy',
                                      'key',
                                      'loudness',
-                                     'mode',
+                                     'modes',
                                      'speechiness',
                                      'acousticness',
                                      'instrumentalness',
@@ -183,9 +184,12 @@ if __name__ == '__main__':
     connect_to_db(app)
     # results = get_genre_features(10)
     dataframes = {}
-    stats = {}
+
     offset = 0
     for i in range(151):
+        stats = {}
+        print i
+        pdb.set_trace()
         results = get_genre_features(10, offset)
         offset += 10
 
@@ -193,4 +197,25 @@ if __name__ == '__main__':
             dataframes[genre] = create_dataframe(features)
 
         for genre, df in dataframes.iteritems():
-            stats[genre] = df.describe()
+            mean = df.mean()
+            std = df.std()
+            stats[genre] = {'genre': genre,
+                            'danceability': mean.danceability,
+                            'energy': mean.energy,
+                            'key': mean.key,
+                            'loudness': mean.loudness,
+                            'mode': mean.modes,
+                            'speechiness': mean.speechiness,
+                            'acousticness': mean.acousticness,
+                            'instrumentalness': mean.instrumentalness,
+                            'liveness': mean.liveness,
+                            'valence': mean.valence,
+                            'tempo': mean.tempo,
+                            'duration_ms': mean.duration_ms,
+                            'time_signature': mean.time_signature
+                            }
+
+        load_audio_aggregates(stats)
+
+
+    # print stats

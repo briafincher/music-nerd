@@ -1,7 +1,8 @@
 from client_credentials_flow import genre_search, make_tracks, feature_search
 from model2 import app, db, connect_to_db
 # from model import connect_to_db, app
-from model2 import Genre, Track, AudioFeatures
+from model2 import Genre, Track, AudioFeatures, GenreAverages
+import pandas
 #Album, AlbumGenre, Artist, ArtistGenre, Track, AudioFeatures
 
 # tracks = c.search['tracks']['items'] # list of track dictionaries
@@ -153,6 +154,31 @@ def batch_track_queries():
         start = end
 
 
+def load_audio_aggregates(stats):
+    """Adds aggregate genre info"""
+
+    for genre in stats:
+        # mean_df = stats[genre]['mean']
+        if not GenreAverages.query.filter(GenreAverages.genre == genre).first():
+            genre_info = GenreAverages(genre=genre,
+                                       danceability=stats[genre]['danceability'],
+                                       energy=stats[genre]['energy'],
+                                       key=stats[genre]['key'],
+                                       loudness=stats[genre]['loudness'],
+                                       mode=stats[genre]['mode'],
+                                       speechiness=stats[genre]['speechiness'],
+                                       acousticness=stats[genre]['acousticness'],
+                                       instrumentalness=stats[genre]['instrumentalness'],
+                                       liveness=stats[genre]['liveness'],
+                                       valence=stats[genre]['valence'],
+                                       tempo=stats[genre]['tempo'],
+                                       duration_ms=stats[genre]['duration_ms'],
+                                       time_signature=stats[genre]['time_signature'])
+            db.session.add(genre_info)
+
+    db.session.commit()
+
+
 if __name__ == '__main__':
     # init_app()
     connect_to_db(app)
@@ -161,3 +187,4 @@ if __name__ == '__main__':
     # load_genres()
     # batch_genre_queries()
     # batch_track_queries()
+    # load_audio_aggregates()
