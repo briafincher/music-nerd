@@ -1,4 +1,4 @@
-from client_credentials_flow import genre_search
+from client_credentials_flow import genre_search, sp
 
 def find_artists(genre, limit):
 
