@@ -1,8 +1,9 @@
-from client_credentials_flow import genre_search, make_tracks, feature_search
+from client_credentials_flow import genre_search, make_tracks, feature_search, artist_search
 from model2 import app, db, connect_to_db
 # from model import connect_to_db, app
-from model2 import Genre, Track, AudioFeatures, GenreAverages
+from model2 import Genre, Track, AudioFeatures, GenreAverages, Artist, Image, ArtistGenre
 import pandas
+import pdb
 #Album, AlbumGenre, Artist, ArtistGenre, Track, AudioFeatures
 
 # tracks = c.search['tracks']['items'] # list of track dictionaries
@@ -179,6 +180,46 @@ def load_audio_aggregates(stats):
     db.session.commit()
 
 
+def load_artists():
+    """Loads artists for all genres"""
+
+    genres = Genre.query.all()
+    genre_names = []
+    for genre in genres:
+        genre_names.append(genre.name)
+    print len(genre_names)
+
+    for i, genre in enumerate(genre_names[380:]):
+        print i
+        pdb.set_trace()
+        artists = artist_search(genre)
+
+        for a_id, artist in artists.items():
+            if not Artist.query.filter(Artist.artist_id == artist['artist_id']).first():
+                new_artist = Artist(name=artist['name'],
+                                    popularity=artist['popularity'],
+                                    artist_id=artist['artist_id'],
+                                    uri=artist['uri'],
+                                    href=artist['href'])
+                db.session.add(new_artist)
+
+                for image in artist['images']:
+                    new_image = Image(artist_id=artist['artist_id'],
+                                      url=image['url'],
+                                      width=image['width'],
+                                      height=image['height'])
+                    db.session.add(new_image)
+
+                # pdb.set_trace()
+                for genre in artist['genres']:
+                    genre_obj = Genre.query.filter(Genre.name == genre).first()
+                    if genre_obj:
+                        new_ag = ArtistGenre(artist_id=artist['artist_id'],
+                                             genre_id=genre_obj.genre_id)
+                        db.session.add(new_ag)
+        db.session.commit()
+
+
 if __name__ == '__main__':
     # init_app()
     connect_to_db(app)
@@ -188,3 +229,4 @@ if __name__ == '__main__':
     # batch_genre_queries()
     # batch_track_queries()
     # load_audio_aggregates()
+    load_artists()

@@ -43,29 +43,42 @@ class Genre(db.Model):
 #     genre_id = db.Column(db.Integer, db.ForeignKey('genres.genre_id'), nullable=False)
 
 
-# class Artist(db.Model):
-#     """Artist model"""
+class Artist(db.Model):
+    """Artist model"""
 
-#     __tablename__ = 'artists'
+    __tablename__ = 'artists'
 
-#     artist_id = db.Column(db.String(50), primary_key=True)
-#     name = db.Column(db.String(100), nullable=False)
-#     images =
-#     popularity = db.Column(db.Integer)
-#     href =
-#     uri =
+    artist_id = db.Column(db.String(50), primary_key=True)
+    name = db.Column(db.String(100), nullable=False)
+    popularity = db.Column(db.Integer)
+    href = db.Column(db.String(250))
+    uri = db.Column(db.String(250))
 
-#     genres = db.relationship('Genre', secondary='artists_genres', backref='artists')
+    genres = db.relationship('Genre', secondary='artists_genres', backref='artists')
+
+    images = db.relationship('Image', backref='artist')
 
 
-# class ArtistGenre(db.Model):
-#     """Association table for artists and genres"""
+class Image(db.Model):
+    """Image model"""
 
-#     __tablename__ = 'artists_genres'
+    __tablename__ = 'images'
 
-#     artist_genre_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-#     artist_id = db.Column(db.String(100), db.ForeignKey('artists.artist_id'), nullable=False)
-#     genre_id = db.Column(db.Integer, db.ForeignKey('genres.genre_id'), nullable=False)
+    image_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    url = db.Column(db.String(200))
+    width = db.Column(db.Integer)
+    height = db.Column(db.Integer)
+    artist_id = db.Column(db.String(50), db.ForeignKey('artists.artist_id'))
+
+
+class ArtistGenre(db.Model):
+    """Association table for artists and genres"""
+
+    __tablename__ = 'artists_genres'
+
+    artist_genre_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    artist_id = db.Column(db.String(100), db.ForeignKey('artists.artist_id'), nullable=False)
+    genre_id = db.Column(db.Integer, db.ForeignKey('genres.genre_id'), nullable=False)
 
 
 class Track(db.Model):

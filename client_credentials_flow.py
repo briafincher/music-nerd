@@ -20,7 +20,7 @@ sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 def genre_search(genre, limit):
     """Makes a search request to Spotify's API for the given genre.
 
-    Returns list of top ten tracks for that genre.
+    Returns list of top tracks for that genre.
 
     """
 
@@ -62,10 +62,10 @@ def track_search(track):
     return sp.tracks(track)
 
 
-def artist_search(artists):
-    """Makes a search request to Spotify's API for the given artist"""
+# def artist_search(artists):
+#     """Makes a search request to Spotify's API for the given artist"""
 
-    pass
+#     pass
 
 
 def feature_search(tracks):
@@ -96,3 +96,32 @@ def feature_search(tracks):
         features.append(feature)
 
     return features
+
+
+def artist_search(genre):
+    """Finds artists based on a genre search"""
+
+    # related = sp.artist_related_artists(uri)
+    # artist_results = related['artists']
+
+    tracks = genre_search(genre, 20)
+
+    artist_list = []
+    for track in tracks:
+        artist_list.extend(track['artists'])
+
+    artists = {}
+    for artist_item in artist_list:
+        artist = sp.artist(artist_item['uri'])
+        artist_id = artist['id']
+        artists[artist_id] = {'name': artist['name'],
+                              'popularity': artist['popularity'],
+                              'artist_id': artist_id,
+                              'uri': artist['uri'],
+                              'genres': artist['genres'],
+                              'href': artist['href'],
+                              'images': artist['images']}
+
+    return artists
+
+# def find_related_artists(artists):
