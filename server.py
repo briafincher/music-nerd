@@ -4,7 +4,7 @@ from flask import (Flask, render_template, redirect, request, flash, session)
 from flask_debugtoolbar import DebugToolbarExtension
 
 from model2 import app, connect_to_db, db
-from model2 import Genre, Track, AudioFeatures, GenreAverages
+from model2 import Genre, Track, AudioFeatures, GenreAverages, Image, Artist, ArtistGenre
 
 app.secret_key = "ABC"
 

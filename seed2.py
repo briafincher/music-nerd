@@ -1,8 +1,8 @@
 from client_credentials_flow import genre_search, make_tracks, feature_search, artist_search
 from model2 import app, db, connect_to_db
 # from model import connect_to_db, app
-from model2 import Genre, Track, AudioFeatures, GenreAverages, Artist, Image, ArtistGenre
-import pandas
+from model2 import Genre, Track, AudioFeatures, GenreAverages, Artist, Image, ArtistGenre, RelatedGenres
+import pandas as pd
 import pdb
 #Album, AlbumGenre, Artist, ArtistGenre, Track, AudioFeatures
 
@@ -220,6 +220,76 @@ def load_artists():
         db.session.commit()
 
 
+def count_artists(genre, other_genre):
+    """Counts shared artists between genres"""
+
+    artists = genre.artists
+    other_artists = other_genre.artists
+
+    count = 0
+
+    for artist in artists:
+        if artist in other_artists:
+            count += 1
+
+    return count
+
+
+def correlation(genre, other_genre):
+    """Finds correlation between audio features"""
+
+    features = GenreAverages.query.filter_by(genre=genre.name).first()
+    other_features = GenreAverages.query.filter_by(genre=other_genre.name).first()
+
+    features_series = pd.Series([features.danceability,
+                                 features.energy,
+                                 features.key,
+                                 features.loudness,
+                                 features.mode,
+                                 features.speechiness,
+                                 features.acousticness,
+                                 features.instrumentalness,
+                                 features.liveness,
+                                 features.valence,
+                                 features.tempo])
+
+    other_features_series = pd.Series([other_features.danceability,
+                                      other_features.energy,
+                                      other_features.key,
+                                      other_features.loudness,
+                                      other_features.mode,
+                                      other_features.speechiness,
+                                      other_features.acousticness,
+                                      other_features.instrumentalness,
+                                      other_features.liveness,
+                                      other_features.valence,
+                                      other_features.tempo])
+
+    pearson = features_series.corr(other_features_series, method='pearson')
+    kendall = features_series.corr(other_features_series, method='kendall')
+    spearman = features_series.corr(other_features_series, method='spearman')
+
+    return {'pearson': pearson,
+            'kendall': kendall,
+            'spearman': spearman}
+
+
+def load_genre_relations():
+    """Loads genre relations in database"""
+
+    genres = Genre.query.all()
+    for genre in genres:
+        for other_genre in genres[1:]:
+            count = count_artists(genre, other_genre)
+            correlation = correlation(genre, other_genre)
+            relation = RelatedGenres(genre1_id=genre.genre_id,
+                                     genre2_id=other_genre.genre_id,
+                                     artist_count=count,
+                                     correlation=correlation)
+            db.session.add(relation)
+        genres.pop(0)
+    db.session.commit()
+
 if __name__ == '__main__':
     # init_app()
     connect_to_db(app)
@@ -229,4 +299,4 @@ if __name__ == '__main__':
     # batch_genre_queries()
     # batch_track_queries()
     # load_audio_aggregates()
-    load_artists()
+    # load_artists()

@@ -42,6 +42,19 @@ class Genre(db.Model):
 #     album_id = db.Column(db.String(50), db.ForeignKey('albums.album_id'), nullable=False)
 #     genre_id = db.Column(db.Integer, db.ForeignKey('genres.genre_id'), nullable=False)
 
+class RelatedGenres(db.Model):
+    """Related genres model"""
+
+    __tablename__ = 'related_genres'
+
+    related_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    genre1_id = db.Column(db.Integer, db.ForeignKey('genres.genre_id'))
+    genre2_id = db.Column(db.Integer, db.ForeignKey('genres.genre_id'))
+    shared_artists = db.Column(db.Integer)
+    pearson = db.Column(db.Float)
+    kendall = db.Column(db.Float)
+    spearman = db.Column(db.Float)
+
 
 class Artist(db.Model):
     """Artist model"""
@@ -57,6 +70,10 @@ class Artist(db.Model):
     genres = db.relationship('Genre', secondary='artists_genres', backref='artists')
 
     images = db.relationship('Image', backref='artist')
+
+    def __repr__(self):
+        name = self.name.encode('utf8')
+        return '<Artist name={}>'.format(name)
 
 
 class Image(db.Model):
