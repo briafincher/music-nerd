@@ -56,6 +56,20 @@ class RelatedGenres(db.Model):
     spearman = db.Column(db.Float)
 
 
+class TopRelatedGenres(db.Model):
+    """Related genres model"""
+
+    __tablename__ = 'top_related_genres'
+
+    related_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    genre1_id = db.Column(db.Integer, db.ForeignKey('genres.genre_id'))
+    genre2_id = db.Column(db.Integer, db.ForeignKey('genres.genre_id'))
+    shared_artists = db.Column(db.Integer)
+    pearson = db.Column(db.Float)
+    kendall = db.Column(db.Float)
+    spearman = db.Column(db.Float)
+
+
 class Artist(db.Model):
     """Artist model"""
 

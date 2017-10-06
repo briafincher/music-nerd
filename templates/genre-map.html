@@ -40,7 +40,7 @@
 {% for genre in genres %}
 
     <tr>
-        <td>{{ genre }}</td>
+        <td><a href='/genres/{{genre}}'>{{ genre }}</a></td>
         <td>{{ genres[genre]['acousticness'] }}</td>
         <td>{{ genres[genre]['danceability'] }}</td>
         <td>{{ genres[genre]['duration_ms'] }}</td>
