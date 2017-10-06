@@ -6,6 +6,10 @@ from flask_debugtoolbar import DebugToolbarExtension
 from model2 import app, connect_to_db, db
 from model2 import Genre, Track, AudioFeatures, GenreAverages, Image, Artist, ArtistGenre, RelatedGenres
 
+from related import top_related
+
+from random import randint
+
 app.secret_key = "ABC"
 
 app.jinja_env.undefined = StrictUndefined
@@ -68,13 +72,19 @@ def show_genre_info(genre):
     genre_object = Genre.query.filter_by(name=genre).first()
     genre_id = genre_object.genre_id
 
-    related_genres = RelatedGenres.query.filter((RelatedGenres.genre1_id == genre_id) |
-                                                (RelatedGenres.genre2_id == genre_id)).all()
+    related_genres_search = top_related(genre)
+    related_genres = []
+    print genre, type(genre)
+    for related in related_genres_search:
+        print related
+        for item in related:
+            print item, type(item)
+            if type(item) == 'unicode':
+                related_genres.append(item)
+            # WHAT IS GOING ON HERE LOL
 
     artists = {}
-
     popular_artists = find_popular_artists(genre_object.artists)
-
     while(len(artists) < 4):
         for popularity, artist in popular_artists:
             if len(artists) == 4:
@@ -89,7 +99,23 @@ def show_genre_info(genre):
     description = None
     playlist = None
 
-    return render_template('genre-info.html', genre=genre, artists=artists)
+    return render_template('genre-info.html',
+                           genre=genre,
+                           artists=artists,
+                           related=related_genres)
+
+
+@app.route('/random')
+def find_random_genre():
+    """Takes the user to a random genre page"""
+
+    random = randint(1, 1520)
+
+    genre = Genre.query.filter_by(genre_id=random).first()
+
+    name = genre.name
+
+    return redirect('/genres/{}'.format(name))
 
 if __name__ == '__main__':
     app.debug = True

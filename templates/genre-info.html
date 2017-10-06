@@ -9,6 +9,10 @@
 </div>
 
 <div id='related'>
+    <h2>Related Genres</h2>
+    {% for genre in related %}
+        <span><a href='/genres/{{genre}}'>{{genre}}</a></span>
+    {% endfor %}
 </div>
 
 {% endblock %}
