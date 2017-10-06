@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{genre}}</h1>
+<div id='artists'>
+    <h2>Popular Artists</h2>
+    {% for artist in artists %}
+        <div>{{artist}}<br><img src='{{artists.get(artist)}}'></div>
+    {% endfor %}
+</div>
+
+<div id='related'>
+</div>
+
+{% endblock %}

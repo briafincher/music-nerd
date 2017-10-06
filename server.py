@@ -4,7 +4,7 @@ from flask import (Flask, render_template, redirect, request, flash, session)
 from flask_debugtoolbar import DebugToolbarExtension
 
 from model2 import app, connect_to_db, db
-from model2 import Genre, Track, AudioFeatures, GenreAverages, Image, Artist, ArtistGenre
+from model2 import Genre, Track, AudioFeatures, GenreAverages, Image, Artist, ArtistGenre, RelatedGenres
 
 app.secret_key = "ABC"
 
@@ -47,6 +47,49 @@ def show_genres():
 
     return render_template('genre-map.html', genres=genre_features)
     # return render_template('d3.html')
+
+
+def find_popular_artists(artists):
+
+    most_popular = []
+
+    for artist in artists:
+        most_popular.append((artist.popularity, artist))
+
+    most_popular.sort()
+
+    return most_popular[::-1]
+
+
+@app.route('/genres/<genre>')
+def show_genre_info(genre):
+    """Genre info page"""
+
+    genre_object = Genre.query.filter_by(name=genre).first()
+    genre_id = genre_object.genre_id
+
+    related_genres = RelatedGenres.query.filter((RelatedGenres.genre1_id == genre_id) |
+                                                (RelatedGenres.genre2_id == genre_id)).all()
+
+    artists = {}
+
+    popular_artists = find_popular_artists(genre_object.artists)
+
+    while(len(artists) < 4):
+        for popularity, artist in popular_artists:
+            if len(artists) == 4:
+                break
+            name = artist.name
+            if artist.images:
+                url = artist.images[0].url
+            else:
+                url = None
+            artists[name] = url
+
+    description = None
+    playlist = None
+
+    return render_template('genre-info.html', genre=genre, artists=artists)
 
 if __name__ == '__main__':
     app.debug = True

@@ -274,21 +274,54 @@ def correlation(genre, other_genre):
             'spearman': spearman}
 
 
-def load_genre_relations():
+def load_genre_relations(genres):
     """Loads genre relations in database"""
 
     genres = Genre.query.all()
+    genre_set = set(genres)
     for genre in genres:
-        for other_genre in genres[1:]:
+        for other_genre in genre_set.difference(set([genre])):
             count = count_artists(genre, other_genre)
-            correlation = correlation(genre, other_genre)
+            corr = correlation(genre, other_genre)
             relation = RelatedGenres(genre1_id=genre.genre_id,
                                      genre2_id=other_genre.genre_id,
-                                     artist_count=count,
-                                     correlation=correlation)
+                                     shared_artists=count,
+                                     pearson=corr['pearson'],
+                                     kendall=corr['kendall'],
+                                     spearman=corr['spearman'])
             db.session.add(relation)
-        genres.pop(0)
-    db.session.commit()
+            db.session.commit()
+        genre_set = genre_set.difference(set([genre]))
+
+
+def find_greatest(dictionary):
+    greatest = None
+    for item in dictionary:
+        # pdb.set_trace()
+        if dictionary[item] > dictionary.get(greatest):
+            greatest = item
+    return greatest
+
+
+def fewer_genre_relations():
+
+    genres = Genre.query.all()
+    artist_counts = {}
+    for genre in genres:
+        artist_counts[genre.name] = len(genre.artists)
+
+    sorted_genres_by_artist = []
+
+    while(True):
+        if len(artist_counts) > 0:
+            next = find_greatest(artist_counts)
+            sorted_genres_by_artist.append(next)
+            artist_counts.pop(next)
+        else:
+            break
+
+    return sorted_genres_by_artist
+
 
 if __name__ == '__main__':
     # init_app()
@@ -300,3 +333,5 @@ if __name__ == '__main__':
     # batch_track_queries()
     # load_audio_aggregates()
     # load_artists()
+    # load_genre_relations()
+    # results = fewer_genre_relations()
