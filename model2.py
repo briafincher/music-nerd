@@ -179,12 +179,6 @@ class GenreAverages(db.Model):
         return "<Audio features for genre '{}'>".format(self.genre)
 
 ###############################################################################
-# Helper functions
-
-# def init_app():
-
-#     app = Flask(__name__)
-
 
 def connect_to_db(app):
     """Connect the database to a Flask app"""

@@ -1,0 +1,1521 @@
+,genre,speechiness
+0,modern rock,0.062914
+1,tropical house,0.068686
+2,pop rap,0.158228571429
+3,pop,0.084024
+4,post-teen pop,0.095642
+5,rap,0.154064
+6,rock,0.051994
+7,dance pop,0.091644
+8,trap music,0.194116
+9,edm,0.060866
+10,alternative rock,0.051193877551
+11,latin,0.095224
+12,pop rock,0.054972
+13,dwn trap,0.195320833333
+14,alternative metal,0.056144
+15,neo mellow,0.043054
+16,r&b,0.116182
+17,southern hip hop,0.206512
+18,hip hop,0.202814
+19,classic rock,0.055756
+20,mellow gold,0.040548
+21,indie rock,0.048796
+22,album rock,0.05431
+23,viral pop,0.079522
+24,reggaeton,0.093446
+25,soft rock,0.043484
+26,post-grunge,0.05679
+27,indie r&b,0.137664
+28,latin pop,0.074908
+29,indie pop,0.046686
+30,pop punk,0.063922
+31,indietronica,0.055924
+32,permanent wave,0.0460333333333
+33,electro house,0.064748
+34,tropical,0.089228
+35,urban contemporary,0.123068
+36,indie folk,0.04578
+37,folk-pop,0.0401
+38,singer-songwriter,0.047952
+39,nu metal,0.06241
+40,hard rock,0.070894
+41,hip pop,0.181110638298
+42,contemporary country,0.044664
+43,indie poptimism,0.0874765957447
+44,big room,0.0662978723404
+45,rap metal,0.068056
+46,gangster rap,0.200792
+47,canadian pop,0.156124
+48,country road,0.040276
+49,country,0.04129
+50,folk rock,0.048652
+51,garage rock,0.0584346938776
+52,house,0.080142
+53,grupera,0.0398
+54,latin hip hop,0.0994638297872
+55,stomp and holler,0.0359734693878
+56,underground hip hop,0.179706
+57,chamber pop,0.049802
+58,dirty south rap,0.203902040816
+59,rock en espanol,0.048408
+60,regional mexican,0.059692
+61,progressive house,0.064448
+62,roots rock,0.057248
+63,blues-rock,0.058948
+64,funk rock,0.067714
+65,alternative dance,0.05374
+66,modern country rock,0.04095
+67,dance rock,0.059712
+68,trap latino,0.102388636364
+69,europop,0.065034
+70,new wave,0.053374
+71,neo soul,0.122328
+72,synthpop,0.049128
+73,new wave pop,0.051568
+74,adult standards,0.049054
+75,banda,0.04217
+76,latin alternative,0.053892
+77,neo-psychedelic,0.057398
+78,soul,0.05185
+79,classic funk rock,0.060338
+80,quiet storm,0.078416
+81,emo,0.073178
+82,psychedelic rock,0.045412
+83,norteno,0.043682
+84,spanish pop,0.048388
+85,deep pop r&b,0.146845652174
+86,progressive electro house,0.078764
+87,deep indie r&b,0.13265
+88,rap rock,0.081666
+89,art rock,0.052662
+90,new rave,0.053524
+91,latin arena pop,0.043484
+92,escape room,0.202688
+93,motown,0.05249
+94,regional mexican pop,0.05107
+95,screamo,0.084614
+96,shimmer pop,0.046502
+97,electronic,0.06745
+98,brostep,0.07636
+99,metal,0.079362
+100,new romantic,0.050718
+101,teen pop,0.134438
+102,disco,0.05206
+103,deep big room,0.0850224489796
+104,indie anthem-folk,0.059652
+105,pop reggaeton,0.101484
+106,reggaeton flow,0.126678
+107,crunk,0.19966
+108,funk,0.059454
+109,vapor soul,0.098408
+110,trap francais,0.146715217391
+111,acoustic pop,0.046758
+112,metropopolis,0.06436
+113,deep tropical house,0.046334
+114,west coast rap,0.245492
+115,deep german hip hop,0.202665306122
+116,metalcore,0.093666
+117,punk,0.078618
+118,deep funk carioca,0.161698
+119,electronic trap,0.086852
+120,focus,0.043184
+121,new americana,0.034984
+122,east coast hip hop,0.250712
+123,folk,0.04102
+124,francoton,0.112534782609
+125,sertanejo universitario,0.09374
+126,hardcore hip hop,0.25555625
+127,southern rock,0.048338
+128,brill building pop,0.050436
+129,german hip hop,0.152957142857
+130,christian alternative rock,0.046388
+131,jazz blues,0.055558
+132,worship,0.037526
+133,groove metal,0.097928
+134,ranchera,0.046254
+135,boy band,0.062636
+136,piano rock,0.0508142857143
+137,talent show,0.067686
+138,freak folk,0.038082
+139,swedish pop,0.057372
+140,chillwave,0.048862
+141,british blues,0.057654
+142,modern blues,0.047514
+143,vocal jazz,0.053948
+144,argentine rock,0.042188
+145,g funk,0.203363265306
+146,christian music,0.041888
+147,redneck,0.047214
+148,vegas indie,0.0781857142857
+149,new jack swing,0.101040816327
+150,swedish idol pop,0.0573040816327
+151,bass trap,0.09152
+152,compositional ambient,0.042098
+153,mpb,0.063842
+154,country rock,0.042612
+155,dance-punk,0.050014
+156,memphis soul,0.062406
+157,ccm,0.03842
+158,deep underground hip hop,0.186468
+159,soundtrack,0.045238
+160,cumbia pop,0.079652
+161,noise pop,0.0410510204082
+162,rock-and-roll,0.05213
+163,soul blues,0.06312
+164,k-pop,0.0915040816327
+165,indie psych-rock,0.052478
+166,protopunk,0.059364
+167,moombahton,0.100236
+168,lo-fi,0.042412
+169,dream pop,0.0419244897959
+170,anthem worship,0.038924
+171,german pop,0.055696
+172,electric blues,0.055782
+173,outlaw country,0.041598
+174,melodic metalcore,0.095378
+175,detroit hip hop,0.205086
+176,hollywood,0.146822
+177,deep dutch hip hop,0.167667391304
+178,christian rock,0.046306
+179,southern soul,0.063418
+180,deep groove house,0.06028
+181,korean pop,0.092998
+182,chicago soul,0.0561714285714
+183,indiecoustica,0.0439653061224
+184,deep german pop rock,0.075598
+185,cantautor,0.048446
+186,glam metal,0.059442
+187,pagode,0.078988
+188,britpop,0.05033
+189,italian arena pop,0.070894
+190,traditional country,0.044838
+191,glam rock,0.064956
+192,alternative hip hop,0.24256
+193,funk metal,0.065946
+194,mariachi,0.041496
+195,deep australian indie,0.063458
+196,classify,0.045834
+197,underground pop rap,0.201258
+198,scorecore,0.0513666666667
+199,italian pop,0.052892
+200,samba,0.062648
+201,tracestep,0.081274
+202,complextro,0.075502
+203,deep pop edm,0.07517
+204,downtempo,0.0852816326531
+205,trip hop,0.081392
+206,grime,0.223584
+207,british invasion,0.057208
+208,speed metal,0.095698
+209,channel pop,0.05058
+210,classical,0.0457066666667
+211,catstep,0.083328
+212,lilith,0.0398632653061
+213,bachata,0.060538
+214,bossa nova,0.044778
+215,deep house,0.060438
+216,skate punk,0.076722
+217,melancholia,0.044102
+218,vapor twitch,0.114712
+219,lift kit,0.040393877551
+220,disco house,0.07459
+221,symphonic rock,0.04906
+222,comic,0.209378
+223,pop emo,0.0706319148936
+224,anti-folk,0.051582
+225,grunge,0.0516422222222
+226,duranguense,0.046068
+227,australian dance,0.093138
+228,traditional folk,0.04071
+229,bubblegum pop,0.04761
+230,otacore,0.081292
+231,chillhop,0.181426530612
+232,hoerspiel,0.759775510204
+233,australian alternative rock,0.077706
+234,reggae fusion,0.165884
+235,sertanejo,0.095138
+236,la indie,0.047752
+237,jazz,0.04596
+238,rockabilly,0.053982
+239,cumbia,0.05119
+240,nueva cancion,0.06375
+241,progressive rock,0.04786
+242,texas country,0.033806
+243,nu jazz,0.0938102040816
+244,video game music,0.063511627907
+245,romantic,0.0457066666667
+246,roots reggae,0.14595
+247,slow core,0.050724
+248,swedish folk pop,0.046434
+249,space rock,0.047732
+250,madchester,0.04205
+251,power metal,0.073986
+252,progressive metal,0.082572
+253,dancehall,0.169112244898
+254,nu gaze,0.050314
+255,alt-indie rock,0.055044
+256,french pop,0.06528
+257,world worship,0.036012
+258,reggae,0.148028
+259,deep trap,0.173275510204
+260,opm,0.03301
+261,alternative country,0.04422
+262,deep danish pop,0.10735
+263,mandopop,0.037268
+264,spanish rock,0.0498224489796
+265,industrial metal,0.071448
+266,deep southern trap,0.262736
+267,forro,0.096246
+268,sky room,0.070932
+269,brazilian hip hop,0.175686
+270,nashville sound,0.044252
+271,indie garage rock,0.0492244897959
+272,taiwanese pop,0.037268
+273,bolero,0.035474
+274,thrash metal,0.090988
+275,merseybeat,0.045678
+276,danish pop,0.076058
+277,lounge,0.044108
+278,trance,0.071724
+279,finnish dance pop,0.12334375
+280,jam band,0.051048
+281,deep latin hip hop,0.189657142857
+282,chamber psych,0.039482
+283,jazz funk,0.058876
+284,deep taiwanese pop,0.03717
+285,turkish pop,0.07305
+286,cool jazz,0.047042
+287,post-punk,0.049158
+288,salsa,0.049094
+289,eurodance,0.066126
+290,preverb,0.03731
+291,brooklyn indie,0.049893877551
+292,c-pop,0.037268
+293,swedish alternative rock,0.071534
+294,minimal,0.046738
+295,german techno,0.0520959183673
+296,pixie,0.064582
+297,chilean rock,0.076574
+298,deep cumbia sonidera,0.046656
+299,candy pop,0.0564551020408
+300,filter house,0.083834
+301,post-screamo,0.101296
+302,punk blues,0.060416
+303,vocal house,0.068
+304,deep euro house,0.071124
+305,deep new americana,0.04071
+306,bow pop,0.046768
+307,french hip hop,0.14885
+308,alternative emo,0.06076
+309,axe,0.0799102040816
+310,big beat,0.0983795918367
+311,cabaret,0.061864
+312,finnish pop,0.0635612244898
+313,progressive trance,0.071206
+314,chanson,0.06285
+315,swedish indie rock,0.059806
+316,industrial rock,0.066392
+317,merengue,0.05481
+318,etherpop,0.0615265306122
+319,garage psych,0.037792
+320,jazz fusion,0.05357
+321,power pop,0.045322
+322,ninja,0.0589
+323,cantopop,0.0493979591837
+324,uk post-punk,0.0459551020408
+325,melodic death metal,0.079718
+326,deep swedish hip hop,0.16505
+327,country dawn,0.0417918367347
+328,bubblegum dance,0.056172
+329,show tunes,0.114551020408
+330,post rock,0.035544
+331,dutch hip hop,0.159973469388
+332,vallenato,0.065174
+333,shiver pop,0.055842
+334,italian hip hop,0.112594
+335,dutch pop,0.0552653061224
+336,post-disco,0.067518
+337,bebop,0.045932
+338,deep regional mexican,0.069358
+339,spanish pop rock,0.0540755102041
+340,modern classical,0.044125
+341,swedish eurodance,0.109076
+342,contemporary post-bop,0.045924
+343,minimal techno,0.056984
+344,irish rock,0.053618
+345,dutch house,0.0739638297872
+346,turkish rock,0.0617244897959
+347,easy listening,0.04111
+348,swedish hip hop,0.105026
+349,danspunk,0.0804040816327
+350,australian pop,0.05565
+351,indonesian pop,0.039068
+352,canadian indie,0.043687755102
+353,wrestling,0.072293877551
+354,microhouse,0.0814020408163
+355,hip house,0.107436
+356,cumbia villera,0.0830346938776
+357,west coast trap,0.281798
+358,texas blues,0.052472
+359,celtic rock,0.060496
+360,broadway,0.162714
+361,pinoy alternative,0.037878
+362,french indietronica,0.061884
+363,blues,0.044504
+364,acid jazz,0.0532760869565
+365,anthem emo,0.0635510204082
+366,chillstep,0.071886
+367,movie tunes,0.082026
+368,tech house,0.057884
+369,uk funky,0.0666081632653
+370,norwegian indie,0.065206122449
+371,progressive bluegrass,0.036734
+372,classic swedish pop,0.0414291666667
+373,traditional blues,0.041798
+374,soul jazz,0.045568
+375,stoner rock,0.068782
+376,melodic hardcore,0.068808
+377,experimental rock,0.049348
+378,turntablism,0.202692
+379,norwegian pop,0.050712
+380,minimal dub,0.079487755102
+381,fourth world,0.0425895833333
+382,electro,0.094606
+383,swing,0.055188
+384,latin christian,0.03674
+385,dreamo,0.05122
+386,indie jazz,0.07238
+387,rock gaucho,0.069544
+388,french rock,0.0504367346939
+389,post-hardcore,0.078992
+390,epicore,0.04639375
+391,azontobeats,0.112388
+392,zapstep,0.140822
+393,deep chiptune,0.054308
+394,sheffield indie,0.05538
+395,uplifting trance,0.060776
+396,noise rock,0.0527893617021
+397,progressive post-hardcore,0.072356
+398,hard bop,0.045638
+399,antiviral pop,0.0877102040816
+400,aussietronica,0.113312
+401,indie punk,0.0576
+402,death core,0.135758333333
+403,electro latino,0.101926
+404,ambient,0.0421791666667
+405,reggae rock,0.065672
+406,country blues,0.040486
+407,anime,0.097726
+408,deep funk,0.080042
+409,new age,0.039178
+410,french reggae,0.17338
+411,j-pop,0.09429
+412,groove room,0.0548
+413,lovers rock,0.16019
+414,deep melodic euro house,0.064972
+415,death metal,0.12281
+416,nu disco,0.0608081632653
+417,indie rockism,0.0524387755102
+418,electro swing,0.100483673469
+419,country gospel,0.04228
+420,neo classical metal,0.071286
+421,mexican indie,0.0600285714286
+422,uk garage,0.146816326531
+423,gothic metal,0.055882
+424,stride,0.04213
+425,industrial,0.074978
+426,canadian metal,0.046978
+427,future funk,0.214298
+428,christian uplift,0.039588
+429,brazilian gospel,0.0372645833333
+430,german metal,0.05375
+431,swedish indie pop,0.07359
+432,gauze pop,0.05973
+433,turkish jazz,0.044006
+434,christian hip hop,0.178228571429
+435,latin jazz,0.049272
+436,stoner metal,0.079374
+437,experimental,0.0540291666667
+438,ska,0.103848
+439,french indie pop,0.0486729166667
+440,deep ccm,0.033874
+441,merengue urbano,0.065896
+442,classic norwegian pop,0.0738897959184
+443,pub rock,0.052302
+444,memphis blues,0.062356
+445,ska punk,0.08506
+446,suomi rock,0.06230625
+447,afrobeats,0.116514
+448,hyphy,0.185979591837
+449,liquid funk,0.072492
+450,swedish synthpop,0.069326
+451,chicago blues,0.051654
+452,drill,0.199246
+453,vaporwave,0.114504
+454,neue deutsche harte,0.059274
+455,louvor,0.0364244897959
+456,world,0.0519816326531
+457,dub,0.150012
+458,smooth jazz,0.041168
+459,drum and bass,0.072172
+460,memphis hip hop,0.162926
+461,j-rock,0.116202
+462,new orleans blues,0.05818
+463,new weird america,0.036525
+464,german pop rock,0.076586
+465,old school hip hop,0.216465306122
+466,relaxative,0.045922
+467,trova,0.087232
+468,big band,0.062308
+469,hardcore punk,0.099528
+470,stomp pop,0.063034
+471,bass music,0.1195
+472,flamenco,0.0534127659574
+473,indonesian indie,0.0509551020408
+474,comedy,0.836798
+475,baroque,0.0457931034483
+476,viking metal,0.083782
+477,russelater,0.155810204082
+478,djent,0.0758595744681
+479,mambo,0.055096
+480,acoustic blues,0.053922
+481,spanish indie pop,0.0425632653061
+482,swedish metal,0.070662
+483,delta blues,0.066058
+484,norwegian rock,0.05408
+485,deep texas country,0.0327040816327
+486,gospel,0.07291
+487,christian relaxative,0.0411108695652
+488,doo-wop,0.063922
+489,icelandic pop,0.037056
+490,latin metal,0.076352
+491,cowboy western,0.050554
+492,piedmont blues,0.048178
+493,deep swedish indie pop,0.0429617021277
+494,wonky,0.149366
+495,hardstyle,0.075318
+496,classical period,0.0476
+497,minimal tech house,0.0580285714286
+498,cumbia sonidera,0.04877
+499,operatic pop,0.04115
+500,meditation,0.0649291666667
+501,pop house,0.080456
+502,dangdut,0.0337346938776
+503,turkish folk,0.0502469387755
+504,hands up,0.102726530612
+505,deep disco house,0.057112244898
+506,celtic,0.035302
+507,desi,0.081524
+508,shoegaze,0.042724
+509,tejano,0.058068
+510,boogaloo,0.049662
+511,argentine reggae,0.095268
+512,nwobhm,0.093308
+513,deep hardstyle,0.0908428571429
+514,dansband,0.0521777777778
+515,indian pop,0.080764
+516,danish pop rock,0.0646734693878
+517,japanese r&b,0.0766142857143
+518,electropowerpop,0.096056
+519,gothic symphonic metal,0.101804
+520,intelligent dance music,0.04496
+521,healing,0.055676
+522,sleep,0.0753375
+523,finnish hip hop,0.112984
+524,desi hip hop,0.0912530612245
+525,schlager,0.0424469387755
+526,melbourne bounce,0.126598
+527,contemporary jazz,0.05053
+528,drone,0.043374
+529,symphonic metal,0.055582
+530,spanish punk,0.0783775510204
+531,filthstep,0.092518
+532,louisiana blues,0.0602
+533,children's music,0.082306122449
+534,cubaton,0.0730612244898
+535,velha guarda,0.091032
+536,electroclash,0.0570448979592
+537,jangle pop,0.045654
+538,brazilian indie,0.0861224489796
+539,chicano rap,0.164302040816
+540,spanish hip hop,0.274873469388
+541,uk drill,0.252188
+542,folk punk,0.066788
+543,k-hop,0.122774
+544,retro electro,0.0485285714286
+545,alternative r&b,0.122576
+546,afrobeat,0.055694
+547,polish pop,0.0480591836735
+548,opera,0.045795
+549,british folk,0.0371488372093
+550,nu-cumbia,0.038376
+551,a cappella,0.0720102040816
+552,j-dance,0.088193877551
+553,alternative pop rock,0.060848
+554,j-rap,0.0963346938776
+555,boston rock,0.065378
+556,future garage,0.0999653061224
+557,crossover thrash,0.106128
+558,mathcore,0.093986
+559,classic danish pop,0.0392183673469
+560,german indie,0.045198
+561,glitch,0.093314
+562,coverchill,0.0383
+563,jazz metal,0.083756
+564,environmental,0.0834975
+565,reading,0.9191875
+566,filmi,0.079194
+567,rumba,0.04601875
+568,azonto,0.100824489796
+569,levenslied,0.0524102040816
+570,polynesian pop,0.114034
+571,glitch hop,0.110842857143
+572,melodipop,0.0638458333333
+573,arabesk,0.0629918367347
+574,zolo,0.060988
+575,northern soul,0.042732
+576,underground rap,0.20462
+577,spanish new wave,0.045084
+578,vapor pop,0.0443590909091
+579,brazilian punk,0.092698
+580,piano blues,0.088426
+581,abstract hip hop,0.207108163265
+582,deep turkish pop,0.073054
+583,christian dance,0.05614
+584,neoclassical,0.038546
+585,norwegian hip hop,0.110202
+586,liedermacher,0.058036
+587,discofox,0.0783395833333
+588,australian hip hop,0.169478
+589,folk metal,0.097002
+590,canadian country,0.0418869565217
+591,strut,0.136227083333
+592,breakbeat,0.089532
+593,sludge metal,0.072376
+594,italo dance,0.0634836734694
+595,bluegrass,0.035746
+596,new tribe,0.054196
+597,neo-singer-songwriter,0.042326
+598,finnish metal,0.063185106383
+599,danseband,0.0442739130435
+600,fluxwork,0.0787897959184
+601,hardcore techno,0.086674
+602,jump blues,0.09239
+603,welsh rock,0.0607979591837
+604,technical death metal,0.120136734694
+605,german punk,0.0671346938776
+606,fingerstyle,0.0425897959184
+607,float house,0.067993877551
+608,sleaze rock,0.062296
+609,australian country,0.043958
+610,deep uplifting trance,0.0641795918367
+611,alternative ccm,0.03609375
+612,folklore argentino,0.055356
+613,kiwi rock,0.070986
+614,alternative pop,0.048474
+615,grave wave,0.056254
+616,swamp blues,0.051982
+617,electro jazz,0.08002
+618,rock steady,0.110256
+619,slow game,0.165632
+620,j-metal,0.101254
+621,post-metal,0.0550346938776
+622,techno,0.056558
+623,no wave,0.071768
+624,russian pop,0.088244
+625,stomp and flutter,0.03313
+626,portland indie,0.0536142857143
+627,dutch rock,0.058287755102
+628,doom metal,0.0591
+629,modern performance,0.039968
+630,pagan black metal,0.0720645833333
+631,black metal,0.087476
+632,jump up,0.080846
+633,pop flamenco,0.0922326530612
+634,hard alternative,0.069984
+635,christian metal,0.13847
+636,kirtan,0.038878
+637,neurofunk,0.08692
+638,polish hip hop,0.140953061224
+639,drift,0.043998
+640,dark jazz,0.047266
+641,peruvian rock,0.056464
+642,deathgrind,0.137148
+643,italian indie pop,0.072958
+644,ectofolk,0.044754
+645,symphonic black metal,0.087456
+646,classic italian pop,0.050798
+647,turkish hip hop,0.160358333333
+648,cuban rumba,0.063888
+649,brega,0.0532673469388
+650,deep norteno,0.0489510204082
+651,happy hardcore,0.119968
+652,carnaval,0.0799085106383
+653,belgian rock,0.08511
+654,chicago house,0.061314
+655,medieval rock,0.0747428571429
+656,irish folk,0.0903466666667
+657,jungle,0.07218
+658,chamame,0.058328
+659,scottish rock,0.045528
+660,rap chileno,0.240332
+661,classic chinese pop,0.034472
+662,dark wave,0.047918
+663,progressive uplifting trance,0.0622955555556
+664,orgcore,0.0612244444444
+665,austindie,0.05653
+666,idol,0.048866
+667,chicago indie,0.05279
+668,medieval,0.0489
+669,avant-garde jazz,0.04395
+670,eurovision,0.0578265306122
+671,bay area indie,0.077206
+672,romantico,0.031388
+673,western swing,0.049226
+674,russian rock,0.131022
+675,japanese city pop,0.052406
+676,new orleans jazz,0.073662
+677,j-idol,0.071348
+678,italian disco,0.068292
+679,harmonica blues,0.05646
+680,arab pop,0.062948
+681,puerto rican rock,0.171346938776
+682,dubstep,0.116764
+683,classic finnish pop,0.0497355555556
+684,malaysian pop,0.0424959183673
+685,outsider house,0.069462
+686,mexican rock-and-roll,0.036656
+687,portuguese rock,0.0918653061224
+688,post-doom metal,0.062506
+689,colombian rock,0.0792
+690,sertanejo tradicional,0.0437510204082
+691,brutal death metal,0.128428
+692,soul flow,0.223508
+693,salsa international,0.0517795918367
+694,seattle indie,0.032476
+695,avantgarde metal,0.05848
+696,hardcore,0.100196
+697,nasheed,0.0396224489796
+698,gbvfi,0.04962
+699,psychedelic doom,0.057734
+700,celtic punk,0.066582
+701,grindcore,0.112183673469
+702,quebecois,0.047942
+703,austropop,0.080184
+704,brazilian ccm,0.0455755102041
+705,funky tech house,0.072496
+706,riddim,0.222693877551
+707,psychedelic trance,0.055448
+708,speed garage,0.0771145833333
+709,baile funk,0.157408163265
+710,classic russian rock,0.141536734694
+711,freestyle,0.0635744680851
+712,j-poprock,0.065648
+713,italian pop rock,0.0582326530612
+714,ebm,0.055436
+715,math pop,0.049606
+716,barnmusik,0.433124489796
+717,spanish noise pop,0.0404833333333
+718,warm drone,0.0407795918367
+719,soca,0.13557
+720,nursery,0.075692
+721,ethereal wave,0.039604
+722,nintendocore,0.088502
+723,african gospel,0.07035
+724,garage pop,0.052398
+725,world meditation,0.041138
+726,destroy techno,0.074434
+727,balearic,0.053512244898
+728,progressive deathcore,0.152772
+729,math rock,0.06425
+730,laiko,0.05419
+731,acid house,0.0575163265306
+732,albuquerque indie,0.035706
+733,mande pop,0.051822
+734,polish punk,0.0599541666667
+735,russiavision,0.070034
+736,deep latin christian,0.03543
+737,indie dream pop,0.04554
+738,kindermusik,0.0584727272727
+739,emo punk,0.0556902439024
+740,entehno,0.051974
+741,bassline,0.129336
+742,k-indie,0.06502
+743,classic finnish rock,0.04381875
+744,substep,0.04119
+745,electrofox,0.180488
+746,drill and bass,0.0661836734694
+747,turbo folk,0.0735306122449
+748,british alternative rock,0.079808
+749,ambeat,0.078906
+750,ska revival,0.0775346938776
+751,deep minimal techno,0.0628288888889
+752,bmore,0.134459183673
+753,british indie rock,0.04716
+754,canterbury scene,0.046844
+755,musica para ninos,0.066088
+756,romanian pop,0.05291
+757,chill lounge,0.0407530612245
+758,rock catala,0.0545978723404
+759,free jazz,0.04483
+760,argentine indie,0.0487755102041
+761,deep comedy,0.91462
+762,twee pop,0.050308
+763,classic garage rock,0.0557734693878
+764,volksmusik,0.0457652173913
+765,post-post-hardcore,0.094494
+766,electro-industrial,0.05557
+767,gypsy jazz,0.063194
+768,oi,0.08314
+769,latin electronica,0.076726
+770,straight edge,0.110336
+771,christian hardcore,0.143458
+772,kabarett,0.445223404255
+773,kraut rock,0.04182
+774,steampunk,0.086028
+775,singaporean pop,0.0441408163265
+776,swedish hard rock,0.0664897959184
+777,world fusion,0.06107
+778,slovak pop,0.0784979591837
+779,dansktop,0.0400081632653
+780,surf music,0.051198
+781,thai idol,0.045784
+782,gabba,0.138922916667
+783,gothic rock,0.0532408163265
+784,chaotic hardcore,0.106482
+785,nu age,0.042016
+786,bhangra,0.122492
+787,canzone napoletana,0.065994
+788,retro metal,0.0568795918367
+789,cello,0.052796
+790,mandible,0.04812
+791,ballroom,0.032098
+792,ye ye,0.047204
+793,tango,0.0557204081633
+794,swedish jazz,0.0410306122449
+795,dixieland,0.078892
+796,old-time,0.0480541666667
+797,laboratorio,0.0579142857143
+798,mashup,0.129032653061
+799,christelijk,0.0403630434783
+800,freakbeat,0.05735
+801,punjabi,0.128155102041
+802,alternative roots rock,0.052688
+803,futurepop,0.06803
+804,vancouver indie,0.048498
+805,christian punk,0.054774
+806,choro,0.068098
+807,african rock,0.235236
+808,deep talent show,0.035862
+809,e6fi,0.061976
+810,drone metal,0.0471265306122
+811,nordic house,0.107083673469
+812,electro bailando,0.095364
+813,early music,0.043918
+814,psychobilly,0.070636
+815,hawaiian,0.0449
+816,horror punk,0.06862
+817,andean,0.062586
+818,russian hip hop,0.18652244898
+819,detroit techno,0.0557224489796
+820,progressive psytrance,0.0691510204082
+821,comedy rock,0.199320408163
+822,thai pop,0.043018
+823,psychill,0.0578102040816
+824,orchestral,0.044892
+825,tribal house,0.0633541666667
+826,atmospheric black metal,0.070008
+827,progressive trance house,0.0558791666667
+828,deep indian pop,0.073487755102
+829,jazz trio,0.044486
+830,classical performance,0.044368
+831,persian pop,0.113084
+832,fado,0.039596
+833,classical piano,0.0411571428571
+834,uk hip hop,0.240224489796
+835,voidgaze,0.064978
+836,danish hip hop,0.167940816327
+837,zouk riddim,0.082556
+838,israeli rock,0.056294
+839,czech rock,0.0600204081633
+840,swedish reggae,0.166961702128
+841,exotica,0.045762
+842,praise,0.082092
+843,theme,0.042824
+844,hungarian rock,0.077894
+845,athens indie,0.04574
+846,neo-trad metal,0.087616
+847,dub techno,0.0491897959184
+848,norwegian metal,0.0644326530612
+849,venezuelan rock,0.052864
+850,choral,0.0441347826087
+851,aggrotech,0.050762
+852,neo-progressive,0.0434857142857
+853,turkish alternative,0.038525
+854,hungarian pop,0.0913704545455
+855,classic colombian pop,0.061172
+856,kizomba,0.110968
+857,avant-garde,0.044932
+858,columbus ohio indie,0.106416326531
+859,czech folk,0.0507106382979
+860,anime score,0.045708
+861,visual kei,0.083872
+862,mizrahi,0.052306
+863,barnemusikk,0.16051
+864,abstract beats,0.189920408163
+865,italian metal,0.05196
+866,popgaze,0.0470040816327
+867,indian folk,0.08524
+868,deep latin alternative,0.06129375
+869,power-pop punk,0.073616
+870,ok indie,0.069236
+871,deep chill,0.0426833333333
+872,classic turkish pop,0.062216
+873,french movie tunes,0.046287755102
+874,bubble trance,0.0514306122449
+875,goregrind,0.137189795918
+876,j-indie,0.064568
+877,vintage italian soundtrack,0.043766
+878,melodic hard rock,0.052138
+879,deep tech house,0.0544145833333
+880,dark cabaret,0.06209
+881,shibuya-kei,0.0565520833333
+882,deep pop punk,0.07623125
+883,folkmusik,0.0428622222222
+884,power blues-rock,0.051878
+885,rai,0.0608244897959
+886,p funk,0.104364
+887,swedish punk,0.0746847826087
+888,russian punk,0.070862
+889,spanish reggae,0.192054
+890,black thrash,0.08035
+891,fidget house,0.13747755102
+892,shimmer psych,0.066546
+893,musica nativista,0.0737642857143
+894,albanian pop,0.122338
+895,horrorcore,0.182132
+896,basque rock,0.0838595744681
+897,violin,0.0429954545455
+898,nu skool breaks,0.0801
+899,melodic power metal,0.115012
+900,turkish classical,0.0498204081633
+901,highlife,0.091784
+902,belly dance,0.063306
+903,string quartet,0.038718
+904,classic belgian pop,0.0452632653061
+905,indie psych-pop,0.054387755102
+906,southern gospel,0.0327204081633
+907,chiptune,0.05695
+908,soukous,0.116438
+909,lds,0.0417918367347
+910,instrumental post rock,0.0403795918367
+911,irish country,0.036787755102
+912,brass band,0.096112
+913,classic polish pop,0.0575872340426
+914,bouncy house,0.134724
+915,vintage swedish pop,0.0714085106383
+916,timba,0.061844
+917,classic peruvian pop,0.0693367346939
+918,renaissance,0.044762
+919,acid techno,0.088004
+920,norwegian gospel,0.03635
+921,yugoslav rock,0.0749081632653
+922,dominican pop,0.057902
+923,classic icelandic pop,0.0558361702128
+924,arab folk,0.04506875
+925,southern soul blues,0.059238
+926,perth indie,0.051916
+927,neue deutsche welle,0.0999346938776
+928,swiss rock,0.051088
+929,zouk,0.05163
+930,deep melodic metalcore,0.151792
+931,sega,0.0825306122449
+932,mod revival,0.07037
+933,pakistani pop,0.0483183673469
+934,deep soul house,0.074888
+935,french folk pop,0.0722333333333
+936,deep christian rock,0.034224
+937,c86,0.046716
+938,rio de la plata,0.0753
+939,native american,0.0532897959184
+940,college a cappella,0.061976
+941,uk dub,0.143042857143
+942,jazz bass,0.072124
+943,miami bass,0.168132
+944,ambient idm,0.046604
+945,polish reggae,0.0948204081633
+946,nordic folk,0.049674
+947,hauntology,0.065882
+948,vienna indie,0.0683583333333
+949,swamp pop,0.046706
+950,modern uplift,0.0576895833333
+951,catalan folk,0.0785833333333
+952,chanson quebecois,0.0468583333333
+953,girl group,0.05679
+954,brazilian composition,0.0452625
+955,digital hardcore,0.0945734693878
+956,hip hop tuga,0.159874468085
+957,hip hop quebecois,0.171602083333
+958,deep neofolk,0.0471959183673
+959,vintage french electronic,0.0441040816327
+960,samba-enredo,0.150467391304
+961,vocaloid,0.0651795918367
+962,italian jazz,0.041936
+963,croatian pop,0.0789
+964,spanish folk,0.034698
+965,hard minimal techno,0.0964714285714
+966,vintage tango,0.051676
+967,desert blues,0.05788
+968,garage punk,0.081284
+969,bounce,0.19295
+970,hiplife,0.133766666667
+971,mexican son,0.0927020833333
+972,german oi,0.0873265306122
+973,classical guitar,0.0536244897959
+974,drumfunk,0.0734979591837
+975,czech hip hop,0.218360869565
+976,appalachian folk,0.0409346938776
+977,vietnamese pop,0.035982
+978,balkan brass,0.086378
+979,free improvisation,0.0608021276596
+980,riot grrrl,0.066026
+981,rosary,0.035774
+982,electronica,0.066222
+983,underground latin hip hop,0.249022916667
+984,karneval,0.0699425531915
+985,serialism,0.0495448979592
+986,cante flamenco,0.0999978723404
+987,tico,0.0673204081633
+988,boogie-woogie,0.058876
+989,morna,0.055346
+990,ecuadoria,0.0568612244898
+991,traditional rock 'n roll,0.049814
+992,estonian pop,0.056078
+993,tin pan alley,0.054428
+994,german show tunes,0.0659675
+995,disco polo,0.064814
+996,portuguese pop,0.0617304347826
+997,mbalax,0.0586102040816
+998,harpsichord,0.042424
+999,deep soundtrack,0.045288
+1000,polish indie,0.0581755102041
+1001,cyber metal,0.0905612244898
+1002,kids dance party,0.172768
+1003,metal guitar,0.056732
+1004,thrash core,0.124124
+1005,outsider,0.065293877551
+1006,full on,0.05593125
+1007,composition d,0.0421979166667
+1008,deep liquid,0.050812244898
+1009,kompa,0.041556
+1010,new age piano,0.046176
+1011,heavy alternative,0.0602632653061
+1012,jumpstyle,0.079306
+1013,electropunk,0.079602
+1014,classic czech pop,0.0451627906977
+1015,stomp and whittle,0.044374
+1016,slovak hip hop,0.236377777778
+1017,beats,0.0888755102041
+1018,brutal deathcore,0.115192
+1019,finnish indie,0.0485229166667
+1020,makossa,0.100895918367
+1021,qawwali,0.051832
+1022,kwaito house,0.113189795918
+1023,witch house,0.0654918367347
+1024,j-ambient,0.0448971428571
+1025,atmospheric post rock,0.035136
+1026,zillertal,0.0428326086957
+1027,gothic alternative,0.101064
+1028,funk carioca,0.233954166667
+1029,latvian pop,0.0585446808511
+1030,crust punk,0.150782
+1031,oshare kei,0.109725
+1032,blackgaze,0.0616918367347
+1033,psych gaze,0.037012244898
+1034,grunge pop,0.067112244898
+1035,orquesta tropical,0.0465102040816
+1036,ghazal,0.057794
+1037,classic venezuelan pop,0.0700571428571
+1038,rva indie,0.087912
+1039,irish indie,0.068768
+1040,denver indie,0.083948
+1041,world chill,0.0422244897959
+1042,deep gothic post-punk,0.041082
+1043,ethiopian pop,0.0601693877551
+1044,deep rai,0.0827304347826
+1045,electro dub,0.0946195652174
+1046,traditional ska,0.069966
+1047,hungarian hip hop,0.22138
+1048,fake,0.059034
+1049,beatdown,0.11741
+1050,deep acoustic pop,0.0415612244898
+1051,drone folk,0.0436102040816
+1052,canadian hip hop,0.204151020408
+1053,louisville indie,0.070698
+1054,dirty texas rap,0.24296122449
+1055,neofolk,0.0452673469388
+1056,neo-rockabilly,0.059966
+1057,judaica,0.041666
+1058,deep flow,0.119594736842
+1059,japanese psychedelic,0.057784
+1060,ragtime,0.0676020408163
+1061,anarcho-punk,0.117808
+1062,workout,0.069716
+1063,austrian hip hop,0.139891666667
+1064,guidance,0.45784
+1065,traditional british folk,0.0423612244898
+1066,calypso,0.123422
+1067,orquesta tipica,0.04927
+1068,swiss hip hop,0.11945
+1069,geek rock,0.094106122449
+1070,deep adult standards,0.064168
+1071,blaskapelle,0.0581829787234
+1072,classic french pop,0.05483
+1073,nwothm,0.0961979591837
+1074,deep smooth jazz,0.048122
+1075,deep dance pop,0.069506122449
+1076,dark black metal,0.0968734693878
+1077,abstract,0.0536125
+1078,tone,0.0540333333333
+1079,neo-synthpop,0.057968
+1080,minimal melodic techno,0.0613723404255
+1081,nerdcore,0.200018
+1082,ukulele,0.118352
+1083,kurdish folk,0.0568510204082
+1084,ukrainian rock,0.0748591836735
+1085,kayokyoku,0.0424224489796
+1086,new beat,0.101872916667
+1087,lithumania,0.0568979166667
+1088,modern southern rock,0.038606
+1089,euroska,0.06281875
+1090,k-rock,0.0450693877551
+1091,classic soundtrack,0.037344
+1092,zouglou,0.113279591837
+1093,australian indie,0.060416
+1094,indie emo,0.0583816326531
+1095,lo star,0.058128
+1096,atmospheric post-metal,0.0528
+1097,broken beat,0.109858
+1098,acousmatic,0.06841
+1099,minimal wave,0.0527204081633
+1100,solipsynthm,0.0965285714286
+1101,swedish prog,0.044856
+1102,alternative americana,0.0350693877551
+1103,darkstep,0.102871428571
+1104,nl folk,0.087068
+1105,marching band,0.0707224489796
+1106,lounge house,0.0467957446809
+1107,semba,0.100214583333
+1108,underground power pop,0.050626
+1109,psychedelic blues-rock,0.0678479166667
+1110,crack rock steady,0.168378
+1111,vegan straight edge,0.213695918367
+1112,motivation,0.53383125
+1113,schranz,0.0714632653061
+1114,traditional swing,0.0905041666667
+1115,chalga,0.103385714286
+1116,musiikkia lapsille,0.139195652174
+1117,footwork,0.126082
+1118,breakcore,0.0801734693878
+1119,yoik,0.0635625
+1120,leeds indie,0.0672551020408
+1121,tribute,0.0584428571429
+1122,funky breaks,0.075812244898
+1123,indian classical,0.0599708333333
+1124,didgeridoo,0.120595744681
+1125,classic dutch pop,0.0540836734694
+1126,slc indie,0.047656
+1127,deep contemporary country,0.0323653061224
+1128,danish indie,0.0510020833333
+1129,belgian indie,0.0427958333333
+1130,jazz brass,0.0460081632653
+1131,deep brazilian pop,0.0773829787234
+1132,corrosion,0.039888
+1133,black death,0.094502
+1134,japanese jazztronica,0.073998
+1135,electro trash,0.104851020408
+1136,classic afrobeat,0.069772
+1137,gothic americana,0.040587755102
+1138,slavic metal,0.081494
+1139,dark hardcore,0.231004347826
+1140,scratch,0.2191
+1141,traditional scottish folk,0.067306122449
+1142,hebrew pop,0.05296
+1143,garage punk blues,0.116318
+1144,hindustani classical,0.05565625
+1145,indie singer-songwriter,0.039222
+1146,deep german punk,0.0695173913043
+1147,deep disco,0.078028
+1148,electronicore,0.0838959183673
+1149,zydeco,0.061704
+1150,usbm,0.080268
+1151,string folk,0.0426693877551
+1152,beach music,0.0513934782609
+1153,luk thung,0.0376530612245
+1154,michigan indie,0.063086
+1155,south african jazz,0.04858
+1156,islamic recitation,0.037
+1157,spanish invasion,0.05594375
+1158,russian alternative,0.0620395833333
+1159,deep orchestral,0.0467744680851
+1160,mallet,0.0507770833333
+1161,dark ambient,0.0445591836735
+1162,ragga jungle,0.139852083333
+1163,progressive alternative,0.058208
+1164,fast melodic punk,0.117745652174
+1165,martial industrial,0.0590131578947
+1166,deep discofox,0.0870571428571
+1167,enka,0.0367770833333
+1168,kwaito,0.0863285714286
+1169,porro,0.072712
+1170,power violence,0.124224
+1171,finnish hardcore,0.0671318181818
+1172,neurostep,0.155929166667
+1173,classic russian pop,0.0542387755102
+1174,vapor house,0.10317755102
+1175,deep melodic hard rock,0.0822142857143
+1176,downtempo fusion,0.096992
+1177,ostrock,0.0885891304348
+1178,spanish classical,0.0450212765957
+1179,monastic,0.0484530612245
+1180,string band,0.041728
+1181,ambient psychill,0.0518571428571
+1182,faroese pop,0.0419040816327
+1183,musica per bambini,0.0661916666667
+1184,rebetiko,0.0414791666667
+1185,romanian rock,0.13124893617
+1186,panpipe,0.0384541666667
+1187,afrikaans,0.130883333333
+1188,abstract idm,0.0630714285714
+1189,deep psychobilly,0.07309
+1190,ugandan pop,0.104822
+1191,bass trip,0.166376
+1192,power electronics,0.048056
+1193,french punk,0.0941183673469
+1194,library music,0.0508265306122
+1195,j-reggae,0.202526086957
+1196,russian folk,0.096336
+1197,musique pour enfants,0.0928204081633
+1198,hard house,0.0699
+1199,concert piano,0.0433612244898
+1200,trash rock,0.0627708333333
+1201,wind ensemble,0.044332
+1202,deep liquid bass,0.0971765957447
+1203,deep jazz guitar,0.0404734693878
+1204,norwegian jazz,0.0452846153846
+1205,neo metal,0.0980979591837
+1206,gospel reggae,0.0995895833333
+1207,traditional soul,0.049628
+1208,persian traditional,0.127378
+1209,coupe decale,0.122712244898
+1210,italian progressive rock,0.0505836734694
+1211,manele,0.079070212766
+1212,magyar,0.0887704545455
+1213,melodic progressive metal,0.0844717391304
+1214,japanoise,0.0659
+1215,bay area hip hop,0.201112
+1216,german ccm,0.0370260869565
+1217,bossa nova jazz,0.04176875
+1218,deep opera,0.0478844444444
+1219,greek indie,0.0799530612245
+1220,consort,0.0407918367347
+1221,chaotic black metal,0.0993145833333
+1222,classic schlager,0.0610630434783
+1223,rap metalcore,0.116418
+1224,slam death metal,0.1415875
+1225,deep ambient,0.047246
+1226,nz indie,0.0411520833333
+1227,polyphony,0.0428285714286
+1228,deep progressive trance,0.0465354166667
+1229,galego,0.04921875
+1230,indie fuzzpop,0.0442530612245
+1231,experimental psych,0.039568
+1232,iskelma,0.054770212766
+1233,italian folk,0.0665326086957
+1234,tekno,0.148956097561
+1235,shanty,0.114724
+1236,dark psytrance,0.0665644444444
+1237,breton folk,0.0701681818182
+1238,jig and reel,0.0481020408163
+1239,military band,0.458964583333
+1240,technical brutal death metal,0.141887755102
+1241,armenian folk,0.065814
+1242,gamecore,0.073672
+1243,tzadik,0.0636625
+1244,neo-pagan,0.08044
+1245,go-go,0.15397755102
+1246,deep folk metal,0.0851291666667
+1247,contemporary composition,0.0499333333333
+1248,deep canadian indie,0.061708
+1249,liturgical,0.0450632653061
+1250,speedcore,0.128176086957
+1251,depressive black metal,0.0732755102041
+1252,accordion,0.0517319148936
+1253,skinhead reggae,0.0980428571429
+1254,bulgarian rock,0.0836829787234
+1255,harp,0.042847826087
+1256,ambient fusion,0.056625
+1257,funeral doom,0.0580954545455
+1258,pipe band,0.0609346938776
+1259,remix,0.0699632653061
+1260,screamocore,0.104453061224
+1261,danish jazz,0.049606122449
+1262,future ambient,0.0570958333333
+1263,deep soft rock,0.0531551020408
+1264,spoken word,0.49933
+1265,klezmer,0.0644976190476
+1266,j-core,0.0974680851064
+1267,deep german indie,0.0550095238095
+1268,minimal dubstep,0.117227083333
+1269,deep sunset lounge,0.0344
+1270,bemani,0.245842857143
+1271,indorock,0.03940625
+1272,flick hop,0.26025625
+1273,indie shoegaze,0.04541875
+1274,vintage chanson,0.0625680851064
+1275,greek house,0.0533212765957
+1276,punta,0.153553061224
+1277,doujin,0.08332
+1278,corsican folk,0.0350638297872
+1279,nepali,0.04115
+1280,screamo punk,0.106354
+1281,ghettotech,0.150932653061
+1282,west african jazz,0.0530729166667
+1283,college marching band,0.114408163265
+1284,kuduro,0.153533333333
+1285,neo-industrial rock,0.0639591836735
+1286,greek hip hop,0.10175625
+1287,barbershop,0.12969
+1288,jazz orchestra,0.0609408163265
+1289,benga,0.0937408163265
+1290,brass ensemble,0.05335
+1291,stl indie,0.0605673469388
+1292,deep happy hardcore,0.14543125
+1293,hard glam,0.0910265306122
+1294,blues-rock guitar,0.0436659574468
+1295,mantra,0.11257173913
+1296,british dance band,0.07158
+1297,guitar case,0.0357326530612
+1298,african percussion,0.146358333333
+1299,dallas indie,0.0443404255319
+1300,geek folk,0.06774
+1301,carnatic,0.0955043478261
+1302,deep darkpsy,0.0745333333333
+1303,triangle indie,0.056156
+1304,cumbia funk,0.08656875
+1305,thrash-groove metal,0.0885152173913
+1306,outer hip hop,0.20942826087
+1307,throat singing,0.0602020833333
+1308,swedish pop punk,0.0777022222222
+1309,sinhala,0.057414893617
+1310,dark minimal techno,0.0722377777778
+1311,chinese traditional,0.049626
+1312,deep deep house,0.0713369565217
+1313,italian punk,0.0727159090909
+1314,unblack metal,0.0888170212766
+1315,deep vocal jazz,0.041585106383
+1316,cornetas y tambores,0.049497826087
+1317,jug band,0.0769770833333
+1318,indie pop rock,0.0475142857143
+1319,power noise,0.0598804347826
+1320,capoeira,0.127993617021
+1321,commons,0.0542446808511
+1322,post-disco soul,0.0884895833333
+1323,halloween,0.12691875
+1324,contemporary folk,0.0483
+1325,finnish jazz,0.0671295454545
+1326,chinese indie rock,0.0428446808511
+1327,byzantine,0.0432959183673
+1328,zim,0.11227826087
+1329,black sludge,0.0573755102041
+1330,vintage jazz,0.0970510204082
+1331,dubsteppe,0.0842872340426
+1332,deep psytrance,0.0889081632653
+1333,street punk,0.0949543478261
+1334,breaks,0.0791234042553
+1335,drama,0.782483333333
+1336,abstractro,0.0559387755102
+1337,deep new wave,0.0468208333333
+1338,gospel blues,0.108389583333
+1339,light music,0.0517319148936
+1340,deep southern soul,0.0500816326531
+1341,deep indie rock,0.042006122449
+1342,mexican traditional,0.0589897959184
+1343,gothic post-punk,0.0501265306122
+1344,cajun,0.048998
+1345,northern irish indie,0.0539936170213
+1346,british brass band,0.0447957446809
+1347,deep indie singer-songwriter,0.0428239130435
+1348,noise punk,0.0923770833333
+1349,traditional funk,0.0642
+1350,polish jazz,0.0363808510638
+1351,baroque ensemble,0.040902
+1352,deep ragga,0.232560869565
+1353,demoscene,0.131097826087
+1354,japanese traditional,0.089226
+1355,deep downtempo fusion,0.0556729166667
+1356,heavy gothic rock,0.0734
+1357,bangla,0.0455957446809
+1358,covertrance,0.0563181818182
+1359,deep vocal house,0.0874755555556
+1360,deep freestyle,0.05793125
+1361,classical organ,0.0396574468085
+1362,deep full on,0.0913340909091
+1363,makina,0.0789553191489
+1364,c64,0.0481979166667
+1365,spytrack,0.049006122449
+1366,classical flute,0.0446204081633
+1367,musique concrete,0.0802382978723
+1368,grim death metal,0.110617391304
+1369,polka,0.0534081632653
+1370,slash punk,0.165089583333
+1371,muziek voor kinderen,0.0705730769231
+1372,deep jazz fusion,0.0449586956522
+1373,classic eurovision,0.098082
+1374,chamber choir,0.0534
+1375,skiffle,0.0566319148936
+1376,poetry,0.724445833333
+1377,deep funk house,0.106508510638
+1378,fallen angel,0.0749854166667
+1379,electroacoustic improvisation,0.0525697674419
+1380,steelpan,0.056676
+1381,belorush,0.0842957446809
+1382,fussball,0.0708857142857
+1383,oratory,0.788936170213
+1384,deep east coast hip hop,0.245793877551
+1385,grisly death metal,0.0950428571429
+1386,traditional reggae,0.125572093023
+1387,spanish indie rock,0.0581270833333
+1388,sunset lounge,0.0521744186047
+1389,early music ensemble,0.0665586956522
+1390,contemporary classical,0.068693877551
+1391,lowercase,0.0646955555556
+1392,punk ska,0.148854
+1393,deep progressive house,0.0531022222222
+1394,indian rock,0.0439020833333
+1395,clarinet,0.0463368421053
+1396,deep jazz piano,0.0408723404255
+1397,deep melodic death metal,0.093814
+1398,hardcore breaks,0.108769565217
+1399,skinhead oi,0.0672173913043
+1400,vintage swing,0.095847826087
+1401,hatecore,0.0876795454545
+1402,glitch beats,0.0479355555556
+1403,villancicos,0.105591111111
+1404,deep classic garage rock,0.38115106383
+1405,deep indie pop,0.0543276595745
+1406,neo soul-jazz,0.0828425531915
+1407,deep pop emo,0.06016
+1408,traditional rockabilly,0.0781787234043
+1409,deep nordic folk,0.0457531914894
+1410,klapa,0.0302444444444
+1411,deep swedish rock,0.0766469387755
+1412,crossover prog,0.0460533333333
+1413,football,0.0899
+1414,organic ambient,0.0378085106383
+1415,soda pop,0.0397040816327
+1416,deep chill-out,0.047397826087
+1417,deep hardcore,0.0977260869565
+1418,deep filthstep,0.0969454545455
+1419,wrock,0.0757040816327
+1420,norwegian punk,0.0668666666667
+1421,deep northern soul,0.0542510638298
+1422,experimental dubstep,0.0754586956522
+1423,deep free jazz,0.06045
+1424,raw black metal,0.071578
+1425,thai indie,0.0509977777778
+1426,classic psychedelic rock,0.0455468085106
+1427,gamelan,0.0529306122449
+1428,deep surf music,0.044729787234
+1429,dubstep product,0.102134042553
+1430,goa trance,0.0561022727273
+1431,deep italo disco,0.0495333333333
+1432,deep thrash metal,0.120122916667
+1433,deep g funk,0.224865217391
+1434,accordeon,0.0830469387755
+1435,charred death,0.0973954545455
+1436,ambient dub techno,0.0828744680851
+1437,slovenian rock,0.0463957446809
+1438,maghreb,0.1005
+1439,re:techno,0.05355
+1440,malagasy folk,0.0767282608696
+1441,hard stoner rock,0.0653804347826
+1442,dark progressive house,0.05908
+1443,zeuhl,0.06836
+1444,neo honky tonk,0.0403918367347
+1445,tanzlmusi,0.0989125
+1446,deep dub techno,0.0986456521739
+1447,j-punk,0.109226530612
+1448,noise,0.0716688888889
+1449,chill groove,0.0605756097561
+1450,tibetan,0.05824
+1451,deep punk rock,0.105886363636
+1452,deep power-pop punk,0.0698625
+1453,j-poppunk,0.0927931818182
+1454,italo beats,0.0696075
+1455,deep space rock,0.0583446808511
+1456,deep motown,0.0567645833333
+1457,kc indie,0.055586
+1458,new jack smooth,0.0973354166667
+1459,deep nz indie,0.0468489361702
+1460,alternative metalcore,0.110058695652
+1461,chinese opera,0.0391288888889
+1462,vintage rockabilly,0.076346
+1463,deep eurodance,0.0447857142857
+1464,deep cello,0.0481448979592
+1465,chill-out trance,0.0663666666667
+1466,german street punk,0.0969434782609
+1467,terrorcore,0.102035897436
+1468,doomcore,0.13922826087
+1469,twin cities indie,0.0479791666667
+1470,french folk,0.0682653061224
+1471,glitter trance,0.0555770833333
+1472,nu electro,0.0588066666667
+1473,indie emo rock,0.0786975609756
+1474,deep classical piano,0.0589229166667
+1475,ceilidh,0.0462416666667
+1476,alternative hardcore,0.125246511628
+1477,jangle rock,0.03343125
+1478,skweee,0.112945652174
+1479,bulgarian folk,0.0452979166667
+1480,deep neo-synthpop,0.0374065217391
+1481,rhythm and boogie,0.0549291666667
+1482,swedish jazz orkester,0.0462755102041
+1483,deep hardcore punk,0.125106976744
+1484,chinese experimental,0.0818369565217
+1485,jazz composition,0.0427414634146
+1486,modern downshift,0.0718833333333
+1487,ethereal gothic,0.056602173913
+1488,ghoststep,0.104813888889
+1489,anime cv,0.063222
+1490,modern free jazz,0.132880434783
+1491,vintage schlager,0.117217391304
+1492,song poem,0.0751367346939
+1493,neo-traditional country,0.0398260869565
+1494,deep orgcore,0.0886755555556
+1495,cryptic black metal,0.1554725
+1496,cinematic dubstep,0.0881128205128
+1497,vintage country folk,0.0701755102041
+1498,vintage gospel,0.0621106382979
+1499,gothic doom,0.06115
+1500,deep symphonic black metal,0.10816122449
+1501,vintage reggae,0.110644897959
+1502,deep german jazz,0.0494857142857
+1503,twee indie pop,0.0379192307692
+1504,saxophone,0.0530463414634
+1505,dark electro-industrial,0.065436
+1506,deep delta blues,0.0563734693878
+1507,caucasian folk,0.06704375
+1508,chip hop,0.0960212765957
+1509,deep breakcore,0.137389130435
+1510,deep deep tech house,0.0854685714286
+1511,deep string quartet,0.049186
+1512,necrogrind,0.110813333333
+1513,central asian folk,0.0594127659574
+1514,drone psych,0.0574685714286
+1515,vintage swoon,0.0454265306122
+1516,rock noise,0.161238
+1517,smooth urban r&b,0.117258139535
+1518,deep latin jazz,0.0781717948718
+1519,vintage western,0.0618104166667

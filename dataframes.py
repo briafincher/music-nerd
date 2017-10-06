@@ -1,29 +1,33 @@
 import pandas as pd
 from model2 import GenreAverages
+from model2 import connect_to_db, app
 
-danceability = pd.DataFrame()
-energy = pd.DataFrame()
-key = pd.DataFrame()
-loudness = pd.DataFrame()
-mode = pd.DataFrame()
-speechiness = pd.DataFrame()
-acousticness = pd.DataFrame()
-instrumentalness = pd.DataFrame()
-liveness = pd.DataFrame()
-valence = pd.DataFrame()
-tempo = pd.DataFrame()
 
-    df = pd.DataFrame(data, columns=['track_id',
-                                     'danceability',
-                                     'energy',
-                                     'key',
-                                     'loudness',
-                                     'modes',
-                                     'speechiness',
-                                     'acousticness',
-                                     'instrumentalness',
-                                     'liveness',
-                                     'valence',
-                                     'tempo',
-                                     'duration_ms',
-                                     'time_signature'])
+def create_dataframe(feature, genres):
+    data = {'genre': [], feature: []}
+
+    for genre in genres:
+        data['genre'].append(genre.genre)
+        data[feature].append(getattr(genre, feature))
+
+    dataframe = pd.DataFrame(data, columns=['genre', feature])
+    dataframe.to_csv('genre_features/{}.csv'.format(feature))
+
+connect_to_db(app)
+
+genres = GenreAverages.query.all()
+
+features = ['danceability',
+            'energy',
+            'key',
+            'loudness',
+            'mode',
+            'speechiness',
+            'acousticness',
+            'instrumentalness',
+            'liveness',
+            'valence',
+            'tempo']
+
+for feature in features:
+    create_dataframe(feature, genres)
