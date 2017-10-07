@@ -124,4 +124,6 @@ def artist_search(genre):
 
     return artists
 
+
 def create_playlist(genre):
+    pass

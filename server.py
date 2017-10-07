@@ -86,7 +86,9 @@ def show_genre_info(genre):
             # WHAT IS GOING ON HERE LOL
 
     artists = {}
+
     popular_artists = find_popular_artists(genre_object.artists)
+
     while(len(artists) < 4):
         for popularity, artist in popular_artists:
             if len(artists) == 4:
@@ -99,6 +101,7 @@ def show_genre_info(genre):
             artists[name] = url
 
     description = None
+
     playlist = create_playlist(genre)
 
     return render_template('genre-info.html',
