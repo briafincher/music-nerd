@@ -10,7 +10,7 @@ var pack = d3.pack()
     .size([width, height])
     .padding(1.5);
 
-d3.csv("/static/genre_features/danceability.csv", function(d) {
+d3.csv("/static/genre_features/danceability2.csv", function(d) {
   d.value = +d.value;
   if (d.value) return d;
 }, function(error, classes) {

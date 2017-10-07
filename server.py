@@ -10,6 +10,8 @@ from related import top_related
 
 from random import randint
 
+from client_credentials_flow import create_playlist
+
 app.secret_key = "ABC"
 
 app.jinja_env.undefined = StrictUndefined
@@ -97,7 +99,7 @@ def show_genre_info(genre):
             artists[name] = url
 
     description = None
-    playlist = None
+    playlist = create_playlist(genre)
 
     return render_template('genre-info.html',
                            genre=genre,

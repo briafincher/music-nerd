@@ -124,4 +124,4 @@ def artist_search(genre):
 
     return artists
 
-# def find_related_artists(artists):
+def create_playlist(genre):

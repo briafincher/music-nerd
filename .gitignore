@@ -2,3 +2,4 @@ env
 secrets.sh
 *.pyc
 .DS_store
+music2.sql
