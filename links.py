@@ -1,5 +1,5 @@
 from model2 import app, connect_to_db, db
-from model2 import Genre, Track, AudioFeatures, GenreAverages, Artist, ArtistGenre, Image, RelatedGenre
+from model2 import Genre, Track, AudioFeatures, GenreAverages, Artist, ArtistGenre, Image, RelatedGenres
 from client_credentials_flow import genre_search, track_search, make_tracks, feature_search
 import pdb
 import pandas as pd
@@ -7,78 +7,41 @@ import numpy as np
 from seed2 import load_audio_features, load_audio_aggregates
 
 
-    # genres = Genre.query.all()
-    # genre_list = []
-    # for genre in genres:
-    #     genre_list.append(genre.name)
+def add_nodes(relationships):
 
-    # genre_features = {}
-    # for genre in genre_list:
-    #     features = GenreAverages.query.filter_by(genre=genre).first()
-    #     genre_features[genre] = {'acousticness': features.acousticness,
-    #                              'danceability': features.danceability,
-    #                              'duration_ms': features.duration_ms,
-    #                              'energy': features.energy,
-    #                              'instrumentalness': features.instrumentalness,
-    #                              'key': features.key,
-    #                              'liveness': features.liveness,
-    #                              'loudness': features.loudness,
-    #                              'mode': features.mode,
-    #                              'speechiness': features.speechiness,
-    #                              'tempo': features.tempo,
-    #                              'time_signature': features.time_signature,
-    #                              'valence': features.valence
-    #                              }
-# connect_to_db(app)
+    nodes = []
 
-genres = Genre.query.all()
-for genre in genres:
-    for artist in genre.artists:
+    for relationship in relationships:
+        genre1 = Genre.query.filter_by(genre_id=relationship.genre1_id).first()
+        genre2 = Genre.query.filter_by(genre_id=relationship.genre2_id).first()
+
+        nodes.append({'id': genre1.name, 'group': 1})
+        nodes.append({'id': genre2.name, 'group': 1})
+
+    print add_nodes(relationships)
 
 
+def add_links(relationships):
 
-# def create_dict(ranks, feature):
-#     feature_dict = {}
-#     for i, genre in enumerate(ranks):
-#         feature_dict[genre.genre] = {'rank': i,
-#                                      feature: genre.feature}
+    links = []
 
-#     return feature_dict
+    for relationship in relationships:
 
-# genres = GenreAverages.query.all()
-# # for genre in genres:
-# #     name = genre.genre
+        genre1 = Genre.query.filter_by(genre_id=relationship.genre1_id).first()
+        genre2 = Genre.query.filter_by(genre_id=relationship.genre2_id).first()
 
-# acousticness = GenreAverages.query.order_by(GenreAverages.acousticness).all()
-# acousticness_dict = create_dict(acousticness, 'acousticness')
-# # for i, genre in enumerate(acousticness):
-# #     acousticness_dict[genre.genre] = {'rank': i, 'acousticness': genre.acousticness}
+        links.append({'source': genre1.name,
+                      'target': genre2.name,
+                      'value': relationship.shared_artists})
 
-# danceability = GenreAverages.query.order_by(GenreAverages.danceability).all()
-
-# duration_ms = GenreAverages.query.order_by(GenreAverages.duration_ms).all()
-
-# energy = GenreAverages.query.order_by(GenreAverages.energy).all()
-
-# instrumentalness = GenreAverages.query.order_by(GenreAverages.instrumentalness).all()
-
-# key = GenreAverages.query.order_by(GenreAverages.key).all()
-
-# liveness = GenreAverages.query.order_by(GenreAverages.liveness).all()
-
-# loudness = GenreAverages.query.order_by(GenreAverages.loudness).all()
-
-# mode = GenreAverages.query.order_by(GenreAverages.mode).all()
-
-# speechiness = GenreAverages.query.order_by(GenreAverages.speechiness).all()
-
-# tempo = GenreAverages.query.order_by(GenreAverages.tempo).all()
-
-# time_signature = GenreAverages.query.order_by(GenreAverages.time_signature).all()
-
-# valence = GenreAverages.query.order_by(GenreAverages.valence).all()
+    print links
 
 
 if __name__ == '__main__':
 
     connect_to_db(app)
+
+    relationships = RelatedGenres.query.filter(RelatedGenres.shared_artists > 0).all()
+
+    # add_nodes(relationships)
+    add_links(relationships)
