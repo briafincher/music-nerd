@@ -18,7 +18,7 @@ def add_nodes(relationships):
         nodes.append({'id': genre1.name, 'group': 1})
         nodes.append({'id': genre2.name, 'group': 1})
 
-    print add_nodes(relationships)
+    print nodes
 
 
 def add_links(relationships):
@@ -43,5 +43,5 @@ if __name__ == '__main__':
 
     relationships = RelatedGenres.query.filter(RelatedGenres.shared_artists > 0).all()
 
-    # add_nodes(relationships)
-    add_links(relationships)
+    add_nodes(relationships)
+    # add_links(relationships)
