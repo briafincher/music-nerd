@@ -18,10 +18,8 @@ def add_nodes(relationships):
         nodes.append({'id': genre1.name, 'group': 1})
         nodes.append({'id': genre2.name, 'group': 1})
 
-    print 'nodes = ['
     for node in nodes:
-        print '{},'.format(node)
-    print ']'
+        print node
 
 
 def add_links(relationships):
@@ -37,10 +35,8 @@ def add_links(relationships):
                       'target': genre2.name,
                       'value': relationship.shared_artists})
 
-    print 'links = ['
     for link in links:
-        print '{},'.format(link)
-    print ']'
+        print link
 
 
 if __name__ == '__main__':
