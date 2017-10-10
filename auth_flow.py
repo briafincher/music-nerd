@@ -2,6 +2,7 @@ import os
 import spotipy
 # from pprint import pformat
 import spotipy.util as util
+from client_credentials_flow import genre_search
 
 os.remove('.cache-haverchucks')
 
@@ -17,4 +18,25 @@ sp = spotipy.Spotify(auth=token)
 
 result = sp.search(q='genre:dance+pop', limit=10)
 
-print result
+
+def find_playlist(name):
+    pass
+
+
+def create_playlist(genre):
+
+    playlist = find_playlist(genre)
+
+    if playlist:
+
+        return playlist
+
+    else:
+
+        search_results = genre_search(genre, 20)
+
+        tracks = []
+
+        for track in search_results:
+            tracks.append(track['id'])
+    pass

@@ -6,7 +6,7 @@ nodes = []
 
 links = []
 
-for node in open('all_genre_nodes.txt'):
+for node in open('genre_nodes.txt'):
     node.strip()
     if node not in nodes:
         nodes.append(node)

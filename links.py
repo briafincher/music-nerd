@@ -1,10 +1,6 @@
-from model2 import app, connect_to_db, db
-from model2 import Genre, Track, AudioFeatures, GenreAverages, Artist, ArtistGenre, Image, RelatedGenres
-from client_credentials_flow import genre_search, track_search, make_tracks, feature_search
-import pdb
-import pandas as pd
-import numpy as np
-from seed2 import load_audio_features, load_audio_aggregates
+from model2 import app, connect_to_db
+from model2 import Genre, RelatedGenres
+import json
 
 
 def add_nodes(relationships):
@@ -15,11 +11,15 @@ def add_nodes(relationships):
         genre1 = Genre.query.filter_by(genre_id=relationship.genre1_id).first()
         genre2 = Genre.query.filter_by(genre_id=relationship.genre2_id).first()
 
-        nodes.append({'id': genre1.name, 'group': 1})
-        nodes.append({'id': genre2.name, 'group': 1})
+        if genre1.name not in nodes:
+            nodes.append({'id': genre1.name, 'group': 1})
+        if genre2.name not in nodes:
+            nodes.append({'id': genre2.name, 'group': 1})
 
-    for node in nodes:
-        print node
+    # for node in nodes:
+    #     print node
+
+    return nodes
 
 
 def add_links(relationships):
@@ -35,8 +35,10 @@ def add_links(relationships):
                       'target': genre2.name,
                       'value': relationship.shared_artists})
 
-    for link in links:
-        print link
+    # for link in links:
+    #     print link
+
+    return links
 
 
 if __name__ == '__main__':
@@ -45,5 +47,10 @@ if __name__ == '__main__':
 
     relationships = RelatedGenres.query.filter(RelatedGenres.shared_artists > 0).all()
 
-    # add_nodes(relationships)
-    add_links(relationships)
+    nodes = add_nodes(relationships)
+    links = add_links(relationships)
+
+    genres = json.dumps({"nodes": nodes,
+                         "links": links})
+
+    print genres
