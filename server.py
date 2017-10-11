@@ -78,12 +78,11 @@ def show_genre_info(genre):
 
     related_genres_search = top_related(genre)
     related_genres = []
-    print genre, type(genre)
     for related in related_genres_search:
         print related
         for item in related:
-            print item, type(item)
-            if type(item) == 'unicode':
+            if item != genre and type(item) != int:
+                print item, type(item)
                 related_genres.append(item)
             # WHAT IS GOING ON HERE LOL
 
@@ -106,10 +105,27 @@ def show_genre_info(genre):
 
     playlist = create_playlist(genre)
 
+    f = GenreAverages.query.filter_by(genre=genre).first()
+    features = {'acousticness': f.acousticness,
+                'danceability': f.danceability,
+                'duration_ms': f.duration_ms / 60000,  # duration in minutes
+                'energy': f.energy,
+                'instrumentalness': f.instrumentalness,
+                'key': f.key,
+                'liveness': f.liveness,
+                'loudness': f.loudness,
+                'mode': f.mode,
+                'speechiness': f.speechiness,
+                'tempo': f.tempo,
+                'time_signature': f.time_signature,
+                'valence': f.valence
+                }
+
     return render_template('genre-info.html',
                            genre=genre,
                            artists=artists,
-                           related=related_genres)
+                           related=related_genres,
+                           features=features)
 
 
 @app.route('/random')
