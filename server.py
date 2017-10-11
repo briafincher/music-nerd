@@ -10,7 +10,7 @@ from related import top_related
 
 from random import randint
 
-from client_credentials_flow import create_playlist
+from auth_flow import create_playlist
 
 # from auth_flow import create_playlist
 
@@ -73,6 +73,9 @@ def find_popular_artists(artists):
 def show_genre_info(genre):
     """Genre info page"""
 
+    username = 'haverchucks'
+    # username = session['spotify_un']
+
     genre_object = Genre.query.filter_by(name=genre).first()
     genre_id = genre_object.genre_id
 
@@ -103,7 +106,7 @@ def show_genre_info(genre):
 
     description = None
 
-    playlist = create_playlist(genre)
+    playlist_uri = create_playlist(genre, username)
 
     f = GenreAverages.query.filter_by(genre=genre).first()
     features = {'acousticness': f.acousticness,
@@ -125,7 +128,8 @@ def show_genre_info(genre):
                            genre=genre,
                            artists=artists,
                            related=related_genres,
-                           features=features)
+                           features=features,
+                           playlist=playlist_uri)
 
 
 @app.route('/random')
