@@ -11,6 +11,12 @@ from related import top_related
 from random import randint
 
 from auth_flow import create_playlist
+# import spotipy
+# import spotipy.util as util
+from secrets import SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI
+from spotipy import oauth2, Spotify
+
+import os
 
 # from auth_flow import create_playlist
 
@@ -18,12 +24,62 @@ app.secret_key = "ABC"
 
 app.jinja_env.undefined = StrictUndefined
 
+oauth = oauth2.SpotifyOAuth(client_id=SPOTIPY_CLIENT_ID,
+                            client_secret=SPOTIPY_CLIENT_SECRET,
+                            redirect_uri=SPOTIPY_REDIRECT_URI,
+                            scope='playlist-modify-public')
+
 
 @app.route('/')
 def index():
     """Landing page"""
 
     return render_template('homepage.html')
+
+
+# @app.route('/login-form')
+# def show_login_form():
+#     """Allows user to login to connect their Spotify account."""
+
+#     return render_template('login-form.html')
+
+@app.route('/login')
+def get_access_token():
+    """Gets Spotify API access token for user"""
+
+    code = request.args.get('code')
+    token = oauth.get_access_token(code)['access_token']
+
+    sp = Spotify(auth=token)
+    user = sp.me()
+
+    session['token'] = token
+    session['user'] = user
+
+    return redirect('/')
+
+
+@app.route('/login-button')
+def login():
+    """Oauth for Spotify API"""
+
+    oauth_url = oauth.get_authorize_url()
+
+     # if session['username']:
+     #     os.remove('.cache-{}'.format(session['username']))
+
+#     username = request.args.get('username')
+#     session['username'] = username
+
+#     token = util.prompt_for_user_token(username=username,
+#                                        redirect_uri=SPOTIPY_REDIRECT_URI,
+#                                        client_id=SPOTIPY_CLIENT_ID,
+#                                        client_secret=SPOTIPY_CLIENT_SECRET,
+#                                        scope='playlist-modify-public')
+#     sp = spotipy.Spotify(auth=token)
+#     # session['token'] = token
+
+    return redirect(oauth_url)
 
 
 @app.route('/genres')
@@ -54,7 +110,6 @@ def show_genres():
                                  }
 
     return render_template('genre-map.html', genres=genre_features)
-    # return render_template('d3.html')
 
 
 def find_popular_artists(artists):
@@ -73,21 +128,15 @@ def find_popular_artists(artists):
 def show_genre_info(genre):
     """Genre info page"""
 
-    username = 'haverchucks'
-    # username = session['spotify_un']
-
     genre_object = Genre.query.filter_by(name=genre).first()
     genre_id = genre_object.genre_id
 
     related_genres_search = top_related(genre)
     related_genres = []
     for related in related_genres_search:
-        print related
         for item in related:
             if item != genre and type(item) != int:
-                print item, type(item)
                 related_genres.append(item)
-            # WHAT IS GOING ON HERE LOL
 
     artists = {}
 
@@ -106,7 +155,8 @@ def show_genre_info(genre):
 
     description = None
 
-    playlist_uri = create_playlist(genre, username)
+    if session['user']:
+        playlist_uri = create_playlist(genre, session['user'])
 
     f = GenreAverages.query.filter_by(genre=genre).first()
     features = {'acousticness': f.acousticness,

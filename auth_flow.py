@@ -26,8 +26,6 @@ token = util.prompt_for_user_token(username=username,
 
 sp = spotipy.Spotify(auth=token)
 
-# result = sp.search(q='genre:dance+pop', limit=10)
-
 
 def find_playlist(name, username):
 
@@ -41,7 +39,7 @@ def find_playlist(name, username):
     return None
 
 
-def create_playlist(genre, username):
+def create_playlist(genre, sp):
 
     playlist = find_playlist(genre, username)
 
