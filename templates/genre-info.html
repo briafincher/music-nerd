@@ -22,15 +22,8 @@
         <h3>Acousticness</h3>
             <p>{{ features['acousticness'] }}</p>
             <p>A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.</p>
-            <div id='acousticness' 'class'='feature'>
-                <svg height='50' width='250'>
-                    <circle cx='20' cy='25' r='15' stroke='blue' stroke-width='2' fill='white'></circle>
-                    <circle cx='55' cy='25'r='15' stroke='blue' stroke-width='2' fill='white'></circle>
-                    <circle cx='90' cy='25'r='15' stroke='blue' stroke-width='2' fill='white'></circle>
-                    <circle cx='125' cy='25'r='15' stroke='blue' stroke-width='2' fill='white'></circle>
-                    <circle cx='160' cy='25'r='15' stroke='blue' stroke-width='2' fill='white'></circle>
-                </svg>
-            <div>
+            <svg id='acousticness' class='feature' width='100' height='50'><svg>
+
         <h3>Danceability</h3>
             <p>{{ features['danceability'] }}</p>
             <p>Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.</p>
@@ -178,13 +171,33 @@
 
 </div>
 
-<button id='playlist'>Show me a playlist!</button>
 <script src="https://code.jquery.com/jquery.js"></script>
+
+<button id='playlist'>Show me a playlist!</button>
 <script>
     $('playlist').on('click', renderPlaylist)
 
     function renderPlaylist(evt) {
         alert('This will show you a playlist soon :)')
+    }
+</script>
+
+<script>
+    var num = Math.ceil({{ features['acousticness'] }} * 100);
+    var x = 0;
+
+    for (var i=0; i < num; i++) {
+        var rect = $(document.createElementNS('http://www.w3.org/2000/svg', 'rect'))
+                    .attr({
+                        x: x,
+                        y: 0,
+                        width: 5,
+                        height: 50,
+                        stroke: 'blue',
+                        fill: 'blue'
+                    });
+        $('acousticness').append(rect);
+        x += 5;
     }
 </script>
 
