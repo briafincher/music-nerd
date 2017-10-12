@@ -30,6 +30,7 @@
         $.get('/playlist/{{genre}}', function(data) {
             $('#playlist-iframe').attr('src', data).show();
             $('#playlist-button').hide();
+            alert('This playlist has been added to your Spotify library.')
         });
     }
 

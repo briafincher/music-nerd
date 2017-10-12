@@ -4,13 +4,33 @@
 
   <title>Music Nerd</title>
   <link rel='stylesheet' href='/static/css/styles.css'>
+  {% for message in get_flashed_messages() %}
+    {{ message }}
+  {% endfor %}
 
 </head>
 
 <body>
 
-  <a href='/'>Home</a>
-  <a id='login' href='/login-button'><button name='login' id='login-button'>Login with Spotify</button></a>
+  <div id='toolbar'>
+    <a href='/'>Home</a>
+    <span id='user'></span>
+    <a id='login' href='/login-button'><button name='login' id='login-button'>Login with Spotify</button></a>
+  </div>
+
+  {% if 'user' in session %}
+
+      <script src="https://code.jquery.com/jquery.js"></script>
+
+      <script>
+
+        $('#login-button').html('Logout')
+        $('#login').attr('href', '/logout')
+        $('#user').html("Hi, {{ session['user']['display_name'].split(' ')[0] }}!")
+
+      </script>
+
+  {% endif %}
 
   {% block content %} put your content here {% endblock %}
 

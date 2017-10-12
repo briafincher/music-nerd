@@ -56,6 +56,8 @@ def get_access_token():
     session['token'] = token
     session['user'] = user
 
+    flash('You have logged in with your Spotify account!')
+
     print session
 
     return redirect('/')
@@ -68,6 +70,17 @@ def login():
     oauth_url = oauth.get_authorize_url()
 
     return redirect(oauth_url)
+
+
+@app.route('/logout')
+def logout():
+    """Removes access token for Spotify user"""
+
+    flash('You have been logged out!')
+    session.pop('token', None)
+    session.pop('user', None)
+
+    return redirect('/')
 
 
 @app.route('/genres')
