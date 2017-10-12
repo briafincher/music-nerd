@@ -7,6 +7,19 @@ img {
     width: 100px;
 }
 
-/*.unfilled {
+HIDE#categories {
+    -webkit-transform: rotate(270deg);
+    transform-origin: 50% 50% 0;
+    float: left;
+    width: 100%;
+}
 
-}*/
+body {
+    font-family: Helvetica;
+    text-align: center;
+}
+
+#main {
+    margin: auto;
+    width: 80%;
+}
