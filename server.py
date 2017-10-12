@@ -97,16 +97,16 @@ def show_genres():
         features = GenreAverages.query.filter_by(genre=genre).first()
         genre_features[genre] = {'acousticness': features.acousticness,
                                  'danceability': features.danceability,
-                                 'duration_ms': features.duration_ms,
+                                 # 'duration_ms': features.duration_ms,
                                  'energy': features.energy,
                                  'instrumentalness': features.instrumentalness,
-                                 'key': features.key,
+                                 # 'key': features.key,
                                  'liveness': features.liveness,
                                  'loudness': features.loudness,
                                  'mode': features.mode,
                                  'speechiness': features.speechiness,
                                  'tempo': features.tempo,
-                                 'time_signature': features.time_signature,
+                                 # 'time_signature': features.time_signature,
                                  'valence': features.valence
                                  }
 

@@ -2,9 +2,9 @@
     display: inline-block;
 }
 
-img {
-    height: 100px;
-    width: 100px;
+HIDEimg {
+    height: 200px;
+    width: 200px;
 }
 
 HIDE#categories {
