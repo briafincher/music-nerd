@@ -18,9 +18,24 @@
 </div>
 
 <div id='playlist'>
-    <h2>Top tracks for {{ genre }}</h2>
-    <iframe src="https://open.spotify.com/embed?uri={{playlist}}" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+    <h2>Top Tracks for {{ genre }}</h2>
+    <button id='playlist-button'>Show me a playlist!</button>
+    <iframe id='playlist-iframe' width="300" height="380" frameborder="0" allowtransparency="true" hidden></iframe>
 </div>
+
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script>
+    function renderPlaylist(evt) {
+        $.get('/playlist/{{genre}}', function(data) {
+            $('#playlist-iframe').attr('src', data).show();
+            $('#playlist-button').hide();
+        });
+    }
+
+    $('#playlist-button').on('click', renderPlaylist);
+</script>
+
 
 <div id='features'>
     <h2>Audio Features</h2>
@@ -176,16 +191,7 @@
 
 </div>
 
-<script src="https://code.jquery.com/jquery.js"></script>
 
-<button id='playlist'>Show me a playlist!</button>
-<script>
-    $('playlist').on('click', renderPlaylist)
-
-    function renderPlaylist(evt) {
-        alert('This will show you a playlist soon :)')
-    }
-</script>
 
 <script>
     // make this a function called for each feature

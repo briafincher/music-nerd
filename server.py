@@ -56,6 +56,8 @@ def get_access_token():
     session['token'] = token
     session['user'] = user
 
+    print session
+
     return redirect('/')
 
 
@@ -64,20 +66,6 @@ def login():
     """Oauth for Spotify API"""
 
     oauth_url = oauth.get_authorize_url()
-
-     # if session['username']:
-     #     os.remove('.cache-{}'.format(session['username']))
-
-#     username = request.args.get('username')
-#     session['username'] = username
-
-#     token = util.prompt_for_user_token(username=username,
-#                                        redirect_uri=SPOTIPY_REDIRECT_URI,
-#                                        client_id=SPOTIPY_CLIENT_ID,
-#                                        client_secret=SPOTIPY_CLIENT_SECRET,
-#                                        scope='playlist-modify-public')
-#     sp = spotipy.Spotify(auth=token)
-#     # session['token'] = token
 
     return redirect(oauth_url)
 
@@ -155,9 +143,6 @@ def show_genre_info(genre):
 
     description = None
 
-    if session['user']:
-        playlist_uri = create_playlist(genre, session['user'])
-
     f = GenreAverages.query.filter_by(genre=genre).first()
     features = {'acousticness': f.acousticness,
                 'danceability': f.danceability,
@@ -178,8 +163,18 @@ def show_genre_info(genre):
                            genre=genre,
                            artists=artists,
                            related=related_genres,
-                           features=features,
-                           playlist=playlist_uri)
+                           features=features)
+
+
+@app.route('/playlist/<genre>')
+def render_playlist(genre):
+    """Renders a playlist of that genre's top songs"""
+
+    playlist_uri = create_playlist(genre=genre,
+                                   user=session['user']['id'],
+                                   token=session['token'])
+
+    return 'https://open.spotify.com/embed?uri={}'.format(playlist_uri)
 
 
 @app.route('/random')
