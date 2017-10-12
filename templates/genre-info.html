@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>{{genre}}</h1>
+<h1>{{capitalized}}</h1>
 <div id='artists'>
     <h2>Popular Artists</h2>
     {% for artist in artists %}
@@ -12,13 +12,13 @@
 
     <h2>Related Genres</h2>
     {% for genre in related %}
-        <span><a href='/genres/{{genre}}'>{{genre}}</a></span>
+        <span><a href="/genres/{{genre['genre']}}">{{genre['capitalized']}}</a></span>
     {% endfor %}
 
 </div>
 
 <div id='playlist'>
-    <h2>Top Tracks for {{ genre }}</h2>
+    <h2>Music Nerd's Guide</h2>
     <button id='playlist-button'>Show me a playlist!</button>
     <iframe id='playlist-iframe' width="300" height="380" frameborder="0" allowtransparency="true" hidden></iframe>
 </div>

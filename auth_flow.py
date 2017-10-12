@@ -4,6 +4,8 @@ import spotipy
 import spotipy.util as util
 from client_credentials_flow import genre_search
 from secrets import SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI
+import string
+import pdb
 
 # os.remove('.cache-haverchucks')
 
@@ -34,7 +36,7 @@ def find_playlist(name, user, token):
     playlists = sp.user_playlists(user)
 
     for playlist in playlists['items']:
-        if playlist['name'] == name:
+        if playlist['name'] == "Music Nerd's Guide to {}".format(name):
             return {'uri': playlist['uri'],
                     'id': playlist['id']}
 
@@ -43,7 +45,8 @@ def find_playlist(name, user, token):
 
 def create_playlist(genre, user, token):
 
-    playlist = find_playlist(genre, user, token)
+    name = string.capwords(genre)
+    playlist = find_playlist(name, user, token)
 
     if playlist:
         return playlist['uri']
@@ -52,9 +55,9 @@ def create_playlist(genre, user, token):
         sp = spotipy.Spotify(auth=token)
 
         sp.user_playlist_create(user=user,
-                                name=genre)
+                                name="Music Nerd's Guide to {}".format(name))
 
-        playlist = find_playlist(genre, user, token)
+        playlist = find_playlist(name, user, token)
         playlist_id = playlist['id']
         playlist_uri = playlist['uri']
 

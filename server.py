@@ -11,18 +11,18 @@ from related import top_related
 from random import randint
 
 from auth_flow import create_playlist
-# import spotipy
-# import spotipy.util as util
+
 from secrets import SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI
 from spotipy import oauth2, Spotify
 
 import os
 
-# from auth_flow import create_playlist
-
 app.secret_key = "ABC"
-
 app.jinja_env.undefined = StrictUndefined
+
+# SPOTIPY_CLIENT_ID = os.environ['SPOTIPY_CLIENT_ID']
+# SPOTIPY_CLIENT_SECRET = os.environ['SPOTIPY_CLIENT_SECRET']
+# SPOTIPY_REDIRECT_URI = os.environ['SPOTIPY_REDIRECT_URI']
 
 oauth = oauth2.SpotifyOAuth(client_id=SPOTIPY_CLIENT_ID,
                             client_secret=SPOTIPY_CLIENT_SECRET,
@@ -114,6 +114,8 @@ def find_popular_artists(artists):
 
 @app.route('/genres/<genre>')
 def show_genre_info(genre):
+    import string
+
     """Genre info page"""
 
     genre_object = Genre.query.filter_by(name=genre).first()
@@ -124,7 +126,8 @@ def show_genre_info(genre):
     for related in related_genres_search:
         for item in related:
             if item != genre and type(item) != int:
-                related_genres.append(item)
+                related_genres.append({'genre': item,
+                                       'capitalized': string.capwords(item)})
 
     artists = {}
 
@@ -161,6 +164,7 @@ def show_genre_info(genre):
 
     return render_template('genre-info.html',
                            genre=genre,
+                           capitalized=string.capwords(genre),
                            artists=artists,
                            related=related_genres,
                            features=features)
@@ -170,6 +174,7 @@ def show_genre_info(genre):
 def render_playlist(genre):
     """Renders a playlist of that genre's top songs"""
 
+    print session
     playlist_uri = create_playlist(genre=genre,
                                    user=session['user']['id'],
                                    token=session['token'])
