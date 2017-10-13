@@ -4,7 +4,7 @@ from flask import (Flask, render_template, redirect, request, flash, session)
 from flask_debugtoolbar import DebugToolbarExtension
 
 from model2 import app, connect_to_db, db
-from model2 import Genre, Track, AudioFeatures, GenreAverages, Image, Artist, ArtistGenre, RelatedGenres
+from model2 import Genre, Track, AudioFeatures, GenreAverages, Image, Artist, ArtistGenre, RelatedGenres, Description
 
 from related import top_related
 
@@ -14,6 +14,8 @@ from auth_flow import create_playlist
 
 from secrets import SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI
 from spotipy import oauth2, Spotify
+
+import wikipedia
 
 import os
 
@@ -157,7 +159,11 @@ def show_genre_info(genre):
                 url = None
             artists[name] = url
 
-    description = None
+    genre_description = Description.query.filter_by(genre_id=genre_id).first()
+    if genre_description.page_name:
+        description = wikipedia.summary(genre_description.page_name)
+    else:
+        description = None
 
     f = GenreAverages.query.filter_by(genre=genre).first()
     features = {'acousticness': f.acousticness,
@@ -180,7 +186,8 @@ def show_genre_info(genre):
                            capitalized=string.capwords(genre),
                            artists=artists,
                            related=related_genres,
-                           features=features)
+                           features=features,
+                           description=description)
 
 
 @app.route('/playlist/<genre>')

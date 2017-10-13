@@ -3,10 +3,11 @@
 
 <div id='categories'>
     <span id='genre' class='sidebar'>{{ capitalized }}</span>
+    <span id='playlist' class='sidebar'>Music Nerd Guide</span>
+    <span id='description' class='sidebar'>About the Genre</span>
     <span id='top-artists' class='sidebar'>Top Artists</span>
     <span id='related' class='sidebar'>Related Genres</span>
     <span id='features' class='sidebar'>Audio Features</span>
-    <span id='playlist' class='sidebar'>Music Nerd Guide</span>
 </div>
 
 <div id='main'>
@@ -23,8 +24,20 @@
     <iframe id='playlist-iframe' width="300" height="380" frameborder="0" allowtransparency="true" hidden></iframe>
 </div>
 
+<div class='main' id='description'>
+    {% if description %}
+        <h2>A little about {{ genre }}...</h2>
+        <p>{{ description }}</p>
+        <p id='asterisk'>*Some genre names are similar to other Wikipedia pages, so this description
+            might seem strange. We are working on cleaning up our data.</p>
+    {% else %}
+        <h2>Aw shucks! It looks like Wikipedia doesn't have much to say about {{ genre }}</h2>
+        <p>That's ok. I bet we can get a still figure out what it's all about.</p>
+    {% endif %}
+</div>
+
 <div class='main' id='audio-features'>
-    <h1>Here's What {{ capitalized }} Sounds Like</h1>
+    <h2>Here's What {{ capitalized }} Sounds Like</h2>
     <p>Let's take a look</p>
         <h3>Acousticness</h3>
             <p>{{ features['acousticness'] }} / 1</p>

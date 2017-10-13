@@ -1,9 +1,11 @@
 from client_credentials_flow import genre_search, make_tracks, feature_search, artist_search
 from model2 import app, db, connect_to_db
 # from model import connect_to_db, app
-from model2 import Genre, Track, AudioFeatures, GenreAverages, Artist, Image, ArtistGenre, RelatedGenres
+from model2 import Genre, Track, AudioFeatures, GenreAverages, Artist, Image, ArtistGenre, RelatedGenres, Description
 import pandas as pd
 import pdb
+import wikipedia
+import wiki
 #Album, AlbumGenre, Artist, ArtistGenre, Track, AudioFeatures
 
 # tracks = c.search['tracks']['items'] # list of track dictionaries
@@ -323,6 +325,30 @@ def fewer_genre_relations():
     return sorted_genres_by_artist
 
 
+def load_descriptions():
+    """Loads description table"""
+
+    genres = Genre.query.all()
+    options = {}
+
+    for genre in genres:
+        try:
+            wikipedia.summary(genre.name)
+            page = genre.name
+        except wikipedia.exceptions.DisambiguationError as e:
+            options[genre.name] = e.options
+            page = None
+        except wikipedia.exceptions.PageError:
+            page = None
+
+        description = Description(genre_id=genre.genre_id, page_name=page)
+        db.session.add(description)
+        db.session.commit()
+
+    for option in options:
+        print option
+
+
 if __name__ == '__main__':
     # init_app()
     connect_to_db(app)
@@ -335,3 +361,4 @@ if __name__ == '__main__':
     # load_artists()
     # load_genre_relations()
     # results = fewer_genre_relations()
+    # load_descriptions()

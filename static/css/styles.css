@@ -23,3 +23,7 @@ body {
     margin: auto;
     width: 80%;
 }
+
+#asterisk {
+    font-size:10px;
+}

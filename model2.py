@@ -179,14 +179,24 @@ class GenreAverages(db.Model):
         return "<Audio features for genre '{}'>".format(self.genre)
 
 
-class Users(db.Model):
-    """User model"""
+class Description(db.Model):
+    """Model for genre descriptions"""
 
-    __tablename__ = 'users'
+    __tablename__ = 'descriptions'
 
-    user_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    email = db.Column(db.String(100), nullable=False)
-    # spotify_username =
+    genre_id = db.Column(db.Integer, db.ForeignKey('genres.genre_id'), primary_key=True)
+    page_name = db.Column(db.String(100), nullable=True)
+
+# class Users(db.Model):
+#     """User model"""
+
+#     __tablename__ = 'users'
+
+#     user_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+#     email = db.Column(db.String(100), nullable=False)
+#     # spotify_username =
+
+
 
 ###############################################################################
 
