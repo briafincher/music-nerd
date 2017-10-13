@@ -7,11 +7,23 @@ HIDEimg {
     width: 200px;
 }
 
-HIDE#categories {
+#categories {
     -webkit-transform: rotate(270deg);
-    transform-origin: 50% 50% 0;
+    transform-origin: 50% 100% 0;
     float: left;
-    width: 100%;
+    width: 750px;
+    height: 100px;
+    margin-left: 5px;
+    margin-top: auto;
+}
+
+.sidebar {
+    display: inline-block;
+    -webkit-flex: auto;
+    margin-left: auto;
+    margin-top: 38px;
+    width: 140;
+    height: 25px;
 }
 
 body {
@@ -21,9 +33,26 @@ body {
 
 #main {
     margin: auto;
-    width: 80%;
+    width: 75%%;
 }
 
 #asterisk {
     font-size:10px;
+}
+
+#genre.main {
+    height: 300px;
+    width: 500px;
+    background-color: #B0F6E8;
+    margin: auto;
+}
+
+h1 #genre {
+    margin: auto;
+    width: 75%;
+    height: 20%;
+}
+
+#description.main {
+    text-align: justify;
 }

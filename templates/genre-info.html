@@ -2,12 +2,11 @@
 {% block content %}
 
 <div id='categories'>
-    <span id='genre' class='sidebar'>{{ capitalized }}</span>
-    <span id='playlist' class='sidebar'>Music Nerd Guide</span>
-    <span id='description' class='sidebar'>About the Genre</span>
-    <span id='top-artists' class='sidebar'>Top Artists</span>
-    <span id='related' class='sidebar'>Related Genres</span>
     <span id='features' class='sidebar'>Audio Features</span>
+    <span id='related' class='sidebar'>Related Genres</span>
+    <span id='top-artists' class='sidebar'>Top Artists</span>
+    <span id='description' class='sidebar'>About the Genre</span>
+    <span id='playlist' class='sidebar'>Music Nerd Guide</span>
 </div>
 
 <div id='main'>
@@ -111,6 +110,7 @@
 <script src="https://code.jquery.com/jquery.js"></script>
 <script>
     function renderPlaylist(evt) {
+        // AJAX to alert if user not signed in. Make a route to check & return data
         $.get('/playlist/{{genre}}', function(data) {
             $('#playlist-iframe').attr('src', data).show();
             $('#playlist-button').hide();
