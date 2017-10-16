@@ -1,1475 +1,1475 @@
-{"group": 1, "id": u"children's music"}
-{"group": 1, "id": u"traditional rock 'n roll"}
-{"group": 1, "id": u'a cappella'}
-{"group": 1, "id": u'abstract beats'}
-{"group": 1, "id": u'abstract hip hop'}
-{"group": 1, "id": u'abstract idm'}
-{"group": 1, "id": u'abstract'}
-{"group": 1, "id": u'abstractro'}
-{"group": 1, "id": u'accordion'}
-{"group": 1, "id": u'acid house'}
-{"group": 1, "id": u'acid jazz'}
-{"group": 1, "id": u'acid techno'}
-{"group": 1, "id": u'acousmatic'}
-{"group": 1, "id": u'acoustic blues'}
-{"group": 1, "id": u'acoustic pop'}
-{"group": 1, "id": u'adult standards'}
-{"group": 1, "id": u'african gospel'}
-{"group": 1, "id": u'african percussion'}
-{"group": 1, "id": u'african rock'}
-{"group": 1, "id": u'afrikaans'}
-{"group": 1, "id": u'afrobeat'}
-{"group": 1, "id": u'afrobeats'}
-{"group": 1, "id": u'aggrotech'}
-{"group": 1, "id": u'albanian pop'}
-{"group": 1, "id": u'album rock'}
-{"group": 1, "id": u'albuquerque indie'}
-{"group": 1, "id": u'alt-indie rock'}
-{"group": 1, "id": u'alternative americana'}
-{"group": 1, "id": u'alternative ccm'}
-{"group": 1, "id": u'alternative country'}
-{"group": 1, "id": u'alternative dance'}
-{"group": 1, "id": u'alternative emo'}
-{"group": 1, "id": u'alternative hardcore'}
-{"group": 1, "id": u'alternative hip hop'}
-{"group": 1, "id": u'alternative metal'}
-{"group": 1, "id": u'alternative metalcore'}
-{"group": 1, "id": u'alternative pop rock'}
-{"group": 1, "id": u'alternative pop'}
-{"group": 1, "id": u'alternative r&b'}
-{"group": 1, "id": u'alternative rock'}
-{"group": 1, "id": u'alternative roots rock'}
-{"group": 1, "id": u'ambeat'}
-{"group": 1, "id": u'ambient dub techno'}
-{"group": 1, "id": u'ambient fusion'}
-{"group": 1, "id": u'ambient idm'}
-{"group": 1, "id": u'ambient psychill'}
-{"group": 1, "id": u'ambient'}
-{"group": 1, "id": u'anarcho-punk'}
-{"group": 1, "id": u'andean'}
-{"group": 1, "id": u'anime score'}
-{"group": 1, "id": u'anime'}
-{"group": 1, "id": u'anthem emo'}
-{"group": 1, "id": u'anthem worship'}
-{"group": 1, "id": u'anti-folk'}
-{"group": 1, "id": u'antiviral pop'}
-{"group": 1, "id": u'appalachian folk'}
-{"group": 1, "id": u'arab folk'}
-{"group": 1, "id": u'arab pop'}
-{"group": 1, "id": u'arabesk'}
-{"group": 1, "id": u'argentine indie'}
-{"group": 1, "id": u'argentine reggae'}
-{"group": 1, "id": u'argentine rock'}
-{"group": 1, "id": u'armenian folk'}
-{"group": 1, "id": u'art rock'}
-{"group": 1, "id": u'athens indie'}
-{"group": 1, "id": u'atmospheric black metal'}
-{"group": 1, "id": u'atmospheric post rock'}
-{"group": 1, "id": u'atmospheric post-metal'}
-{"group": 1, "id": u'aussietronica'}
-{"group": 1, "id": u'austindie'}
-{"group": 1, "id": u'australian alternative rock'}
-{"group": 1, "id": u'australian country'}
-{"group": 1, "id": u'australian dance'}
-{"group": 1, "id": u'australian hip hop'}
-{"group": 1, "id": u'australian indie'}
-{"group": 1, "id": u'australian pop'}
-{"group": 1, "id": u'austrian hip hop'}
-{"group": 1, "id": u'austropop'}
-{"group": 1, "id": u'avant-garde jazz'}
-{"group": 1, "id": u'avant-garde'}
-{"group": 1, "id": u'avantgarde metal'}
-{"group": 1, "id": u'axe'}
-{"group": 1, "id": u'azonto'}
-{"group": 1, "id": u'azontobeats'}
-{"group": 1, "id": u'bachata'}
-{"group": 1, "id": u'baile funk'}
-{"group": 1, "id": u'balearic'}
-{"group": 1, "id": u'balkan brass'}
-{"group": 1, "id": u'ballroom'}
-{"group": 1, "id": u'banda'}
-{"group": 1, "id": u'bangla'}
-{"group": 1, "id": u'barbershop'}
-{"group": 1, "id": u'barnemusikk'}
-{"group": 1, "id": u'baroque ensemble'}
-{"group": 1, "id": u'baroque'}
-{"group": 1, "id": u'basque rock'}
-{"group": 1, "id": u'bass music'}
-{"group": 1, "id": u'bass trap'}
-{"group": 1, "id": u'bass trip'}
-{"group": 1, "id": u'bassline'}
-{"group": 1, "id": u'bay area hip hop'}
-{"group": 1, "id": u'bay area indie'}
-{"group": 1, "id": u'beach music'}
-{"group": 1, "id": u'beatdown'}
-{"group": 1, "id": u'beats'}
-{"group": 1, "id": u'bebop'}
-{"group": 1, "id": u'belgian indie'}
-{"group": 1, "id": u'belgian rock'}
-{"group": 1, "id": u'belly dance'}
-{"group": 1, "id": u'belorush'}
-{"group": 1, "id": u'benga'}
-{"group": 1, "id": u'bhangra'}
-{"group": 1, "id": u'big band'}
-{"group": 1, "id": u'big beat'}
-{"group": 1, "id": u'big room'}
-{"group": 1, "id": u'black death'}
-{"group": 1, "id": u'black metal'}
-{"group": 1, "id": u'black sludge'}
-{"group": 1, "id": u'black thrash'}
-{"group": 1, "id": u'blackgaze'}
-{"group": 1, "id": u'blaskapelle'}
-{"group": 1, "id": u'bluegrass'}
-{"group": 1, "id": u'blues'}
-{"group": 1, "id": u'blues-rock guitar'}
-{"group": 1, "id": u'blues-rock'}
-{"group": 1, "id": u'bmore'}
-{"group": 1, "id": u'bolero'}
-{"group": 1, "id": u'boogaloo'}
-{"group": 1, "id": u'boogie-woogie'}
-{"group": 1, "id": u'bossa nova jazz'}
-{"group": 1, "id": u'bossa nova'}
-{"group": 1, "id": u'boston rock'}
-{"group": 1, "id": u'bounce'}
-{"group": 1, "id": u'bouncy house'}
-{"group": 1, "id": u'bow pop'}
-{"group": 1, "id": u'boy band'}
-{"group": 1, "id": u'brass band'}
-{"group": 1, "id": u'brass ensemble'}
-{"group": 1, "id": u'brazilian ccm'}
-{"group": 1, "id": u'brazilian composition'}
-{"group": 1, "id": u'brazilian gospel'}
-{"group": 1, "id": u'brazilian hip hop'}
-{"group": 1, "id": u'brazilian indie'}
-{"group": 1, "id": u'brazilian punk'}
-{"group": 1, "id": u'breakbeat'}
-{"group": 1, "id": u'breakcore'}
-{"group": 1, "id": u'brega'}
-{"group": 1, "id": u'breton folk'}
-{"group": 1, "id": u'brill building pop'}
-{"group": 1, "id": u'british alternative rock'}
-{"group": 1, "id": u'british blues'}
-{"group": 1, "id": u'british brass band'}
-{"group": 1, "id": u'british dance band'}
-{"group": 1, "id": u'british folk'}
-{"group": 1, "id": u'british indie rock'}
-{"group": 1, "id": u'british invasion'}
-{"group": 1, "id": u'britpop'}
-{"group": 1, "id": u'broadway'}
-{"group": 1, "id": u'broken beat'}
-{"group": 1, "id": u'brooklyn indie'}
-{"group": 1, "id": u'brostep'}
-{"group": 1, "id": u'brutal death metal'}
-{"group": 1, "id": u'brutal deathcore'}
-{"group": 1, "id": u'bubble trance'}
-{"group": 1, "id": u'bubblegum dance'}
-{"group": 1, "id": u'bubblegum pop'}
-{"group": 1, "id": u'bulgarian folk'}
-{"group": 1, "id": u'bulgarian rock'}
-{"group": 1, "id": u'byzantine'}
-{"group": 1, "id": u'c-pop'}
-{"group": 1, "id": u'c64'}
-{"group": 1, "id": u'c86'}
-{"group": 1, "id": u'cabaret'}
-{"group": 1, "id": u'cajun'}
-{"group": 1, "id": u'calypso'}
-{"group": 1, "id": u'canadian country'}
-{"group": 1, "id": u'canadian hip hop'}
-{"group": 1, "id": u'canadian indie'}
-{"group": 1, "id": u'canadian metal'}
-{"group": 1, "id": u'canadian pop'}
-{"group": 1, "id": u'candy pop'}
-{"group": 1, "id": u'cantautor'}
-{"group": 1, "id": u'cante flamenco'}
-{"group": 1, "id": u'canterbury scene'}
-{"group": 1, "id": u'cantopop'}
-{"group": 1, "id": u'canzone napoletana'}
-{"group": 1, "id": u'carnatic'}
-{"group": 1, "id": u'carnaval'}
-{"group": 1, "id": u'catalan folk'}
-{"group": 1, "id": u'catstep'}
-{"group": 1, "id": u'caucasian folk'}
-{"group": 1, "id": u'ccm'}
-{"group": 1, "id": u'ceilidh'}
-{"group": 1, "id": u'cello'}
-{"group": 1, "id": u'celtic punk'}
-{"group": 1, "id": u'celtic rock'}
-{"group": 1, "id": u'celtic'}
-{"group": 1, "id": u'chalga'}
-{"group": 1, "id": u'chamame'}
-{"group": 1, "id": u'chamber choir'}
-{"group": 1, "id": u'chamber pop'}
-{"group": 1, "id": u'chamber psych'}
-{"group": 1, "id": u'channel pop'}
-{"group": 1, "id": u'chanson quebecois'}
-{"group": 1, "id": u'chanson'}
-{"group": 1, "id": u'chaotic black metal'}
-{"group": 1, "id": u'chaotic hardcore'}
-{"group": 1, "id": u'charred death'}
-{"group": 1, "id": u'chicago blues'}
-{"group": 1, "id": u'chicago house'}
-{"group": 1, "id": u'chicago indie'}
-{"group": 1, "id": u'chicago soul'}
-{"group": 1, "id": u'chicano rap'}
-{"group": 1, "id": u'chilean rock'}
-{"group": 1, "id": u'chill groove'}
-{"group": 1, "id": u'chill lounge'}
-{"group": 1, "id": u'chill-out trance'}
-{"group": 1, "id": u'chillhop'}
-{"group": 1, "id": u'chillstep'}
-{"group": 1, "id": u'chillwave'}
-{"group": 1, "id": u'chinese experimental'}
-{"group": 1, "id": u'chinese indie rock'}
-{"group": 1, "id": u'chinese opera'}
-{"group": 1, "id": u'chinese traditional'}
-{"group": 1, "id": u'chiptune'}
-{"group": 1, "id": u'choral'}
-{"group": 1, "id": u'choro'}
-{"group": 1, "id": u'christelijk'}
-{"group": 1, "id": u'christian alternative rock'}
-{"group": 1, "id": u'christian dance'}
-{"group": 1, "id": u'christian hardcore'}
-{"group": 1, "id": u'christian hip hop'}
-{"group": 1, "id": u'christian metal'}
-{"group": 1, "id": u'christian music'}
-{"group": 1, "id": u'christian punk'}
-{"group": 1, "id": u'christian relaxative'}
-{"group": 1, "id": u'christian rock'}
-{"group": 1, "id": u'christian uplift'}
-{"group": 1, "id": u'cinematic dubstep'}
-{"group": 1, "id": u'clarinet'}
-{"group": 1, "id": u'classic afrobeat'}
-{"group": 1, "id": u'classic belgian pop'}
-{"group": 1, "id": u'classic chinese pop'}
-{"group": 1, "id": u'classic colombian pop'}
-{"group": 1, "id": u'classic czech pop'}
-{"group": 1, "id": u'classic danish pop'}
-{"group": 1, "id": u'classic dutch pop'}
-{"group": 1, "id": u'classic eurovision'}
-{"group": 1, "id": u'classic finnish pop'}
-{"group": 1, "id": u'classic finnish rock'}
-{"group": 1, "id": u'classic french pop'}
-{"group": 1, "id": u'classic funk rock'}
-{"group": 1, "id": u'classic garage rock'}
-{"group": 1, "id": u'classic icelandic pop'}
-{"group": 1, "id": u'classic italian pop'}
-{"group": 1, "id": u'classic norwegian pop'}
-{"group": 1, "id": u'classic peruvian pop'}
-{"group": 1, "id": u'classic polish pop'}
-{"group": 1, "id": u'classic psychedelic rock'}
-{"group": 1, "id": u'classic rock'}
-{"group": 1, "id": u'classic russian pop'}
-{"group": 1, "id": u'classic russian rock'}
-{"group": 1, "id": u'classic schlager'}
-{"group": 1, "id": u'classic soundtrack'}
-{"group": 1, "id": u'classic swedish pop'}
-{"group": 1, "id": u'classic turkish pop'}
-{"group": 1, "id": u'classic venezuelan pop'}
-{"group": 1, "id": u'classical flute'}
-{"group": 1, "id": u'classical guitar'}
-{"group": 1, "id": u'classical organ'}
-{"group": 1, "id": u'classical performance'}
-{"group": 1, "id": u'classical period'}
-{"group": 1, "id": u'classical piano'}
-{"group": 1, "id": u'classical'}
-{"group": 1, "id": u'classify'}
-{"group": 1, "id": u'college a cappella'}
-{"group": 1, "id": u'college marching band'}
-{"group": 1, "id": u'colombian rock'}
-{"group": 1, "id": u'columbus ohio indie'}
-{"group": 1, "id": u'comedy rock'}
-{"group": 1, "id": u'comedy'}
-{"group": 1, "id": u'comic'}
-{"group": 1, "id": u'commons'}
-{"group": 1, "id": u'complextro'}
-{"group": 1, "id": u'composition d'}
-{"group": 1, "id": u'compositional ambient'}
-{"group": 1, "id": u'concert piano'}
-{"group": 1, "id": u'consort'}
-{"group": 1, "id": u'contemporary classical'}
-{"group": 1, "id": u'contemporary composition'}
-{"group": 1, "id": u'contemporary country'}
-{"group": 1, "id": u'contemporary folk'}
-{"group": 1, "id": u'contemporary jazz'}
-{"group": 1, "id": u'contemporary post-bop'}
-{"group": 1, "id": u'cool jazz'}
-{"group": 1, "id": u'cornetas y tambores'}
-{"group": 1, "id": u'corrosion'}
-{"group": 1, "id": u'corsican folk'}
-{"group": 1, "id": u'country blues'}
-{"group": 1, "id": u'country dawn'}
-{"group": 1, "id": u'country gospel'}
-{"group": 1, "id": u'country road'}
-{"group": 1, "id": u'country rock'}
-{"group": 1, "id": u'country'}
-{"group": 1, "id": u'coupe decale'}
-{"group": 1, "id": u'coverchill'}
-{"group": 1, "id": u'cowboy western'}
-{"group": 1, "id": u'crack rock steady'}
-{"group": 1, "id": u'croatian pop'}
-{"group": 1, "id": u'crossover prog'}
-{"group": 1, "id": u'crossover thrash'}
-{"group": 1, "id": u'crunk'}
-{"group": 1, "id": u'crust punk'}
-{"group": 1, "id": u'cuban rumba'}
-{"group": 1, "id": u'cubaton'}
-{"group": 1, "id": u'cumbia funk'}
-{"group": 1, "id": u'cumbia pop'}
-{"group": 1, "id": u'cumbia sonidera'}
-{"group": 1, "id": u'cumbia villera'}
-{"group": 1, "id": u'cumbia'}
-{"group": 1, "id": u'cyber metal'}
-{"group": 1, "id": u'czech folk'}
-{"group": 1, "id": u'czech hip hop'}
-{"group": 1, "id": u'czech rock'}
-{"group": 1, "id": u'dallas indie'}
-{"group": 1, "id": u'dance pop'}
-{"group": 1, "id": u'dance rock'}
-{"group": 1, "id": u'dance-punk'}
-{"group": 1, "id": u'dancehall'}
-{"group": 1, "id": u'dangdut'}
-{"group": 1, "id": u'danish hip hop'}
-{"group": 1, "id": u'danish indie'}
-{"group": 1, "id": u'danish jazz'}
-{"group": 1, "id": u'danish pop rock'}
-{"group": 1, "id": u'danish pop'}
-{"group": 1, "id": u'dansband'}
-{"group": 1, "id": u'danseband'}
-{"group": 1, "id": u'dansktop'}
-{"group": 1, "id": u'danspunk'}
-{"group": 1, "id": u'dark ambient'}
-{"group": 1, "id": u'dark black metal'}
-{"group": 1, "id": u'dark cabaret'}
-{"group": 1, "id": u'dark electro-industrial'}
-{"group": 1, "id": u'dark hardcore'}
-{"group": 1, "id": u'dark jazz'}
-{"group": 1, "id": u'dark minimal techno'}
-{"group": 1, "id": u'dark progressive house'}
-{"group": 1, "id": u'dark psytrance'}
-{"group": 1, "id": u'dark wave'}
-{"group": 1, "id": u'darkstep'}
-{"group": 1, "id": u'death core'}
-{"group": 1, "id": u'death metal'}
-{"group": 1, "id": u'deathgrind'}
-{"group": 1, "id": u'deep acoustic pop'}
-{"group": 1, "id": u'deep adult standards'}
-{"group": 1, "id": u'deep ambient'}
-{"group": 1, "id": u'deep australian indie'}
-{"group": 1, "id": u'deep big room'}
-{"group": 1, "id": u'deep brazilian pop'}
-{"group": 1, "id": u'deep breakcore'}
-{"group": 1, "id": u'deep canadian indie'}
-{"group": 1, "id": u'deep ccm'}
-{"group": 1, "id": u'deep cello'}
-{"group": 1, "id": u'deep chill'}
-{"group": 1, "id": u'deep chill-out'}
-{"group": 1, "id": u'deep chiptune'}
-{"group": 1, "id": u'deep christian rock'}
-{"group": 1, "id": u'deep classic garage rock'}
-{"group": 1, "id": u'deep comedy'}
-{"group": 1, "id": u'deep contemporary country'}
-{"group": 1, "id": u'deep cumbia sonidera'}
-{"group": 1, "id": u'deep dance pop'}
-{"group": 1, "id": u'deep danish pop'}
-{"group": 1, "id": u'deep darkpsy'}
-{"group": 1, "id": u'deep deep house'}
-{"group": 1, "id": u'deep delta blues'}
-{"group": 1, "id": u'deep disco house'}
-{"group": 1, "id": u'deep disco'}
-{"group": 1, "id": u'deep discofox'}
-{"group": 1, "id": u'deep downtempo fusion'}
-{"group": 1, "id": u'deep dub techno'}
-{"group": 1, "id": u'deep dutch hip hop'}
-{"group": 1, "id": u'deep east coast hip hop'}
-{"group": 1, "id": u'deep euro house'}
-{"group": 1, "id": u'deep filthstep'}
-{"group": 1, "id": u'deep folk metal'}
-{"group": 1, "id": u'deep free jazz'}
-{"group": 1, "id": u'deep freestyle'}
-{"group": 1, "id": u'deep full on'}
-{"group": 1, "id": u'deep funk carioca'}
-{"group": 1, "id": u'deep funk house'}
-{"group": 1, "id": u'deep funk'}
-{"group": 1, "id": u'deep g funk'}
-{"group": 1, "id": u'deep german hip hop'}
-{"group": 1, "id": u'deep german indie'}
-{"group": 1, "id": u'deep german jazz'}
-{"group": 1, "id": u'deep german pop rock'}
-{"group": 1, "id": u'deep german punk'}
-{"group": 1, "id": u'deep gothic post-punk'}
-{"group": 1, "id": u'deep groove house'}
-{"group": 1, "id": u'deep happy hardcore'}
-{"group": 1, "id": u'deep hardcore punk'}
-{"group": 1, "id": u'deep hardcore'}
-{"group": 1, "id": u'deep hardstyle'}
-{"group": 1, "id": u'deep house'}
-{"group": 1, "id": u'deep indian pop'}
-{"group": 1, "id": u'deep indie pop'}
-{"group": 1, "id": u'deep indie r&b'}
-{"group": 1, "id": u'deep indie rock'}
-{"group": 1, "id": u'deep indie singer-songwriter'}
-{"group": 1, "id": u'deep italo disco'}
-{"group": 1, "id": u'deep jazz fusion'}
-{"group": 1, "id": u'deep jazz guitar'}
-{"group": 1, "id": u'deep jazz piano'}
-{"group": 1, "id": u'deep latin alternative'}
-{"group": 1, "id": u'deep latin christian'}
-{"group": 1, "id": u'deep latin hip hop'}
-{"group": 1, "id": u'deep liquid bass'}
-{"group": 1, "id": u'deep liquid'}
-{"group": 1, "id": u'deep melodic death metal'}
-{"group": 1, "id": u'deep melodic euro house'}
-{"group": 1, "id": u'deep melodic hard rock'}
-{"group": 1, "id": u'deep melodic metalcore'}
-{"group": 1, "id": u'deep minimal techno'}
-{"group": 1, "id": u'deep motown'}
-{"group": 1, "id": u'deep neo-synthpop'}
-{"group": 1, "id": u'deep new americana'}
-{"group": 1, "id": u'deep new wave'}
-{"group": 1, "id": u'deep nordic folk'}
-{"group": 1, "id": u'deep norteno'}
-{"group": 1, "id": u'deep northern soul'}
-{"group": 1, "id": u'deep nz indie'}
-{"group": 1, "id": u'deep opera'}
-{"group": 1, "id": u'deep orchestral'}
-{"group": 1, "id": u'deep orgcore'}
-{"group": 1, "id": u'deep pop edm'}
-{"group": 1, "id": u'deep pop emo'}
-{"group": 1, "id": u'deep pop punk'}
-{"group": 1, "id": u'deep pop r&b'}
-{"group": 1, "id": u'deep power-pop punk'}
-{"group": 1, "id": u'deep progressive house'}
-{"group": 1, "id": u'deep progressive trance'}
-{"group": 1, "id": u'deep psychobilly'}
-{"group": 1, "id": u'deep psytrance'}
-{"group": 1, "id": u'deep punk rock'}
-{"group": 1, "id": u'deep ragga'}
-{"group": 1, "id": u'deep rai'}
-{"group": 1, "id": u'deep regional mexican'}
-{"group": 1, "id": u'deep smooth jazz'}
-{"group": 1, "id": u'deep soft rock'}
-{"group": 1, "id": u'deep soul house'}
-{"group": 1, "id": u'deep soundtrack'}
-{"group": 1, "id": u'deep southern soul'}
-{"group": 1, "id": u'deep southern trap'}
-{"group": 1, "id": u'deep space rock'}
-{"group": 1, "id": u'deep string quartet'}
-{"group": 1, "id": u'deep sunset lounge'}
-{"group": 1, "id": u'deep surf music'}
-{"group": 1, "id": u'deep swedish hip hop'}
-{"group": 1, "id": u'deep swedish indie pop'}
-{"group": 1, "id": u'deep symphonic black metal'}
-{"group": 1, "id": u'deep taiwanese pop'}
-{"group": 1, "id": u'deep talent show'}
-{"group": 1, "id": u'deep tech house'}
-{"group": 1, "id": u'deep texas country'}
-{"group": 1, "id": u'deep trap'}
-{"group": 1, "id": u'deep tropical house'}
-{"group": 1, "id": u'deep turkish pop'}
-{"group": 1, "id": u'deep underground hip hop'}
-{"group": 1, "id": u'deep uplifting trance'}
-{"group": 1, "id": u'deep vocal house'}
-{"group": 1, "id": u'deep vocal jazz'}
-{"group": 1, "id": u'delta blues'}
-{"group": 1, "id": u'demoscene'}
-{"group": 1, "id": u'denver indie'}
-{"group": 1, "id": u'depressive black metal'}
-{"group": 1, "id": u'desert blues'}
-{"group": 1, "id": u'desi hip hop'}
-{"group": 1, "id": u'desi'}
-{"group": 1, "id": u'destroy techno'}
-{"group": 1, "id": u'detroit hip hop'}
-{"group": 1, "id": u'detroit techno'}
-{"group": 1, "id": u'didgeridoo'}
-{"group": 1, "id": u'digital hardcore'}
-{"group": 1, "id": u'dirty south rap'}
-{"group": 1, "id": u'dirty texas rap'}
-{"group": 1, "id": u'disco house'}
-{"group": 1, "id": u'disco polo'}
-{"group": 1, "id": u'disco'}
-{"group": 1, "id": u'discofox'}
-{"group": 1, "id": u'dixieland'}
-{"group": 1, "id": u'djent'}
-{"group": 1, "id": u'dominican pop'}
-{"group": 1, "id": u'doo-wop'}
-{"group": 1, "id": u'doom metal'}
-{"group": 1, "id": u'doomcore'}
-{"group": 1, "id": u'doujin'}
-{"group": 1, "id": u'downtempo fusion'}
-{"group": 1, "id": u'downtempo'}
-{"group": 1, "id": u'drama'}
-{"group": 1, "id": u'dream pop'}
-{"group": 1, "id": u'dreamo'}
-{"group": 1, "id": u'drift'}
-{"group": 1, "id": u'drill and bass'}
-{"group": 1, "id": u'drill'}
-{"group": 1, "id": u'drone folk'}
-{"group": 1, "id": u'drone metal'}
-{"group": 1, "id": u'drone psych'}
-{"group": 1, "id": u'drone'}
-{"group": 1, "id": u'drum and bass'}
-{"group": 1, "id": u'drumfunk'}
-{"group": 1, "id": u'dub techno'}
-{"group": 1, "id": u'dub'}
-{"group": 1, "id": u'dubstep'}
-{"group": 1, "id": u'dubsteppe'}
-{"group": 1, "id": u'duranguense'}
-{"group": 1, "id": u'dutch hip hop'}
-{"group": 1, "id": u'dutch house'}
-{"group": 1, "id": u'dutch pop'}
-{"group": 1, "id": u'dutch rock'}
-{"group": 1, "id": u'dwn trap'}
-{"group": 1, "id": u'e6fi'}
-{"group": 1, "id": u'early music ensemble'}
-{"group": 1, "id": u'early music'}
-{"group": 1, "id": u'east coast hip hop'}
-{"group": 1, "id": u'easy listening'}
-{"group": 1, "id": u'ebm'}
-{"group": 1, "id": u'ectofolk'}
-{"group": 1, "id": u'ecuadoria'}
-{"group": 1, "id": u'edm'}
-{"group": 1, "id": u'electric blues'}
-{"group": 1, "id": u'electro bailando'}
-{"group": 1, "id": u'electro dub'}
-{"group": 1, "id": u'electro house'}
-{"group": 1, "id": u'electro jazz'}
-{"group": 1, "id": u'electro latino'}
-{"group": 1, "id": u'electro swing'}
-{"group": 1, "id": u'electro trash'}
-{"group": 1, "id": u'electro'}
-{"group": 1, "id": u'electro-industrial'}
-{"group": 1, "id": u'electroacoustic improvisation'}
-{"group": 1, "id": u'electroclash'}
-{"group": 1, "id": u'electrofox'}
-{"group": 1, "id": u'electronic trap'}
-{"group": 1, "id": u'electronic'}
-{"group": 1, "id": u'electronica'}
-{"group": 1, "id": u'electronicore'}
-{"group": 1, "id": u'electropowerpop'}
-{"group": 1, "id": u'electropunk'}
-{"group": 1, "id": u'emo punk'}
-{"group": 1, "id": u'emo'}
-{"group": 1, "id": u'enka'}
-{"group": 1, "id": u'entehno'}
-{"group": 1, "id": u'environmental'}
-{"group": 1, "id": u'epicore'}
-{"group": 1, "id": u'escape room'}
-{"group": 1, "id": u'estonian pop'}
-{"group": 1, "id": u'ethereal gothic'}
-{"group": 1, "id": u'ethereal wave'}
-{"group": 1, "id": u'etherpop'}
-{"group": 1, "id": u'ethiopian pop'}
-{"group": 1, "id": u'eurodance'}
-{"group": 1, "id": u'europop'}
-{"group": 1, "id": u'euroska'}
-{"group": 1, "id": u'eurovision'}
-{"group": 1, "id": u'exotica'}
-{"group": 1, "id": u'experimental dubstep'}
-{"group": 1, "id": u'experimental psych'}
-{"group": 1, "id": u'experimental rock'}
-{"group": 1, "id": u'experimental'}
-{"group": 1, "id": u'fado'}
-{"group": 1, "id": u'fake'}
-{"group": 1, "id": u'fallen angel'}
-{"group": 1, "id": u'faroese pop'}
-{"group": 1, "id": u'fast melodic punk'}
-{"group": 1, "id": u'fidget house'}
-{"group": 1, "id": u'filmi'}
-{"group": 1, "id": u'filter house'}
-{"group": 1, "id": u'filthstep'}
-{"group": 1, "id": u'fingerstyle'}
-{"group": 1, "id": u'finnish dance pop'}
-{"group": 1, "id": u'finnish hardcore'}
-{"group": 1, "id": u'finnish hip hop'}
-{"group": 1, "id": u'finnish indie'}
-{"group": 1, "id": u'finnish jazz'}
-{"group": 1, "id": u'finnish metal'}
-{"group": 1, "id": u'finnish pop'}
-{"group": 1, "id": u'flamenco'}
-{"group": 1, "id": u'flick hop'}
-{"group": 1, "id": u'float house'}
-{"group": 1, "id": u'fluxwork'}
-{"group": 1, "id": u'focus'}
-{"group": 1, "id": u'folk metal'}
-{"group": 1, "id": u'folk punk'}
-{"group": 1, "id": u'folk rock'}
-{"group": 1, "id": u'folk'}
-{"group": 1, "id": u'folk-pop'}
-{"group": 1, "id": u'folklore argentino'}
-{"group": 1, "id": u'folkmusik'}
-{"group": 1, "id": u'footwork'}
-{"group": 1, "id": u'forro'}
-{"group": 1, "id": u'fourth world'}
-{"group": 1, "id": u'francoton'}
-{"group": 1, "id": u'freak folk'}
-{"group": 1, "id": u'freakbeat'}
-{"group": 1, "id": u'free improvisation'}
-{"group": 1, "id": u'free jazz'}
-{"group": 1, "id": u'freestyle'}
-{"group": 1, "id": u'french folk pop'}
-{"group": 1, "id": u'french folk'}
-{"group": 1, "id": u'french hip hop'}
-{"group": 1, "id": u'french indie pop'}
-{"group": 1, "id": u'french indietronica'}
-{"group": 1, "id": u'french movie tunes'}
-{"group": 1, "id": u'french pop'}
-{"group": 1, "id": u'french punk'}
-{"group": 1, "id": u'french reggae'}
-{"group": 1, "id": u'french rock'}
-{"group": 1, "id": u'full on'}
-{"group": 1, "id": u'funeral doom'}
-{"group": 1, "id": u'funk carioca'}
-{"group": 1, "id": u'funk metal'}
-{"group": 1, "id": u'funk rock'}
-{"group": 1, "id": u'funk'}
-{"group": 1, "id": u'funky breaks'}
-{"group": 1, "id": u'funky tech house'}
-{"group": 1, "id": u'future ambient'}
-{"group": 1, "id": u'future funk'}
-{"group": 1, "id": u'future garage'}
-{"group": 1, "id": u'futurepop'}
-{"group": 1, "id": u'g funk'}
-{"group": 1, "id": u'gabba'}
-{"group": 1, "id": u'galego'}
-{"group": 1, "id": u'gamecore'}
-{"group": 1, "id": u'gamelan'}
-{"group": 1, "id": u'gangster rap'}
-{"group": 1, "id": u'garage pop'}
-{"group": 1, "id": u'garage psych'}
-{"group": 1, "id": u'garage punk blues'}
-{"group": 1, "id": u'garage punk'}
-{"group": 1, "id": u'garage rock'}
-{"group": 1, "id": u'gauze pop'}
-{"group": 1, "id": u'gbvfi'}
-{"group": 1, "id": u'geek folk'}
-{"group": 1, "id": u'geek rock'}
-{"group": 1, "id": u'german ccm'}
-{"group": 1, "id": u'german hip hop'}
-{"group": 1, "id": u'german indie'}
-{"group": 1, "id": u'german metal'}
-{"group": 1, "id": u'german oi'}
-{"group": 1, "id": u'german pop rock'}
-{"group": 1, "id": u'german pop'}
-{"group": 1, "id": u'german punk'}
-{"group": 1, "id": u'german show tunes'}
-{"group": 1, "id": u'german street punk'}
-{"group": 1, "id": u'german techno'}
-{"group": 1, "id": u'ghazal'}
-{"group": 1, "id": u'ghettotech'}
-{"group": 1, "id": u'ghoststep'}
-{"group": 1, "id": u'girl group'}
-{"group": 1, "id": u'glam metal'}
-{"group": 1, "id": u'glam rock'}
-{"group": 1, "id": u'glitch beats'}
-{"group": 1, "id": u'glitch hop'}
-{"group": 1, "id": u'glitch'}
-{"group": 1, "id": u'glitter trance'}
-{"group": 1, "id": u'go-go'}
-{"group": 1, "id": u'goa trance'}
-{"group": 1, "id": u'goregrind'}
-{"group": 1, "id": u'gospel blues'}
-{"group": 1, "id": u'gospel reggae'}
-{"group": 1, "id": u'gospel'}
-{"group": 1, "id": u'gothic alternative'}
-{"group": 1, "id": u'gothic americana'}
-{"group": 1, "id": u'gothic doom'}
-{"group": 1, "id": u'gothic metal'}
-{"group": 1, "id": u'gothic post-punk'}
-{"group": 1, "id": u'gothic rock'}
-{"group": 1, "id": u'gothic symphonic metal'}
-{"group": 1, "id": u'grave wave'}
-{"group": 1, "id": u'greek hip hop'}
-{"group": 1, "id": u'greek house'}
-{"group": 1, "id": u'greek indie'}
-{"group": 1, "id": u'grim death metal'}
-{"group": 1, "id": u'grime'}
-{"group": 1, "id": u'grindcore'}
-{"group": 1, "id": u'grisly death metal'}
-{"group": 1, "id": u'groove metal'}
-{"group": 1, "id": u'groove room'}
-{"group": 1, "id": u'grunge pop'}
-{"group": 1, "id": u'grunge'}
-{"group": 1, "id": u'grupera'}
-{"group": 1, "id": u'guidance'}
-{"group": 1, "id": u'gypsy jazz'}
-{"group": 1, "id": u'hands up'}
-{"group": 1, "id": u'happy hardcore'}
-{"group": 1, "id": u'hard alternative'}
-{"group": 1, "id": u'hard bop'}
-{"group": 1, "id": u'hard glam'}
-{"group": 1, "id": u'hard house'}
-{"group": 1, "id": u'hard minimal techno'}
-{"group": 1, "id": u'hard rock'}
-{"group": 1, "id": u'hard stoner rock'}
-{"group": 1, "id": u'hardcore breaks'}
-{"group": 1, "id": u'hardcore hip hop'}
-{"group": 1, "id": u'hardcore punk'}
-{"group": 1, "id": u'hardcore techno'}
-{"group": 1, "id": u'hardcore'}
-{"group": 1, "id": u'hardstyle'}
-{"group": 1, "id": u'harmonica blues'}
-{"group": 1, "id": u'harp'}
-{"group": 1, "id": u'harpsichord'}
-{"group": 1, "id": u'hatecore'}
-{"group": 1, "id": u'hauntology'}
-{"group": 1, "id": u'hawaiian'}
-{"group": 1, "id": u'healing'}
-{"group": 1, "id": u'heavy alternative'}
-{"group": 1, "id": u'heavy gothic rock'}
-{"group": 1, "id": u'hebrew pop'}
-{"group": 1, "id": u'highlife'}
-{"group": 1, "id": u'hindustani classical'}
-{"group": 1, "id": u'hip hop quebecois'}
-{"group": 1, "id": u'hip hop tuga'}
-{"group": 1, "id": u'hip hop'}
-{"group": 1, "id": u'hip house'}
-{"group": 1, "id": u'hip pop'}
-{"group": 1, "id": u'hiplife'}
-{"group": 1, "id": u'hoerspiel'}
-{"group": 1, "id": u'hollywood'}
-{"group": 1, "id": u'horror punk'}
-{"group": 1, "id": u'horrorcore'}
-{"group": 1, "id": u'house'}
-{"group": 1, "id": u'hungarian hip hop'}
-{"group": 1, "id": u'hungarian pop'}
-{"group": 1, "id": u'hungarian rock'}
-{"group": 1, "id": u'hyphy'}
-{"group": 1, "id": u'icelandic pop'}
-{"group": 1, "id": u'idol'}
-{"group": 1, "id": u'indian classical'}
-{"group": 1, "id": u'indian folk'}
-{"group": 1, "id": u'indian pop'}
-{"group": 1, "id": u'indian rock'}
-{"group": 1, "id": u'indie anthem-folk'}
-{"group": 1, "id": u'indie dream pop'}
-{"group": 1, "id": u'indie emo'}
-{"group": 1, "id": u'indie folk'}
-{"group": 1, "id": u'indie fuzzpop'}
-{"group": 1, "id": u'indie garage rock'}
-{"group": 1, "id": u'indie jazz'}
-{"group": 1, "id": u'indie pop rock'}
-{"group": 1, "id": u'indie pop'}
-{"group": 1, "id": u'indie poptimism'}
-{"group": 1, "id": u'indie psych-pop'}
-{"group": 1, "id": u'indie psych-rock'}
-{"group": 1, "id": u'indie punk'}
-{"group": 1, "id": u'indie r&b'}
-{"group": 1, "id": u'indie rock'}
-{"group": 1, "id": u'indie rockism'}
-{"group": 1, "id": u'indie shoegaze'}
-{"group": 1, "id": u'indie singer-songwriter'}
-{"group": 1, "id": u'indiecoustica'}
-{"group": 1, "id": u'indietronica'}
-{"group": 1, "id": u'indonesian indie'}
-{"group": 1, "id": u'indonesian pop'}
-{"group": 1, "id": u'indorock'}
-{"group": 1, "id": u'industrial metal'}
-{"group": 1, "id": u'industrial rock'}
-{"group": 1, "id": u'industrial'}
-{"group": 1, "id": u'instrumental post rock'}
-{"group": 1, "id": u'intelligent dance music'}
-{"group": 1, "id": u'irish country'}
-{"group": 1, "id": u'irish folk'}
-{"group": 1, "id": u'irish indie'}
-{"group": 1, "id": u'irish rock'}
-{"group": 1, "id": u'iskelma'}
-{"group": 1, "id": u'israeli rock'}
-{"group": 1, "id": u'italian arena pop'}
-{"group": 1, "id": u'italian disco'}
-{"group": 1, "id": u'italian hip hop'}
-{"group": 1, "id": u'italian indie pop'}
-{"group": 1, "id": u'italian jazz'}
-{"group": 1, "id": u'italian metal'}
-{"group": 1, "id": u'italian pop rock'}
-{"group": 1, "id": u'italian pop'}
-{"group": 1, "id": u'italian progressive rock'}
-{"group": 1, "id": u'italian punk'}
-{"group": 1, "id": u'italo beats'}
-{"group": 1, "id": u'italo dance'}
-{"group": 1, "id": u'j-ambient'}
-{"group": 1, "id": u'j-core'}
-{"group": 1, "id": u'j-dance'}
-{"group": 1, "id": u'j-idol'}
-{"group": 1, "id": u'j-indie'}
-{"group": 1, "id": u'j-metal'}
-{"group": 1, "id": u'j-pop'}
-{"group": 1, "id": u'j-poppunk'}
-{"group": 1, "id": u'j-poprock'}
-{"group": 1, "id": u'j-punk'}
-{"group": 1, "id": u'j-rap'}
-{"group": 1, "id": u'j-reggae'}
-{"group": 1, "id": u'j-rock'}
-{"group": 1, "id": u'jam band'}
-{"group": 1, "id": u'jangle pop'}
-{"group": 1, "id": u'jangle rock'}
-{"group": 1, "id": u'japanese city pop'}
-{"group": 1, "id": u'japanese jazztronica'}
-{"group": 1, "id": u'japanese psychedelic'}
-{"group": 1, "id": u'japanese r&b'}
-{"group": 1, "id": u'japanese traditional'}
-{"group": 1, "id": u'japanoise'}
-{"group": 1, "id": u'jazz bass'}
-{"group": 1, "id": u'jazz blues'}
-{"group": 1, "id": u'jazz brass'}
-{"group": 1, "id": u'jazz funk'}
-{"group": 1, "id": u'jazz fusion'}
-{"group": 1, "id": u'jazz metal'}
-{"group": 1, "id": u'jazz orchestra'}
-{"group": 1, "id": u'jazz trio'}
-{"group": 1, "id": u'jazz'}
-{"group": 1, "id": u'jig and reel'}
-{"group": 1, "id": u'judaica'}
-{"group": 1, "id": u'jug band'}
-{"group": 1, "id": u'jump blues'}
-{"group": 1, "id": u'jump up'}
-{"group": 1, "id": u'jumpstyle'}
-{"group": 1, "id": u'jungle'}
-{"group": 1, "id": u'k-hop'}
-{"group": 1, "id": u'k-indie'}
-{"group": 1, "id": u'k-pop'}
-{"group": 1, "id": u'k-rock'}
-{"group": 1, "id": u'kabarett'}
-{"group": 1, "id": u'karneval'}
-{"group": 1, "id": u'kayokyoku'}
-{"group": 1, "id": u'kc indie'}
-{"group": 1, "id": u'kids dance party'}
-{"group": 1, "id": u'kirtan'}
-{"group": 1, "id": u'kiwi rock'}
-{"group": 1, "id": u'kizomba'}
-{"group": 1, "id": u'klapa'}
-{"group": 1, "id": u'klezmer'}
-{"group": 1, "id": u'kompa'}
-{"group": 1, "id": u'korean pop'}
-{"group": 1, "id": u'kraut rock'}
-{"group": 1, "id": u'kuduro'}
-{"group": 1, "id": u'kwaito house'}
-{"group": 1, "id": u'kwaito'}
-{"group": 1, "id": u'la indie'}
-{"group": 1, "id": u'laboratorio'}
-{"group": 1, "id": u'laiko'}
-{"group": 1, "id": u'latin alternative'}
-{"group": 1, "id": u'latin arena pop'}
-{"group": 1, "id": u'latin christian'}
-{"group": 1, "id": u'latin electronica'}
-{"group": 1, "id": u'latin hip hop'}
-{"group": 1, "id": u'latin jazz'}
-{"group": 1, "id": u'latin metal'}
-{"group": 1, "id": u'latin pop'}
-{"group": 1, "id": u'latin'}
-{"group": 1, "id": u'latvian pop'}
-{"group": 1, "id": u'lds'}
-{"group": 1, "id": u'leeds indie'}
-{"group": 1, "id": u'levenslied'}
-{"group": 1, "id": u'library music'}
-{"group": 1, "id": u'liedermacher'}
-{"group": 1, "id": u'lift kit'}
-{"group": 1, "id": u'light music'}
-{"group": 1, "id": u'lilith'}
-{"group": 1, "id": u'liquid funk'}
-{"group": 1, "id": u'lithumania'}
-{"group": 1, "id": u'liturgical'}
-{"group": 1, "id": u'lo star'}
-{"group": 1, "id": u'lo-fi'}
-{"group": 1, "id": u'louisiana blues'}
-{"group": 1, "id": u'louisville indie'}
-{"group": 1, "id": u'lounge'}
-{"group": 1, "id": u'louvor'}
-{"group": 1, "id": u'lovers rock'}
-{"group": 1, "id": u'lowercase'}
-{"group": 1, "id": u'luk thung'}
-{"group": 1, "id": u'madchester'}
-{"group": 1, "id": u'maghreb'}
-{"group": 1, "id": u'magyar'}
-{"group": 1, "id": u'makina'}
-{"group": 1, "id": u'makossa'}
-{"group": 1, "id": u'malagasy folk'}
-{"group": 1, "id": u'malaysian pop'}
-{"group": 1, "id": u'mallet'}
-{"group": 1, "id": u'mambo'}
-{"group": 1, "id": u'mande pop'}
-{"group": 1, "id": u'mandible'}
-{"group": 1, "id": u'mandopop'}
-{"group": 1, "id": u'manele'}
-{"group": 1, "id": u'mantra'}
-{"group": 1, "id": u'marching band'}
-{"group": 1, "id": u'mariachi'}
-{"group": 1, "id": u'martial industrial'}
-{"group": 1, "id": u'mashup'}
-{"group": 1, "id": u'math pop'}
-{"group": 1, "id": u'math rock'}
-{"group": 1, "id": u'mathcore'}
-{"group": 1, "id": u'mbalax'}
-{"group": 1, "id": u'medieval rock'}
-{"group": 1, "id": u'medieval'}
-{"group": 1, "id": u'meditation'}
-{"group": 1, "id": u'melancholia'}
-{"group": 1, "id": u'melbourne bounce'}
-{"group": 1, "id": u'mellow gold'}
-{"group": 1, "id": u'melodic death metal'}
-{"group": 1, "id": u'melodic hard rock'}
-{"group": 1, "id": u'melodic hardcore'}
-{"group": 1, "id": u'melodic metalcore'}
-{"group": 1, "id": u'melodic power metal'}
-{"group": 1, "id": u'melodic progressive metal'}
-{"group": 1, "id": u'melodipop'}
-{"group": 1, "id": u'memphis blues'}
-{"group": 1, "id": u'memphis hip hop'}
-{"group": 1, "id": u'memphis soul'}
-{"group": 1, "id": u'merengue urbano'}
-{"group": 1, "id": u'merengue'}
-{"group": 1, "id": u'merseybeat'}
-{"group": 1, "id": u'metal guitar'}
-{"group": 1, "id": u'metal'}
-{"group": 1, "id": u'metalcore'}
-{"group": 1, "id": u'metropopolis'}
-{"group": 1, "id": u'mexican indie'}
-{"group": 1, "id": u'mexican rock-and-roll'}
-{"group": 1, "id": u'mexican son'}
-{"group": 1, "id": u'miami bass'}
-{"group": 1, "id": u'michigan indie'}
-{"group": 1, "id": u'microhouse'}
-{"group": 1, "id": u'military band'}
-{"group": 1, "id": u'minimal dub'}
-{"group": 1, "id": u'minimal dubstep'}
-{"group": 1, "id": u'minimal melodic techno'}
-{"group": 1, "id": u'minimal tech house'}
-{"group": 1, "id": u'minimal techno'}
-{"group": 1, "id": u'minimal wave'}
-{"group": 1, "id": u'minimal'}
-{"group": 1, "id": u'mizrahi'}
-{"group": 1, "id": u'mod revival'}
-{"group": 1, "id": u'modern blues'}
-{"group": 1, "id": u'modern classical'}
-{"group": 1, "id": u'modern country rock'}
-{"group": 1, "id": u'modern downshift'}
-{"group": 1, "id": u'modern free jazz'}
-{"group": 1, "id": u'modern performance'}
-{"group": 1, "id": u'modern rock'}
-{"group": 1, "id": u'modern southern rock'}
-{"group": 1, "id": u'modern uplift'}
-{"group": 1, "id": u'monastic'}
-{"group": 1, "id": u'moombahton'}
-{"group": 1, "id": u'morna'}
-{"group": 1, "id": u'motivation'}
-{"group": 1, "id": u'motown'}
-{"group": 1, "id": u'movie tunes'}
-{"group": 1, "id": u'mpb'}
-{"group": 1, "id": u'musica nativista'}
-{"group": 1, "id": u'musica para ninos'}
-{"group": 1, "id": u'musiikkia lapsille'}
-{"group": 1, "id": u'musique concrete'}
-{"group": 1, "id": u'musique pour enfants'}
-{"group": 1, "id": u'muziek voor kinderen'}
-{"group": 1, "id": u'nasheed'}
-{"group": 1, "id": u'nashville sound'}
-{"group": 1, "id": u'necrogrind'}
-{"group": 1, "id": u'neo classical metal'}
-{"group": 1, "id": u'neo honky tonk'}
-{"group": 1, "id": u'neo mellow'}
-{"group": 1, "id": u'neo metal'}
-{"group": 1, "id": u'neo soul'}
-{"group": 1, "id": u'neo soul-jazz'}
-{"group": 1, "id": u'neo-industrial rock'}
-{"group": 1, "id": u'neo-pagan'}
-{"group": 1, "id": u'neo-progressive'}
-{"group": 1, "id": u'neo-psychedelic'}
-{"group": 1, "id": u'neo-rockabilly'}
-{"group": 1, "id": u'neo-singer-songwriter'}
-{"group": 1, "id": u'neo-synthpop'}
-{"group": 1, "id": u'neo-trad metal'}
-{"group": 1, "id": u'neo-traditional country'}
-{"group": 1, "id": u'neoclassical'}
-{"group": 1, "id": u'neofolk'}
-{"group": 1, "id": u'nepali'}
-{"group": 1, "id": u'nerdcore'}
-{"group": 1, "id": u'neue deutsche harte'}
-{"group": 1, "id": u'neue deutsche welle'}
-{"group": 1, "id": u'neurofunk'}
-{"group": 1, "id": u'neurostep'}
-{"group": 1, "id": u'new age piano'}
-{"group": 1, "id": u'new age'}
-{"group": 1, "id": u'new americana'}
-{"group": 1, "id": u'new beat'}
-{"group": 1, "id": u'new jack smooth'}
-{"group": 1, "id": u'new jack swing'}
-{"group": 1, "id": u'new orleans blues'}
-{"group": 1, "id": u'new orleans jazz'}
-{"group": 1, "id": u'new rave'}
-{"group": 1, "id": u'new romantic'}
-{"group": 1, "id": u'new tribe'}
-{"group": 1, "id": u'new wave pop'}
-{"group": 1, "id": u'new wave'}
-{"group": 1, "id": u'new weird america'}
-{"group": 1, "id": u'ninja'}
-{"group": 1, "id": u'nintendocore'}
-{"group": 1, "id": u'nl folk'}
-{"group": 1, "id": u'no wave'}
-{"group": 1, "id": u'noise pop'}
-{"group": 1, "id": u'noise punk'}
-{"group": 1, "id": u'noise rock'}
-{"group": 1, "id": u'noise'}
-{"group": 1, "id": u'nordic folk'}
-{"group": 1, "id": u'nordic house'}
-{"group": 1, "id": u'norteno'}
-{"group": 1, "id": u'northern irish indie'}
-{"group": 1, "id": u'northern soul'}
-{"group": 1, "id": u'norwegian gospel'}
-{"group": 1, "id": u'norwegian hip hop'}
-{"group": 1, "id": u'norwegian indie'}
-{"group": 1, "id": u'norwegian jazz'}
-{"group": 1, "id": u'norwegian metal'}
-{"group": 1, "id": u'norwegian pop'}
-{"group": 1, "id": u'norwegian punk'}
-{"group": 1, "id": u'norwegian rock'}
-{"group": 1, "id": u'nu age'}
-{"group": 1, "id": u'nu disco'}
-{"group": 1, "id": u'nu electro'}
-{"group": 1, "id": u'nu gaze'}
-{"group": 1, "id": u'nu jazz'}
-{"group": 1, "id": u'nu metal'}
-{"group": 1, "id": u'nu skool breaks'}
-{"group": 1, "id": u'nu-cumbia'}
-{"group": 1, "id": u'nueva cancion'}
-{"group": 1, "id": u'nursery'}
-{"group": 1, "id": u'nwobhm'}
-{"group": 1, "id": u'nwothm'}
-{"group": 1, "id": u'nz indie'}
-{"group": 1, "id": u'oi'}
-{"group": 1, "id": u'ok indie'}
-{"group": 1, "id": u'old school hip hop'}
-{"group": 1, "id": u'old-time'}
-{"group": 1, "id": u'opera'}
-{"group": 1, "id": u'operatic pop'}
-{"group": 1, "id": u'opm'}
-{"group": 1, "id": u'orchestral'}
-{"group": 1, "id": u'organic ambient'}
-{"group": 1, "id": u'orgcore'}
-{"group": 1, "id": u'orquesta tipica'}
-{"group": 1, "id": u'orquesta tropical'}
-{"group": 1, "id": u'oshare kei'}
-{"group": 1, "id": u'ostrock'}
-{"group": 1, "id": u'otacore'}
-{"group": 1, "id": u'outer hip hop'}
-{"group": 1, "id": u'outlaw country'}
-{"group": 1, "id": u'outsider house'}
-{"group": 1, "id": u'outsider'}
-{"group": 1, "id": u'p funk'}
-{"group": 1, "id": u'pagan black metal'}
-{"group": 1, "id": u'pagode'}
-{"group": 1, "id": u'pakistani pop'}
-{"group": 1, "id": u'panpipe'}
-{"group": 1, "id": u'permanent wave'}
-{"group": 1, "id": u'persian pop'}
-{"group": 1, "id": u'persian traditional'}
-{"group": 1, "id": u'perth indie'}
-{"group": 1, "id": u'peruvian rock'}
-{"group": 1, "id": u'piano blues'}
-{"group": 1, "id": u'piano rock'}
-{"group": 1, "id": u'piedmont blues'}
-{"group": 1, "id": u'pinoy alternative'}
-{"group": 1, "id": u'pipe band'}
-{"group": 1, "id": u'pixie'}
-{"group": 1, "id": u'polish hip hop'}
-{"group": 1, "id": u'polish indie'}
-{"group": 1, "id": u'polish jazz'}
-{"group": 1, "id": u'polish pop'}
-{"group": 1, "id": u'polish punk'}
-{"group": 1, "id": u'polish reggae'}
-{"group": 1, "id": u'polka'}
-{"group": 1, "id": u'polynesian pop'}
-{"group": 1, "id": u'polyphony'}
-{"group": 1, "id": u'pop emo'}
-{"group": 1, "id": u'pop flamenco'}
-{"group": 1, "id": u'pop house'}
-{"group": 1, "id": u'pop punk'}
-{"group": 1, "id": u'pop rap'}
-{"group": 1, "id": u'pop reggaeton'}
-{"group": 1, "id": u'pop rock'}
-{"group": 1, "id": u'pop'}
-{"group": 1, "id": u'popgaze'}
-{"group": 1, "id": u'porro'}
-{"group": 1, "id": u'portland indie'}
-{"group": 1, "id": u'portuguese pop'}
-{"group": 1, "id": u'portuguese rock'}
-{"group": 1, "id": u'post rock'}
-{"group": 1, "id": u'post-disco soul'}
-{"group": 1, "id": u'post-disco'}
-{"group": 1, "id": u'post-doom metal'}
-{"group": 1, "id": u'post-grunge'}
-{"group": 1, "id": u'post-hardcore'}
-{"group": 1, "id": u'post-metal'}
-{"group": 1, "id": u'post-post-hardcore'}
-{"group": 1, "id": u'post-punk'}
-{"group": 1, "id": u'post-screamo'}
-{"group": 1, "id": u'post-teen pop'}
-{"group": 1, "id": u'power blues-rock'}
-{"group": 1, "id": u'power electronics'}
-{"group": 1, "id": u'power metal'}
-{"group": 1, "id": u'power noise'}
-{"group": 1, "id": u'power pop'}
-{"group": 1, "id": u'power violence'}
-{"group": 1, "id": u'power-pop punk'}
-{"group": 1, "id": u'praise'}
-{"group": 1, "id": u'preverb'}
-{"group": 1, "id": u'progressive alternative'}
-{"group": 1, "id": u'progressive bluegrass'}
-{"group": 1, "id": u'progressive deathcore'}
-{"group": 1, "id": u'progressive electro house'}
-{"group": 1, "id": u'progressive house'}
-{"group": 1, "id": u'progressive metal'}
-{"group": 1, "id": u'progressive post-hardcore'}
-{"group": 1, "id": u'progressive psytrance'}
-{"group": 1, "id": u'progressive rock'}
-{"group": 1, "id": u'progressive trance house'}
-{"group": 1, "id": u'progressive trance'}
-{"group": 1, "id": u'progressive uplifting trance'}
-{"group": 1, "id": u'protopunk'}
-{"group": 1, "id": u'psych gaze'}
-{"group": 1, "id": u'psychedelic blues-rock'}
-{"group": 1, "id": u'psychedelic doom'}
-{"group": 1, "id": u'psychedelic rock'}
-{"group": 1, "id": u'psychedelic trance'}
-{"group": 1, "id": u'psychill'}
-{"group": 1, "id": u'psychobilly'}
-{"group": 1, "id": u'pub rock'}
-{"group": 1, "id": u'puerto rican rock'}
-{"group": 1, "id": u'punjabi'}
-{"group": 1, "id": u'punk blues'}
-{"group": 1, "id": u'punk ska'}
-{"group": 1, "id": u'punk'}
-{"group": 1, "id": u'punta'}
-{"group": 1, "id": u'qawwali'}
-{"group": 1, "id": u'quebecois'}
-{"group": 1, "id": u'quiet storm'}
-{"group": 1, "id": u'r&b'}
-{"group": 1, "id": u'ragga jungle'}
-{"group": 1, "id": u'ragtime'}
-{"group": 1, "id": u'rai'}
-{"group": 1, "id": u'ranchera'}
-{"group": 1, "id": u'rap chileno'}
-{"group": 1, "id": u'rap metal'}
-{"group": 1, "id": u'rap metalcore'}
-{"group": 1, "id": u'rap rock'}
-{"group": 1, "id": u'rap'}
-{"group": 1, "id": u'raw black metal'}
-{"group": 1, "id": u're:techno'}
-{"group": 1, "id": u'reading'}
-{"group": 1, "id": u'rebetiko'}
-{"group": 1, "id": u'redneck'}
-{"group": 1, "id": u'reggae fusion'}
-{"group": 1, "id": u'reggae rock'}
-{"group": 1, "id": u'reggae'}
-{"group": 1, "id": u'reggaeton flow'}
-{"group": 1, "id": u'reggaeton'}
-{"group": 1, "id": u'regional mexican pop'}
-{"group": 1, "id": u'regional mexican'}
-{"group": 1, "id": u'relaxative'}
-{"group": 1, "id": u'remix'}
-{"group": 1, "id": u'renaissance'}
-{"group": 1, "id": u'retro electro'}
-{"group": 1, "id": u'retro metal'}
-{"group": 1, "id": u'rhythm and boogie'}
-{"group": 1, "id": u'riddim'}
-{"group": 1, "id": u'rio de la plata'}
-{"group": 1, "id": u'riot grrrl'}
-{"group": 1, "id": u'rock catala'}
-{"group": 1, "id": u'rock en espanol'}
-{"group": 1, "id": u'rock gaucho'}
-{"group": 1, "id": u'rock noise'}
-{"group": 1, "id": u'rock steady'}
-{"group": 1, "id": u'rock'}
-{"group": 1, "id": u'rock-and-roll'}
-{"group": 1, "id": u'rockabilly'}
-{"group": 1, "id": u'romanian pop'}
-{"group": 1, "id": u'romanian rock'}
-{"group": 1, "id": u'romantic'}
-{"group": 1, "id": u'romantico'}
-{"group": 1, "id": u'roots reggae'}
-{"group": 1, "id": u'roots rock'}
-{"group": 1, "id": u'rosary'}
-{"group": 1, "id": u'rumba'}
-{"group": 1, "id": u'russelater'}
-{"group": 1, "id": u'russian alternative'}
-{"group": 1, "id": u'russian folk'}
-{"group": 1, "id": u'russian hip hop'}
-{"group": 1, "id": u'russian pop'}
-{"group": 1, "id": u'russian punk'}
-{"group": 1, "id": u'russian rock'}
-{"group": 1, "id": u'russiavision'}
-{"group": 1, "id": u'rva indie'}
-{"group": 1, "id": u'salsa international'}
-{"group": 1, "id": u'salsa'}
-{"group": 1, "id": u'samba'}
-{"group": 1, "id": u'samba-enredo'}
-{"group": 1, "id": u'schlager'}
-{"group": 1, "id": u'schranz'}
-{"group": 1, "id": u'scorecore'}
-{"group": 1, "id": u'scottish rock'}
-{"group": 1, "id": u'scratch'}
-{"group": 1, "id": u'screamo punk'}
-{"group": 1, "id": u'screamo'}
-{"group": 1, "id": u'screamocore'}
-{"group": 1, "id": u'seattle indie'}
-{"group": 1, "id": u'sega'}
-{"group": 1, "id": u'semba'}
-{"group": 1, "id": u'serialism'}
-{"group": 1, "id": u'sertanejo tradicional'}
-{"group": 1, "id": u'sertanejo universitario'}
-{"group": 1, "id": u'sertanejo'}
-{"group": 1, "id": u'shanty'}
-{"group": 1, "id": u'sheffield indie'}
-{"group": 1, "id": u'shibuya-kei'}
-{"group": 1, "id": u'shimmer pop'}
-{"group": 1, "id": u'shimmer psych'}
-{"group": 1, "id": u'shiver pop'}
-{"group": 1, "id": u'shoegaze'}
-{"group": 1, "id": u'show tunes'}
-{"group": 1, "id": u'singaporean pop'}
-{"group": 1, "id": u'singer-songwriter'}
-{"group": 1, "id": u'ska punk'}
-{"group": 1, "id": u'ska revival'}
-{"group": 1, "id": u'ska'}
-{"group": 1, "id": u'skate punk'}
-{"group": 1, "id": u'skiffle'}
-{"group": 1, "id": u'skinhead oi'}
-{"group": 1, "id": u'skinhead reggae'}
-{"group": 1, "id": u'skweee'}
-{"group": 1, "id": u'sky room'}
-{"group": 1, "id": u'slam death metal'}
-{"group": 1, "id": u'slash punk'}
-{"group": 1, "id": u'slavic metal'}
-{"group": 1, "id": u'slc indie'}
-{"group": 1, "id": u'sleaze rock'}
-{"group": 1, "id": u'sleep'}
-{"group": 1, "id": u'slovak hip hop'}
-{"group": 1, "id": u'slovak pop'}
-{"group": 1, "id": u'slovenian rock'}
-{"group": 1, "id": u'slow core'}
-{"group": 1, "id": u'slow game'}
-{"group": 1, "id": u'sludge metal'}
-{"group": 1, "id": u'smooth jazz'}
-{"group": 1, "id": u'smooth urban r&b'}
-{"group": 1, "id": u'soca'}
-{"group": 1, "id": u'soda pop'}
-{"group": 1, "id": u'soft rock'}
-{"group": 1, "id": u'solipsynthm'}
-{"group": 1, "id": u'song poem'}
-{"group": 1, "id": u'soukous'}
-{"group": 1, "id": u'soul blues'}
-{"group": 1, "id": u'soul flow'}
-{"group": 1, "id": u'soul jazz'}
-{"group": 1, "id": u'soul'}
-{"group": 1, "id": u'soundtrack'}
-{"group": 1, "id": u'south african jazz'}
-{"group": 1, "id": u'southern gospel'}
-{"group": 1, "id": u'southern hip hop'}
-{"group": 1, "id": u'southern rock'}
-{"group": 1, "id": u'southern soul blues'}
-{"group": 1, "id": u'southern soul'}
-{"group": 1, "id": u'space rock'}
-{"group": 1, "id": u'spanish classical'}
-{"group": 1, "id": u'spanish folk'}
-{"group": 1, "id": u'spanish hip hop'}
-{"group": 1, "id": u'spanish indie pop'}
-{"group": 1, "id": u'spanish indie rock'}
-{"group": 1, "id": u'spanish invasion'}
-{"group": 1, "id": u'spanish new wave'}
-{"group": 1, "id": u'spanish noise pop'}
-{"group": 1, "id": u'spanish pop rock'}
-{"group": 1, "id": u'spanish pop'}
-{"group": 1, "id": u'spanish punk'}
-{"group": 1, "id": u'spanish reggae'}
-{"group": 1, "id": u'spanish rock'}
-{"group": 1, "id": u'speed garage'}
-{"group": 1, "id": u'speed metal'}
-{"group": 1, "id": u'speedcore'}
-{"group": 1, "id": u'spytrack'}
-{"group": 1, "id": u'steampunk'}
-{"group": 1, "id": u'steelpan'}
-{"group": 1, "id": u'stl indie'}
-{"group": 1, "id": u'stomp and flutter'}
-{"group": 1, "id": u'stomp and holler'}
-{"group": 1, "id": u'stomp and whittle'}
-{"group": 1, "id": u'stomp pop'}
-{"group": 1, "id": u'stoner metal'}
-{"group": 1, "id": u'stoner rock'}
-{"group": 1, "id": u'straight edge'}
-{"group": 1, "id": u'stride'}
-{"group": 1, "id": u'string band'}
-{"group": 1, "id": u'string folk'}
-{"group": 1, "id": u'string quartet'}
-{"group": 1, "id": u'strut'}
-{"group": 1, "id": u'substep'}
-{"group": 1, "id": u'sunset lounge'}
-{"group": 1, "id": u'suomi rock'}
-{"group": 1, "id": u'surf music'}
-{"group": 1, "id": u'swamp blues'}
-{"group": 1, "id": u'swamp pop'}
-{"group": 1, "id": u'swedish alternative rock'}
-{"group": 1, "id": u'swedish eurodance'}
-{"group": 1, "id": u'swedish folk pop'}
-{"group": 1, "id": u'swedish hard rock'}
-{"group": 1, "id": u'swedish hip hop'}
-{"group": 1, "id": u'swedish idol pop'}
-{"group": 1, "id": u'swedish indie pop'}
-{"group": 1, "id": u'swedish indie rock'}
-{"group": 1, "id": u'swedish jazz orkester'}
-{"group": 1, "id": u'swedish jazz'}
-{"group": 1, "id": u'swedish metal'}
-{"group": 1, "id": u'swedish pop punk'}
-{"group": 1, "id": u'swedish pop'}
-{"group": 1, "id": u'swedish prog'}
-{"group": 1, "id": u'swedish punk'}
-{"group": 1, "id": u'swedish reggae'}
-{"group": 1, "id": u'swedish synthpop'}
-{"group": 1, "id": u'swing'}
-{"group": 1, "id": u'swiss hip hop'}
-{"group": 1, "id": u'swiss rock'}
-{"group": 1, "id": u'symphonic black metal'}
-{"group": 1, "id": u'symphonic metal'}
-{"group": 1, "id": u'symphonic rock'}
-{"group": 1, "id": u'synthpop'}
-{"group": 1, "id": u'taiwanese pop'}
-{"group": 1, "id": u'talent show'}
-{"group": 1, "id": u'tango'}
-{"group": 1, "id": u'tanzlmusi'}
-{"group": 1, "id": u'tech house'}
-{"group": 1, "id": u'technical brutal death metal'}
-{"group": 1, "id": u'technical death metal'}
-{"group": 1, "id": u'techno'}
-{"group": 1, "id": u'teen pop'}
-{"group": 1, "id": u'tejano'}
-{"group": 1, "id": u'tekno'}
-{"group": 1, "id": u'terrorcore'}
-{"group": 1, "id": u'texas blues'}
-{"group": 1, "id": u'texas country'}
-{"group": 1, "id": u'thai idol'}
-{"group": 1, "id": u'thai indie'}
-{"group": 1, "id": u'thai pop'}
-{"group": 1, "id": u'theme'}
-{"group": 1, "id": u'thrash core'}
-{"group": 1, "id": u'thrash metal'}
-{"group": 1, "id": u'thrash-groove metal'}
-{"group": 1, "id": u'tibetan'}
-{"group": 1, "id": u'tico'}
-{"group": 1, "id": u'timba'}
-{"group": 1, "id": u'tin pan alley'}
-{"group": 1, "id": u'tone'}
-{"group": 1, "id": u'tracestep'}
-{"group": 1, "id": u'traditional blues'}
-{"group": 1, "id": u'traditional british folk'}
-{"group": 1, "id": u'traditional country'}
-{"group": 1, "id": u'traditional folk'}
-{"group": 1, "id": u'traditional funk'}
-{"group": 1, "id": u'traditional reggae'}
-{"group": 1, "id": u'traditional rockabilly'}
-{"group": 1, "id": u'traditional scottish folk'}
-{"group": 1, "id": u'traditional ska'}
-{"group": 1, "id": u'traditional soul'}
-{"group": 1, "id": u'traditional swing'}
-{"group": 1, "id": u'trance'}
-{"group": 1, "id": u'trap francais'}
-{"group": 1, "id": u'trap latino'}
-{"group": 1, "id": u'trap music'}
-{"group": 1, "id": u'trash rock'}
-{"group": 1, "id": u'triangle indie'}
-{"group": 1, "id": u'tribal house'}
-{"group": 1, "id": u'tribute'}
-{"group": 1, "id": u'trip hop'}
-{"group": 1, "id": u'tropical house'}
-{"group": 1, "id": u'tropical'}
-{"group": 1, "id": u'trova'}
-{"group": 1, "id": u'turbo folk'}
-{"group": 1, "id": u'turkish alternative'}
-{"group": 1, "id": u'turkish classical'}
-{"group": 1, "id": u'turkish folk'}
-{"group": 1, "id": u'turkish hip hop'}
-{"group": 1, "id": u'turkish jazz'}
-{"group": 1, "id": u'turkish pop'}
-{"group": 1, "id": u'turkish rock'}
-{"group": 1, "id": u'turntablism'}
-{"group": 1, "id": u'twee indie pop'}
-{"group": 1, "id": u'twee pop'}
-{"group": 1, "id": u'twin cities indie'}
-{"group": 1, "id": u'tzadik'}
-{"group": 1, "id": u'ugandan pop'}
-{"group": 1, "id": u'uk drill'}
-{"group": 1, "id": u'uk dub'}
-{"group": 1, "id": u'uk funky'}
-{"group": 1, "id": u'uk garage'}
-{"group": 1, "id": u'uk hip hop'}
-{"group": 1, "id": u'uk post-punk'}
-{"group": 1, "id": u'ukrainian rock'}
-{"group": 1, "id": u'ukulele'}
-{"group": 1, "id": u'unblack metal'}
-{"group": 1, "id": u'underground hip hop'}
-{"group": 1, "id": u'underground latin hip hop'}
-{"group": 1, "id": u'underground pop rap'}
-{"group": 1, "id": u'underground power pop'}
-{"group": 1, "id": u'underground rap'}
-{"group": 1, "id": u'uplifting trance'}
-{"group": 1, "id": u'urban contemporary'}
-{"group": 1, "id": u'usbm'}
-{"group": 1, "id": u'vallenato'}
-{"group": 1, "id": u'vancouver indie'}
-{"group": 1, "id": u'vapor house'}
-{"group": 1, "id": u'vapor pop'}
-{"group": 1, "id": u'vapor soul'}
-{"group": 1, "id": u'vapor twitch'}
-{"group": 1, "id": u'vaporwave'}
-{"group": 1, "id": u'vegan straight edge'}
-{"group": 1, "id": u'vegas indie'}
-{"group": 1, "id": u'velha guarda'}
-{"group": 1, "id": u'venezuelan rock'}
-{"group": 1, "id": u'video game music'}
-{"group": 1, "id": u'vienna indie'}
-{"group": 1, "id": u'viking metal'}
-{"group": 1, "id": u'villancicos'}
-{"group": 1, "id": u'vintage chanson'}
-{"group": 1, "id": u'vintage country folk'}
-{"group": 1, "id": u'vintage french electronic'}
-{"group": 1, "id": u'vintage gospel'}
-{"group": 1, "id": u'vintage italian soundtrack'}
-{"group": 1, "id": u'vintage jazz'}
-{"group": 1, "id": u'vintage rockabilly'}
-{"group": 1, "id": u'vintage schlager'}
-{"group": 1, "id": u'vintage swedish pop'}
-{"group": 1, "id": u'vintage swing'}
-{"group": 1, "id": u'vintage tango'}
-{"group": 1, "id": u'vintage western'}
-{"group": 1, "id": u'violin'}
-{"group": 1, "id": u'viral pop'}
-{"group": 1, "id": u'visual kei'}
-{"group": 1, "id": u'vocal house'}
-{"group": 1, "id": u'vocal jazz'}
-{"group": 1, "id": u'vocaloid'}
-{"group": 1, "id": u'voidgaze'}
-{"group": 1, "id": u'volksmusik'}
-{"group": 1, "id": u'warm drone'}
-{"group": 1, "id": u'welsh rock'}
-{"group": 1, "id": u'west african jazz'}
-{"group": 1, "id": u'west coast rap'}
-{"group": 1, "id": u'west coast trap'}
-{"group": 1, "id": u'western swing'}
-{"group": 1, "id": u'wind ensemble'}
-{"group": 1, "id": u'witch house'}
-{"group": 1, "id": u'wonky'}
-{"group": 1, "id": u'world chill'}
-{"group": 1, "id": u'world fusion'}
-{"group": 1, "id": u'world meditation'}
-{"group": 1, "id": u'world worship'}
-{"group": 1, "id": u'world'}
-{"group": 1, "id": u'worship'}
-{"group": 1, "id": u'wrestling'}
-{"group": 1, "id": u'ye ye'}
-{"group": 1, "id": u'yoik'}
-{"group": 1, "id": u'yugoslav rock'}
-{"group": 1, "id": u'zapstep'}
-{"group": 1, "id": u'zeuhl'}
-{"group": 1, "id": u'zillertal'}
-{"group": 1, "id": u'zim'}
-{"group": 1, "id": u'zolo'}
-{"group": 1, "id": u'zouglou'}
-{"group": 1, "id": u'zouk riddim'}
-{"group": 1, "id": u'zouk'}
-{"group": 1, "id": u'zydeco'}
+{"group": 1, "id": "children's music"}
+{"group": 1, "id": "traditional rock 'n roll"}
+{"group": 1, "id": "a cappella"}
+{"group": 1, "id": "abstract beats"}
+{"group": 1, "id": "abstract hip hop"}
+{"group": 1, "id": "abstract idm"}
+{"group": 1, "id": "abstract"}
+{"group": 1, "id": "abstractro"}
+{"group": 1, "id": "accordion"}
+{"group": 1, "id": "acid house"}
+{"group": 1, "id": "acid jazz"}
+{"group": 1, "id": "acid techno"}
+{"group": 1, "id": "acousmatic"}
+{"group": 1, "id": "acoustic blues"}
+{"group": 1, "id": "acoustic pop"}
+{"group": 1, "id": "adult standards"}
+{"group": 1, "id": "african gospel"}
+{"group": 1, "id": "african percussion"}
+{"group": 1, "id": "african rock"}
+{"group": 1, "id": "afrikaans"}
+{"group": 1, "id": "afrobeat"}
+{"group": 1, "id": "afrobeats"}
+{"group": 1, "id": "aggrotech"}
+{"group": 1, "id": "albanian pop"}
+{"group": 1, "id": "album rock"}
+{"group": 1, "id": "albuquerque indie"}
+{"group": 1, "id": "alt-indie rock"}
+{"group": 1, "id": "alternative americana"}
+{"group": 1, "id": "alternative ccm"}
+{"group": 1, "id": "alternative country"}
+{"group": 1, "id": "alternative dance"}
+{"group": 1, "id": "alternative emo"}
+{"group": 1, "id": "alternative hardcore"}
+{"group": 1, "id": "alternative hip hop"}
+{"group": 1, "id": "alternative metal"}
+{"group": 1, "id": "alternative metalcore"}
+{"group": 1, "id": "alternative pop rock"}
+{"group": 1, "id": "alternative pop"}
+{"group": 1, "id": "alternative r&b"}
+{"group": 1, "id": "alternative rock"}
+{"group": 1, "id": "alternative roots rock"}
+{"group": 1, "id": "ambeat"}
+{"group": 1, "id": "ambient dub techno"}
+{"group": 1, "id": "ambient fusion"}
+{"group": 1, "id": "ambient idm"}
+{"group": 1, "id": "ambient psychill"}
+{"group": 1, "id": "ambient"}
+{"group": 1, "id": "anarcho-punk"}
+{"group": 1, "id": "andean"}
+{"group": 1, "id": "anime score"}
+{"group": 1, "id": "anime"}
+{"group": 1, "id": "anthem emo"}
+{"group": 1, "id": "anthem worship"}
+{"group": 1, "id": "anti-folk"}
+{"group": 1, "id": "antiviral pop"}
+{"group": 1, "id": "appalachian folk"}
+{"group": 1, "id": "arab folk"}
+{"group": 1, "id": "arab pop"}
+{"group": 1, "id": "arabesk"}
+{"group": 1, "id": "argentine indie"}
+{"group": 1, "id": "argentine reggae"}
+{"group": 1, "id": "argentine rock"}
+{"group": 1, "id": "armenian folk"}
+{"group": 1, "id": "art rock"}
+{"group": 1, "id": "athens indie"}
+{"group": 1, "id": "atmospheric black metal"}
+{"group": 1, "id": "atmospheric post rock"}
+{"group": 1, "id": "atmospheric post-metal"}
+{"group": 1, "id": "aussietronica"}
+{"group": 1, "id": "austindie"}
+{"group": 1, "id": "australian alternative rock"}
+{"group": 1, "id": "australian country"}
+{"group": 1, "id": "australian dance"}
+{"group": 1, "id": "australian hip hop"}
+{"group": 1, "id": "australian indie"}
+{"group": 1, "id": "australian pop"}
+{"group": 1, "id": "austrian hip hop"}
+{"group": 1, "id": "austropop"}
+{"group": 1, "id": "avant-garde jazz"}
+{"group": 1, "id": "avant-garde"}
+{"group": 1, "id": "avantgarde metal"}
+{"group": 1, "id": "axe"}
+{"group": 1, "id": "azonto"}
+{"group": 1, "id": "azontobeats"}
+{"group": 1, "id": "bachata"}
+{"group": 1, "id": "baile funk"}
+{"group": 1, "id": "balearic"}
+{"group": 1, "id": "balkan brass"}
+{"group": 1, "id": "ballroom"}
+{"group": 1, "id": "banda"}
+{"group": 1, "id": "bangla"}
+{"group": 1, "id": "barbershop"}
+{"group": 1, "id": "barnemusikk"}
+{"group": 1, "id": "baroque ensemble"}
+{"group": 1, "id": "baroque"}
+{"group": 1, "id": "basque rock"}
+{"group": 1, "id": "bass music"}
+{"group": 1, "id": "bass trap"}
+{"group": 1, "id": "bass trip"}
+{"group": 1, "id": "bassline"}
+{"group": 1, "id": "bay area hip hop"}
+{"group": 1, "id": "bay area indie"}
+{"group": 1, "id": "beach music"}
+{"group": 1, "id": "beatdown"}
+{"group": 1, "id": "beats"}
+{"group": 1, "id": "bebop"}
+{"group": 1, "id": "belgian indie"}
+{"group": 1, "id": "belgian rock"}
+{"group": 1, "id": "belly dance"}
+{"group": 1, "id": "belorush"}
+{"group": 1, "id": "benga"}
+{"group": 1, "id": "bhangra"}
+{"group": 1, "id": "big band"}
+{"group": 1, "id": "big beat"}
+{"group": 1, "id": "big room"}
+{"group": 1, "id": "black death"}
+{"group": 1, "id": "black metal"}
+{"group": 1, "id": "black sludge"}
+{"group": 1, "id": "black thrash"}
+{"group": 1, "id": "blackgaze"}
+{"group": 1, "id": "blaskapelle"}
+{"group": 1, "id": "bluegrass"}
+{"group": 1, "id": "blues"}
+{"group": 1, "id": "blues-rock guitar"}
+{"group": 1, "id": "blues-rock"}
+{"group": 1, "id": "bmore"}
+{"group": 1, "id": "bolero"}
+{"group": 1, "id": "boogaloo"}
+{"group": 1, "id": "boogie-woogie"}
+{"group": 1, "id": "bossa nova jazz"}
+{"group": 1, "id": "bossa nova"}
+{"group": 1, "id": "boston rock"}
+{"group": 1, "id": "bounce"}
+{"group": 1, "id": "bouncy house"}
+{"group": 1, "id": "bow pop"}
+{"group": 1, "id": "boy band"}
+{"group": 1, "id": "brass band"}
+{"group": 1, "id": "brass ensemble"}
+{"group": 1, "id": "brazilian ccm"}
+{"group": 1, "id": "brazilian composition"}
+{"group": 1, "id": "brazilian gospel"}
+{"group": 1, "id": "brazilian hip hop"}
+{"group": 1, "id": "brazilian indie"}
+{"group": 1, "id": "brazilian punk"}
+{"group": 1, "id": "breakbeat"}
+{"group": 1, "id": "breakcore"}
+{"group": 1, "id": "brega"}
+{"group": 1, "id": "breton folk"}
+{"group": 1, "id": "brill building pop"}
+{"group": 1, "id": "british alternative rock"}
+{"group": 1, "id": "british blues"}
+{"group": 1, "id": "british brass band"}
+{"group": 1, "id": "british dance band"}
+{"group": 1, "id": "british folk"}
+{"group": 1, "id": "british indie rock"}
+{"group": 1, "id": "british invasion"}
+{"group": 1, "id": "britpop"}
+{"group": 1, "id": "broadway"}
+{"group": 1, "id": "broken beat"}
+{"group": 1, "id": "brooklyn indie"}
+{"group": 1, "id": "brostep"}
+{"group": 1, "id": "brutal death metal"}
+{"group": 1, "id": "brutal deathcore"}
+{"group": 1, "id": "bubble trance"}
+{"group": 1, "id": "bubblegum dance"}
+{"group": 1, "id": "bubblegum pop"}
+{"group": 1, "id": "bulgarian folk"}
+{"group": 1, "id": "bulgarian rock"}
+{"group": 1, "id": "byzantine"}
+{"group": 1, "id": "c-pop"}
+{"group": 1, "id": "c64"}
+{"group": 1, "id": "c86"}
+{"group": 1, "id": "cabaret"}
+{"group": 1, "id": "cajun"}
+{"group": 1, "id": "calypso"}
+{"group": 1, "id": "canadian country"}
+{"group": 1, "id": "canadian hip hop"}
+{"group": 1, "id": "canadian indie"}
+{"group": 1, "id": "canadian metal"}
+{"group": 1, "id": "canadian pop"}
+{"group": 1, "id": "candy pop"}
+{"group": 1, "id": "cantautor"}
+{"group": 1, "id": "cante flamenco"}
+{"group": 1, "id": "canterbury scene"}
+{"group": 1, "id": "cantopop"}
+{"group": 1, "id": "canzone napoletana"}
+{"group": 1, "id": "carnatic"}
+{"group": 1, "id": "carnaval"}
+{"group": 1, "id": "catalan folk"}
+{"group": 1, "id": "catstep"}
+{"group": 1, "id": "caucasian folk"}
+{"group": 1, "id": "ccm"}
+{"group": 1, "id": "ceilidh"}
+{"group": 1, "id": "cello"}
+{"group": 1, "id": "celtic punk"}
+{"group": 1, "id": "celtic rock"}
+{"group": 1, "id": "celtic"}
+{"group": 1, "id": "chalga"}
+{"group": 1, "id": "chamame"}
+{"group": 1, "id": "chamber choir"}
+{"group": 1, "id": "chamber pop"}
+{"group": 1, "id": "chamber psych"}
+{"group": 1, "id": "channel pop"}
+{"group": 1, "id": "chanson quebecois"}
+{"group": 1, "id": "chanson"}
+{"group": 1, "id": "chaotic black metal"}
+{"group": 1, "id": "chaotic hardcore"}
+{"group": 1, "id": "charred death"}
+{"group": 1, "id": "chicago blues"}
+{"group": 1, "id": "chicago house"}
+{"group": 1, "id": "chicago indie"}
+{"group": 1, "id": "chicago soul"}
+{"group": 1, "id": "chicano rap"}
+{"group": 1, "id": "chilean rock"}
+{"group": 1, "id": "chill groove"}
+{"group": 1, "id": "chill lounge"}
+{"group": 1, "id": "chill-out trance"}
+{"group": 1, "id": "chillhop"}
+{"group": 1, "id": "chillstep"}
+{"group": 1, "id": "chillwave"}
+{"group": 1, "id": "chinese experimental"}
+{"group": 1, "id": "chinese indie rock"}
+{"group": 1, "id": "chinese opera"}
+{"group": 1, "id": "chinese traditional"}
+{"group": 1, "id": "chiptune"}
+{"group": 1, "id": "choral"}
+{"group": 1, "id": "choro"}
+{"group": 1, "id": "christelijk"}
+{"group": 1, "id": "christian alternative rock"}
+{"group": 1, "id": "christian dance"}
+{"group": 1, "id": "christian hardcore"}
+{"group": 1, "id": "christian hip hop"}
+{"group": 1, "id": "christian metal"}
+{"group": 1, "id": "christian music"}
+{"group": 1, "id": "christian punk"}
+{"group": 1, "id": "christian relaxative"}
+{"group": 1, "id": "christian rock"}
+{"group": 1, "id": "christian uplift"}
+{"group": 1, "id": "cinematic dubstep"}
+{"group": 1, "id": "clarinet"}
+{"group": 1, "id": "classic afrobeat"}
+{"group": 1, "id": "classic belgian pop"}
+{"group": 1, "id": "classic chinese pop"}
+{"group": 1, "id": "classic colombian pop"}
+{"group": 1, "id": "classic czech pop"}
+{"group": 1, "id": "classic danish pop"}
+{"group": 1, "id": "classic dutch pop"}
+{"group": 1, "id": "classic eurovision"}
+{"group": 1, "id": "classic finnish pop"}
+{"group": 1, "id": "classic finnish rock"}
+{"group": 1, "id": "classic french pop"}
+{"group": 1, "id": "classic funk rock"}
+{"group": 1, "id": "classic garage rock"}
+{"group": 1, "id": "classic icelandic pop"}
+{"group": 1, "id": "classic italian pop"}
+{"group": 1, "id": "classic norwegian pop"}
+{"group": 1, "id": "classic peruvian pop"}
+{"group": 1, "id": "classic polish pop"}
+{"group": 1, "id": "classic psychedelic rock"}
+{"group": 1, "id": "classic rock"}
+{"group": 1, "id": "classic russian pop"}
+{"group": 1, "id": "classic russian rock"}
+{"group": 1, "id": "classic schlager"}
+{"group": 1, "id": "classic soundtrack"}
+{"group": 1, "id": "classic swedish pop"}
+{"group": 1, "id": "classic turkish pop"}
+{"group": 1, "id": "classic venezuelan pop"}
+{"group": 1, "id": "classical flute"}
+{"group": 1, "id": "classical guitar"}
+{"group": 1, "id": "classical organ"}
+{"group": 1, "id": "classical performance"}
+{"group": 1, "id": "classical period"}
+{"group": 1, "id": "classical piano"}
+{"group": 1, "id": "classical"}
+{"group": 1, "id": "classify"}
+{"group": 1, "id": "college a cappella"}
+{"group": 1, "id": "college marching band"}
+{"group": 1, "id": "colombian rock"}
+{"group": 1, "id": "columbus ohio indie"}
+{"group": 1, "id": "comedy rock"}
+{"group": 1, "id": "comedy"}
+{"group": 1, "id": "comic"}
+{"group": 1, "id": "commons"}
+{"group": 1, "id": "complextro"}
+{"group": 1, "id": "composition d"}
+{"group": 1, "id": "compositional ambient"}
+{"group": 1, "id": "concert piano"}
+{"group": 1, "id": "consort"}
+{"group": 1, "id": "contemporary classical"}
+{"group": 1, "id": "contemporary composition"}
+{"group": 1, "id": "contemporary country"}
+{"group": 1, "id": "contemporary folk"}
+{"group": 1, "id": "contemporary jazz"}
+{"group": 1, "id": "contemporary post-bop"}
+{"group": 1, "id": "cool jazz"}
+{"group": 1, "id": "cornetas y tambores"}
+{"group": 1, "id": "corrosion"}
+{"group": 1, "id": "corsican folk"}
+{"group": 1, "id": "country blues"}
+{"group": 1, "id": "country dawn"}
+{"group": 1, "id": "country gospel"}
+{"group": 1, "id": "country road"}
+{"group": 1, "id": "country rock"}
+{"group": 1, "id": "country"}
+{"group": 1, "id": "coupe decale"}
+{"group": 1, "id": "coverchill"}
+{"group": 1, "id": "cowboy western"}
+{"group": 1, "id": "crack rock steady"}
+{"group": 1, "id": "croatian pop"}
+{"group": 1, "id": "crossover prog"}
+{"group": 1, "id": "crossover thrash"}
+{"group": 1, "id": "crunk"}
+{"group": 1, "id": "crust punk"}
+{"group": 1, "id": "cuban rumba"}
+{"group": 1, "id": "cubaton"}
+{"group": 1, "id": "cumbia funk"}
+{"group": 1, "id": "cumbia pop"}
+{"group": 1, "id": "cumbia sonidera"}
+{"group": 1, "id": "cumbia villera"}
+{"group": 1, "id": "cumbia"}
+{"group": 1, "id": "cyber metal"}
+{"group": 1, "id": "czech folk"}
+{"group": 1, "id": "czech hip hop"}
+{"group": 1, "id": "czech rock"}
+{"group": 1, "id": "dallas indie"}
+{"group": 1, "id": "dance pop"}
+{"group": 1, "id": "dance rock"}
+{"group": 1, "id": "dance-punk"}
+{"group": 1, "id": "dancehall"}
+{"group": 1, "id": "dangdut"}
+{"group": 1, "id": "danish hip hop"}
+{"group": 1, "id": "danish indie"}
+{"group": 1, "id": "danish jazz"}
+{"group": 1, "id": "danish pop rock"}
+{"group": 1, "id": "danish pop"}
+{"group": 1, "id": "dansband"}
+{"group": 1, "id": "danseband"}
+{"group": 1, "id": "dansktop"}
+{"group": 1, "id": "danspunk"}
+{"group": 1, "id": "dark ambient"}
+{"group": 1, "id": "dark black metal"}
+{"group": 1, "id": "dark cabaret"}
+{"group": 1, "id": "dark electro-industrial"}
+{"group": 1, "id": "dark hardcore"}
+{"group": 1, "id": "dark jazz"}
+{"group": 1, "id": "dark minimal techno"}
+{"group": 1, "id": "dark progressive house"}
+{"group": 1, "id": "dark psytrance"}
+{"group": 1, "id": "dark wave"}
+{"group": 1, "id": "darkstep"}
+{"group": 1, "id": "death core"}
+{"group": 1, "id": "death metal"}
+{"group": 1, "id": "deathgrind"}
+{"group": 1, "id": "deep acoustic pop"}
+{"group": 1, "id": "deep adult standards"}
+{"group": 1, "id": "deep ambient"}
+{"group": 1, "id": "deep australian indie"}
+{"group": 1, "id": "deep big room"}
+{"group": 1, "id": "deep brazilian pop"}
+{"group": 1, "id": "deep breakcore"}
+{"group": 1, "id": "deep canadian indie"}
+{"group": 1, "id": "deep ccm"}
+{"group": 1, "id": "deep cello"}
+{"group": 1, "id": "deep chill"}
+{"group": 1, "id": "deep chill-out"}
+{"group": 1, "id": "deep chiptune"}
+{"group": 1, "id": "deep christian rock"}
+{"group": 1, "id": "deep classic garage rock"}
+{"group": 1, "id": "deep comedy"}
+{"group": 1, "id": "deep contemporary country"}
+{"group": 1, "id": "deep cumbia sonidera"}
+{"group": 1, "id": "deep dance pop"}
+{"group": 1, "id": "deep danish pop"}
+{"group": 1, "id": "deep darkpsy"}
+{"group": 1, "id": "deep deep house"}
+{"group": 1, "id": "deep delta blues"}
+{"group": 1, "id": "deep disco house"}
+{"group": 1, "id": "deep disco"}
+{"group": 1, "id": "deep discofox"}
+{"group": 1, "id": "deep downtempo fusion"}
+{"group": 1, "id": "deep dub techno"}
+{"group": 1, "id": "deep dutch hip hop"}
+{"group": 1, "id": "deep east coast hip hop"}
+{"group": 1, "id": "deep euro house"}
+{"group": 1, "id": "deep filthstep"}
+{"group": 1, "id": "deep folk metal"}
+{"group": 1, "id": "deep free jazz"}
+{"group": 1, "id": "deep freestyle"}
+{"group": 1, "id": "deep full on"}
+{"group": 1, "id": "deep funk carioca"}
+{"group": 1, "id": "deep funk house"}
+{"group": 1, "id": "deep funk"}
+{"group": 1, "id": "deep g funk"}
+{"group": 1, "id": "deep german hip hop"}
+{"group": 1, "id": "deep german indie"}
+{"group": 1, "id": "deep german jazz"}
+{"group": 1, "id": "deep german pop rock"}
+{"group": 1, "id": "deep german punk"}
+{"group": 1, "id": "deep gothic post-punk"}
+{"group": 1, "id": "deep groove house"}
+{"group": 1, "id": "deep happy hardcore"}
+{"group": 1, "id": "deep hardcore punk"}
+{"group": 1, "id": "deep hardcore"}
+{"group": 1, "id": "deep hardstyle"}
+{"group": 1, "id": "deep house"}
+{"group": 1, "id": "deep indian pop"}
+{"group": 1, "id": "deep indie pop"}
+{"group": 1, "id": "deep indie r&b"}
+{"group": 1, "id": "deep indie rock"}
+{"group": 1, "id": "deep indie singer-songwriter"}
+{"group": 1, "id": "deep italo disco"}
+{"group": 1, "id": "deep jazz fusion"}
+{"group": 1, "id": "deep jazz guitar"}
+{"group": 1, "id": "deep jazz piano"}
+{"group": 1, "id": "deep latin alternative"}
+{"group": 1, "id": "deep latin christian"}
+{"group": 1, "id": "deep latin hip hop"}
+{"group": 1, "id": "deep liquid bass"}
+{"group": 1, "id": "deep liquid"}
+{"group": 1, "id": "deep melodic death metal"}
+{"group": 1, "id": "deep melodic euro house"}
+{"group": 1, "id": "deep melodic hard rock"}
+{"group": 1, "id": "deep melodic metalcore"}
+{"group": 1, "id": "deep minimal techno"}
+{"group": 1, "id": "deep motown"}
+{"group": 1, "id": "deep neo-synthpop"}
+{"group": 1, "id": "deep new americana"}
+{"group": 1, "id": "deep new wave"}
+{"group": 1, "id": "deep nordic folk"}
+{"group": 1, "id": "deep norteno"}
+{"group": 1, "id": "deep northern soul"}
+{"group": 1, "id": "deep nz indie"}
+{"group": 1, "id": "deep opera"}
+{"group": 1, "id": "deep orchestral"}
+{"group": 1, "id": "deep orgcore"}
+{"group": 1, "id": "deep pop edm"}
+{"group": 1, "id": "deep pop emo"}
+{"group": 1, "id": "deep pop punk"}
+{"group": 1, "id": "deep pop r&b"}
+{"group": 1, "id": "deep power-pop punk"}
+{"group": 1, "id": "deep progressive house"}
+{"group": 1, "id": "deep progressive trance"}
+{"group": 1, "id": "deep psychobilly"}
+{"group": 1, "id": "deep psytrance"}
+{"group": 1, "id": "deep punk rock"}
+{"group": 1, "id": "deep ragga"}
+{"group": 1, "id": "deep rai"}
+{"group": 1, "id": "deep regional mexican"}
+{"group": 1, "id": "deep smooth jazz"}
+{"group": 1, "id": "deep soft rock"}
+{"group": 1, "id": "deep soul house"}
+{"group": 1, "id": "deep soundtrack"}
+{"group": 1, "id": "deep southern soul"}
+{"group": 1, "id": "deep southern trap"}
+{"group": 1, "id": "deep space rock"}
+{"group": 1, "id": "deep string quartet"}
+{"group": 1, "id": "deep sunset lounge"}
+{"group": 1, "id": "deep surf music"}
+{"group": 1, "id": "deep swedish hip hop"}
+{"group": 1, "id": "deep swedish indie pop"}
+{"group": 1, "id": "deep symphonic black metal"}
+{"group": 1, "id": "deep taiwanese pop"}
+{"group": 1, "id": "deep talent show"}
+{"group": 1, "id": "deep tech house"}
+{"group": 1, "id": "deep texas country"}
+{"group": 1, "id": "deep trap"}
+{"group": 1, "id": "deep tropical house"}
+{"group": 1, "id": "deep turkish pop"}
+{"group": 1, "id": "deep underground hip hop"}
+{"group": 1, "id": "deep uplifting trance"}
+{"group": 1, "id": "deep vocal house"}
+{"group": 1, "id": "deep vocal jazz"}
+{"group": 1, "id": "delta blues"}
+{"group": 1, "id": "demoscene"}
+{"group": 1, "id": "denver indie"}
+{"group": 1, "id": "depressive black metal"}
+{"group": 1, "id": "desert blues"}
+{"group": 1, "id": "desi hip hop"}
+{"group": 1, "id": "desi"}
+{"group": 1, "id": "destroy techno"}
+{"group": 1, "id": "detroit hip hop"}
+{"group": 1, "id": "detroit techno"}
+{"group": 1, "id": "didgeridoo"}
+{"group": 1, "id": "digital hardcore"}
+{"group": 1, "id": "dirty south rap"}
+{"group": 1, "id": "dirty texas rap"}
+{"group": 1, "id": "disco house"}
+{"group": 1, "id": "disco polo"}
+{"group": 1, "id": "disco"}
+{"group": 1, "id": "discofox"}
+{"group": 1, "id": "dixieland"}
+{"group": 1, "id": "djent"}
+{"group": 1, "id": "dominican pop"}
+{"group": 1, "id": "doo-wop"}
+{"group": 1, "id": "doom metal"}
+{"group": 1, "id": "doomcore"}
+{"group": 1, "id": "doujin"}
+{"group": 1, "id": "downtempo fusion"}
+{"group": 1, "id": "downtempo"}
+{"group": 1, "id": "drama"}
+{"group": 1, "id": "dream pop"}
+{"group": 1, "id": "dreamo"}
+{"group": 1, "id": "drift"}
+{"group": 1, "id": "drill and bass"}
+{"group": 1, "id": "drill"}
+{"group": 1, "id": "drone folk"}
+{"group": 1, "id": "drone metal"}
+{"group": 1, "id": "drone psych"}
+{"group": 1, "id": "drone"}
+{"group": 1, "id": "drum and bass"}
+{"group": 1, "id": "drumfunk"}
+{"group": 1, "id": "dub techno"}
+{"group": 1, "id": "dub"}
+{"group": 1, "id": "dubstep"}
+{"group": 1, "id": "dubsteppe"}
+{"group": 1, "id": "duranguense"}
+{"group": 1, "id": "dutch hip hop"}
+{"group": 1, "id": "dutch house"}
+{"group": 1, "id": "dutch pop"}
+{"group": 1, "id": "dutch rock"}
+{"group": 1, "id": "dwn trap"}
+{"group": 1, "id": "e6fi"}
+{"group": 1, "id": "early music ensemble"}
+{"group": 1, "id": "early music"}
+{"group": 1, "id": "east coast hip hop"}
+{"group": 1, "id": "easy listening"}
+{"group": 1, "id": "ebm"}
+{"group": 1, "id": "ectofolk"}
+{"group": 1, "id": "ecuadoria"}
+{"group": 1, "id": "edm"}
+{"group": 1, "id": "electric blues"}
+{"group": 1, "id": "electro bailando"}
+{"group": 1, "id": "electro dub"}
+{"group": 1, "id": "electro house"}
+{"group": 1, "id": "electro jazz"}
+{"group": 1, "id": "electro latino"}
+{"group": 1, "id": "electro swing"}
+{"group": 1, "id": "electro trash"}
+{"group": 1, "id": "electro"}
+{"group": 1, "id": "electro-industrial"}
+{"group": 1, "id": "electroacoustic improvisation"}
+{"group": 1, "id": "electroclash"}
+{"group": 1, "id": "electrofox"}
+{"group": 1, "id": "electronic trap"}
+{"group": 1, "id": "electronic"}
+{"group": 1, "id": "electronica"}
+{"group": 1, "id": "electronicore"}
+{"group": 1, "id": "electropowerpop"}
+{"group": 1, "id": "electropunk"}
+{"group": 1, "id": "emo punk"}
+{"group": 1, "id": "emo"}
+{"group": 1, "id": "enka"}
+{"group": 1, "id": "entehno"}
+{"group": 1, "id": "environmental"}
+{"group": 1, "id": "epicore"}
+{"group": 1, "id": "escape room"}
+{"group": 1, "id": "estonian pop"}
+{"group": 1, "id": "ethereal gothic"}
+{"group": 1, "id": "ethereal wave"}
+{"group": 1, "id": "etherpop"}
+{"group": 1, "id": "ethiopian pop"}
+{"group": 1, "id": "eurodance"}
+{"group": 1, "id": "europop"}
+{"group": 1, "id": "euroska"}
+{"group": 1, "id": "eurovision"}
+{"group": 1, "id": "exotica"}
+{"group": 1, "id": "experimental dubstep"}
+{"group": 1, "id": "experimental psych"}
+{"group": 1, "id": "experimental rock"}
+{"group": 1, "id": "experimental"}
+{"group": 1, "id": "fado"}
+{"group": 1, "id": "fake"}
+{"group": 1, "id": "fallen angel"}
+{"group": 1, "id": "faroese pop"}
+{"group": 1, "id": "fast melodic punk"}
+{"group": 1, "id": "fidget house"}
+{"group": 1, "id": "filmi"}
+{"group": 1, "id": "filter house"}
+{"group": 1, "id": "filthstep"}
+{"group": 1, "id": "fingerstyle"}
+{"group": 1, "id": "finnish dance pop"}
+{"group": 1, "id": "finnish hardcore"}
+{"group": 1, "id": "finnish hip hop"}
+{"group": 1, "id": "finnish indie"}
+{"group": 1, "id": "finnish jazz"}
+{"group": 1, "id": "finnish metal"}
+{"group": 1, "id": "finnish pop"}
+{"group": 1, "id": "flamenco"}
+{"group": 1, "id": "flick hop"}
+{"group": 1, "id": "float house"}
+{"group": 1, "id": "fluxwork"}
+{"group": 1, "id": "focus"}
+{"group": 1, "id": "folk metal"}
+{"group": 1, "id": "folk punk"}
+{"group": 1, "id": "folk rock"}
+{"group": 1, "id": "folk"}
+{"group": 1, "id": "folk-pop"}
+{"group": 1, "id": "folklore argentino"}
+{"group": 1, "id": "folkmusik"}
+{"group": 1, "id": "footwork"}
+{"group": 1, "id": "forro"}
+{"group": 1, "id": "fourth world"}
+{"group": 1, "id": "francoton"}
+{"group": 1, "id": "freak folk"}
+{"group": 1, "id": "freakbeat"}
+{"group": 1, "id": "free improvisation"}
+{"group": 1, "id": "free jazz"}
+{"group": 1, "id": "freestyle"}
+{"group": 1, "id": "french folk pop"}
+{"group": 1, "id": "french folk"}
+{"group": 1, "id": "french hip hop"}
+{"group": 1, "id": "french indie pop"}
+{"group": 1, "id": "french indietronica"}
+{"group": 1, "id": "french movie tunes"}
+{"group": 1, "id": "french pop"}
+{"group": 1, "id": "french punk"}
+{"group": 1, "id": "french reggae"}
+{"group": 1, "id": "french rock"}
+{"group": 1, "id": "full on"}
+{"group": 1, "id": "funeral doom"}
+{"group": 1, "id": "funk carioca"}
+{"group": 1, "id": "funk metal"}
+{"group": 1, "id": "funk rock"}
+{"group": 1, "id": "funk"}
+{"group": 1, "id": "funky breaks"}
+{"group": 1, "id": "funky tech house"}
+{"group": 1, "id": "future ambient"}
+{"group": 1, "id": "future funk"}
+{"group": 1, "id": "future garage"}
+{"group": 1, "id": "futurepop"}
+{"group": 1, "id": "g funk"}
+{"group": 1, "id": "gabba"}
+{"group": 1, "id": "galego"}
+{"group": 1, "id": "gamecore"}
+{"group": 1, "id": "gamelan"}
+{"group": 1, "id": "gangster rap"}
+{"group": 1, "id": "garage pop"}
+{"group": 1, "id": "garage psych"}
+{"group": 1, "id": "garage punk blues"}
+{"group": 1, "id": "garage punk"}
+{"group": 1, "id": "garage rock"}
+{"group": 1, "id": "gauze pop"}
+{"group": 1, "id": "gbvfi"}
+{"group": 1, "id": "geek folk"}
+{"group": 1, "id": "geek rock"}
+{"group": 1, "id": "german ccm"}
+{"group": 1, "id": "german hip hop"}
+{"group": 1, "id": "german indie"}
+{"group": 1, "id": "german metal"}
+{"group": 1, "id": "german oi"}
+{"group": 1, "id": "german pop rock"}
+{"group": 1, "id": "german pop"}
+{"group": 1, "id": "german punk"}
+{"group": 1, "id": "german show tunes"}
+{"group": 1, "id": "german street punk"}
+{"group": 1, "id": "german techno"}
+{"group": 1, "id": "ghazal"}
+{"group": 1, "id": "ghettotech"}
+{"group": 1, "id": "ghoststep"}
+{"group": 1, "id": "girl group"}
+{"group": 1, "id": "glam metal"}
+{"group": 1, "id": "glam rock"}
+{"group": 1, "id": "glitch beats"}
+{"group": 1, "id": "glitch hop"}
+{"group": 1, "id": "glitch"}
+{"group": 1, "id": "glitter trance"}
+{"group": 1, "id": "go-go"}
+{"group": 1, "id": "goa trance"}
+{"group": 1, "id": "goregrind"}
+{"group": 1, "id": "gospel blues"}
+{"group": 1, "id": "gospel reggae"}
+{"group": 1, "id": "gospel"}
+{"group": 1, "id": "gothic alternative"}
+{"group": 1, "id": "gothic americana"}
+{"group": 1, "id": "gothic doom"}
+{"group": 1, "id": "gothic metal"}
+{"group": 1, "id": "gothic post-punk"}
+{"group": 1, "id": "gothic rock"}
+{"group": 1, "id": "gothic symphonic metal"}
+{"group": 1, "id": "grave wave"}
+{"group": 1, "id": "greek hip hop"}
+{"group": 1, "id": "greek house"}
+{"group": 1, "id": "greek indie"}
+{"group": 1, "id": "grim death metal"}
+{"group": 1, "id": "grime"}
+{"group": 1, "id": "grindcore"}
+{"group": 1, "id": "grisly death metal"}
+{"group": 1, "id": "groove metal"}
+{"group": 1, "id": "groove room"}
+{"group": 1, "id": "grunge pop"}
+{"group": 1, "id": "grunge"}
+{"group": 1, "id": "grupera"}
+{"group": 1, "id": "guidance"}
+{"group": 1, "id": "gypsy jazz"}
+{"group": 1, "id": "hands up"}
+{"group": 1, "id": "happy hardcore"}
+{"group": 1, "id": "hard alternative"}
+{"group": 1, "id": "hard bop"}
+{"group": 1, "id": "hard glam"}
+{"group": 1, "id": "hard house"}
+{"group": 1, "id": "hard minimal techno"}
+{"group": 1, "id": "hard rock"}
+{"group": 1, "id": "hard stoner rock"}
+{"group": 1, "id": "hardcore breaks"}
+{"group": 1, "id": "hardcore hip hop"}
+{"group": 1, "id": "hardcore punk"}
+{"group": 1, "id": "hardcore techno"}
+{"group": 1, "id": "hardcore"}
+{"group": 1, "id": "hardstyle"}
+{"group": 1, "id": "harmonica blues"}
+{"group": 1, "id": "harp"}
+{"group": 1, "id": "harpsichord"}
+{"group": 1, "id": "hatecore"}
+{"group": 1, "id": "hauntology"}
+{"group": 1, "id": "hawaiian"}
+{"group": 1, "id": "healing"}
+{"group": 1, "id": "heavy alternative"}
+{"group": 1, "id": "heavy gothic rock"}
+{"group": 1, "id": "hebrew pop"}
+{"group": 1, "id": "highlife"}
+{"group": 1, "id": "hindustani classical"}
+{"group": 1, "id": "hip hop quebecois"}
+{"group": 1, "id": "hip hop tuga"}
+{"group": 1, "id": "hip hop"}
+{"group": 1, "id": "hip house"}
+{"group": 1, "id": "hip pop"}
+{"group": 1, "id": "hiplife"}
+{"group": 1, "id": "hoerspiel"}
+{"group": 1, "id": "hollywood"}
+{"group": 1, "id": "horror punk"}
+{"group": 1, "id": "horrorcore"}
+{"group": 1, "id": "house"}
+{"group": 1, "id": "hungarian hip hop"}
+{"group": 1, "id": "hungarian pop"}
+{"group": 1, "id": "hungarian rock"}
+{"group": 1, "id": "hyphy"}
+{"group": 1, "id": "icelandic pop"}
+{"group": 1, "id": "idol"}
+{"group": 1, "id": "indian classical"}
+{"group": 1, "id": "indian folk"}
+{"group": 1, "id": "indian pop"}
+{"group": 1, "id": "indian rock"}
+{"group": 1, "id": "indie anthem-folk"}
+{"group": 1, "id": "indie dream pop"}
+{"group": 1, "id": "indie emo"}
+{"group": 1, "id": "indie folk"}
+{"group": 1, "id": "indie fuzzpop"}
+{"group": 1, "id": "indie garage rock"}
+{"group": 1, "id": "indie jazz"}
+{"group": 1, "id": "indie pop rock"}
+{"group": 1, "id": "indie pop"}
+{"group": 1, "id": "indie poptimism"}
+{"group": 1, "id": "indie psych-pop"}
+{"group": 1, "id": "indie psych-rock"}
+{"group": 1, "id": "indie punk"}
+{"group": 1, "id": "indie r&b"}
+{"group": 1, "id": "indie rock"}
+{"group": 1, "id": "indie rockism"}
+{"group": 1, "id": "indie shoegaze"}
+{"group": 1, "id": "indie singer-songwriter"}
+{"group": 1, "id": "indiecoustica"}
+{"group": 1, "id": "indietronica"}
+{"group": 1, "id": "indonesian indie"}
+{"group": 1, "id": "indonesian pop"}
+{"group": 1, "id": "indorock"}
+{"group": 1, "id": "industrial metal"}
+{"group": 1, "id": "industrial rock"}
+{"group": 1, "id": "industrial"}
+{"group": 1, "id": "instrumental post rock"}
+{"group": 1, "id": "intelligent dance music"}
+{"group": 1, "id": "irish country"}
+{"group": 1, "id": "irish folk"}
+{"group": 1, "id": "irish indie"}
+{"group": 1, "id": "irish rock"}
+{"group": 1, "id": "iskelma"}
+{"group": 1, "id": "israeli rock"}
+{"group": 1, "id": "italian arena pop"}
+{"group": 1, "id": "italian disco"}
+{"group": 1, "id": "italian hip hop"}
+{"group": 1, "id": "italian indie pop"}
+{"group": 1, "id": "italian jazz"}
+{"group": 1, "id": "italian metal"}
+{"group": 1, "id": "italian pop rock"}
+{"group": 1, "id": "italian pop"}
+{"group": 1, "id": "italian progressive rock"}
+{"group": 1, "id": "italian punk"}
+{"group": 1, "id": "italo beats"}
+{"group": 1, "id": "italo dance"}
+{"group": 1, "id": "j-ambient"}
+{"group": 1, "id": "j-core"}
+{"group": 1, "id": "j-dance"}
+{"group": 1, "id": "j-idol"}
+{"group": 1, "id": "j-indie"}
+{"group": 1, "id": "j-metal"}
+{"group": 1, "id": "j-pop"}
+{"group": 1, "id": "j-poppunk"}
+{"group": 1, "id": "j-poprock"}
+{"group": 1, "id": "j-punk"}
+{"group": 1, "id": "j-rap"}
+{"group": 1, "id": "j-reggae"}
+{"group": 1, "id": "j-rock"}
+{"group": 1, "id": "jam band"}
+{"group": 1, "id": "jangle pop"}
+{"group": 1, "id": "jangle rock"}
+{"group": 1, "id": "japanese city pop"}
+{"group": 1, "id": "japanese jazztronica"}
+{"group": 1, "id": "japanese psychedelic"}
+{"group": 1, "id": "japanese r&b"}
+{"group": 1, "id": "japanese traditional"}
+{"group": 1, "id": "japanoise"}
+{"group": 1, "id": "jazz bass"}
+{"group": 1, "id": "jazz blues"}
+{"group": 1, "id": "jazz brass"}
+{"group": 1, "id": "jazz funk"}
+{"group": 1, "id": "jazz fusion"}
+{"group": 1, "id": "jazz metal"}
+{"group": 1, "id": "jazz orchestra"}
+{"group": 1, "id": "jazz trio"}
+{"group": 1, "id": "jazz"}
+{"group": 1, "id": "jig and reel"}
+{"group": 1, "id": "judaica"}
+{"group": 1, "id": "jug band"}
+{"group": 1, "id": "jump blues"}
+{"group": 1, "id": "jump up"}
+{"group": 1, "id": "jumpstyle"}
+{"group": 1, "id": "jungle"}
+{"group": 1, "id": "k-hop"}
+{"group": 1, "id": "k-indie"}
+{"group": 1, "id": "k-pop"}
+{"group": 1, "id": "k-rock"}
+{"group": 1, "id": "kabarett"}
+{"group": 1, "id": "karneval"}
+{"group": 1, "id": "kayokyoku"}
+{"group": 1, "id": "kc indie"}
+{"group": 1, "id": "kids dance party"}
+{"group": 1, "id": "kirtan"}
+{"group": 1, "id": "kiwi rock"}
+{"group": 1, "id": "kizomba"}
+{"group": 1, "id": "klapa"}
+{"group": 1, "id": "klezmer"}
+{"group": 1, "id": "kompa"}
+{"group": 1, "id": "korean pop"}
+{"group": 1, "id": "kraut rock"}
+{"group": 1, "id": "kuduro"}
+{"group": 1, "id": "kwaito house"}
+{"group": 1, "id": "kwaito"}
+{"group": 1, "id": "la indie"}
+{"group": 1, "id": "laboratorio"}
+{"group": 1, "id": "laiko"}
+{"group": 1, "id": "latin alternative"}
+{"group": 1, "id": "latin arena pop"}
+{"group": 1, "id": "latin christian"}
+{"group": 1, "id": "latin electronica"}
+{"group": 1, "id": "latin hip hop"}
+{"group": 1, "id": "latin jazz"}
+{"group": 1, "id": "latin metal"}
+{"group": 1, "id": "latin pop"}
+{"group": 1, "id": "latin"}
+{"group": 1, "id": "latvian pop"}
+{"group": 1, "id": "lds"}
+{"group": 1, "id": "leeds indie"}
+{"group": 1, "id": "levenslied"}
+{"group": 1, "id": "library music"}
+{"group": 1, "id": "liedermacher"}
+{"group": 1, "id": "lift kit"}
+{"group": 1, "id": "light music"}
+{"group": 1, "id": "lilith"}
+{"group": 1, "id": "liquid funk"}
+{"group": 1, "id": "lithumania"}
+{"group": 1, "id": "liturgical"}
+{"group": 1, "id": "lo star"}
+{"group": 1, "id": "lo-fi"}
+{"group": 1, "id": "louisiana blues"}
+{"group": 1, "id": "louisville indie"}
+{"group": 1, "id": "lounge"}
+{"group": 1, "id": "louvor"}
+{"group": 1, "id": "lovers rock"}
+{"group": 1, "id": "lowercase"}
+{"group": 1, "id": "luk thung"}
+{"group": 1, "id": "madchester"}
+{"group": 1, "id": "maghreb"}
+{"group": 1, "id": "magyar"}
+{"group": 1, "id": "makina"}
+{"group": 1, "id": "makossa"}
+{"group": 1, "id": "malagasy folk"}
+{"group": 1, "id": "malaysian pop"}
+{"group": 1, "id": "mallet"}
+{"group": 1, "id": "mambo"}
+{"group": 1, "id": "mande pop"}
+{"group": 1, "id": "mandible"}
+{"group": 1, "id": "mandopop"}
+{"group": 1, "id": "manele"}
+{"group": 1, "id": "mantra"}
+{"group": 1, "id": "marching band"}
+{"group": 1, "id": "mariachi"}
+{"group": 1, "id": "martial industrial"}
+{"group": 1, "id": "mashup"}
+{"group": 1, "id": "math pop"}
+{"group": 1, "id": "math rock"}
+{"group": 1, "id": "mathcore"}
+{"group": 1, "id": "mbalax"}
+{"group": 1, "id": "medieval rock"}
+{"group": 1, "id": "medieval"}
+{"group": 1, "id": "meditation"}
+{"group": 1, "id": "melancholia"}
+{"group": 1, "id": "melbourne bounce"}
+{"group": 1, "id": "mellow gold"}
+{"group": 1, "id": "melodic death metal"}
+{"group": 1, "id": "melodic hard rock"}
+{"group": 1, "id": "melodic hardcore"}
+{"group": 1, "id": "melodic metalcore"}
+{"group": 1, "id": "melodic power metal"}
+{"group": 1, "id": "melodic progressive metal"}
+{"group": 1, "id": "melodipop"}
+{"group": 1, "id": "memphis blues"}
+{"group": 1, "id": "memphis hip hop"}
+{"group": 1, "id": "memphis soul"}
+{"group": 1, "id": "merengue urbano"}
+{"group": 1, "id": "merengue"}
+{"group": 1, "id": "merseybeat"}
+{"group": 1, "id": "metal guitar"}
+{"group": 1, "id": "metal"}
+{"group": 1, "id": "metalcore"}
+{"group": 1, "id": "metropopolis"}
+{"group": 1, "id": "mexican indie"}
+{"group": 1, "id": "mexican rock-and-roll"}
+{"group": 1, "id": "mexican son"}
+{"group": 1, "id": "miami bass"}
+{"group": 1, "id": "michigan indie"}
+{"group": 1, "id": "microhouse"}
+{"group": 1, "id": "military band"}
+{"group": 1, "id": "minimal dub"}
+{"group": 1, "id": "minimal dubstep"}
+{"group": 1, "id": "minimal melodic techno"}
+{"group": 1, "id": "minimal tech house"}
+{"group": 1, "id": "minimal techno"}
+{"group": 1, "id": "minimal wave"}
+{"group": 1, "id": "minimal"}
+{"group": 1, "id": "mizrahi"}
+{"group": 1, "id": "mod revival"}
+{"group": 1, "id": "modern blues"}
+{"group": 1, "id": "modern classical"}
+{"group": 1, "id": "modern country rock"}
+{"group": 1, "id": "modern downshift"}
+{"group": 1, "id": "modern free jazz"}
+{"group": 1, "id": "modern performance"}
+{"group": 1, "id": "modern rock"}
+{"group": 1, "id": "modern southern rock"}
+{"group": 1, "id": "modern uplift"}
+{"group": 1, "id": "monastic"}
+{"group": 1, "id": "moombahton"}
+{"group": 1, "id": "morna"}
+{"group": 1, "id": "motivation"}
+{"group": 1, "id": "motown"}
+{"group": 1, "id": "movie tunes"}
+{"group": 1, "id": "mpb"}
+{"group": 1, "id": "musica nativista"}
+{"group": 1, "id": "musica para ninos"}
+{"group": 1, "id": "musiikkia lapsille"}
+{"group": 1, "id": "musique concrete"}
+{"group": 1, "id": "musique pour enfants"}
+{"group": 1, "id": "muziek voor kinderen"}
+{"group": 1, "id": "nasheed"}
+{"group": 1, "id": "nashville sound"}
+{"group": 1, "id": "necrogrind"}
+{"group": 1, "id": "neo classical metal"}
+{"group": 1, "id": "neo honky tonk"}
+{"group": 1, "id": "neo mellow"}
+{"group": 1, "id": "neo metal"}
+{"group": 1, "id": "neo soul"}
+{"group": 1, "id": "neo soul-jazz"}
+{"group": 1, "id": "neo-industrial rock"}
+{"group": 1, "id": "neo-pagan"}
+{"group": 1, "id": "neo-progressive"}
+{"group": 1, "id": "neo-psychedelic"}
+{"group": 1, "id": "neo-rockabilly"}
+{"group": 1, "id": "neo-singer-songwriter"}
+{"group": 1, "id": "neo-synthpop"}
+{"group": 1, "id": "neo-trad metal"}
+{"group": 1, "id": "neo-traditional country"}
+{"group": 1, "id": "neoclassical"}
+{"group": 1, "id": "neofolk"}
+{"group": 1, "id": "nepali"}
+{"group": 1, "id": "nerdcore"}
+{"group": 1, "id": "neue deutsche harte"}
+{"group": 1, "id": "neue deutsche welle"}
+{"group": 1, "id": "neurofunk"}
+{"group": 1, "id": "neurostep"}
+{"group": 1, "id": "new age piano"}
+{"group": 1, "id": "new age"}
+{"group": 1, "id": "new americana"}
+{"group": 1, "id": "new beat"}
+{"group": 1, "id": "new jack smooth"}
+{"group": 1, "id": "new jack swing"}
+{"group": 1, "id": "new orleans blues"}
+{"group": 1, "id": "new orleans jazz"}
+{"group": 1, "id": "new rave"}
+{"group": 1, "id": "new romantic"}
+{"group": 1, "id": "new tribe"}
+{"group": 1, "id": "new wave pop"}
+{"group": 1, "id": "new wave"}
+{"group": 1, "id": "new weird america"}
+{"group": 1, "id": "ninja"}
+{"group": 1, "id": "nintendocore"}
+{"group": 1, "id": "nl folk"}
+{"group": 1, "id": "no wave"}
+{"group": 1, "id": "noise pop"}
+{"group": 1, "id": "noise punk"}
+{"group": 1, "id": "noise rock"}
+{"group": 1, "id": "noise"}
+{"group": 1, "id": "nordic folk"}
+{"group": 1, "id": "nordic house"}
+{"group": 1, "id": "norteno"}
+{"group": 1, "id": "northern irish indie"}
+{"group": 1, "id": "northern soul"}
+{"group": 1, "id": "norwegian gospel"}
+{"group": 1, "id": "norwegian hip hop"}
+{"group": 1, "id": "norwegian indie"}
+{"group": 1, "id": "norwegian jazz"}
+{"group": 1, "id": "norwegian metal"}
+{"group": 1, "id": "norwegian pop"}
+{"group": 1, "id": "norwegian punk"}
+{"group": 1, "id": "norwegian rock"}
+{"group": 1, "id": "nu age"}
+{"group": 1, "id": "nu disco"}
+{"group": 1, "id": "nu electro"}
+{"group": 1, "id": "nu gaze"}
+{"group": 1, "id": "nu jazz"}
+{"group": 1, "id": "nu metal"}
+{"group": 1, "id": "nu skool breaks"}
+{"group": 1, "id": "nu-cumbia"}
+{"group": 1, "id": "nueva cancion"}
+{"group": 1, "id": "nursery"}
+{"group": 1, "id": "nwobhm"}
+{"group": 1, "id": "nwothm"}
+{"group": 1, "id": "nz indie"}
+{"group": 1, "id": "oi"}
+{"group": 1, "id": "ok indie"}
+{"group": 1, "id": "old school hip hop"}
+{"group": 1, "id": "old-time"}
+{"group": 1, "id": "opera"}
+{"group": 1, "id": "operatic pop"}
+{"group": 1, "id": "opm"}
+{"group": 1, "id": "orchestral"}
+{"group": 1, "id": "organic ambient"}
+{"group": 1, "id": "orgcore"}
+{"group": 1, "id": "orquesta tipica"}
+{"group": 1, "id": "orquesta tropical"}
+{"group": 1, "id": "oshare kei"}
+{"group": 1, "id": "ostrock"}
+{"group": 1, "id": "otacore"}
+{"group": 1, "id": "outer hip hop"}
+{"group": 1, "id": "outlaw country"}
+{"group": 1, "id": "outsider house"}
+{"group": 1, "id": "outsider"}
+{"group": 1, "id": "p funk"}
+{"group": 1, "id": "pagan black metal"}
+{"group": 1, "id": "pagode"}
+{"group": 1, "id": "pakistani pop"}
+{"group": 1, "id": "panpipe"}
+{"group": 1, "id": "permanent wave"}
+{"group": 1, "id": "persian pop"}
+{"group": 1, "id": "persian traditional"}
+{"group": 1, "id": "perth indie"}
+{"group": 1, "id": "peruvian rock"}
+{"group": 1, "id": "piano blues"}
+{"group": 1, "id": "piano rock"}
+{"group": 1, "id": "piedmont blues"}
+{"group": 1, "id": "pinoy alternative"}
+{"group": 1, "id": "pipe band"}
+{"group": 1, "id": "pixie"}
+{"group": 1, "id": "polish hip hop"}
+{"group": 1, "id": "polish indie"}
+{"group": 1, "id": "polish jazz"}
+{"group": 1, "id": "polish pop"}
+{"group": 1, "id": "polish punk"}
+{"group": 1, "id": "polish reggae"}
+{"group": 1, "id": "polka"}
+{"group": 1, "id": "polynesian pop"}
+{"group": 1, "id": "polyphony"}
+{"group": 1, "id": "pop emo"}
+{"group": 1, "id": "pop flamenco"}
+{"group": 1, "id": "pop house"}
+{"group": 1, "id": "pop punk"}
+{"group": 1, "id": "pop rap"}
+{"group": 1, "id": "pop reggaeton"}
+{"group": 1, "id": "pop rock"}
+{"group": 1, "id": "pop"}
+{"group": 1, "id": "popgaze"}
+{"group": 1, "id": "porro"}
+{"group": 1, "id": "portland indie"}
+{"group": 1, "id": "portuguese pop"}
+{"group": 1, "id": "portuguese rock"}
+{"group": 1, "id": "post rock"}
+{"group": 1, "id": "post-disco soul"}
+{"group": 1, "id": "post-disco"}
+{"group": 1, "id": "post-doom metal"}
+{"group": 1, "id": "post-grunge"}
+{"group": 1, "id": "post-hardcore"}
+{"group": 1, "id": "post-metal"}
+{"group": 1, "id": "post-post-hardcore"}
+{"group": 1, "id": "post-punk"}
+{"group": 1, "id": "post-screamo"}
+{"group": 1, "id": "post-teen pop"}
+{"group": 1, "id": "power blues-rock"}
+{"group": 1, "id": "power electronics"}
+{"group": 1, "id": "power metal"}
+{"group": 1, "id": "power noise"}
+{"group": 1, "id": "power pop"}
+{"group": 1, "id": "power violence"}
+{"group": 1, "id": "power-pop punk"}
+{"group": 1, "id": "praise"}
+{"group": 1, "id": "preverb"}
+{"group": 1, "id": "progressive alternative"}
+{"group": 1, "id": "progressive bluegrass"}
+{"group": 1, "id": "progressive deathcore"}
+{"group": 1, "id": "progressive electro house"}
+{"group": 1, "id": "progressive house"}
+{"group": 1, "id": "progressive metal"}
+{"group": 1, "id": "progressive post-hardcore"}
+{"group": 1, "id": "progressive psytrance"}
+{"group": 1, "id": "progressive rock"}
+{"group": 1, "id": "progressive trance house"}
+{"group": 1, "id": "progressive trance"}
+{"group": 1, "id": "progressive uplifting trance"}
+{"group": 1, "id": "protopunk"}
+{"group": 1, "id": "psych gaze"}
+{"group": 1, "id": "psychedelic blues-rock"}
+{"group": 1, "id": "psychedelic doom"}
+{"group": 1, "id": "psychedelic rock"}
+{"group": 1, "id": "psychedelic trance"}
+{"group": 1, "id": "psychill"}
+{"group": 1, "id": "psychobilly"}
+{"group": 1, "id": "pub rock"}
+{"group": 1, "id": "puerto rican rock"}
+{"group": 1, "id": "punjabi"}
+{"group": 1, "id": "punk blues"}
+{"group": 1, "id": "punk ska"}
+{"group": 1, "id": "punk"}
+{"group": 1, "id": "punta"}
+{"group": 1, "id": "qawwali"}
+{"group": 1, "id": "quebecois"}
+{"group": 1, "id": "quiet storm"}
+{"group": 1, "id": "r&b"}
+{"group": 1, "id": "ragga jungle"}
+{"group": 1, "id": "ragtime"}
+{"group": 1, "id": "rai"}
+{"group": 1, "id": "ranchera"}
+{"group": 1, "id": "rap chileno"}
+{"group": 1, "id": "rap metal"}
+{"group": 1, "id": "rap metalcore"}
+{"group": 1, "id": "rap rock"}
+{"group": 1, "id": "rap"}
+{"group": 1, "id": "raw black metal"}
+{"group": 1, "id": "re:techno"}
+{"group": 1, "id": "reading"}
+{"group": 1, "id": "rebetiko"}
+{"group": 1, "id": "redneck"}
+{"group": 1, "id": "reggae fusion"}
+{"group": 1, "id": "reggae rock"}
+{"group": 1, "id": "reggae"}
+{"group": 1, "id": "reggaeton flow"}
+{"group": 1, "id": "reggaeton"}
+{"group": 1, "id": "regional mexican pop"}
+{"group": 1, "id": "regional mexican"}
+{"group": 1, "id": "relaxative"}
+{"group": 1, "id": "remix"}
+{"group": 1, "id": "renaissance"}
+{"group": 1, "id": "retro electro"}
+{"group": 1, "id": "retro metal"}
+{"group": 1, "id": "rhythm and boogie"}
+{"group": 1, "id": "riddim"}
+{"group": 1, "id": "rio de la plata"}
+{"group": 1, "id": "riot grrrl"}
+{"group": 1, "id": "rock catala"}
+{"group": 1, "id": "rock en espanol"}
+{"group": 1, "id": "rock gaucho"}
+{"group": 1, "id": "rock noise"}
+{"group": 1, "id": "rock steady"}
+{"group": 1, "id": "rock"}
+{"group": 1, "id": "rock-and-roll"}
+{"group": 1, "id": "rockabilly"}
+{"group": 1, "id": "romanian pop"}
+{"group": 1, "id": "romanian rock"}
+{"group": 1, "id": "romantic"}
+{"group": 1, "id": "romantico"}
+{"group": 1, "id": "roots reggae"}
+{"group": 1, "id": "roots rock"}
+{"group": 1, "id": "rosary"}
+{"group": 1, "id": "rumba"}
+{"group": 1, "id": "russelater"}
+{"group": 1, "id": "russian alternative"}
+{"group": 1, "id": "russian folk"}
+{"group": 1, "id": "russian hip hop"}
+{"group": 1, "id": "russian pop"}
+{"group": 1, "id": "russian punk"}
+{"group": 1, "id": "russian rock"}
+{"group": 1, "id": "russiavision"}
+{"group": 1, "id": "rva indie"}
+{"group": 1, "id": "salsa international"}
+{"group": 1, "id": "salsa"}
+{"group": 1, "id": "samba"}
+{"group": 1, "id": "samba-enredo"}
+{"group": 1, "id": "schlager"}
+{"group": 1, "id": "schranz"}
+{"group": 1, "id": "scorecore"}
+{"group": 1, "id": "scottish rock"}
+{"group": 1, "id": "scratch"}
+{"group": 1, "id": "screamo punk"}
+{"group": 1, "id": "screamo"}
+{"group": 1, "id": "screamocore"}
+{"group": 1, "id": "seattle indie"}
+{"group": 1, "id": "sega"}
+{"group": 1, "id": "semba"}
+{"group": 1, "id": "serialism"}
+{"group": 1, "id": "sertanejo tradicional"}
+{"group": 1, "id": "sertanejo universitario"}
+{"group": 1, "id": "sertanejo"}
+{"group": 1, "id": "shanty"}
+{"group": 1, "id": "sheffield indie"}
+{"group": 1, "id": "shibuya-kei"}
+{"group": 1, "id": "shimmer pop"}
+{"group": 1, "id": "shimmer psych"}
+{"group": 1, "id": "shiver pop"}
+{"group": 1, "id": "shoegaze"}
+{"group": 1, "id": "show tunes"}
+{"group": 1, "id": "singaporean pop"}
+{"group": 1, "id": "singer-songwriter"}
+{"group": 1, "id": "ska punk"}
+{"group": 1, "id": "ska revival"}
+{"group": 1, "id": "ska"}
+{"group": 1, "id": "skate punk"}
+{"group": 1, "id": "skiffle"}
+{"group": 1, "id": "skinhead oi"}
+{"group": 1, "id": "skinhead reggae"}
+{"group": 1, "id": "skweee"}
+{"group": 1, "id": "sky room"}
+{"group": 1, "id": "slam death metal"}
+{"group": 1, "id": "slash punk"}
+{"group": 1, "id": "slavic metal"}
+{"group": 1, "id": "slc indie"}
+{"group": 1, "id": "sleaze rock"}
+{"group": 1, "id": "sleep"}
+{"group": 1, "id": "slovak hip hop"}
+{"group": 1, "id": "slovak pop"}
+{"group": 1, "id": "slovenian rock"}
+{"group": 1, "id": "slow core"}
+{"group": 1, "id": "slow game"}
+{"group": 1, "id": "sludge metal"}
+{"group": 1, "id": "smooth jazz"}
+{"group": 1, "id": "smooth urban r&b"}
+{"group": 1, "id": "soca"}
+{"group": 1, "id": "soda pop"}
+{"group": 1, "id": "soft rock"}
+{"group": 1, "id": "solipsynthm"}
+{"group": 1, "id": "song poem"}
+{"group": 1, "id": "soukous"}
+{"group": 1, "id": "soul blues"}
+{"group": 1, "id": "soul flow"}
+{"group": 1, "id": "soul jazz"}
+{"group": 1, "id": "soul"}
+{"group": 1, "id": "soundtrack"}
+{"group": 1, "id": "south african jazz"}
+{"group": 1, "id": "southern gospel"}
+{"group": 1, "id": "southern hip hop"}
+{"group": 1, "id": "southern rock"}
+{"group": 1, "id": "southern soul blues"}
+{"group": 1, "id": "southern soul"}
+{"group": 1, "id": "space rock"}
+{"group": 1, "id": "spanish classical"}
+{"group": 1, "id": "spanish folk"}
+{"group": 1, "id": "spanish hip hop"}
+{"group": 1, "id": "spanish indie pop"}
+{"group": 1, "id": "spanish indie rock"}
+{"group": 1, "id": "spanish invasion"}
+{"group": 1, "id": "spanish new wave"}
+{"group": 1, "id": "spanish noise pop"}
+{"group": 1, "id": "spanish pop rock"}
+{"group": 1, "id": "spanish pop"}
+{"group": 1, "id": "spanish punk"}
+{"group": 1, "id": "spanish reggae"}
+{"group": 1, "id": "spanish rock"}
+{"group": 1, "id": "speed garage"}
+{"group": 1, "id": "speed metal"}
+{"group": 1, "id": "speedcore"}
+{"group": 1, "id": "spytrack"}
+{"group": 1, "id": "steampunk"}
+{"group": 1, "id": "steelpan"}
+{"group": 1, "id": "stl indie"}
+{"group": 1, "id": "stomp and flutter"}
+{"group": 1, "id": "stomp and holler"}
+{"group": 1, "id": "stomp and whittle"}
+{"group": 1, "id": "stomp pop"}
+{"group": 1, "id": "stoner metal"}
+{"group": 1, "id": "stoner rock"}
+{"group": 1, "id": "straight edge"}
+{"group": 1, "id": "stride"}
+{"group": 1, "id": "string band"}
+{"group": 1, "id": "string folk"}
+{"group": 1, "id": "string quartet"}
+{"group": 1, "id": "strut"}
+{"group": 1, "id": "substep"}
+{"group": 1, "id": "sunset lounge"}
+{"group": 1, "id": "suomi rock"}
+{"group": 1, "id": "surf music"}
+{"group": 1, "id": "swamp blues"}
+{"group": 1, "id": "swamp pop"}
+{"group": 1, "id": "swedish alternative rock"}
+{"group": 1, "id": "swedish eurodance"}
+{"group": 1, "id": "swedish folk pop"}
+{"group": 1, "id": "swedish hard rock"}
+{"group": 1, "id": "swedish hip hop"}
+{"group": 1, "id": "swedish idol pop"}
+{"group": 1, "id": "swedish indie pop"}
+{"group": 1, "id": "swedish indie rock"}
+{"group": 1, "id": "swedish jazz orkester"}
+{"group": 1, "id": "swedish jazz"}
+{"group": 1, "id": "swedish metal"}
+{"group": 1, "id": "swedish pop punk"}
+{"group": 1, "id": "swedish pop"}
+{"group": 1, "id": "swedish prog"}
+{"group": 1, "id": "swedish punk"}
+{"group": 1, "id": "swedish reggae"}
+{"group": 1, "id": "swedish synthpop"}
+{"group": 1, "id": "swing"}
+{"group": 1, "id": "swiss hip hop"}
+{"group": 1, "id": "swiss rock"}
+{"group": 1, "id": "symphonic black metal"}
+{"group": 1, "id": "symphonic metal"}
+{"group": 1, "id": "symphonic rock"}
+{"group": 1, "id": "synthpop"}
+{"group": 1, "id": "taiwanese pop"}
+{"group": 1, "id": "talent show"}
+{"group": 1, "id": "tango"}
+{"group": 1, "id": "tanzlmusi"}
+{"group": 1, "id": "tech house"}
+{"group": 1, "id": "technical brutal death metal"}
+{"group": 1, "id": "technical death metal"}
+{"group": 1, "id": "techno"}
+{"group": 1, "id": "teen pop"}
+{"group": 1, "id": "tejano"}
+{"group": 1, "id": "tekno"}
+{"group": 1, "id": "terrorcore"}
+{"group": 1, "id": "texas blues"}
+{"group": 1, "id": "texas country"}
+{"group": 1, "id": "thai idol"}
+{"group": 1, "id": "thai indie"}
+{"group": 1, "id": "thai pop"}
+{"group": 1, "id": "theme"}
+{"group": 1, "id": "thrash core"}
+{"group": 1, "id": "thrash metal"}
+{"group": 1, "id": "thrash-groove metal"}
+{"group": 1, "id": "tibetan"}
+{"group": 1, "id": "tico"}
+{"group": 1, "id": "timba"}
+{"group": 1, "id": "tin pan alley"}
+{"group": 1, "id": "tone"}
+{"group": 1, "id": "tracestep"}
+{"group": 1, "id": "traditional blues"}
+{"group": 1, "id": "traditional british folk"}
+{"group": 1, "id": "traditional country"}
+{"group": 1, "id": "traditional folk"}
+{"group": 1, "id": "traditional funk"}
+{"group": 1, "id": "traditional reggae"}
+{"group": 1, "id": "traditional rockabilly"}
+{"group": 1, "id": "traditional scottish folk"}
+{"group": 1, "id": "traditional ska"}
+{"group": 1, "id": "traditional soul"}
+{"group": 1, "id": "traditional swing"}
+{"group": 1, "id": "trance"}
+{"group": 1, "id": "trap francais"}
+{"group": 1, "id": "trap latino"}
+{"group": 1, "id": "trap music"}
+{"group": 1, "id": "trash rock"}
+{"group": 1, "id": "triangle indie"}
+{"group": 1, "id": "tribal house"}
+{"group": 1, "id": "tribute"}
+{"group": 1, "id": "trip hop"}
+{"group": 1, "id": "tropical house"}
+{"group": 1, "id": "tropical"}
+{"group": 1, "id": "trova"}
+{"group": 1, "id": "turbo folk"}
+{"group": 1, "id": "turkish alternative"}
+{"group": 1, "id": "turkish classical"}
+{"group": 1, "id": "turkish folk"}
+{"group": 1, "id": "turkish hip hop"}
+{"group": 1, "id": "turkish jazz"}
+{"group": 1, "id": "turkish pop"}
+{"group": 1, "id": "turkish rock"}
+{"group": 1, "id": "turntablism"}
+{"group": 1, "id": "twee indie pop"}
+{"group": 1, "id": "twee pop"}
+{"group": 1, "id": "twin cities indie"}
+{"group": 1, "id": "tzadik"}
+{"group": 1, "id": "ugandan pop"}
+{"group": 1, "id": "uk drill"}
+{"group": 1, "id": "uk dub"}
+{"group": 1, "id": "uk funky"}
+{"group": 1, "id": "uk garage"}
+{"group": 1, "id": "uk hip hop"}
+{"group": 1, "id": "uk post-punk"}
+{"group": 1, "id": "ukrainian rock"}
+{"group": 1, "id": "ukulele"}
+{"group": 1, "id": "unblack metal"}
+{"group": 1, "id": "underground hip hop"}
+{"group": 1, "id": "underground latin hip hop"}
+{"group": 1, "id": "underground pop rap"}
+{"group": 1, "id": "underground power pop"}
+{"group": 1, "id": "underground rap"}
+{"group": 1, "id": "uplifting trance"}
+{"group": 1, "id": "urban contemporary"}
+{"group": 1, "id": "usbm"}
+{"group": 1, "id": "vallenato"}
+{"group": 1, "id": "vancouver indie"}
+{"group": 1, "id": "vapor house"}
+{"group": 1, "id": "vapor pop"}
+{"group": 1, "id": "vapor soul"}
+{"group": 1, "id": "vapor twitch"}
+{"group": 1, "id": "vaporwave"}
+{"group": 1, "id": "vegan straight edge"}
+{"group": 1, "id": "vegas indie"}
+{"group": 1, "id": "velha guarda"}
+{"group": 1, "id": "venezuelan rock"}
+{"group": 1, "id": "video game music"}
+{"group": 1, "id": "vienna indie"}
+{"group": 1, "id": "viking metal"}
+{"group": 1, "id": "villancicos"}
+{"group": 1, "id": "vintage chanson"}
+{"group": 1, "id": "vintage country folk"}
+{"group": 1, "id": "vintage french electronic"}
+{"group": 1, "id": "vintage gospel"}
+{"group": 1, "id": "vintage italian soundtrack"}
+{"group": 1, "id": "vintage jazz"}
+{"group": 1, "id": "vintage rockabilly"}
+{"group": 1, "id": "vintage schlager"}
+{"group": 1, "id": "vintage swedish pop"}
+{"group": 1, "id": "vintage swing"}
+{"group": 1, "id": "vintage tango"}
+{"group": 1, "id": "vintage western"}
+{"group": 1, "id": "violin"}
+{"group": 1, "id": "viral pop"}
+{"group": 1, "id": "visual kei"}
+{"group": 1, "id": "vocal house"}
+{"group": 1, "id": "vocal jazz"}
+{"group": 1, "id": "vocaloid"}
+{"group": 1, "id": "voidgaze"}
+{"group": 1, "id": "volksmusik"}
+{"group": 1, "id": "warm drone"}
+{"group": 1, "id": "welsh rock"}
+{"group": 1, "id": "west african jazz"}
+{"group": 1, "id": "west coast rap"}
+{"group": 1, "id": "west coast trap"}
+{"group": 1, "id": "western swing"}
+{"group": 1, "id": "wind ensemble"}
+{"group": 1, "id": "witch house"}
+{"group": 1, "id": "wonky"}
+{"group": 1, "id": "world chill"}
+{"group": 1, "id": "world fusion"}
+{"group": 1, "id": "world meditation"}
+{"group": 1, "id": "world worship"}
+{"group": 1, "id": "world"}
+{"group": 1, "id": "worship"}
+{"group": 1, "id": "wrestling"}
+{"group": 1, "id": "ye ye"}
+{"group": 1, "id": "yoik"}
+{"group": 1, "id": "yugoslav rock"}
+{"group": 1, "id": "zapstep"}
+{"group": 1, "id": "zeuhl"}
+{"group": 1, "id": "zillertal"}
+{"group": 1, "id": "zim"}
+{"group": 1, "id": "zolo"}
+{"group": 1, "id": "zouglou"}
+{"group": 1, "id": "zouk riddim"}
+{"group": 1, "id": "zouk"}
+{"group": 1, "id": "zydeco"}
