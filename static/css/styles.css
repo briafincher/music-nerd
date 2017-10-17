@@ -88,7 +88,7 @@ header {
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: justify;
-    justify-content: space-between;
+/*    justify-content: space-between;*/
     width: 100%;
     overflow: hidden;
     padding: 1.25rem 2.5vw;

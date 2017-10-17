@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
 <form id='search' action='/search'>
     <input type='text' id='search-field' name='search' placeholder='Search a genre'>
     <input type='submit'>
@@ -6,3 +10,5 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src='/static/autocomplete.js'></script>
+
+{% endblock %}

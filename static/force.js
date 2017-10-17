@@ -65,8 +65,8 @@ $('#display').on('submit', function(evt) {
         console.log(features);
 
         $.get('/features', features, function(data) {
-          $('#canvas').remove()
-          $('#container').append(<canvas id='canvas' width="2000" height="2000"></canvas>)
+          $('#canvas').empty()
+          // $('#container').html(<canvas id='canvas' width="2000" height="2000"></canvas>)
           loadD3(data);
           console.log(data)
           // simulation.stop();
