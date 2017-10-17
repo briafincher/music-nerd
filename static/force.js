@@ -65,7 +65,7 @@ $('#display').on('submit', function(evt) {
         console.log(features);
 
         $.get('/features', features, function(data) {
-          $('#canvas').empty()
+          $('#canvas').empty() // GET IT TO EMPTY THE CURRENT CANVAS AND REDRAW
           // $('#container').html(<canvas id='canvas' width="2000" height="2000"></canvas>)
           loadD3(data);
           console.log(data)
