@@ -1,4 +1,4 @@
-from model2 import app, connect_to_db
+from model2 import app, connect_to_db, db
 from model2 import Genre, RelatedGenres, GenreAverages
 import json
 
@@ -39,9 +39,10 @@ def find_genres(feature, limits):
     """Queries db for all genres that fit feature & limit criteria"""
 
     f = getattr(GenreAverages, feature)
+    query = GenreAverages.query.filter(db.and_(f >= limits[0], f <= limits[1])).all()
 
     genres = set()
-    for genre in GenreAverages.query.filter(f >= limits[1] and f <= limits[0]).all():
+    for genre in query:
         genres.add(genre.genre)
 
     return genres
@@ -99,69 +100,22 @@ def make_json(features):
     f = open('static/genre_maps/user_created.json', 'w')
     r = RelatedGenres.query.filter(RelatedGenres.shared_artists > 1).all()
 
-    genres = []
+    genres = set()
 
     for feature in features:
         limits = find_limits(feature, features[feature])
-        genres.extend(find_genres(feature, limits))
+        result = find_genres(feature, limits)
+        print len(result)
+        genres = genres | result
 
-    results = find_relationships(set(genres), r)
+    results = find_relationships(genres, r)
 
     json.dump(results, f)
 
-    return f
-
-# def find_filename(feature):
-#     """Returns the corresponding filename for an audio feature"""
-
-#     if feature == 'acousticness':
-#         return 'static/genre_maps/acoustic.json'
-#     elif feature == 'danceability':
-#         return 'static/genre_maps/dancey.json'
-#     elif feature == 'energy':
-#         return 'static/genre_maps/energetic.json'
-#     elif feature == 'instrumentalness':
-#         return 'static/genre_maps/instrumental.json'
-#     elif feature == 'liveness':
-#         return 'static/genre_maps/live.json'
-#     elif feature == 'loudness':
-#         return 'static/genre_maps/loud.json'
-#     elif feature == 'mode':
-#         return 'static/genre_maps/mode.json'
-#     elif feature == 'speechiness':
-#         return 'static/genre_maps/speechy.json'
-#     elif feature == 'tempo':
-#         return 'static/genre_maps/tempo.json'
-#     elif feature == 'valence':
-#         return 'static/genre_maps/valence.json'
-
-
-# def make_json(feature, limit, relationships):
-#     """Given a dictionary of nodes and links, converts to json file"""
-
-#     filename = find_filename(feature)
-
-#     genres = find_genres(feature, limit)
-
-#     results = find_relationships(genres, relationships)
-
-#     f = open(filename, 'w')
-
-#     json.dump(results, f)
+    return results
 
 if __name__ == '__main__':
 
     connect_to_db(app)
 
     r = RelatedGenres.query.filter(RelatedGenres.shared_artists > 1).all()
-
-    # make_json('acousticness', 0.5, r)
-    # make_json('danceability', 0.5, r)
-    # make_json('energy', 0.5, r)
-    # make_json('instrumentalness', 0.5, r)
-    # make_json('liveness', 0.5, r)
-    # make_json('loudness', -30, r)  # dB measured from -60 to 0
-    # make_json('mode', 0.5, r)
-    # make_json('speechiness', 0.66, r)
-    # make_json('tempo', 115, r)
-    # make_json('valence', 0.5, r)

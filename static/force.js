@@ -1,4 +1,4 @@
-var map = "/static/genre_maps/dancey.json";
+var map = "/static/genre_maps/user_created.json";
 
 function loadD3(map) {
   d3.json(map, function(error, graph) {
