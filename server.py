@@ -41,12 +41,6 @@ def index():
     return render_template('homepage.html')
 
 
-# @app.route('/login-form')
-# def show_login_form():
-#     """Allows user to login to connect their Spotify account."""
-
-#     return render_template('login-form.html')
-
 @app.route('/login')
 def get_access_token():
     """Gets Spotify API access token for user"""
@@ -87,9 +81,12 @@ def logout():
     return redirect('/')
 
 
-@app.route('/genres')
-def show_genres():
+@app.route('/genres', features=None)
+def show_genre_map():
     """Genre map"""
+
+    if features:
+
 
     genres = Genre.query.all()
     genre_list = []
@@ -121,12 +118,22 @@ def show_genres():
 def display_features():
     """Generates graph based on user-selected audio feature parameters"""
 
-    acousticness = requests.args.get('a-level')
-    danceability = requests.args.get('d-level')
-    energy = requests.args.get('e-level')
-    instrumentalness = requests.args.get('i-level')
-    liveness = requests.args.get('l-level')
-    loudness = requests.args.get('lo-level')
+    features = {}
+
+    features['acousticness'] = request.args.get('a-level')
+    features['danceability'] = request.args.get('d-level')
+    features['energy'] = request.args.get('e-level')
+    features['instrumentalness'] = request.args.get('i-level')
+    features['liveness'] = request.args.get('l-level')
+    features['loudness'] = request.args.get('lo-level')
+    features['mode'] = request.args.get('m-level')
+    features['speechiness'] = request.args.get('s-level')
+    features['tempo'] = request.args.get('t-level')
+    features['valence'] = request.args.get('v-level')
+
+    print features
+
+    return redirect('/genres', features=features)
 
 
 def find_popular_artists(artists):

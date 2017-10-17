@@ -1,3 +1,28 @@
+var map = "/static/genre_maps/dancey.json";
+
+$('#display').on('submit', function(evt) {
+        evt.preventDefault();
+
+        var features = {
+          'a-level': $('#a-level').val(),
+          'd-level': $('#d-level').val(),
+          'e-level': $('#e-level').val(),
+          'i-level': $('#i-level').val(),
+          'l-level': $('#l-level').val(),
+          'lo-level': $('#lo-level').val(),
+          'm-level': $('#m-level').val(),
+          's-level': $('#s-level').val(),
+          't-level': $('#t-level').val(),
+          'v-level': $('#v-level').val()
+        };
+
+        $.get('/features', features, showFeatures);
+    });
+
+function showFeatures(path) {
+    map = path;
+}
+
 var canvas = document.querySelector("canvas"),
     context = canvas.getContext("2d"),
     width = canvas.width,
@@ -8,7 +33,7 @@ var simulation = d3.forceSimulation()
     .force("charge", d3.forceManyBody())
     .force("center", d3.forceCenter(width / 2, height / 2));
 
-d3.json("/static/genre_maps/dancey.json", function(error, graph) {
+d3.json(map, function(error, graph) {
   if (error) throw error;
 
   simulation
