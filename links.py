@@ -35,13 +35,13 @@ def add_links(relationships):
     return links
 
 
-def find_genres(feature, limit):
+def find_genres(feature, limits):
     """Queries db for all genres that fit feature & limit criteria"""
 
     f = getattr(GenreAverages, feature)
 
     genres = set()
-    for genre in GenreAverages.query.filter(f >= limit).all():
+    for genre in GenreAverages.query.filter(f >= limits[1] and f <= limits[0]).all():
         genres.add(genre.genre)
 
     return genres
@@ -65,43 +65,89 @@ def find_relationships(genres, relationships):
     return {"nodes": nodes, "links": links}
 
 
-def find_filename(feature):
-    """Returns the corresponding filename for an audio feature"""
+def find_limits(feature, value):
+    """Finds range for which to search genre averages table"""
 
-    if feature == 'acousticness':
-        return 'static/genre_maps/acoustic.json'
-    elif feature == 'danceability':
-        return 'static/genre_maps/dancey.json'
-    elif feature == 'energy':
-        return 'static/genre_maps/energetic.json'
-    elif feature == 'instrumentalness':
-        return 'static/genre_maps/instrumental.json'
-    elif feature == 'liveness':
-        return 'static/genre_maps/live.json'
-    elif feature == 'loudness':
-        return 'static/genre_maps/loud.json'
-    elif feature == 'mode':
-        return 'static/genre_maps/mode.json'
-    elif feature == 'speechiness':
-        return 'static/genre_maps/speechy.json'
+    if feature == 'loudness':
+        maximum = 0
+        upper = -20
+        lower = -40
+        minimum = -60
     elif feature == 'tempo':
-        return 'static/genre_maps/tempo.json'
-    elif feature == 'valence':
-        return 'static/genre_maps/valence.json'
+        maximum = 200
+        upper = 150
+        lower = 100
+        minimum = 50
+    else:
+        maximum = 1
+        upper = .66
+        lower = .33
+        minimum = 0
+
+    if value >= upper:
+        return (upper, maximum)
+    if value < upper and value >= lower:
+        return (lower, upper)
+    if value < lower:
+        return (minimum, lower)
 
 
-def make_json(feature, limit, relationships):
-    """Given a dictionary of nodes and links, converts to json file"""
+def make_json(features):
+    """Given a dictionary of features and parameters, creates a json file pulling
+    from relationships in database that satisfy those parameters"""
 
-    filename = find_filename(feature)
+    f = open('static/genre_maps/user_created.json', 'w')
+    r = RelatedGenres.query.filter(RelatedGenres.shared_artists > 1).all()
 
-    genres = find_genres(feature, limit)
+    genres = []
 
-    results = find_relationships(genres, relationships)
+    for feature in features:
+        limits = find_limits(feature, features[feature])
+        genres.extend(find_genres(feature, limits))
 
-    f = open(filename, 'w')
+    results = find_relationships(set(genres), r)
 
     json.dump(results, f)
+
+    return f
+
+# def find_filename(feature):
+#     """Returns the corresponding filename for an audio feature"""
+
+#     if feature == 'acousticness':
+#         return 'static/genre_maps/acoustic.json'
+#     elif feature == 'danceability':
+#         return 'static/genre_maps/dancey.json'
+#     elif feature == 'energy':
+#         return 'static/genre_maps/energetic.json'
+#     elif feature == 'instrumentalness':
+#         return 'static/genre_maps/instrumental.json'
+#     elif feature == 'liveness':
+#         return 'static/genre_maps/live.json'
+#     elif feature == 'loudness':
+#         return 'static/genre_maps/loud.json'
+#     elif feature == 'mode':
+#         return 'static/genre_maps/mode.json'
+#     elif feature == 'speechiness':
+#         return 'static/genre_maps/speechy.json'
+#     elif feature == 'tempo':
+#         return 'static/genre_maps/tempo.json'
+#     elif feature == 'valence':
+#         return 'static/genre_maps/valence.json'
+
+
+# def make_json(feature, limit, relationships):
+#     """Given a dictionary of nodes and links, converts to json file"""
+
+#     filename = find_filename(feature)
+
+#     genres = find_genres(feature, limit)
+
+#     results = find_relationships(genres, relationships)
+
+#     f = open(filename, 'w')
+
+#     json.dump(results, f)
 
 if __name__ == '__main__':
 
@@ -109,13 +155,13 @@ if __name__ == '__main__':
 
     r = RelatedGenres.query.filter(RelatedGenres.shared_artists > 1).all()
 
-    make_json('acousticness', 0.5, r)
-    make_json('danceability', 0.5, r)
-    make_json('energy', 0.5, r)
-    make_json('instrumentalness', 0.5, r)
-    make_json('liveness', 0.5, r)
-    make_json('loudness', -30, r)  # dB measured from -60 to 0
-    make_json('mode', 0.5, r)
-    make_json('speechiness', 0.66, r)
-    make_json('tempo', 115, r)
-    make_json('valence', 0.5, r)
+    # make_json('acousticness', 0.5, r)
+    # make_json('danceability', 0.5, r)
+    # make_json('energy', 0.5, r)
+    # make_json('instrumentalness', 0.5, r)
+    # make_json('liveness', 0.5, r)
+    # make_json('loudness', -30, r)  # dB measured from -60 to 0
+    # make_json('mode', 0.5, r)
+    # make_json('speechiness', 0.66, r)
+    # make_json('tempo', 115, r)
+    # make_json('valence', 0.5, r)

@@ -40,16 +40,16 @@
 <script src='static/force.js'></script>
 
 <form id='display' action='/features'>
-    <input id='acousticness' type='checkbox' name='acousticness' value='acousticness'> Acousticness <input type='range' max='1' min='0' step='0.1' name='a-level' id='a-level' hidden><br>
-    <input id='danceability' type='checkbox' name='danceability' value='danceability'> Danceability <input type='range' max='1' min='0' step='0.1' name='d-level' id='d-level' hidden><br>
-    <input id='energy' type='checkbox' name='energy' value='energy'> Energy <input type='range' max='1' min='0' step='0.1' name='e-level' id='e-level' hidden><br>
-    <input id='instrumentalness' type='checkbox' name='instrumentalness' value='instrumentalness'> Instrumentalness <input type='range' max='1' min='0' step='0.1' name='i-level' id='i-level' hidden><br>
-    <input id='liveness' type='checkbox' name='liveness' value='liveness'> Liveness <input type='range' max='1' min='0' step='0.1' name='l-level' id='l-level' hidden><br>
-    <input id='loudness'type='checkbox' name='loudness' value='loudness'> Loudness <input type='range' max='0' min='-60' step='10' name='lo-level' id='lo-level' hidden><br>
-    <input id='mode' type='checkbox' name='mode' value='mode'> Mode <input type='range' max='1' min='0' step='0.1' name='m-level' id='m-level' hidden><br>
-    <input id='speechiness' type='checkbox' name='speechiness' value='speechiness'> Speechiness <input type='range' max='1' min='0' step='0.1' name='s-level' id='s-level' hidden><br>
-    <input id='tempo' type='checkbox' name='tempo' value='tempo'> Tempo <input type='range' max='200' min='50' step='0.1' name='t-level' id='t-level' hidden><br>
-    <input id='valence' type='checkbox' name='valence' value='valence'> Valence <input type='range' max='1' min='0' step='0.1' name='v-level' id='v-level' hidden><br>
+    <input id='acousticness' type='checkbox' name='acousticness' value='acousticness'> Acousticness <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='a-level' id='a-level' hidden><br>
+    <input id='danceability' type='checkbox' name='danceability' value='danceability'> Danceability <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='d-level' id='d-level' hidden><br>
+    <input id='energy' type='checkbox' name='energy' value='energy'> Energy <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='e-level' id='e-level' hidden><br>
+    <input id='instrumentalness' type='checkbox' name='instrumentalness' value='instrumentalness'> Instrumentalness <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='i-level' id='i-level' hidden><br>
+    <input id='liveness' type='checkbox' name='liveness' value='liveness'> Liveness <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='l-level' id='l-level' hidden><br>
+    <input id='loudness'type='checkbox' name='loudness' value='loudness'> Loudness <input type='range' defaultValue='-30' max='0' min='-60' step='10' name='lo-level' id='lo-level' hidden><br>
+    <input id='mode' type='checkbox' name='mode' value='mode'> Mode <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='m-level' id='m-level' hidden><br>
+    <input id='speechiness' type='checkbox' name='speechiness' value='speechiness'> Speechiness <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='s-level' id='s-level' hidden><br>
+    <input id='tempo' type='checkbox' name='tempo' value='tempo'> Tempo <input type='range' defaultValue='125' max='200' min='50' step='50' name='t-level' id='t-level' hidden><br>
+    <input id='valence' type='checkbox' name='valence' value='valence'> Valence <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='v-level' id='v-level' hidden><br>
     <input type=submit>
 </form>
 
@@ -83,12 +83,6 @@
     })
     $('#valence').on('click', function() {
         $('#v-level').toggle();
-    })
-</script>
-
-<script>
-    $('#display').on('submit', function(evt) {
-        evt.preventDefault()
     })
 </script>
 

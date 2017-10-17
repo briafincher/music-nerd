@@ -1,39 +1,7 @@
 var map = "/static/genre_maps/dancey.json";
 
-$('#display').on('submit', function(evt) {
-        evt.preventDefault();
-
-        var features = {
-          'a-level': $('#a-level').val(),
-          'd-level': $('#d-level').val(),
-          'e-level': $('#e-level').val(),
-          'i-level': $('#i-level').val(),
-          'l-level': $('#l-level').val(),
-          'lo-level': $('#lo-level').val(),
-          'm-level': $('#m-level').val(),
-          's-level': $('#s-level').val(),
-          't-level': $('#t-level').val(),
-          'v-level': $('#v-level').val()
-        };
-
-        $.get('/features', features, showFeatures);
-    });
-
-function showFeatures(path) {
-    map = path;
-}
-
-var canvas = document.querySelector("canvas"),
-    context = canvas.getContext("2d"),
-    width = canvas.width,
-    height = canvas.height;
-
-var simulation = d3.forceSimulation()
-    .force("link", d3.forceLink().id(function(d) { return d.id; }))
-    .force("charge", d3.forceManyBody())
-    .force("center", d3.forceCenter(width / 2, height / 2));
-
-d3.json(map, function(error, graph) {
+function loadD3(map) {
+  d3.json(map, function(error, graph) {
   if (error) throw error;
 
   simulation
@@ -70,6 +38,42 @@ d3.json(map, function(error, graph) {
     return simulation.find(d3.event.x, d3.event.y);
   }
 });
+}
+
+loadD3(map);
+
+$('#display').on('submit', function(evt) {
+        evt.preventDefault();
+
+        var features = {
+          'a-level': $('#a-level').val(),
+          'd-level': $('#d-level').val(),
+          'e-level': $('#e-level').val(),
+          'i-level': $('#i-level').val(),
+          'l-level': $('#l-level').val(),
+          'lo-level': $('#lo-level').val(),
+          'm-level': $('#m-level').val(),
+          's-level': $('#s-level').val(),
+          't-level': $('#t-level').val(),
+          'v-level': $('#v-level').val()
+        };
+
+        $.get('/features', features, function(data) {
+          loadD3(data);  // THIS DOESN'T WORK FOR SOME REASON
+        });
+    });
+
+var canvas = document.querySelector("canvas"),
+    context = canvas.getContext("2d"),
+    width = canvas.width,
+    height = canvas.height;
+
+var simulation = d3.forceSimulation()
+    .force("link", d3.forceLink().id(function(d) { return d.id; }))
+    .force("charge", d3.forceManyBody())
+    .force("center", d3.forceCenter(width / 2, height / 2));
+
+
 
 function dragstarted() {
   if (!d3.event.active) simulation.alphaTarget(0.3).restart();

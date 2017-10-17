@@ -81,12 +81,9 @@ def logout():
     return redirect('/')
 
 
-@app.route('/genres', features=None)
+@app.route('/genres')
 def show_genre_map():
     """Genre map"""
-
-    if features:
-
 
     genres = Genre.query.all()
     genre_list = []
@@ -98,16 +95,13 @@ def show_genre_map():
         features = GenreAverages.query.filter_by(genre=genre).first()
         genre_features[genre] = {'acousticness': features.acousticness,
                                  'danceability': features.danceability,
-                                 # 'duration_ms': features.duration_ms,
                                  'energy': features.energy,
                                  'instrumentalness': features.instrumentalness,
-                                 # 'key': features.key,
                                  'liveness': features.liveness,
                                  'loudness': features.loudness,
                                  'mode': features.mode,
                                  'speechiness': features.speechiness,
                                  'tempo': features.tempo,
-                                 # 'time_signature': features.time_signature,
                                  'valence': features.valence
                                  }
 
@@ -118,22 +112,36 @@ def show_genre_map():
 def display_features():
     """Generates graph based on user-selected audio feature parameters"""
 
-    features = {}
+    features = request.args.get('features')
 
-    features['acousticness'] = request.args.get('a-level')
-    features['danceability'] = request.args.get('d-level')
-    features['energy'] = request.args.get('e-level')
-    features['instrumentalness'] = request.args.get('i-level')
-    features['liveness'] = request.args.get('l-level')
-    features['loudness'] = request.args.get('lo-level')
-    features['mode'] = request.args.get('m-level')
-    features['speechiness'] = request.args.get('s-level')
-    features['tempo'] = request.args.get('t-level')
-    features['valence'] = request.args.get('v-level')
+    parameters = {}
 
-    print features
+    if features['a-level'] != '.5':
+        parameters['acousticness'] = features['a-level']
+    if features['d-level'] != '.5':
+        parameters['danceability'] = features['d-level']
+    if features['e-level'] != '.5':
+        parameters['energy'] = features['e-level']
+    if features['i-level'] != '.5':
+        parameters['instrumentalness'] = features['i-level']
+    if features['l-level'] != '.5':
+        parameters['liveness'] = features['l-level']
+    if features['lo-level'] != '-30':
+        parameters['loudness'] = features['lo-level']
+    if features['m-level'] != '.5':
+        parameters['mode'] = features['m-level']
+    if features['s-level'] != '.5':
+        parameters['speechiness'] = features['s-level']
+    if features['t-level'] != '125':
+        parameters['tempo'] = features['t-level']
+    if features['v-level'] != '.5':
+        parameters['valence'] = features['v-level']
 
-    return redirect('/genres', features=features)
+    path = make_json(parameters)
+
+    path = "/static/genre_maps/all_high_values.json"
+
+    return path
 
 
 def find_popular_artists(artists):
