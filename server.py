@@ -19,6 +19,8 @@ import wikipedia
 
 import os
 
+from links import make_json
+
 app.secret_key = "ABC"
 app.jinja_env.undefined = StrictUndefined
 
@@ -113,6 +115,18 @@ def show_genres():
                                  }
 
     return render_template('genre-map.html', genres=genre_features)
+
+
+@app.route('/features')
+def display_features():
+    """Generates graph based on user-selected audio feature parameters"""
+
+    acousticness = requests.args.get('a-level')
+    danceability = requests.args.get('d-level')
+    energy = requests.args.get('e-level')
+    instrumentalness = requests.args.get('i-level')
+    liveness = requests.args.get('l-level')
+    loudness = requests.args.get('lo-level')
 
 
 def find_popular_artists(artists):

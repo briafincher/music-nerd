@@ -1,10 +1,10 @@
 from model2 import app, connect_to_db
 from model2 import Genre, RelatedGenres, GenreAverages
 import json
-import pdb
 
 
 def add_nodes(relationships):
+    """Given a list of relationships, parses nodes"""
 
     nodes = []
 
@@ -19,6 +19,7 @@ def add_nodes(relationships):
 
 
 def add_links(relationships):
+    """Given a list of relationships, parses links"""
 
     links = []
 
@@ -30,9 +31,6 @@ def add_links(relationships):
         links.append({"source": genre1.name,
                       "target": genre2.name,
                       "value": relationship.shared_artists})
-
-    # for link in links:
-    #     print link
 
     return links
 
@@ -109,30 +107,15 @@ if __name__ == '__main__':
 
     connect_to_db(app)
 
-    r = RelatedGenres.query.filter(RelatedGenres.shared_artists > 0).all()
+    r = RelatedGenres.query.filter(RelatedGenres.shared_artists > 1).all()
 
-    # nodes = add_nodes(relationships)
-    # links = add_links(relationships)
-
-    # genres = json.dumps({"nodes": nodes,
-    #                      "links": links})
-
-    # print genres
-
-    make_json('acousticness', 0.5, r, 'static/genre_maps/acoustic.json')
-    make_json('danceability', 0.5, r, 'static/genre_maps/dancey.json')
-    make_json('energy', 0.5, r, 'static/genre_maps/energetic.json')
-    make_json('instrumentalness', 0.5, r, 'static/genre_maps/instrumental.json')
-    make_json('liveness', 0.5, r, 'static/genre_maps/live.json')
-    make_json('loudness', 0.5, r, 'static/genre_maps/loud.json')
-    make_json('mode', 0.5, r, 'static/genre_maps/mode.json')
-    make_json('speechiness', 0.5, r, 'static/genre_maps/speechy.json')
-    make_json('tempo', 0.5, r, 'static/genre_maps/tempo.json')
-    make_json('valence', 0.5, r, 'static/genre_maps/valence.json')
-
-    # feature = 'acousticness'
-    # limit = 0.5
-    # genres = find_genres(feature, limit)
-    # results = find_relationships(genres, relationships)
-    # f = open('static/genre_maps/acoustic.json', 'w')
-    # json.dump(results, f)
+    make_json('acousticness', 0.5, r)
+    make_json('danceability', 0.5, r)
+    make_json('energy', 0.5, r)
+    make_json('instrumentalness', 0.5, r)
+    make_json('liveness', 0.5, r)
+    make_json('loudness', -30, r)  # dB measured from -60 to 0
+    make_json('mode', 0.5, r)
+    make_json('speechiness', 0.66, r)
+    make_json('tempo', 115, r)
+    make_json('valence', 0.5, r)
