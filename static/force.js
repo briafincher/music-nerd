@@ -1,48 +1,52 @@
-var map = "/static/genre_maps/user_created.json";
+var path = "/static/genre_maps/all_high_values.json";
 
-function loadD3(map) {
-  d3.json(map, function(error, graph) {
-  if (error) throw error;
+function loadD3(path) {
+  d3.json(path, function(error, graph) {
+    if (error) throw error;
 
-  simulation
-      .nodes(graph.nodes)
-      .on("tick", ticked);
+    simulation
+        .nodes(graph.nodes)
+        .on("tick", ticked);
 
-  simulation.force("link")
-      .links(graph.links);
+    simulation.force("link")
+        .links(graph.links);
 
-  d3.select(canvas)
-      .call(d3.drag()
-          .container(canvas)
-          .subject(dragsubject)
-          .on("start", dragstarted)
-          .on("drag", dragged)
-          .on("end", dragended));
+    d3.select(canvas)
+        .call(d3.drag()
+            .container(canvas)
+            .subject(dragsubject)
+            .on("start", dragstarted)
+            .on("drag", dragged)
+            .on("end", dragended));
 
-  function ticked() {
-    context.clearRect(0, 0, width, height);
+    function ticked() {
+      context.clearRect(0, 0, width, height);
 
-    context.beginPath();
-    graph.links.forEach(drawLink);
-    context.strokeStyle = "#aaa";
-    context.stroke();
+      context.beginPath();
+      graph.links.forEach(drawLink);
+      context.strokeStyle = "#aaa";
+      context.stroke();
 
-    context.beginPath();
-    graph.nodes.forEach(drawNode);
-    context.fill();
-    context.strokeStyle = "#fff";
-    context.stroke();
-  }
+      context.beginPath();
+      graph.nodes.forEach(drawNode);
+      context.fill();
+      context.strokeStyle = "#fff";
+      context.stroke();
+    }
 
-  function dragsubject() {
-    return simulation.find(d3.event.x, d3.event.y);
-  }
-});
+    function dragsubject() {
+      return simulation.find(d3.event.x, d3.event.y);
+    }
+
+    simulation.restart();
+  });
 }
 
-loadD3(map);
+loadD3(path);
 
 $('#display').on('submit', function(evt) {
+        // console.log('hi hello i am here')
+
         evt.preventDefault();
 
         var features = {
@@ -58,8 +62,14 @@ $('#display').on('submit', function(evt) {
           'v-level': $('#v-level').val()
         };
 
+        console.log(features);
+
         $.get('/features', features, function(data) {
-          loadD3(data);  // THIS DOESN'T WORK FOR SOME REASON
+          loadD3(data);
+          // simulation.stop();
+          console.log('simulation stopped');
+          // simulation.restart();
+          console.log('sim restarted');  // THIS DOESN'T WORK
         });
     });
 

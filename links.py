@@ -51,14 +51,16 @@ def find_genres(feature, limits):
 def find_relationships(genres, relationships):
     """Find all relationships for genres in given genre list"""
 
-    results = []
+    results = set()
     for relationship in relationships:
 
         genre1 = Genre.query.filter_by(genre_id=relationship.genre1_id).first()
         genre2 = Genre.query.filter_by(genre_id=relationship.genre2_id).first()
 
-        if genre1.name in genres or genre2.name in genres:
-            results.append(relationship)
+        if genre1.name in genres:
+            results.add(relationship)
+        elif genre2.name in genres:
+            results.add(relationship)
 
     nodes = add_nodes(results)
     links = add_links(results)
@@ -100,19 +102,22 @@ def make_json(features):
     f = open('static/genre_maps/user_created.json', 'w')
     r = RelatedGenres.query.filter(RelatedGenres.shared_artists > 1).all()
 
-    genres = set()
+    genres = []  # list of genre sets
 
     for feature in features:
         limits = find_limits(feature, features[feature])
         result = find_genres(feature, limits)
-        print len(result)
-        genres = genres | result
+        genres.append(result)
 
-    results = find_relationships(genres, r)
+    genre_set = genres[0]
+    for genre in genres[1:]:
+        genre_set = genre_set & genre
+
+    results = find_relationships(genre_set, r)
 
     json.dump(results, f)
 
-    return results
+    return 'static/genre_maps/user_created.json'
 
 if __name__ == '__main__':
 

@@ -37,7 +37,6 @@
 
 <canvas width="2000" height="2000"></canvas>
 <script src="https://d3js.org/d3.v4.min.js"></script>
-<script src='static/force.js'></script>
 
 <form id='display' action='/features'>
     <input id='acousticness' type='checkbox' name='acousticness' value='acousticness'> Acousticness <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='a-level' id='a-level' hidden><br>
@@ -48,10 +47,13 @@
     <input id='loudness'type='checkbox' name='loudness' value='loudness'> Loudness <input type='range' defaultValue='-30' max='0' min='-60' step='10' name='lo-level' id='lo-level' hidden><br>
     <input id='mode' type='checkbox' name='mode' value='mode'> Mode <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='m-level' id='m-level' hidden><br>
     <input id='speechiness' type='checkbox' name='speechiness' value='speechiness'> Speechiness <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='s-level' id='s-level' hidden><br>
-    <input id='tempo' type='checkbox' name='tempo' value='tempo'> Tempo <input type='range' defaultValue='125' max='200' min='50' step='50' name='t-level' id='t-level' hidden><br>
+    <input id='tempo' type='checkbox' name='tempo' value='tempo'> Tempo <input type='range' defaultValue='150' max='200' min='50' step='50' name='t-level' id='t-level' hidden><br>
     <input id='valence' type='checkbox' name='valence' value='valence'> Valence <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='v-level' id='v-level' hidden><br>
-    <input type=submit>
+    <input type="submit">
 </form>
+
+<script src='static/force.js'></script>
+
 
 <script>
     $('#acousticness').on('click', function() {

@@ -112,34 +112,34 @@ def show_genre_map():
 def display_features():
     """Generates graph based on user-selected audio feature parameters"""
 
-    features = request.args.get('features')
-
     parameters = {}
 
-    if features['a-level'] != '.5':
-        parameters['acousticness'] = features['a-level']
-    if features['d-level'] != '.5':
-        parameters['danceability'] = features['d-level']
-    if features['e-level'] != '.5':
-        parameters['energy'] = features['e-level']
-    if features['i-level'] != '.5':
-        parameters['instrumentalness'] = features['i-level']
-    if features['l-level'] != '.5':
-        parameters['liveness'] = features['l-level']
-    if features['lo-level'] != '-30':
-        parameters['loudness'] = features['lo-level']
-    if features['m-level'] != '.5':
-        parameters['mode'] = features['m-level']
-    if features['s-level'] != '.5':
-        parameters['speechiness'] = features['s-level']
-    if features['t-level'] != '125':
-        parameters['tempo'] = features['t-level']
-    if features['v-level'] != '.5':
-        parameters['valence'] = features['v-level']
+    if float(request.args.get('a-level')) != .5:
+        parameters['acousticness'] = float(request.args.get('a-level'))
+    if float(request.args.get('d-level')) != .5:
+        parameters['danceability'] = float(request.args.get('d-level'))
+    if float(request.args.get('e-level')) != .5:
+        parameters['energy'] = float(request.args.get('e-level'))
+    if float(request.args.get('i-level')) != .5:
+        parameters['instrumentalness'] = float(request.args.get('i-level'))
+    if float(request.args.get('l-level')) != .5:
+        parameters['liveness'] = float(request.args.get('l-level'))
+    if float(request.args.get('lo-level')) != -30:
+        parameters['loudness'] = float(request.args.get('lo-level'))
+    if float(request.args.get('m-level')) != .5:
+        parameters['mode'] = float(request.args.get('m-level'))
+    if float(request.args.get('s-level')) != .5:
+        parameters['speechiness'] = float(request.args.get('s-level'))
+    if float(request.args.get('t-level')) != 150:
+        parameters['tempo'] = float(request.args.get('t-level'))
+    if float(request.args.get('v-level')) != .5:
+        parameters['valence'] = float(request.args.get('v-level'))
+
+    print parameters
 
     path = make_json(parameters)
 
-    path = "/static/genre_maps/all_high_values.json"
+    # path = "/static/genre_maps/acoustic.json"
 
     return path
 
@@ -242,6 +242,23 @@ def find_random_genre():
     name = genre.name
 
     return redirect('/genres/{}'.format(name))
+
+
+@app.route('/search-form')
+def show_search():
+    """Shows the search page"""
+
+    return render_template('search-form.html')
+
+
+@app.route('/search')
+def search():
+    """Searches for a genre page to go to"""
+
+    genre = request.args.get('search')
+
+    return redirect('/genres/{}'.format(genre))
+
 
 if __name__ == '__main__':
     app.debug = True
