@@ -49,19 +49,79 @@
                 <h2>Here's What {{ capitalized }} Sounds Like</h2>
                 <p>Let's take a closer look</p>
                 <div id='feature-names'>
-                    <span id='acousticness'>Acousticness</span>
-                    <span id='danceability'>Danceability</span>
-                    <span id='energy'>Energy</span>
-                    <span id='instrumentalness'>Instrumentalness</span>
-                    <span id='liveness'>Liveness</span>
-                    <span id='loudness'>Loudness</span>
-                    <span id='mode'>Mode</span>
-                    <span id='speechiness'>Speechiness</span>
-                    <span id='tempo'>Tempo</span>
-                    <span id='valence'>Valence</span>
+                    <span id='a-label'>Acousticness</span>
+                    <script>
+                        $('#a-label').on('mouseover', function() {
+                            display('#acousticness')
+                        })
+                    </script>
+
+                    <span id='d-label'>Danceability</span>
+                    <script>
+                        $('#d-label').on('mouseover', function() {
+                            display('#danceability')
+                        })
+                    </script>
+
+                    <span id='e-label'>Energy</span>
+                    <script>
+                        $('#e-label').on('mouseover', function() {
+                            display('#energy')
+                        })
+                    </script>
+
+                    <span id='i-label'>Instrumentalness</span>
+                    <script>
+                        $('#i-label').on('mouseover', function() {
+                            display('#instrumentalness')
+                        })
+                    </script>
+
+                    <span id='li-label'>Liveness</span>
+                    <script>
+                        $('#li-label').on('mouseover', function() {
+                            display('#liveness')
+                        })
+                    </script>
+
+                    <span id='lo-label'>Loudness</span>
+                    <script>
+                        $('#lo-label').on('mouseover', function() {
+                            display('#loudness')
+                        })
+                    </script>
+
+                    <span id='m-label'>Mode</span>
+                    <script>
+                        $('#m-label').on('mouseover', function() {
+                            display('#mode')
+                        })
+                    </script>
+
+                    <span id='s-label'>Speechiness</span>
+                    <script>
+                        $('#s-label').on('mouseover', function() {
+                            display('#speechiness')
+                        })
+                    </script>
+
+                    <span id='t-label'>Tempo</span>
+                    <script>
+                        $('#t-label').on('mouseover', function() {
+                            display('#tempo')
+                        })
+                    </script>
+
+                    <span id='v-label'>Valence</span>
+                    <script>
+                        $('#v-label').on('mouseover', function() {
+                            display('#valence')
+                        })
+                    </script>
+
                 </div>
                 <div id='feature-info'>
-                    <div id='acousticness' class='feature'>
+                    <div id='acousticness' class='feature' hidden>
                         <p>{{ features['acousticness'] }} / 1</p>
                         <meta id='a-value' data-acousticness="{{features['acousticness']}}">
                         <script>
@@ -69,7 +129,7 @@
                             var category = categorize('acousticness', aVal)
                             console.log(category + ' acousticness')
                         </script>
-                        <p hidden>A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.</p>
+                        <p>A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.</p>
                     </div>
                     <div id='danceability' class='feature' hidden>
                         <p>{{ features['danceability'] }} / 1</p>
@@ -79,7 +139,7 @@
                             var category = categorize('danceability', dVal)
                             console.log(category + ' danceability')
                         </script>
-                        <p hidden>Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.</p>
+                        <p>Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.</p>
                     </div>
                     <div id='energy' class='feature' hidden>
                         <p>{{ features['energy'] }} / 1</p>
@@ -89,7 +149,7 @@
                             var category = categorize('energy', eVal)
                             console.log(category  + ' energy')
                         </script>
-                        <p hidden>Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.</p>
+                        <p>Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.</p>
                     </div>
                     <div id='instrumentalness' class='feature' hidden>
                         <p>{{ features['instrumentalness'] }} / 1</p>
@@ -99,7 +159,7 @@
                             var category = categorize('instrumentalness', iVal)
                             console.log(category + ' instrumentalness')
                         </script>
-                        <p hidden>Predicts whether a track contains no vocals. "Ooh" and "aah" sounds are treated as instrumental in this context. Rap or spoken word tracks are clearly "vocal". The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal content. Values above 0.5 are intended to represent instrumental tracks, but confidence is higher as the value approaches 1.0.</p>
+                        <p>Predicts whether a track contains no vocals. "Ooh" and "aah" sounds are treated as instrumental in this context. Rap or spoken word tracks are clearly "vocal". The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal content. Values above 0.5 are intended to represent instrumental tracks, but confidence is higher as the value approaches 1.0.</p>
                     </div>
                     <div id='liveness' class='feature' hidden>
                         <p>{{ features['liveness'] }} / 1 - Above 0.8 = LIVE</p>
@@ -109,7 +169,7 @@
                             var category = categorize('liveness', liVal)
                             console.log(category + ' liveness')
                         </script>
-                        <p hidden>Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live.</p>
+                        <p>Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live.</p>
                     </div>
                     <div id='loudness' class='feature' hidden>
                         <p>{{ features['loudness'] }} (-60 - 0)</p>
@@ -119,7 +179,7 @@
                             var category = categorize('loudness', loVal)
                             console.log(category + ' loudness')
                         </script>
-                        <p hidden>The overall loudness of a track in decibels (dB). Loudness values are averaged across the entire track and are useful for comparing relative loudness of tracks. Loudness is the quality of a sound that is the primary psychological correlate of physical strength (amplitude). Values typical range between -60 and 0 db.</p>
+                        <p>The overall loudness of a track in decibels (dB). Loudness values are averaged across the entire track and are useful for comparing relative loudness of tracks. Loudness is the quality of a sound that is the primary psychological correlate of physical strength (amplitude). Values typical range between -60 and 0 db.</p>
                     </div>
                     <div id='mode' class='feature' hidden>
                         <p>{{ features['mode'] }} / Major: 1, Minor: 0</p>
@@ -129,7 +189,7 @@
                             var category = categorize('mode', mVal)
                             console.log(category + ' mode')
                         </script>
-                        <p hidden> Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic content is derived. Major is represented by 1 and minor is 0.</p>
+                        <p> Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic content is derived. Major is represented by 1 and minor is 0.</p>
                     </div>
                     <div id='speechiness' class='feature' hidden>
                         <p>{{ features['speechiness'] }} / Closer to 1 = speech-like, >0.66 = entirely spoken words, 0.33-0.66 = music and speech (like rap), below 0.33 = music / not speech-like </p>
@@ -139,7 +199,7 @@
                             var category = categorize('speechiness', sVal)
                             console.log(category + ' speechiness')
                         </script>
-                        <p hidden> Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value. Values above 0.66 describe tracks that are probably made entirely of spoken words. Values between 0.33 and 0.66 describe tracks that may contain both music and speech, either in sections or layered, including such cases as rap music. Values below 0.33 most likely represent music and other non-speech-like tracks.</p>
+                        <p> Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value. Values above 0.66 describe tracks that are probably made entirely of spoken words. Values between 0.33 and 0.66 describe tracks that may contain both music and speech, either in sections or layered, including such cases as rap music. Values below 0.33 most likely represent music and other non-speech-like tracks.</p>
                     </div>
                     <div id='tempo' class='feature' hidden>
                         <p>{{ features['tempo'] }} BPM / 200</p>
@@ -149,7 +209,7 @@
                             var category = categorize('tempo', tVal)
                             console.log(category + ' tempo')
                         </script>
-                        <p hidden>The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration. [OUT OF 200]</p>
+                        <p>The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration. [OUT OF 200]</p>
                     </div>
                     <div id='valence' class='feature' hidden>
                         <p>{{ features['valence'] }} / 1, positivity measure</p>
@@ -159,7 +219,7 @@
                             var category = categorize('valence', vVal)
                             console.log(category + ' valence')
                         </script>
-                        <p hidden>A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).</p>
+                        <p>A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).</p>
                     </div>
                 </div>
             </div>
