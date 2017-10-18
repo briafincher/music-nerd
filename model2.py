@@ -17,6 +17,9 @@ class Genre(db.Model):
     genre_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(50), nullable=False)
 
+    # artists = db.relationship('Artist', secondary='artists_genres', backref='genres', lazy='dynamic')
+    artists = db.relationship('Artist', secondary='artists_genres', backref='genres', order_by='Artist.popularity')
+
     def __repr__(self):
         return '<Genre name={}>'.format(self.name)
 
@@ -80,8 +83,6 @@ class Artist(db.Model):
     popularity = db.Column(db.Integer)
     href = db.Column(db.String(250))
     uri = db.Column(db.String(250))
-
-    genres = db.relationship('Genre', secondary='artists_genres', backref='artists')
 
     images = db.relationship('Image', backref='artist')
 
@@ -195,8 +196,6 @@ class Description(db.Model):
 #     user_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
 #     email = db.Column(db.String(100), nullable=False)
 #     # spotify_username =
-
-
 
 ###############################################################################
 
