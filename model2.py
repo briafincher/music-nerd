@@ -60,6 +60,7 @@ class Artist(db.Model):
     artist_id = db.Column(db.String(50), primary_key=True)
     name = db.Column(db.String(100), nullable=False)
     popularity = db.Column(db.Integer)
+    # popularity = db.Column(db.Integer, index=True) # Use upon re-creation
     href = db.Column(db.String(250))
     uri = db.Column(db.String(250))
 

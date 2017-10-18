@@ -160,13 +160,6 @@ def show_genre_info(genre):
         related_genres.append({'genre': r.name,
                               'capitalized': string.capwords(r.name)})
 
-    # related_genres = []
-    # for related in related_genres_search:
-    #     for item in related:
-    #         if item != genre and type(item) != int:
-    #             related_genres.append({'genre': item,
-    #                                    'capitalized': string.capwords(item)})
-
     artists = {}
 
     popular_artists = genre_object.artists[-6:]
