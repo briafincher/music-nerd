@@ -1,4 +1,5 @@
-var path = "/static/genre_maps/all_high_values.json";
+// var path = "/extra/miserables.json";
+var path = "/static/miserables.json";
 
 function loadD3(path) {
   d3.json(path, function(error, graph) {
@@ -62,17 +63,11 @@ $('#display').on('submit', function(evt) {
           'v-level': $('#v-level').val()
         };
 
-        console.log(features);
-
         $.get('/features', features, function(data) {
           $('#canvas').empty() // GET IT TO EMPTY THE CURRENT CANVAS AND REDRAW
           // $('#container').html(<canvas id='canvas' width="2000" height="2000"></canvas>)
           loadD3(data);
-          console.log(data)
-          // simulation.stop();
-          console.log('simulation stopped');
-          // simulation.restart();
-          console.log('sim restarted');  // THIS DOESN'T WORK
+          $('#display').trigger('reset')
         });
     });
 

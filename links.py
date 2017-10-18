@@ -100,7 +100,7 @@ def make_json(features):
     from relationships in database that satisfy those parameters"""
 
     f = open('static/genre_maps/user_created.json', 'w')
-    r = RelatedGenres.query.filter(RelatedGenres.shared_artists > 1).all()
+    r = RelatedGenres.query.filter(RelatedGenres.shared_artists > 5).all()
 
     genres = []  # list of genre sets
 
