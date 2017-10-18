@@ -240,7 +240,7 @@
             <div class='main' id='related-genres'>
                 <h2>{{ capitalized }} is most closely related to:</h2>
                 {% for genre in related %}
-                    <span><a href="/genres/{{genre['genre']}}">{{genre['capitalized']}}</a></span><br>
+                    <span class='artists'><a href="/genres/{{genre['genre']}}">{{genre['capitalized']}}</a></span><br>
                 {% endfor %}
             </div>
         </section>
