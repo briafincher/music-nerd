@@ -24,27 +24,6 @@ class Genre(db.Model):
         return '<Genre name={}>'.format(self.name)
 
 
-# class Album(db.Model):
-#     """Album model"""
-
-#     __tablename__ = 'albums'
-
-#     album_id = db.Column(db.String(50), primary_key=True, db.ForeignKey('tracks.album_id'))
-#     # artists = # Array of simplified artist objects
-#     name = db.Column(db.String(250), nullable=False)
-
-#     genres = db.relationship('Genre', secondary='albums_genres', backref='albums')
-
-
-# class AlbumGenre(db.Model):
-#     """Association table for albums and genres"""
-
-#     __tablename__ = 'albums_genres'
-
-#     album_genre_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-#     album_id = db.Column(db.String(50), db.ForeignKey('albums.album_id'), nullable=False)
-#     genre_id = db.Column(db.Integer, db.ForeignKey('genres.genre_id'), nullable=False)
-
 class RelatedGenres(db.Model):
     """Related genres model"""
 
@@ -188,14 +167,6 @@ class Description(db.Model):
     genre_id = db.Column(db.Integer, db.ForeignKey('genres.genre_id'), primary_key=True)
     page_name = db.Column(db.String(100), nullable=True)
 
-# class Users(db.Model):
-#     """User model"""
-
-#     __tablename__ = 'users'
-
-#     user_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-#     email = db.Column(db.String(100), nullable=False)
-#     # spotify_username =
 
 ###############################################################################
 

@@ -144,18 +144,6 @@ def display_features():
     return path
 
 
-# def find_popular_artists(artists):
-
-#     most_popular = []
-
-#     for artist in artists:
-#         most_popular.append((artist.popularity, artist))
-
-#     most_popular.sort()
-
-#     return most_popular[::-1]
-
-
 @app.route('/genres/<genre>')
 def show_genre_info(genre):
     import string
@@ -165,13 +153,19 @@ def show_genre_info(genre):
     genre_object = Genre.query.filter_by(name=genre).first()
     genre_id = genre_object.genre_id
 
-    related_genres_search = top_related(genre)
+    related_genre_search = top_related(genre)
     related_genres = []
-    for related in related_genres_search:
-        for item in related:
-            if item != genre and type(item) != int:
-                related_genres.append({'genre': item,
-                                       'capitalized': string.capwords(item)})
+    for related in related_genre_search:
+        r = Genre.query.filter_by(genre_id=related).first()
+        related_genres.append({'genre': r.name,
+                              'capitalized': string.capwords(r.name)})
+
+    # related_genres = []
+    # for related in related_genres_search:
+    #     for item in related:
+    #         if item != genre and type(item) != int:
+    #             related_genres.append({'genre': item,
+    #                                    'capitalized': string.capwords(item)})
 
     artists = {}
 
@@ -183,19 +177,6 @@ def show_genre_info(genre):
         else:
             url = None
         artists[name] = url
-
-    # popular_artists = find_popular_artists(genre_object.artists)
-
-    # while(len(artists) < 4):
-    #     for popularity, artist in popular_artists:
-    #         if len(artists) == 4:
-    #             break
-    #         name = artist.name
-    #         if artist.images:
-    #             url = artist.images[0].url
-    #         else:
-    #             url = None
-    #         artists[name] = url
 
     genre_description = Description.query.filter_by(genre_id=genre_id).first()
     if genre_description.page_name:
