@@ -30,9 +30,9 @@ def top_related(genre_name):
     genres = []
     for r in related:
         if r.genre1_id == genre.genre_id:
-            genres.append(r.genre2_id)
+            genres.append((r.genre2_id, r.shared_artists))
         elif r.genre2_id == genre.genre_id:
-            genres.append(r.genre1_id)
+            genres.append((r.genre1_id, r.shared_artists))
 
     return genres
 

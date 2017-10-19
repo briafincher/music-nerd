@@ -150,9 +150,60 @@
         <section id='related-section'>
             <div class='main' id='related-genres'>
                 <h2>{{ capitalized }} is most closely related to:</h2>
-                {% for genre in related %}
-                    <span class='artists'><a href="/genres/{{genre['genre']}}">{{genre['capitalized']}}</a></span><br>
-                {% endfor %}
+                <meta id='related-one' data-genre="{{ related[0]['genre'] }}" data-shared="{{ related[0]['shared'] }}" data-upper="{{ related[0]['capitalized'] }}">
+                <meta id='related-two' data-genre="{{ related[1]['genre'] }}" data-shared="{{ related[1]['shared'] }}" data-upper="{{ related[1]['capitalized'] }}">
+                <meta id='related-three' data-genre="{{ related[2]['genre'] }}" data-shared="{{ related[2]['shared'] }}" data-upper="{{ related[2]['capitalized'] }}">
+                <meta id='related-four' data-genre="{{ related[3]['genre'] }}" data-shared="{{ related[3]['shared'] }}" data-upper="{{ related[3]['capitalized'] }}">
+                <meta id='related-five' data-genre="{{ related[4]['genre'] }}" data-shared="{{ related[4]['shared'] }}" data-upper="{{ related[4]['capitalized'] }}">
+
+                <svg id='related' width='600px' height='160px'>
+                    <div id='elements' width='80%' style='margin: auto;'>
+                        <a id='one-a'><text id='one' width='100px' x='10px'></text></a><rect id='rect1' height='20px' style='fill: blue;' x='110px'/></rect>
+                        <a id='two-a'><text id='two' width='100px' x='10px'></text></a><rect id='rect2' height='20px' style='fill: blue;' x='110px'/></rect>
+                        <a id='three-a'><text id='three' width='100px' x='10px'></text></a><rect id='rect3' height='20px' style='fill: blue;' x='110px'/></rect>
+                        <a id='four-a'><text id='four' width='100px' x='10px'></text></a><rect id='rect4' height='20px' style='fill: blue;' x='110px'/></rect>
+                        <a id='five-a'><text id='five' width='100px' x='10px'></text></a><rect id='rect5' height='20px' style='fill: blue;' x='110px'/></rect>
+                    </div>
+                </svg>
+
+                <script>
+                    var one = $('#related-one').data();
+                    var two = $('#related-two').data();
+                    var three = $('#related-three').data();
+                    var four = $('#related-four').data();
+                    var five = $('#related-five').data();
+
+                    $('#one-a').attr('href', '/genres/' + one.genre)
+                    $('#two-a').attr('href', '/genres/' + two.genre)
+                    $('#three-a').attr('href', '/genres/' + three.genre)
+                    $('#four-a').attr('href', '/genres/' + four.genre)
+                    $('#five-a').attr('href', '/genres/' + five.genre)
+
+                    $('#one-a').html(one.upper)
+                    $('#two-a').html(two.upper)
+                    $('#three-a').html(three.upper)
+                    $('#four-a').html(four.upper)
+                    $('#five-a').html(five.upper)
+
+                    $('#rect1').attr('width', one.shared * 3)
+                    $('#rect2').attr('width', two.shared * 3)
+                    $('#rect3').attr('width', three.shared * 3)
+                    $('#rect4').attr('width', four.shared * 3)
+                    $('#rect5').attr('width', five.shared * 3)
+
+                    $('#rect1').attr('y', '10px')
+                    $('#rect2').attr('y', '40px')
+                    $('#rect3').attr('y', '70px')
+                    $('#rect4').attr('y', '100px')
+                    $('#rect5').attr('y', '130px')
+
+                    $('#one').attr('y', '10px')
+                    $('#two').attr('y', '40px')
+                    $('#three').attr('y', '70px')
+                    $('#four').attr('y', '100px')
+                    $('#five').attr('y', '130px')
+                </script>
+
             </div>
         </section>
 

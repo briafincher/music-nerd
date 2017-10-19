@@ -1,6 +1,6 @@
 from jinja2 import StrictUndefined
 
-from flask import (Flask, render_template, redirect, request, flash, session)
+from flask import (Flask, render_template, redirect, request, flash, session, jsonify)
 from flask_debugtoolbar import DebugToolbarExtension
 
 from model2 import app, connect_to_db, db
@@ -164,10 +164,12 @@ def show_genre_info(genre):
 
     related_genre_search = top_related(genre)
     related_genres = []
-    for related in related_genre_search:
+    for related, shared in related_genre_search:
+        print related, shared
         r = Genre.query.filter_by(genre_id=related).first()
         related_genres.append({'genre': r.name,
-                              'capitalized': string.capwords(r.name)})
+                              'capitalized': string.capwords(r.name),
+                              'shared': shared})
 
     artists = {}
 
