@@ -38,30 +38,21 @@
 <!-- <div id='container'>
     <canvas id='canvas' width="2000" height="2000"></canvas>
 </div> -->
-<svg id='svg' width='2000' height='2000'></svg>
-<script src="https://d3js.org/d3.v4.min.js"></script>
 
-<div id='form-container'>
+
+<div id='container'>
     <form id='display' action='/features'>
-        <input id='acousticness' type='checkbox' name='acousticness' value='acousticness'> Acousticness <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='a-level' id='a-level' hidden><span id='a-val'>0.5</span><br>
 
-        <input id='danceability' type='checkbox' name='danceability' value='danceability'> Danceability <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='d-level' id='d-level' hidden><span id='d-val'>0.5</span><br>
-
-        <input id='energy' type='checkbox' name='energy' value='energy'> Energy <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='e-level' id='e-level' hidden><span id='e-val'>0.5</span><br>
-
-        <input id='instrumentalness' type='checkbox' name='instrumentalness' value='instrumentalness'> Instrumentalness <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='i-level' id='i-level' hidden><span id='i-val'>0.5</span><br>
-
-        <input id='liveness' type='checkbox' name='liveness' value='liveness'> Liveness <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='l-level' id='l-level' hidden><span id='l-val'>0.5</span><br>
-
-        <input id='loudness'type='checkbox' name='loudness' value='loudness'> Loudness <input type='range' defaultValue='-30' max='0' min='-60' step='10' name='lo-level' id='lo-level' hidden><span id='lo-val'>-30</span><br>
-
-        <input id='mode' type='checkbox' name='mode' value='mode'> Mode <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='m-level' id='m-level' hidden><span id='m-val'>0.5</span><br>
-
-        <input id='speechiness' type='checkbox' name='speechiness' value='speechiness'> Speechiness <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='s-level' id='s-level' hidden><span id='s-val'>0.5</span><br>
-
-        <input id='tempo' type='checkbox' name='tempo' value='tempo'> Tempo <input type='range' defaultValue='150' max='200' min='50' step='50' name='t-level' id='t-level' hidden><span id='t-val'>150</span><br>
-
-        <input id='valence' type='checkbox' name='valence' value='valence'> Valence <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='v-level' id='v-level' hidden><span id='v-val'>0.5</span><br>
+        Acousticness <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='a-level' id='a-level'><span id='a-val'>0.5</span><br>
+        Danceability <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='d-level' id='d-level'><span id='d-val'>0.5</span><br>
+        Energy <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='e-level' id='e-level'><span id='e-val'>0.5</span><br>
+        Instrumentalness <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='i-level' id='i-level'><span id='i-val'>0.5</span><br>
+        Liveness <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='l-level' id='l-level'><span id='l-val'>0.5</span><br>
+        Loudness <input type='range' defaultValue='-30' max='0' min='-60' step='10' name='lo-level' id='lo-level'><span id='lo-val'>-30</span><br>
+        Mode <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='m-level' id='m-level'><span id='m-val'>0.5</span><br>
+        Speechiness <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='s-level' id='s-level'><span id='s-val'>0.5</span><br>
+        Tempo <input type='range' defaultValue='150' max='200' min='50' step='50' name='t-level' id='t-level'><span id='t-val'>150</span><br>
+        Valence <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='v-level' id='v-level'><span id='v-val'>0.5</span><br>
 
         <input type="submit">
 
@@ -108,43 +99,14 @@
             });
         </script>
     </form>
+    <svg id='svg' width='1000' height='1000'></svg>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
 </div>
 
 <script src='static/d3.js'></script>
 
 
-<script>
-    $('#acousticness').on('click', function() {
-        $('#a-level').toggle();
-    })
-    $('#danceability').on('click', function() {
-        $('#d-level').toggle();
-    })
-    $('#energy').on('click', function() {
-        $('#e-level').toggle();
-    })
-    $('#instrumentalness').on('click', function() {
-        $('#i-level').toggle();
-    })
-    $('#liveness').on('click', function() {
-        $('#l-level').toggle();
-    })
-    $('#loudness').on('click', function() {
-        $('#lo-level').toggle();
-    })
-    $('#mode').on('click', function() {
-        $('#m-level').toggle();
-    })
-    $('#speechiness').on('click', function() {
-        $('#s-level').toggle();
-    })
-    $('#tempo').on('click', function() {
-        $('#t-level').toggle();
-    })
-    $('#valence').on('click', function() {
-        $('#v-level').toggle();
-    })
-</script>
+
 
 {% endblock %}
 
