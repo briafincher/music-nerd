@@ -99,8 +99,10 @@ def make_json(features):
     """Given a dictionary of features and parameters, creates a json file pulling
     from relationships in database that satisfy those parameters"""
 
+    open('static/genre_maps/user_created.json', 'w').close()  # erase file
+
     f = open('static/genre_maps/user_created.json', 'w')
-    r = RelatedGenres.query.filter(RelatedGenres.shared_artists > 5).all()
+    r = RelatedGenres.query.filter(RelatedGenres.shared_artists > 10).all()
 
     genres = []  # list of genre sets
 
@@ -119,8 +121,17 @@ def make_json(features):
 
     return 'static/genre_maps/user_created.json'
 
+
 if __name__ == '__main__':
 
     connect_to_db(app)
 
-    r = RelatedGenres.query.filter(RelatedGenres.shared_artists > 1).all()
+    r = RelatedGenres.query.filter(RelatedGenres.shared_artists > 10).all()
+    f = open('static/genre_maps/10_plus.json', 'w')
+    genre_query = Genre.query.all()
+    genres = []
+    for genre in genre_query:
+        genres.append(genre.name)
+    results = find_relationships(genres, r)
+    json.dump(results, f)
+    f.close()

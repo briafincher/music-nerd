@@ -36,6 +36,12 @@ function loadD3(path) {
     node.append("title")
         .text(function(d) { return d.id; });
 
+    // node.append('a').attr('href', '/genres/' + d.id) // add href to each node
+    // node.append(function(d) {
+    //   var href = '/genres/' + d.id
+    //   return "<a href=" + href + "></a>"
+    // })
+
     simulation
         .nodes(graph.nodes)
         .on("tick", ticked);
@@ -54,14 +60,15 @@ function loadD3(path) {
           .attr("cx", function(d) { return d.x; })
           .attr("cy", function(d) { return d.y; });
     }
+
+    simulation.restart();
   });
 }
 
-var path = '/static/genre_maps/acoustic.json';
+var path = '/static/genre_maps/10_plus.json';
 loadD3(path);
 
 $('#display').on('submit', function(evt) {
-        // console.log('hi hello i am here')
 
         evt.preventDefault();
 
@@ -79,8 +86,7 @@ $('#display').on('submit', function(evt) {
         };
 
         $.get('/features', features, function(data) {
-          $('#svg').empty() // GET IT TO EMPTY THE CURRENT CANVAS AND REDRAW
-          // $('#container').html(<canvas id='canvas' width="2000" height="2000"></canvas>)
+          $('#svg').empty()
           loadD3(data);
           $('#display').trigger('reset')
         });
