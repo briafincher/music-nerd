@@ -134,4 +134,5 @@ if __name__ == '__main__':
         genres.append(genre.name)
     results = find_relationships(genres, r)
     json.dump(results, f)
+    # GET JSON TO HAVE 'data' AT THE BEGINNING
     f.close()
