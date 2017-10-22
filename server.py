@@ -12,7 +12,7 @@ from random import randint
 
 from auth_flow import create_playlist
 
-from secrets import SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI
+# from secrets import SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI
 from spotipy import oauth2, Spotify
 
 import wikipedia
@@ -24,9 +24,9 @@ from links import make_json
 app.secret_key = "ABC"
 app.jinja_env.undefined = StrictUndefined
 
-# SPOTIPY_CLIENT_ID = os.environ['SPOTIPY_CLIENT_ID']
-# SPOTIPY_CLIENT_SECRET = os.environ['SPOTIPY_CLIENT_SECRET']
-# SPOTIPY_REDIRECT_URI = os.environ['SPOTIPY_REDIRECT_URI']
+SPOTIPY_CLIENT_ID = os.environ['SPOTIPY_CLIENT_ID']
+SPOTIPY_CLIENT_SECRET = os.environ['SPOTIPY_CLIENT_SECRET']
+SPOTIPY_REDIRECT_URI = os.environ['SPOTIPY_REDIRECT_URI']
 
 oauth = oauth2.SpotifyOAuth(client_id=SPOTIPY_CLIENT_ID,
                             client_secret=SPOTIPY_CLIENT_SECRET,
@@ -99,7 +99,7 @@ def show_genre_map():
                                  'instrumentalness': features.instrumentalness,
                                  'liveness': features.liveness,
                                  'loudness': features.loudness,
-                                 'mode': features.mode,
+                                 # 'mode': features.mode,
                                  'speechiness': features.speechiness,
                                  'tempo': features.tempo,
                                  'valence': features.valence
@@ -120,7 +120,7 @@ def display_features():
     i_level = float(request.args.get('i-level'))
     l_level = float(request.args.get('l-level'))
     lo_level = float(request.args.get('lo-level'))
-    m_level = float(request.args.get('m-level'))
+    # m_level = float(request.args.get('m-level'))
     s_level = float(request.args.get('s-level'))
     t_level = float(request.args.get('t-level'))
     v_level = float(request.args.get('v-level'))
@@ -137,8 +137,8 @@ def display_features():
         parameters['liveness'] = l_level
     if lo_level != -30:
         parameters['loudness'] = lo_level
-    if m_level != .5:
-        parameters['mode'] = m_level
+    # if m_level != .5:
+    #     parameters['mode'] = m_level
     if s_level != .5:
         parameters['speechiness'] = s_level
     if t_level != 150:
@@ -165,7 +165,6 @@ def show_genre_info(genre):
     related_genre_search = top_related(genre)
     related_genres = []
     for related, shared in related_genre_search:
-        print related, shared
         r = Genre.query.filter_by(genre_id=related).first()
         related_genres.append({'genre': r.name,
                               'capitalized': string.capwords(r.name),
@@ -191,16 +190,16 @@ def show_genre_info(genre):
     f = GenreAverages.query.filter_by(genre=genre).first()
     features = {'acousticness': f.acousticness,
                 'danceability': f.danceability,
-                'duration_ms': f.duration_ms / 60000,  # duration in minutes
+                # 'duration_ms': f.duration_ms / 60000,  # duration in minutes
                 'energy': f.energy,
                 'instrumentalness': f.instrumentalness,
-                'key': f.key,
+                # 'key': f.key,
                 'liveness': f.liveness,
                 'loudness': f.loudness,
-                'mode': f.mode,
+                # 'mode': f.mode,
                 'speechiness': f.speechiness,
                 'tempo': f.tempo,
-                'time_signature': f.time_signature,
+                # 'time_signature': f.time_signature,
                 'valence': f.valence
                 }
 
@@ -258,4 +257,4 @@ if __name__ == '__main__':
     app.debug = True
 
     connect_to_db(app)
-    app.run()
+    app.run(host="0.0.0.0")

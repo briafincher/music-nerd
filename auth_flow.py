@@ -1,17 +1,17 @@
-# import os
+import os
 import spotipy
 # from pprint import pformat
 import spotipy.util as util
 from client_credentials_flow import genre_search
-from secrets import SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI
+# from secrets import SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI
 import string
 import pdb
 
 # os.remove('.cache-haverchucks')
 
-# SPOTIPY_CLIENT_ID = os.environ['SPOTIPY_CLIENT_ID']
-# SPOTIPY_CLIENT_SECRET = os.environ['SPOTIPY_CLIENT_SECRET']
-# SPOTIPY_REDIRECT_URI = os.environ['SPOTIPY_REDIRECT_URI']
+SPOTIPY_CLIENT_ID = os.environ['SPOTIPY_CLIENT_ID']
+SPOTIPY_CLIENT_SECRET = os.environ['SPOTIPY_CLIENT_SECRET']
+SPOTIPY_REDIRECT_URI = os.environ['SPOTIPY_REDIRECT_URI']
 
 # SPOTIPY_CLIENT_ID = SPOTIPY_CLIENT_ID
 # SPOTIPY_CLIENT_SECRET = SPOTIPY_CLIENT_SECRET
