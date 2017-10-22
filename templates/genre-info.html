@@ -196,7 +196,6 @@
                         dataList.push(genre.shared);
                     }
 
-
                     var relatedChart = new Chart(ctx, {
                         type: 'horizontalBar',
                         data: {
@@ -214,59 +213,28 @@
                             }
                         }
                     });
-                </script>
 
-                <!-- <div id='elements' width='80%' style='margin: auto;'>
-                        <a id='one-a'></a>
-                        <a id='two-a'></a>
-                        <a id='three-a'></a>
-                        <a id='four-a'></a>
-                        <a id='five-a'></a>
-                </div>
-                <svg id='related-bars' width='600px' height='160px'>
-                        One<rect id='rect1' height='20px' style='fill: blue;' x='110px'/></rect>
-                        <rect id='rect2' height='20px' style='fill: blue;' x='110px'/></rect>
-                        <rect id='rect3' height='20px' style='fill: blue;' x='110px'/></rect>
-                        <rect id='rect4' height='20px' style='fill: blue;' x='110px'/></rect>
-                        <rect id='rect5' height='20px' style='fill: blue;' x='110px'/></rect>
-                </svg> -->
+                    $('#ctx').on('click', function(evt){
+            
+                        var base = relatedChart.scales['y-axis-0'].right;
+                        var height = relatedChart.chart.height;
+        
+                        if(evt.offsetX < base){
 
-                <script>
-                    // var one = $('#related-one').data();
-                    // var two = $('#related-two').data();
-                    // var three = $('#related-three').data();
-                    // var four = $('#related-four').data();
-                    // var five = $('#related-five').data();
+                            var count = relatedChart.scales['y-axis-0'].ticks.length;
+                            
+                            var bar_height = height / count;
+                            var bar_index = Math.floor(evt.offsetY / bar_height);
 
-                    // $('#one-a').attr('href', '/genres/' + one.genre)
-                    // $('#two-a').attr('href', '/genres/' + two.genre)
-                    // $('#three-a').attr('href', '/genres/' + three.genre)
-                    // $('#four-a').attr('href', '/genres/' + four.genre)
-                    // $('#five-a').attr('href', '/genres/' + five.genre)
+                            var label = relatedChart.data.labels[bar_index];
+                            var genre = label.toLowerCase();
 
-                    // $('#one-a').html(one.upper)
-                    // $('#two-a').html(two.upper)
-                    // $('#three-a').html(three.upper)
-                    // $('#four-a').html(four.upper)
-                    // $('#five-a').html(five.upper)
+                            $.get('/genres/' + genre, function() {
+                                window.location = '/genres/' + genre;
+                            });
+                        }
 
-                    // $('#rect1').attr('width', one.shared * 3)
-                    // $('#rect2').attr('width', two.shared * 3)
-                    // $('#rect3').attr('width', three.shared * 3)
-                    // $('#rect4').attr('width', four.shared * 3)
-                    // $('#rect5').attr('width', five.shared * 3)
-
-                    // $('#rect1').attr('y', '10px')
-                    // $('#rect2').attr('y', '40px')
-                    // $('#rect3').attr('y', '70px')
-                    // $('#rect4').attr('y', '100px')
-                    // $('#rect5').attr('y', '130px')
-
-                    // $('#one').attr('y', '10px')
-                    // $('#two').attr('y', '40px')
-                    // $('#three').attr('y', '70px')
-                    // $('#four').attr('y', '100px')
-                    // $('#five').attr('y', '130px')
+                    }); 
                 </script>
 
             </div>
@@ -275,12 +243,6 @@
     </div>
 
 </div>
-
-<!-- <text id='one' width='100px' x='10px'></text>
-<text id='two' width='100px' x='10px'></text>
-<text id='three' width='100px' x='10px'></text>
-<text id='four' width='100px' x='10px'></text>
-<text id='five' width='100px' x='10px'></text> -->
 
 
 <script src="https://code.jquery.com/jquery.js"></script>
