@@ -134,7 +134,7 @@ $('#lo-label').on('mouseover', function() {
     $('#info').html(info)
 
     var loVal = $('#lo-value').data();
-    $('#slider').prop('step', 10);
+    // $('#slider').prop('step', 10);
     $('#slider').prop('min', -60);
     $('#slider').prop('max', 0);
     $('#slider').prop('value', loVal);
@@ -159,7 +159,7 @@ $('#t-label').on('mouseover', function() {
     $('#info').html(info)
 
     var tVal = $('#t-value').data();
-    $('#slider').prop('step', 10)
+    // $('#slider').prop('step', 10);
     $('#slider').prop('min', 50);
     $('#slider').prop('max', 200);
     $('#slider').prop('value', tVal);

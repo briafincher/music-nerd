@@ -155,13 +155,14 @@ def display_features():
 
 @app.route('/genres/<genre>')
 def show_genre_info(genre):
-    import string
-
     """Genre info page"""
+
+    import string
 
     genre_object = Genre.query.filter_by(name=genre).first()
     genre_id = genre_object.genre_id
 
+    # populate related genre data
     related_genre_search = top_related(genre)
     related_genres = []
     for related, shared in related_genre_search:
@@ -169,9 +170,11 @@ def show_genre_info(genre):
         related_genres.append({'genre': r.name,
                               'capitalized': string.capwords(r.name),
                               'shared': shared})
+    # if len(related_genres) < 5:
+    #     for i in range(5 - len(related_genres))
 
+    # populate top artists data
     artists = {}
-
     popular_artists = genre_object.artists[-6:]
     for artist in popular_artists:
         name = artist.name
@@ -181,12 +184,14 @@ def show_genre_info(genre):
             url = None
         artists[name] = url
 
+    # pull genre description with Wikipedia API
     genre_description = Description.query.filter_by(genre_id=genre_id).first()
     if genre_description.page_name:
         description = wikipedia.summary(genre_description.page_name)
     else:
         description = None
 
+    # populate genre audio features data
     f = GenreAverages.query.filter_by(genre=genre).first()
     features = {'acousticness': f.acousticness,
                 'danceability': f.danceability,
