@@ -178,13 +178,32 @@
                     var four = $('#related-four').data();
                     var five = $('#related-five').data();
 
+                    var allGenres = [one, two, three, four, five];
+                    var genres = [];
+                    for (var i = 0; i < allGenres.length; i++) {
+                        var genre = allGenres[i];
+                        if (genre.shared > 0) {
+                            genres.push(genre);
+                        }
+                    }
+
+                    var labelsList = [];
+                    var dataList = [];
+
+                    for (var i = 0; i < genres.length; i++) {
+                        var genre = genres[i];
+                        labelsList.push(genre.upper);
+                        dataList.push(genre.shared);
+                    }
+
+
                     var relatedChart = new Chart(ctx, {
                         type: 'horizontalBar',
                         data: {
-                            labels: [one.upper, two.upper, three.upper, four.upper, five.upper],
+                            labels: labelsList,
                             datasets: [{
                                 backgroundColor: '#3e95cd',
-                                data: [one.shared, two.shared, three.shared, four.shared, five.shared]
+                                data: dataList
                             }]
                         }, 
                         options: {
