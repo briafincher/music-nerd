@@ -12,21 +12,21 @@ from random import randint
 
 from auth_flow import create_playlist
 
-from secrets import SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI
+# from secrets import SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI
 from spotipy import oauth2, Spotify
 
 import wikipedia
 
-# import os
+import os
 
 from links import make_json
 
 app.secret_key = "ABC"
 app.jinja_env.undefined = StrictUndefined
 
-# SPOTIPY_CLIENT_ID = os.environ['SPOTIPY_CLIENT_ID']
-# SPOTIPY_CLIENT_SECRET = os.environ['SPOTIPY_CLIENT_SECRET']
-# SPOTIPY_REDIRECT_URI = os.environ['SPOTIPY_REDIRECT_URI']
+SPOTIPY_CLIENT_ID = os.environ['SPOTIPY_CLIENT_ID']
+SPOTIPY_CLIENT_SECRET = os.environ['SPOTIPY_CLIENT_SECRET']
+SPOTIPY_REDIRECT_URI = os.environ['SPOTIPY_REDIRECT_URI']
 
 oauth = oauth2.SpotifyOAuth(client_id=SPOTIPY_CLIENT_ID,
                             client_secret=SPOTIPY_CLIENT_SECRET,
