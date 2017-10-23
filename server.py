@@ -225,6 +225,7 @@ def render_playlist(genre):
     playlist_uri = create_playlist(genre=genre,
                                    user=session['user']['id'],
                                    token=session['token'])
+    print playlist_uri
 
     return 'https://open.spotify.com/embed?uri={}'.format(playlist_uri)
 
@@ -238,6 +239,7 @@ def find_random_genre():
     genre = Genre.query.filter_by(genre_id=random).first()
 
     name = genre.name
+    print name
 
     return redirect('/genres/{}'.format(name))
 
