@@ -40,78 +40,110 @@
 </div> -->
 
 
-<div id='container'>
+<div id='container' class='page'>
     <form id='display' action='/features'>
+        <p id='feature-explanation'>Filter the genres displayed by setting parameters on audio features. To learn more about a feature, hover over it.</p><br>
 
-        Acousticness <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='a-level' id='a-level'><span id='a-val'>0.5</span><br>
-        Danceability <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='d-level' id='d-level'><span id='d-val'>0.5</span><br>
+
+        <span id='a' class='tooltip-container'>Acousticness
+            <span class='tooltip' id='a-tooltip'>A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.</span>
+        </span>
+        <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='a-level' id='a-level'><span id='a-val'>0.5</span><br>
+
+
+        <span id='d' class='tooltip-container'>Danceability
+            <span class='tooltip' id='d-tooltip'>Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.</span>
+        </span>
+        <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='d-level' id='d-level'><span id='d-val'>0.5</span><br>
+
+        <span class='tooltip' id='e-tooltip'>Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.</span>
         Energy <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='e-level' id='e-level'><span id='e-val'>0.5</span><br>
+
+        <span class='tooltip' id='i-tooltip'>Predicts whether a track contains no vocals. "Ooh" and "aah" sounds are treated as instrumental in this context. Rap or spoken word tracks are clearly "vocal". The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal content. Values above 0.5 are intended to represent instrumental tracks, but confidence is higher as the value approaches 1.0.</span>
         Instrumentalness <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='i-level' id='i-level'><span id='i-val'>0.5</span><br>
+
+        <span class='tooltip' id='li-tooltip'>Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live.</span>
         Liveness <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='l-level' id='l-level'><span id='l-val'>0.5</span><br>
+
+        <span class='tooltip' id='lo-tooltip'>The overall loudness of a track in decibels (dB). Loudness values are averaged across the entire track and are useful for comparing relative loudness of tracks. Loudness is the quality of a sound that is the primary psychological correlate of physical strength (amplitude). Values typical range between -60 and 0 db.</span>
         Loudness <input type='range' defaultValue='-30' max='0' min='-60' step='10' name='lo-level' id='lo-level'><span id='lo-val'>-30</span><br>
-<!--         Mode <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='m-level' id='m-level'><span id='m-val'>0.5</span><br> -->
+
+        <span class='tooltip' id='s-tooltip'>Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value. Values above 0.66 describe tracks that are probably made entirely of spoken words. Values between 0.33 and 0.66 describe tracks that may contain both music and speech, either in sections or layered, including such cases as rap music. Values below 0.33 most likely represent music and other non-speech-like tracks.</span>
         Speechiness <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='s-level' id='s-level'><span id='s-val'>0.5</span><br>
+
+        <span class='tooltip' id='t-tooltip'>The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration.</span>
         Tempo <input type='range' defaultValue='150' max='200' min='50' step='50' name='t-level' id='t-level'><span id='t-val'>150</span><br>
+
+        <span class='tooltip' id='v-tooltip'>A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).</span>
         Valence <input type='range' defaultValue='.5' max='1' min='0' step='0.1' name='v-level' id='v-level'><span id='v-val'>0.5</span><br>
 
-        <input type="submit">
-
-        <script>
-            $('#a-level').change(function () {
-                var val = $('#a-level').val();
-                $('#a-val').html(val);
-            });
-            $('#d-level').change(function () {
-                var val = $('#d-level').val();
-                $('#d-val').html(val);
-            });
-            $('#e-level').change(function () {
-                var val = $('#e-level').val();
-                $('#e-val').html(val);
-            });
-            $('#i-level').change(function () {
-                var val = $('#i-level').val();
-                $('#i-val').html(val);
-            });
-            $('#l-level').change(function () {
-                var val = $('#l-level').val();
-                $('#l-val').html(val);
-            });
-            $('#lo-level').change(function () {
-                var val = $('#lo-level').val();
-                $('#lo-val').html(val);
-            });
-            // $('#m-level').change(function () {
-            //     var val = $('#m-level').val();
-            //     $('#m-val').html(val);
-            // });
-            $('#s-level').change(function () {
-                var val = $('#s-level').val();
-                $('#s-val').html(val);
-            });
-            $('#t-level').change(function () {
-                var val = $('#t-level').val();
-                $('#t-val').html(val);
-            });
-            $('#v-level').change(function () {
-                var val = $('#v-level').val();
-                $('#v-val').html(val);
-            });
-        </script>
+        <input type="submit" value='Show genres'>
     </form>
+
     <svg id='svg' width='1000' height='1000'></svg>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="http://bost.ocks.org/mike/fisheye/fisheye.js?0.0.3"> </script>
-    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"> </script>
-    <script src="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"> </script>
-    <script id='input_json' src='static/genre_maps/10_plus.json'></script>
-    <script src='static/fancy_force.js'></script>
+
+    <form id='search' action='/search'>
+        <input type='text' id='search-field' name='search' placeholder='Search a genre'><br>
+        <input type='submit' value='Learn more'>
+    </form>
+
 </div>
 
-<div class="ui-widget">
+<!-- <div class="ui-widget">
    <input id="search">
     <button id='search-button' type="button">Search</button>
-</div>
+</div> -->
+
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src='/static/autocomplete.js'></script>
+
+<script>
+    $('#a-level').change(function () {
+        var val = $('#a-level').val();
+        $('#a-val').html(val);
+    });
+    $('#d-level').change(function () {
+        var val = $('#d-level').val();
+        $('#d-val').html(val);
+    });
+    $('#e-level').change(function () {
+        var val = $('#e-level').val();
+        $('#e-val').html(val);
+    });
+    $('#i-level').change(function () {
+        var val = $('#i-level').val();
+        $('#i-val').html(val);
+    });
+    $('#l-level').change(function () {
+        var val = $('#l-level').val();
+        $('#l-val').html(val);
+    });
+    $('#lo-level').change(function () {
+        var val = $('#lo-level').val();
+        $('#lo-val').html(val);
+    });
+    $('#s-level').change(function () {
+        var val = $('#s-level').val();
+        $('#s-val').html(val);
+    });
+    $('#t-level').change(function () {
+        var val = $('#t-level').val();
+        $('#t-val').html(val);
+    });
+    $('#v-level').change(function () {
+        var val = $('#v-level').val();
+        $('#v-val').html(val);
+    });
+</script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="http://bost.ocks.org/mike/fisheye/fisheye.js?0.0.3"> </script>
+<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"> </script>
+<script src="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"> </script>
+<script id='input_json' src='static/genre_maps/10_plus.json'></script>
+<script src='static/fancy_force.js'></script>
 
 
 {% endblock %}

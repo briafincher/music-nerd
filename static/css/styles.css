@@ -24,53 +24,41 @@
     float: left;
 }
 
-HIDE#categories {
-    -webkit-transform: rotate(270deg);
-    transform-origin: 50% 100% 0;
-    width: 750px;
-    height: 100px;
-    margin-left: 5px;
-    margin-top: auto;
-}
-
-HIDE#categories {
-    width: 10%;
-    height: 80%;
-    display: inline-block;
-    float: left;
-}
-
 #page {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center
+    height: 100vh;
 }
 
 .categories {
     display: flex;
-    width: 80vh;
-    top: 13vh;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    align-items: center;
-    position: fixed;
-    -webkit-transform: rotate(-90deg) translateX(-100%);
-    transform-origin: left top;
+    width: 100px;
 }
 
-#main {/*
-    display: flex;*/
-    position: relative;
-    width: 85%;
-    overflow: visible;
- /*   height: 100%;*/
-    margin-right: 5%;
+.categories > div {
+    transform-origin: left top;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    margin-top: 10vh;
+    -webkit-transform: rotate(-90deg) translateX(-100%);
+}
+
+.categories > div > a {
+    padding-right: 16px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    flex: 1 0 auto;
+        width: calc(100vw - 100px);
 }
 
 section {
     display: flex;
-    height: 1000px;
+    flex: 1 0 auto;
 }
 
 .main {
@@ -103,8 +91,6 @@ body {
     background-color: #B0F6E8;
 }
 
-
-
 #asterisk {
     font-size:10px;
 }
@@ -126,10 +112,6 @@ h1 #genre {
     text-align: justify;
 }
 
-#page {
-    display: block;
-}
-
 header {
     position: fixed;
     display: flex;
@@ -144,18 +126,19 @@ header {
     z-index: 10;
 }
 
-#user-image {
-    height: 50px;
-    width: 50px;
-}
-
 #left {
     -webkit-align-self: flext-start;
     align-self: flex-start;
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
 }
 
 #right {
     margin-left: auto;
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .highlighted {
@@ -165,4 +148,48 @@ header {
 
 .bold {
     font-weight: bold;
+}
+
+#container.page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 60%;
+    left: 7%;
+    margin-left: -60px;
+
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+#a:hover #a-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+#display {
+    width: 300px;
+}
+
+#feature-explanation {
+    width: 75%;
 }

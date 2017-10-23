@@ -1,14 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<div id='page'>
+<div id='page' class='page'>
 
     <nav class='categories'>
+        <div>
             <a id='related-title' class='sidebar' href='#related-section'>Related Genres</a>
             <a id='artists-title' class='sidebar' href='#artists-section'>Top Artists</a>
             <a id='features-title' class='sidebar' href='#features-section'>Audio Features</a>
             <a id='description-title' class='sidebar' href='#description-section'>About the Genre</a>
             <a id='playlist-title' class='sidebar' href='#playlist-section'>Music Nerd Guide</a>
+        </div>
     </nav>
 
     <main id='main' data-spy='scroll' data-target='.categories' data-offset='50'>
@@ -90,7 +92,7 @@
                 <div id='feature-info'>
                     <p id='info'></p>
                 </div>
-                
+
                 <div id='feature-slider'>
                     <input type='range' id='slider'>
                 </div>
@@ -148,11 +150,11 @@
 </script>
 
 <!-- navigation? -->
-<script src='/static/navigation.js'></script>
+<!-- <script src='/static/navigation.js'></script> -->
 <script>
-    $(document).ready(function() {
-        $('nav a').pageNav();
-    });
+    // $(document).ready(function() {
+    //     $('nav a').pageNav();
+    // });
 </script>
 
 

@@ -1,15 +1,15 @@
-import os
+# import os
 import spotipy
 # from pprint import pformat
 from spotipy.oauth2 import SpotifyClientCredentials
 
-SPOTIPY_CLIENT_ID = os.environ['SPOTIPY_CLIENT_ID']
-SPOTIPY_CLIENT_SECRET = os.environ['SPOTIPY_CLIENT_SECRET']
-SPOTIPY_REDIRECT_URI = os.environ['SPOTIPY_REDIRECT_URI']
+# SPOTIPY_CLIENT_ID = os.environ['SPOTIPY_CLIENT_ID']
+# SPOTIPY_CLIENT_SECRET = os.environ['SPOTIPY_CLIENT_SECRET']
+# SPOTIPY_REDIRECT_URI = os.environ['SPOTIPY_REDIRECT_URI']
 
-# SPOTIPY_CLIENT_ID = 'aae1d1323f2548b0a2c612e1e2ce516e'
-# SPOTIPY_CLIENT_SECRET = '5270b54d98e7461ebb1ea950c9e5a8ca'
-# SPOTIPY_REDIRECT_URI = 'http://localhost:5000/'
+SPOTIPY_CLIENT_ID = 'aae1d1323f2548b0a2c612e1e2ce516e'
+SPOTIPY_CLIENT_SECRET = '5270b54d98e7461ebb1ea950c9e5a8ca'
+SPOTIPY_REDIRECT_URI = 'http://localhost:5000/'
 
 client_credentials_manager = SpotifyClientCredentials(client_id='aae1d1323f2548b0a2c612e1e2ce516e',
                                                       client_secret='5270b54d98e7461ebb1ea950c9e5a8ca')

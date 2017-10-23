@@ -71,7 +71,7 @@ $('#a-label').on('mouseover', function() {
     var aVal = $('#a-value').data();
     $('#slider').prop('min', 0);
     $('#slider').prop('max', 1);
-    $('#slider').prop('value', aVal);
+    $('#slider').prop('value', aVal.acousticness);
     $('#slider').trigger('change');
 
     var category = categorize('acousticness', aVal);
@@ -83,7 +83,7 @@ $('#d-label').on('mouseover', function() {
     var dVal = $('#d-value').data();
     $('#slider').prop('min', 0);
     $('#slider').prop('max', 1);
-    $('#slider').prop('value', dVal);
+    $('#slider').prop('value', dVal.danceability);
     $('#slider').trigger('change');
 
     var category = categorize('danceability', dVal);
@@ -95,7 +95,7 @@ $('#e-label').on('mouseover', function() {
     var eVal = $('#e-value').data();
     $('#slider').prop('min', 0);
     $('#slider').prop('max', 1);
-    $('#slider').prop('value', eVal);
+    $('#slider').prop('value', eVal.energy);
     $('#slider').trigger('change');
 
     var category = categorize('energy', eVal);
@@ -107,7 +107,7 @@ $('#i-label').on('mouseover', function() {
     var iVal = $('#i-value').data();
     $('#slider').prop('min', 0);
     $('#slider').prop('max', 1);
-    $('#slider').prop('value', iVal);
+    $('#slider').prop('value', iVal.instrumentalness);
     $('#slider').trigger('change');
 
     var category = categorize('instrumentalness', iVal);
@@ -119,7 +119,7 @@ $('#li-label').on('mouseover', function() {
     var liVal = $('#li-value').data();
     $('#slider').prop('min', 0);
     $('#slider').prop('max', 1);
-    $('#slider').prop('value', liVal);
+    $('#slider').prop('value', liVal.liveness);
     $('#slider').trigger('change');
 
     var category = categorize('liveness', liVal);
@@ -132,7 +132,7 @@ $('#lo-label').on('mouseover', function() {
     // $('#slider').prop('step', 10);
     $('#slider').prop('min', -60);
     $('#slider').prop('max', 0);
-    $('#slider').prop('value', loVal);
+    $('#slider').prop('value', loVal.loudness);
     $('#slider').trigger('change');
 
     var category = categorize('loudness', loVal);
@@ -144,7 +144,7 @@ $('#s-label').on('mouseover', function() {
     var sVal = $('#s-value').data();
     $('#slider').prop('min', 0);
     $('#slider').prop('max', 1);
-    $('#slider').prop('value', sVal);
+    $('#slider').prop('value', sVal.speechiness);
     $('#slider').trigger('change');
 
     var category = categorize('speechiness', sVal);
@@ -157,7 +157,7 @@ $('#t-label').on('mouseover', function() {
     // $('#slider').prop('step', 10);
     $('#slider').prop('min', 50);
     $('#slider').prop('max', 200);
-    $('#slider').prop('value', tVal);
+    $('#slider').prop('value', tVal.tempo);
     $('#slider').trigger('change');
 
     var category = categorize('tempo', tVal);
@@ -169,7 +169,7 @@ $('#v-label').on('mouseover', function() {
     var vVal = $('#v-value').data();
     $('#slider').prop('min', 0);
     $('#slider').prop('max', 1);
-    $('#slider').prop('value', vVal);
+    $('#slider').prop('value', vVal.valence);
     $('#slider').trigger('change');
 
     var category = categorize('valence', vVal);
