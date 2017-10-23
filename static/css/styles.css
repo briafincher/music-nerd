@@ -118,11 +118,6 @@ header {
     justify-content: space-evenly;
 }
 
-.highlighted {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
 .bold {
     font-weight: bold;
     text-decoration: underline;
