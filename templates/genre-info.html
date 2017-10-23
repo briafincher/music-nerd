@@ -160,13 +160,62 @@
 <script>
     $('#genre-section').scrollTo($('#playlist-section'));
 </script>
+<script>
+    $('#main').scroll(function() {
 
+        var scrollTop = $('#main').scrollTop();
+        // if (scrollTop >= $('#related-section').offset().top) {
+        //     $('#related-title').addClass('bold')
+        // }
+        // if ($('#related-section').offset().top === 0) {
+        //     $('.sidebar').removeClass('bold');
+        //     $('#related-title').addClass('bold');
+        // } else if ($('#artists-section').offset().top === 0) {
+        //     $('.sidebar').removeClass('bold');
+        //     $('#artists-title').addClass('bold');
+        // } else if ($('#features-section').offset().top === 0) {
+        //     $('.sidebar').removeClass('bold');
+        //     $('#features-title').addClass('bold');
+        // } else if ($('#description-section').offset().top === 0) {
+        //     $('.sidebar').removeClass('bold');
+        //     $('#description-title').addClass('bold');
+        // } else if ($('#playlist-section').offset().top === 0) {
+        //     $('.sidebar').removeClass('bold');
+        //     $('#playlist-title').addClass('bold');
+        // } else {
+        //     $('.sidebar').removeClass('bold');
+        // }
+
+        if ($('#genre-section').offset().top <= 0 && $('#playlist-section').offset().top > 0) {
+            $('.sidebar').removeClass('bold');
+        } else if ($('#playlist-section').offset().top <= 0 && $('#description-section').offset().top > 0) {
+            $('.sidebar').removeClass('bold');
+            $('#playlist-title').addClass('bold');
+        } else if ($('#description-section').offset().top <= 0 && $('#features-section').offset().top > 0) {
+            $('.sidebar').removeClass('bold');
+            $('#description-title').addClass('bold');
+        } else if ($('#features-section').offset().top <= 0 && $('#artists-section').offset().top > 0) {
+            $('.sidebar').removeClass('bold');
+            $('#features-title').addClass('bold');
+        } else if ($('#artists-section').offset().top <= 0 && $('#related-section').offset().top > 0) {
+            $('.sidebar').removeClass('bold');
+            $('#artists-title').addClass('bold');
+        } else {
+            $('.sidebar').removeClass('bold');
+            $('#related-title').addClass('bold');
+        }
+    });
+</script>
 <!-- navigation? -->
 <!-- <script src='/static/navigation.js'></script> -->
 <script>
     // $(document).ready(function() {
     //     $('nav a').pageNav();
     // });
+
+// console.log('related-section');
+//             console.log(scrollTop);
+//             console.log($('#related-section').offset().top);
 </script>
 
 

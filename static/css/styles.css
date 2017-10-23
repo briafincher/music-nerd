@@ -125,6 +125,7 @@ header {
 
 .bold {
     font-weight: bold;
+    text-decoration: underline;
 }
 
 #container.page {
