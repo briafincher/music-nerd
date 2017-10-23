@@ -3,6 +3,7 @@
 <head>
 
   <title>Music Nerd</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel='stylesheet' href='/static/css/styles.css'>
   {% for message in get_flashed_messages() %}
     {{ message }}
@@ -12,20 +13,39 @@
 
 <body>
   <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
   <header id='toolbar'>
-    <a href='/'>Home</a>
-    <span id='user'></span>
-    <a id='login' href='/login-button'><button name='login' id='login-button'>Login with Spotify</button></a>
+    <span id='left'>
+      <a href='/'>Home</a>
+      <a href='/genres'>Explore</a>
+      <a href='/random'>Random</a>
+    </span>
+    <span id='right'>
+<!--       <img id='user-image'> -->
+      <span id='user'></span>
+      <a href='/login-button' id='login'>Login</a>
+    </span>
   </header>
 
   {% if 'user' in session %}
+      <meta id='user-info' data-name={{ session['user']['display_name'].split(' ')[0] }} data-url={{ session['user']['images'][0]['url'] }}>
 
       <script>
 
-        $('#login-button').html('Logout')
-        $('#login').attr('href', '/logout')
-        $('#user').html("Hi, {{ session['user']['display_name'].split(' ')[0] }}!")
+        $('#login').html('Logout');
+        $('#login').attr('href', '/logout');
+
+        var name = $('#user-info').data().name;
+        // var url = $('#user-info').data().url;
+
+
+        $('#user').html("Hi, " + name + "!");
+
+        // $('#user-image').attr('src', url);
+        // $('#user-image').show();
 
       </script>
 

@@ -3,8 +3,10 @@
 {% block content %}
 <h1>WELCOME TO MUSIC NERD</h1>
 <p>A genre exploration tool for discovering new music</p>
-<div id='explore'><a href='/genres'>Explore</a></div>
-<div id='search'><a href='/search-form'>Search</a></div>
-<div id='random'><a href='/random'>Random</a></div>
+<a href='/login-button'><button name='login' id='login-button'>Get started by logging in with Spotify!</button></a>
+
+{% if 'user' in session %}
+    <script> $('#login-button').hide(); </script>
+{% endif %}
 
 {% endblock %}

@@ -1,12 +1,27 @@
-.artists {
-    display: inline-block;
-    height: 300px;
-    width: 300px;
+#top-artists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-HIDEimg {
+#first-row {
+    display: flex;
+}
+
+#second-row {
+    display: flex;
+    position: fixed-bottom;
+}
+
+.artist-image {
     height: 200px;
     width: 200px;
+}
+
+.artists {
+    display: inline-block;
+    float: left;
 }
 
 HIDE#categories {
@@ -25,6 +40,13 @@ HIDE#categories {
     float: left;
 }
 
+#page {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center
+}
+
 .categories {
     display: flex;
     width: 80vh;
@@ -35,6 +57,33 @@ HIDE#categories {
     position: fixed;
     -webkit-transform: rotate(-90deg) translateX(-100%);
     transform-origin: left top;
+}
+
+#main {/*
+    display: flex;*/
+    position: relative;
+    width: 85%;
+    overflow: visible;
+ /*   height: 100%;*/
+    margin-right: 5%;
+}
+
+section {
+    display: flex;
+    height: 1000px;
+}
+
+.main {
+    margin-left: auto;
+    width: 85%;
+    display: block;
+    /* display: inline-block;*/
+/*    float: left;*/
+
+   /* display: flex;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;*/
 }
 
 HIDE.sidebar {
@@ -54,11 +103,7 @@ body {
     background-color: #B0F6E8;
 }
 
-#main {
-    margin-left: 10%;
-    display: inline-block;
-    float: right;
-}
+
 
 #asterisk {
     font-size:10px;
@@ -68,6 +113,7 @@ body {
     height: 300px;
     width: 500px;
     margin: auto;
+    text-align: center;
 }
 
 h1 #genre {
@@ -96,6 +142,20 @@ header {
     padding: 1.25rem 2.5vw;
     top: 0;
     z-index: 10;
+}
+
+#user-image {
+    height: 50px;
+    width: 50px;
+}
+
+#left {
+    -webkit-align-self: flext-start;
+    align-self: flex-start;
+}
+
+#right {
+    margin-left: auto;
 }
 
 .highlighted {

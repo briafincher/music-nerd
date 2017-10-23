@@ -58,7 +58,7 @@ def get_access_token():
 
     print session
 
-    return redirect('/')
+    return redirect('/genres')
 
 
 @app.route('/login-button')

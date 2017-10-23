@@ -1,64 +1,4 @@
-// var parent = $('#related-genres').children() // 1, 3, 5, 7, 9
-
-// var one = '#' + $('#related-genres').children()[1].id
-// var two = '#' + $('#related-genres').children()[3].id
-// var three = '#' + $('#related-genres').children()[5].id
-// var four = '#' + $('#related-genres').children()[7].id
-// var five = '#' + $('#related-genres').children()[9].id
-
-// var GENRES = [
-//             $(one).data().capitalized,
-//             $(two).data().capitalized,
-//             $(three).data().capitalized,
-//             $(four).data().capitalized,
-//             $(five).data().capitalized
-//         ];
-
-// var color = Chart.helpers.color;
-// var horizontalBarChartData = {
-//     labels: GENRES,
-//     datasets: [{
-//         backgroundColor: 'rgba(49, 79, 111)',
-//         borderColor: 'rgba(49, 79, 111)',
-//         borderWidth: 1,
-//         data: [
-//             $(one).data().shared,
-//             $(two).data().shared,
-//             $(three).data().shared,
-//             $(four).data().shared,
-//             $(five).data().shared
-//         ]
-//     }]
-// };
-
-// window.onload = function() {
-//     var ctx = document.getElementById('related-graph').getContext('2d');
-//     window.myHorizontalBar = new Chart(ctx, {
-//         type: 'horizontalBar',
-//         data: horizontalBarChartData,
-//         option: {
-//             elements: {
-//                 rectangle: {
-//                     borderWidth: 2,
-//                 }
-//             },
-//             responsive: true,
-//             // legend: {
-//             //     position: 'right',
-//             // },
-//             title: {
-//                 display: false,
-//                 text: 'Shared Artists'
-//             }
-//         }
-//     });
-// };
-
-
-
-
-var canvas = document.getElementById('related-graph');
-var ctx = canvas.getContext('2d');
+var ctx = $('#ctx')
 
 var one = $('#related-one').data();
 var two = $('#related-two').data();
@@ -66,9 +6,60 @@ var three = $('#related-three').data();
 var four = $('#related-four').data();
 var five = $('#related-five').data();
 
-ctx.font = '20px Helvetica';
-ctx.fillText(one.upper, 10, 10);
-ctx.fillText(two.upper, 10, 40);
-ctx.fillText(three.upper, 10, 70);
-ctx.fillText(four.upper, 10, 100);
-ctx.fillText(five.upper, 10, 130);
+var allGenres = [one, two, three, four, five];
+var genres = [];
+for (var i = 0; i < allGenres.length; i++) {
+    var genre = allGenres[i];
+    if (genre.shared > 0) {
+        genres.push(genre);
+    }
+}
+
+var labelsList = [];
+var dataList = [];
+
+for (var i = 0; i < genres.length; i++) {
+    var genre = genres[i];
+    labelsList.push(genre.upper);
+    dataList.push(genre.shared);
+}
+
+var relatedChart = new Chart(ctx, {
+    type: 'horizontalBar',
+    data: {
+        labels: labelsList,
+        datasets: [{
+            backgroundColor: '#3e95cd',
+            data: dataList
+        }]
+    }, 
+    options: {
+        legend: { display: false },
+        title: { display: false },
+        scales: {
+            xAxes: [{ display: false }]
+        }
+    }
+});
+
+$('#ctx').on('click', function(evt){
+
+    var base = relatedChart.scales['y-axis-0'].right;
+    var height = relatedChart.chart.height;
+
+    if(evt.offsetX < base){
+
+        var count = relatedChart.scales['y-axis-0'].ticks.length;
+        
+        var bar_height = height / count;
+        var bar_index = Math.floor(evt.offsetY / bar_height);
+
+        var label = relatedChart.data.labels[bar_index];
+        var genre = label.toLowerCase();
+
+        $.get('/genres/' + genre, function() {
+            window.location = '/genres/' + genre;
+        });
+    }
+
+}); 
