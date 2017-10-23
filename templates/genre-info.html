@@ -16,18 +16,22 @@
     <main id='main' data-spy='scroll' data-target='.categories' data-offset='50'>
 
         <section id='genre-section'>
-            <div class='main' id='genre'>
-                <h1>Let's explore <b>{{ capitalized }}</b>!!</h1>
+            <div class='section'>
+                <div class='main' id='genre'>
+                    <h1>Let's explore <b>{{ capitalized }}</b>!!</h1>
+                </div>
             </div>
         </section>
 
         <section id='playlist-section'><a name='playlist-section'></a>
-            <div class='main' id='playlist'>
-                <p>We've created a playlist to help get you started.</p>
-                <p>Click the button below to listen to some <b>{{ genre }}</b> tunes while you learn more. This playlist
-                    will be saved to your Spotify library.</p>
-                <button id='playlist-button'>Show Music Nerd's Guide to {{ genre }}!</button>
-                <iframe id='playlist-iframe' width="300" height="380" frameborder="0" allowtransparency="true" hidden></iframe>
+            <div class='section'>
+                <div class='main' id='playlist'>
+                    <p>We've created a playlist to help get you started.</p>
+                    <p>Click the button below to listen to some <b>{{ genre }}</b> tunes while you learn more. This playlist
+                        will be saved to your Spotify library.</p>
+                    <button id='playlist-button'>Show Music Nerd's Guide to {{ genre }}!</button>
+                    <iframe id='playlist-iframe' width="300" height="380" frameborder="0" allowtransparency="true" hidden></iframe>
+                </div>
             </div>
             <script>
                 function renderPlaylist(evt) {
@@ -43,94 +47,102 @@
         </section>
 
         <section id='description-section'><a name='description-section'></a>
-            <div class='main' id='description'>
-                {% if description %}
-                    <h2>A little about {{ capitalized }}...</h2>
-                    <p>{{ description }}</p>
-                    <p id='asterisk'>*Some genre names are similar to other Wikipedia pages, so this description
-                        might seem strange. We are working on cleaning up our data.</p>
-                {% else %}
-                    <h2>Aw shucks! It looks like Wikipedia doesn't have much to say about {{ genre }}</h2>
-                    <p>That's ok. I bet we can get a still figure out what it's all about.</p>
-                {% endif %}
+            <div class='section'>
+                <div class='main' id='description'>
+                    {% if description %}
+                        <h2 class='description'>A little about {{ capitalized }}...</h2>
+                        <p class='description info'>{{ description }}</p>
+                        <p id='asterisk' class='description'>*Some genre names are similar to other Wikipedia pages, so this description
+                            might seem strange. We are working on cleaning up our data.</p>
+                    {% else %}
+                        <h2 class='description info'>Aw shucks! It looks like Wikipedia doesn't have much to say about {{ genre }}</h2>
+                        <p class='description'>That's ok. I bet we can get a still figure out what it's all about.</p>
+                    {% endif %}
+                </div>
             </div>
         </section>
 
         <section id='features-section'><a name='features-section'></a>
-            <div class='main' id='audio-features'>
-                <h2>Here's What {{ capitalized }} Sounds Like</h2>
-                <p>Let's take a closer look at how we can characterize its tracks</p>
-                <div id='feature-names'>
-                    <span id='a-label'>Acousticness</span>
-                    <meta id='a-value' data-acousticness="{{features['acousticness']}}">
+            <div class='section'>
+                <div class='main' id='audio-features'>
+                    <h2>Here's What {{ capitalized }} Sounds Like</h2>
+                    <p>Let's take a closer look at how we can characterize its tracks</p>
+                    <div id='feature-names'>
+                        <span id='a-label'>Acousticness</span>
+                        <meta id='a-value' data-acousticness="{{features['acousticness']}}">
 
-                    <span id='d-label'>Danceability</span>
-                    <meta id='d-value' data-danceability="{{features['danceability']}}">
+                        <span id='d-label'>Danceability</span>
+                        <meta id='d-value' data-danceability="{{features['danceability']}}">
 
-                    <span id='e-label'>Energy</span>
-                    <meta id='e-value' data-energy="{{features['energy']}}">
+                        <span id='e-label'>Energy</span>
+                        <meta id='e-value' data-energy="{{features['energy']}}">
 
-                    <span id='i-label'>Instrumentalness</span>
-                    <meta id='i-value' data-instrumentalness="{{features['instrumentalness']}}">
+                        <span id='i-label'>Instrumentalness</span>
+                        <meta id='i-value' data-instrumentalness="{{features['instrumentalness']}}">
 
-                    <span id='li-label'>Liveness</span>
-                    <meta id='li-value' data-liveness="{{features['liveness']}}">
+                        <span id='li-label'>Liveness</span>
+                        <meta id='li-value' data-liveness="{{features['liveness']}}">
 
-                    <span id='lo-label'>Loudness</span>
-                    <meta id='lo-value' data-loudness="{{features['loudness']}}">
+                        <span id='lo-label'>Loudness</span>
+                        <meta id='lo-value' data-loudness="{{features['loudness']}}">
 
-                    <span id='s-label'>Speechiness</span>
-                    <meta id='s-value' data-speechiness="{{features['speechiness']}}">
+                        <span id='s-label'>Speechiness</span>
+                        <meta id='s-value' data-speechiness="{{features['speechiness']}}">
 
-                    <span id='t-label'>Tempo</span>
-                    <meta id='t-value' data-tempo="{{features['tempo']}}">
+                        <span id='t-label'>Tempo</span>
+                        <meta id='t-value' data-tempo="{{features['tempo']}}">
 
-                    <span id='v-label'>Valence</span>
-                    <meta id='v-value' data-valence="{{features['valence']}}">
-                </div>
+                        <span id='v-label'>Valence</span>
+                        <meta id='v-value' data-valence="{{features['valence']}}">
+                    </div>
 
-                <div id='feature-info'>
-                    <p id='info'></p>
-                </div>
+                    <div id='feature-info'>
+                        <p id='info'></p>
+                    </div>
 
-                <div id='feature-slider'>
-                    <input type='range' id='slider'>
-                </div>
-                <div id='feature-category'>
-                    <span id='low'>Low</span>
-                    <span id='medium'>Medium</span>
-                    <span id='high'>High</span>
+                    <div id='feature-slider'>
+                        <input type='range' id='slider'>
+                    </div>
+                    <div id='feature-category'>
+                        <span id='low'>Low</span>
+                        <span id='medium'>Medium</span>
+                        <span id='high'>High</span>
+                    </div>
                 </div>
             </div>
             <script src='/static/genre_features.js'></script>
         </section>
 
         <section id='artists-section'><a name='artists-section'></a>
-            <div class='main' id='top-artists'>
-                <h2>These are the most popular artists making {{ genre }} music</h2>
-                <div id='first-row'>
-                {% for artist in artists.keys()[:3] %}
-                    <div class='artists'>{{artist}}<br><img class='artist-image' src='{{artists.get(artist)}}'></div>
-                {% endfor %}
-                </div>
-                <div id='second-row'>
-                {% for artist in artists.keys()[3:] %}
-                    <div class='artists'>{{artist}}<br><img class='artist-image' src='{{artists.get(artist)}}'></div>
-                {% endfor %}
+            <div class='section'>
+                <div class='main' id='top-artists'>
+                    <h2>These are the most popular artists making {{ genre }} music</h2>
+                    <div id='first-row'>
+                    {% for artist in artists.keys()[:3] %}
+                        <div class='artists'>{{artist}}<br><img class='artist-image' src='{{artists.get(artist)}}'></div>
+                    {% endfor %}
+                    </div>
+                    <div id='second-row'>
+                    {% for artist in artists.keys()[3:] %}
+                        <div class='artists'>{{artist}}<br><img class='artist-image' src='{{artists.get(artist)}}'></div>
+                    {% endfor %}
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id='related-section'><a name='related-section'></a>
-            <div class='main' id='related-genres'>
-                <h2>{{ capitalized }} is most closely related to:</h2>
-                <p>Click on a genre name to explore that genre!</p>
-                <canvas id='ctx' width='600px' height='160px'></canvas>
-                <meta id='related-one' data-genre="{{ related[0]['genre'] }}" data-shared="{{ related[0]['shared'] }}" data-upper="{{ related[0]['capitalized'] }}">
-                <meta id='related-two' data-genre="{{ related[1]['genre'] }}" data-shared="{{ related[1]['shared'] }}" data-upper="{{ related[1]['capitalized'] }}">
-                <meta id='related-three' data-genre="{{ related[2]['genre'] }}" data-shared="{{ related[2]['shared'] }}" data-upper="{{ related[2]['capitalized'] }}">
-                <meta id='related-four' data-genre="{{ related[3]['genre'] }}" data-shared="{{ related[3]['shared'] }}" data-upper="{{ related[3]['capitalized'] }}">
-                <meta id='related-five' data-genre="{{ related[4]['genre'] }}" data-shared="{{ related[4]['shared'] }}" data-upper="{{ related[4]['capitalized'] }}">
+            <div class='section'>
+                <div class='main' id='related-genres'>
+                    <h2>{{ capitalized }} is most closely related to:</h2>
+                    <p>Click on a genre name to explore that genre!</p>
+                    <canvas id='ctx' width='600px' height='160px'></canvas>
+                    <meta id='related-one' data-genre="{{ related[0]['genre'] }}" data-shared="{{ related[0]['shared'] }}" data-upper="{{ related[0]['capitalized'] }}">
+                    <meta id='related-two' data-genre="{{ related[1]['genre'] }}" data-shared="{{ related[1]['shared'] }}" data-upper="{{ related[1]['capitalized'] }}">
+                    <meta id='related-three' data-genre="{{ related[2]['genre'] }}" data-shared="{{ related[2]['shared'] }}" data-upper="{{ related[2]['capitalized'] }}">
+                    <meta id='related-four' data-genre="{{ related[3]['genre'] }}" data-shared="{{ related[3]['shared'] }}" data-upper="{{ related[3]['capitalized'] }}">
+                    <meta id='related-five' data-genre="{{ related[4]['genre'] }}" data-shared="{{ related[4]['shared'] }}" data-upper="{{ related[4]['capitalized'] }}">
+                </div>
             </div>
             <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js'></script>
             <script src='/static/related_genres.js'></script>
