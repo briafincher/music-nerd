@@ -251,6 +251,8 @@ def search():
 
     genre = request.args.get('search')
 
+    print genre
+
     return redirect('/genres/{}'.format(genre))
 
 

@@ -20,13 +20,20 @@
   <header id='toolbar'>
     <span id='left'>
       <a href='/'><img id='icon' src='/static/images/003-music.png'></img></a>
+      <span id='user'></span>
       <a href='/genres'>EXPLORE</a>
       <a href='/random'>RANDOM</a>
+
+      
     </span>
     <span id='right'>
 <!--       <img id='user-image'> -->
-      <span id='user'></span>
+      
       <a href='/login-button' id='login'>LOGIN</a>
+      <form id='search' action='/search'>
+        <input type='text' id='search-field' name='search' placeholder='Search a genre'><input type='submit' value='Go'>
+      </form>
+      <script src='/static/search.js'></script>
     </span>
   </header>
 
