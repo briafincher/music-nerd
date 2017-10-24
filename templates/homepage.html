@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>WELCOME TO MUSIC NERD</h1>
-<p>A genre exploration tool for discovering new music</p>
-<a href='/login-button'><button name='login' id='login-button'>Get started by logging in with Spotify!</button></a>
+<div id='homepage'>
+    <h1>WELCOME TO MUSIC NERD</h1>
+    <p>A genre exploration tool for discovering new music</p>
+    <a href='/login-button'><button name='login' id='login-button'>Get started by logging in with Spotify!</button></a>
+</div>
 
 {% if 'user' in session %}
     <script> $('#login-button').hide(); </script>

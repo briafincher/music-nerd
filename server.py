@@ -244,13 +244,6 @@ def find_random_genre():
     return redirect('/genres/{}'.format(name))
 
 
-# @app.route('/search-form')
-# def show_search():
-#     """Shows the search page"""
-
-#     return render_template('search-form.html')
-
-
 @app.route('/search')
 def search():
     """Searches for a genre page to go to"""
