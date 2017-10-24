@@ -15,14 +15,17 @@ function loadD3(path) {
     if (error) throw error;
 
     var link = svg.append("g")
-        .attr("class", "links")
+      .attr('transform', 'translate(450, 300)')
+      .attr("class", "links")
       .selectAll("line")
       .data(graph.links)
       .enter().append("line")
         .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
 
     var node = svg.append("g")
-        .attr("class", "nodes")
+      // .attr('transform', 'translate(' + margins.left + ',' + margins.top + ')')
+      .attr('transform', 'translate(450, 300)')
+      .attr("class", "nodes")
       .selectAll("circle")
       .data(graph.nodes)
       .enter().append("circle")

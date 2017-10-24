@@ -19,14 +19,14 @@
 
   <header id='toolbar'>
     <span id='left'>
-      <a href='/'>Music Nerd</a>
-      <a href='/genres'>Explore</a>
-      <a href='/random'>Random</a>
+      <a href='/'><img id='icon' src='/static/images/003-music.png'></img></a>
+      <a href='/genres'>EXPLORE</a>
+      <a href='/random'>RANDOM</a>
     </span>
     <span id='right'>
 <!--       <img id='user-image'> -->
       <span id='user'></span>
-      <a href='/login-button' id='login'>Login</a>
+      <a href='/login-button' id='login'>LOGIN</a>
     </span>
   </header>
 
@@ -35,14 +35,14 @@
 
       <script>
 
-        $('#login').html('Logout');
+        $('#login').html('LOGOUT');
         $('#login').attr('href', '/logout');
 
         var name = $('#user-info').data().name;
         // var url = $('#user-info').data().url;
 
 
-        $('#user').html("Hi, " + name + "!");
+        $('#user').html("HI, " + name.toUpperCase() + "!");
 
         // $('#user-image').attr('src', url);
         // $('#user-image').show();

@@ -211,6 +211,7 @@ def show_genre_info(genre):
     return render_template('genre-info.html',
                            genre=genre,
                            capitalized=string.capwords(genre),
+                           upper=genre.upper(),
                            artists=artists,
                            related=related_genres,
                            features=features,
