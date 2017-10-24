@@ -66,13 +66,21 @@
             <div class='section'>
                 <div class='main' id='description'>
                     {% if description %}
-                        <h2 class='description'>A little about {{ capitalized }}...</h2>
-                        <p class='description info'>{{ description }}</p>
-                        <p id='asterisk' class='description'>*Some genre names are similar to other Wikipedia pages, so this description
-                            might seem strange. We are working on cleaning up our data.</p>
+                        <div class='heading'>
+                            <h2 class='description'>A little about {{ capitalized }}...</h2>
+                        </div>
+                        <div class='scroll-desc'>
+                            <p class='description info'>{{ description }}</p>
+                            <p id='asterisk' class='description'>*Some genre names are similar to other Wikipedia pages, so this description
+                                might seem strange. We are working on cleaning up our data.</p>
+                        </div>
                     {% else %}
-                        <h2 class='description info'>Aw shucks! It looks like Wikipedia doesn't have much to say about {{ genre }}</h2>
-                        <p class='description'>That's ok. I bet we can get a still figure out what it's all about.</p>
+                        <div class='heading'>
+                            <h2 class='description info'>Aw shucks! It looks like Wikipedia doesn't have much to say about {{ genre }}</h2>
+                        </div>
+                        <div class='scroll-desc'>
+                            <p class='description'>That's ok. I bet we can get a still figure out what it's all about.</p>
+                        </div>
                     {% endif %}
                 </div>
             </div>
