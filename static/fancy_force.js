@@ -15,7 +15,7 @@ function loadD3(path) {
     if (error) throw error;
 
     var link = svg.append("g")
-      .attr('transform', 'translate(450, 300)')
+      .attr('transform', 'translate(450, 350)')
       .attr("class", "links")
       .selectAll("line")
       .data(graph.links)
@@ -23,7 +23,7 @@ function loadD3(path) {
         .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
 
     var node = svg.append("g")
-      .attr('transform', 'translate(450, 300)')
+      .attr('transform', 'translate(450, 350)')
       .attr("class", "nodes")
       .selectAll("circle")
       .data(graph.nodes)
@@ -158,5 +158,14 @@ $('#reset').on('click', function() {
   simulation.stop();
   simulation.restart();
   simulation.alpha(1);
+})
+
+$('#start').on('click', function() {
+  simulation.restart();
+  simulation.alpha(1);
+})
+
+$('#stop').on('click', function() {
+  simulation.stop();
 })
 

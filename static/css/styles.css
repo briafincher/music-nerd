@@ -156,13 +156,16 @@ header a {
 #container.page {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     overflow: auto;
 }
 
-
+#genre-map {
+    display: flex;
+    flex-direction: column;
+}
 
 .tooltip {
     visibility: hidden;
@@ -197,13 +200,27 @@ header a {
 }*/
 
 #feature-explanation {
-    width: 75%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+/*    background-color: #6EC3D6;
+    border-top: 1px solid #6EC3D6;
+    border-top-radius: 7px;*/
+    text-align: justify;
+    color: #1B4145;
 }
 
 #params {
     display: flex;
     flex-direction: column;
-/*    float: left;*/
+    justify-content: flex-start;
+/*    border-style: solid;
+    border-width: 1px;*/
+/*    height: 353px;*/
+    align-items: center;
+/*    background-color: #ffffff;*/
+/*    border-radius: 7px;*/
+/*    border-color: #5A7678;*/
 }
 
 #main {
@@ -259,6 +276,7 @@ section {
     height: calc(100vh - 100px);
     width: calc(100vw - 300px);
     overflow: scroll;
+    margin-top: 70px;
 }
 
 #left-map {
@@ -267,8 +285,51 @@ section {
     width: 300px;
     heigth: 100%;
     justify-content: center;
+    margin-left: 5%;
 }
 
 #right-map {
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    justify-content: center;
+}
+
+#bottom {
+    margin-bottom: 10vh;
+}
+
+#show-genres {
+    background-color: #1B4145;
+    color: #ffffff;
+}
+
+#intro {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#display {
+    display: flex;
+    flex-direction: column;
+}
+
+.parameter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#i-level {
+    width: 80px;
+}
+
+#a-level {
+    width: 110px;
+}
+
+#start, #stop {
+    background-color: #1B4145;
+    color: #ffffff;
 }
