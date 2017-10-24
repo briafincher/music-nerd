@@ -5,11 +5,11 @@
 
     <nav class='categories'>
         <div>
-            <a id='related-title' class='sidebar' href='#related-section'>Related Genres</a>
-            <a id='artists-title' class='sidebar' href='#artists-section'>Top Artists</a>
-            <a id='features-title' class='sidebar' href='#features-section'>Audio Features</a>
-            <a id='description-title' class='sidebar' href='#description-section'>About</a>
-            <a id='playlist-title' class='sidebar' href='#playlist-section'>Playlist</a>
+            <a id='related-title' class='sidebar' href='#related-section'>RELATED GENRES</a>
+            <a id='artists-title' class='sidebar' href='#artists-section'>TOP ARTISTS</a>
+            <a id='features-title' class='sidebar' href='#features-section'>AUDIO FEATURES</a>
+            <a id='description-title' class='sidebar' href='#description-section'>ABOUT</a>
+            <a id='playlist-title' class='sidebar' href='#playlist-section'>PLAYLIST</a>
         </div>
     </nav>
 
@@ -17,23 +17,27 @@
         <meta id='genre' data-name='{{ genre }}'>
 
         <section id='genre-section'>
-            <div class='section'>
+            <div class='genre'>
                 <div class='main' id='genre'>
-                    <p>LET'S EXPLORE<p> 
+                    <p><i>LET'S EXPLORE:</i><p> 
                     <h1>{{ upper }}</h1>
                 </div>
+                <img id='genre-image' src='/static/images/compact-disc.png'>
             </div>
         </section>
 
         <section id='playlist-section'><a name='playlist-section'></a>
             <div class='section'>
                 <div class='main' id='playlist'>
-                    <p>We've created a playlist to help get you started.</p>
-                    <p>Click the button below to listen to some <b>{{ genre }}</b> tunes while you learn more. This playlist
+                    <img id='playlist-image' src='/static/images/005-technology.png'>
+<!--                      -->
+                    <p class='topic'>We've created a playlist to help you get started.</p>
+                    <p class='sub'>Click the button below to listen to some <span id='color'><b>{{ genre }}</b></span> tunes while you learn more. This playlist
                         will be saved to your Spotify library.</p>
                     <button id='playlist-button'>Show Music Nerd's Guide to {{ genre }}!</button>
+                    <iframe id='iframe' width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
                 </div>
-                <iframe id='iframe' width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                
 
             </div>
             <script src="https://code.jquery.com/jquery.js"></script>
@@ -47,7 +51,8 @@
                     $.get('/playlist/{{genre}}', function(data) {
                         $('#iframe').attr('src', data);
                         $('#iframe').toggle();
-                        $('#playlist-button').hide();
+                        // $('#playlist-button').hide();
+                        $('#playlist-button').remove();
                     });
                 }
 
@@ -75,6 +80,7 @@
 
         <section id='features-section'><a name='features-section'></a>
             <div class='section'>
+                <img id='features-image' src='/static/images/007-controls.png'>
                 <div class='main' id='audio-features'>
                     <h2>Here's What {{ capitalized }} Sounds Like</h2>
                     <p>Let's take a closer look at how we can characterize its tracks</p>
@@ -120,6 +126,7 @@
                         <span id='high'>High</span>
                     </div>
                 </div>
+
             </div>
             <script src='/static/genre_features.js'></script>
         </section>

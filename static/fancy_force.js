@@ -9,13 +9,15 @@ var simulation = d3.forceSimulation()
     .force("charge", d3.forceManyBody().strength(-1))
     .force("center", d3.forceCenter(width / 2, height / 2));
 
+var offsetX = $('#params').width() * 2;
+var offsetY = $('#params').height() / 2;
 
 function loadD3(path) {
   d3.json(path, function(error, graph) {
     if (error) throw error;
 
     var link = svg.append("g")
-      .attr('transform', 'translate(450, 350)')
+      .attr('transform', 'translate(' + offsetX + ', ' + offsetY + ')') 
       .attr("class", "links")
       .selectAll("line")
       .data(graph.links)
@@ -23,7 +25,7 @@ function loadD3(path) {
         .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
 
     var node = svg.append("g")
-      .attr('transform', 'translate(450, 350)')
+      .attr('transform', 'translate(' + offsetX + ', ' + offsetY + ')')
       .attr("class", "nodes")
       .selectAll("circle")
       .data(graph.nodes)
