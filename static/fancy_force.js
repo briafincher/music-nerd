@@ -30,21 +30,10 @@ function loadD3(path) {
       .enter().append("circle")
       .attr("r", 5)
       .attr("fill", function(d) { return color(d.group); })
-      // new drag
-      // .on('dblclick', releasenode)
-      //   .call(node_drag)
 
-      // Original drag
-      // .call(d3.drag()
-      //     .on("start", dragstarted)
-      //     .on("drag", dragged)
-      //     .on("end", dragended));
+    node.append("title")
+        .text(function(d) { return d.id; });
 
-      // New drag
-
-
-      // Node highlighting
-      // .call(force.drag()
     node.on('click', connectedNodes);
     node.on('dblclick', releasenode);
     
@@ -54,17 +43,6 @@ function loadD3(path) {
       .on('end', dragended)
 
     node.call(node_drag);
-
-    // CLOSER DRAG
-    // node.call(d3.drag()
-    //   .on('start', dragstarted)
-    //   .on('drag', dragged)
-    //   .on('end', dragended));
-
-    //node.on('dblclick', releasenode);
-
-    node.append("title")
-        .text(function(d) { return d.id; });
 
     simulation
         .nodes(graph.nodes)
@@ -86,10 +64,8 @@ function loadD3(path) {
 
     }
 
-
-    // //Toggle stores whether the highlighting is on
     var toggle = 0;
-    // //Create an array logging what is connected to what
+    
     var linkedByIndex = {};
     for (i = 0; i < graph.nodes.length; i++) {
          linkedByIndex[i + "," + i] = 1;
@@ -97,13 +73,13 @@ function loadD3(path) {
     graph.links.forEach(function (d) {
          linkedByIndex[d.source.index + "," + d.target.index] = 1;
      });
-    // //This function looks up whether a pair are neighbours
+    
     function neighboring(a, b) {
          return linkedByIndex[a.index + "," + b.index];
     }
     function connectedNodes() {
          if (toggle == 0) {
-    //         //Reduce the opacity of all but the neighbouring nodes
+    
             simulation.stop();
              d = d3.select(this).node().__data__;
              node.style("opacity", function (o) {
@@ -112,47 +88,16 @@ function loadD3(path) {
              link.style("stroke-opacity", function (o) {
                  return d.index==o.source.index | d.index==o.target.index ? 1 : 0.1;
              });
-    //         //Reduce the op
+    
              toggle = 1;
          } else {
-    //         //Put them back to opacity=1
+    
              simulation.restart();
              node.style("opacity", 1);
              link.style("stroke-opacity", 1);
              toggle = 0;
          }
      }
-
-     // original drag functions
-    // function dragstarted(d, i) {
-    //   // if (!d3.event.active) simulation.alphaTarget(0.3).restart();
-    //   // console.log(d.id)
-    //   // d.fx = d.x;
-    //   // d.fy = d.y;
-    //   simulation.stop();
-    // }
-
-    // function dragged(d, i) {
-    //   d.px += d3.event.dx;
-    //   d.py += d3.event.dy;
-    //   d.x += d3.event.dx;
-    //   d.y += d3.event.dy;
-    //   // d.fx = d3.event.x;
-    //   // d.fy = d3.event.y;
-    // }
-
-    // function dragended(d, i) {
-    //   // if (!d3.event.active) simulation.alphaTarget(0);
-    //   // d.fx = null;
-    //   // d.fy = null;
-    //   d.fixed = true;
-    //   simulation.restart();
-    // }
-
-    // function releasenode(d) {
-    //   d.fixed = false;
-    //   simulation.restart();
-    // }
 
     function dragstarted(d) {
       if (!d3.event.active) simulation.alphaTarget(0.3).restart();
@@ -175,7 +120,7 @@ function loadD3(path) {
     }
 
     simulation.restart();
-    // simulation.alpha(1);
+    simulation.alpha(1);
   });
 }
 

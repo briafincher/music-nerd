@@ -31,7 +31,7 @@ var force = d3.forceSimulation()
 
     function releasenode(d) {
         d.fixed = false; // of course set the node to fixed so the force doesn't include the node in its auto positioning stuff
-        //force.resume();
+        force.resume();
     }
 
     var node_drag = d3.drag()

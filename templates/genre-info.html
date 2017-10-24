@@ -32,18 +32,21 @@
                     <p>Click the button below to listen to some <b>{{ genre }}</b> tunes while you learn more. This playlist
                         will be saved to your Spotify library.</p>
                     <button id='playlist-button'>Show Music Nerd's Guide to {{ genre }}!</button>
-
                 </div>
-                <iframe id='iframe' width="300" height="380" frameborder="0" allowtransparency="true" hidden></iframe>
+                <iframe id='iframe' width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+
             </div>
             <script src="https://code.jquery.com/jquery.js"></script>
             <script>
+                $(document).ready(function() {
+                    $('#iframe').hide();
+                })
                 function renderPlaylist(evt) {
                     // AJAX to alert if user not signed in. Make a route to check & return data
 
                     $.get('/playlist/{{genre}}', function(data) {
                         $('#iframe').attr('src', data);
-                        $('#iframe').show();
+                        $('#iframe').toggle();
                         $('#playlist-button').hide();
                     });
                 }
