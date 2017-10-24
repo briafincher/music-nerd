@@ -37,7 +37,13 @@ var relatedChart = new Chart(ctx, {
         legend: { display: false },
         title: { display: false },
         scales: {
-            xAxes: [{ display: false }]
+            xAxes: [{ display: false }],
+            yAxes: [{
+                ticks: {
+                    fontSize: 30,
+
+                }
+            }]
         }
     }
 });

@@ -141,7 +141,7 @@
         <section id='artists-section'><a name='artists-section'></a>
             <div class='section'>
                 <div class='main' id='top-artists'>
-                    <h2>These are the most popular artists making {{ genre }} music</h2>
+                    <h2>These are the most popular artists making <span class='purple'>{{ genre }}</span> music</h2>
                     <p> #MakingTheBand </p>
                     <div id='first-row'>
                     {% for artist in artists.keys()[:3] %}
@@ -161,13 +161,13 @@
             <div class='section'>
                 <div class='main' id='related-genres'>
                     <h2>{{ capitalized }} is most closely related to:</h2>
-                    <p>Click on a genre name to explore that genre!</p>
-                    <canvas id='ctx' width='600px' height='160px'></canvas>
+                    <canvas id='ctx' width='80%' height='50%'></canvas>
                     <meta id='related-one' data-genre="{{ related[0]['genre'] }}" data-shared="{{ related[0]['shared'] }}" data-upper="{{ related[0]['capitalized'] }}">
                     <meta id='related-two' data-genre="{{ related[1]['genre'] }}" data-shared="{{ related[1]['shared'] }}" data-upper="{{ related[1]['capitalized'] }}">
                     <meta id='related-three' data-genre="{{ related[2]['genre'] }}" data-shared="{{ related[2]['shared'] }}" data-upper="{{ related[2]['capitalized'] }}">
                     <meta id='related-four' data-genre="{{ related[3]['genre'] }}" data-shared="{{ related[3]['shared'] }}" data-upper="{{ related[3]['capitalized'] }}">
                     <meta id='related-five' data-genre="{{ related[4]['genre'] }}" data-shared="{{ related[4]['shared'] }}" data-upper="{{ related[4]['capitalized'] }}">
+                    <p>Click on a genre name to explore that genre!</p>
                 </div>
             </div>
             <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js'></script>

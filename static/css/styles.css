@@ -162,11 +162,13 @@ header {
 
 header a {
     color: white;
+    margin-right: 20px;
 }
 
 .bold {
     font-weight: bold;
     text-decoration: underline;
+    color: #6EC3D6;
 }
 
 #container.page {
@@ -411,6 +413,7 @@ nav > a {
 #genre-image {
     height: 300px;
     width: 300px;
+    margin-left: 20px;
 }
 
 #description-section {
@@ -421,6 +424,7 @@ nav > a {
 .heading > h2 {
     text-align: center;
     font-size: 3.8rem;
+    font-weight: bold;
 }
 
 #homepage-image { 
@@ -533,6 +537,9 @@ nav > a {
 #top-artists > h2 {
     color: #C1E8E6;
     font-size: 3rem;
+    font-weight: bold;
+    width: 80%;
+    text-align: center;
 }
 
 #top-artists > p {
@@ -546,5 +553,23 @@ nav > a {
     color: #1B4145;
 }
 
-    background-color: #2F5255;
-    background-color: #1B4145;
+#related-genres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#related-genres > h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1B4145;
+}
+
+#related-genres > p {
+    font-size: 1.7em;
+}
+
+.purple {
+    color: #7383BF;
+}
