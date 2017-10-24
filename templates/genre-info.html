@@ -143,14 +143,15 @@
             <div class='section'>
                 <div class='main' id='top-artists'>
                     <h2>These are the most popular artists making {{ genre }} music</h2>
+                    <p> #MakingTheBand </p>
                     <div id='first-row'>
                     {% for artist in artists.keys()[:3] %}
-                        <div class='artists'>{{artist}}<br><img class='artist-image' src='{{artists.get(artist)}}'></div>
+                        <div class='artists'><img class='artist-image' src='{{artists.get(artist)}}'><br>{{artist}}</div>
                     {% endfor %}
                     </div>
                     <div id='second-row'>
                     {% for artist in artists.keys()[3:] %}
-                        <div class='artists'>{{artist}}<br><img class='artist-image' src='{{artists.get(artist)}}'></div>
+                        <div class='artists'><img class='artist-image' src='{{artists.get(artist)}}'><br>{{artist}}</div>
                     {% endfor %}
                     </div>
                 </div>

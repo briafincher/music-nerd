@@ -1,27 +1,37 @@
 #top-artists {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 #first-row {
     display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 70px;
+    padding-top: 50px;
 }
 
 #second-row {
     display: flex;
     position: fixed-bottom;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .artist-image {
     height: 200px;
     width: 200px;
+    padding-bottom: 5px;
 }
 
 .artists {
     display: inline-block;
     float: left;
+    font-size: 1.3rem;
 }
 
 #page {
@@ -61,7 +71,7 @@ body {
 }
 
 #asterisk {
-    font-size:10px;
+    font-size: 12px;
 }
 
 #genre.main {
@@ -441,11 +451,24 @@ nav > a {
     align-items: center;
 }
 
-/*.heading {
-    align-self: flex-start;
-    text-align: right;
+#top-artists {
+    color: #ffffff;
 }
-*/
+
+#artists-section {
+    background-color: #2F5255;
+}
+
+#top-artists > h2 {
+    color: #C1E8E6;
+    font-size: 3rem;
+}
+
+#top-artists > p {
+    padding-top: 10px;
+    color: #C1E8E6;
+    font-size: 1rem;
+}
 
     background-color: #2F5255;
     background-color: #1B4145;
