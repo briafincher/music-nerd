@@ -67,7 +67,7 @@
                 <div class='main' id='description'>
                     {% if description %}
                         <div class='heading'>
-                            <h2 class='description'>A little about {{ capitalized }}...</h2>
+                            <h2 class='description'>A little about {{ genre }}...</h2>
                         </div>
                         <div class='scroll-desc'>
                             <p class='description info'>{{ description }}</p>
@@ -92,46 +92,49 @@
                 <div class='main' id='audio-features'>
                     <h2>Here's What {{ capitalized }} Sounds Like</h2>
                     <p>Let's take a closer look at how we can characterize its tracks</p>
-                    <div id='feature-names'>
-                        <span id='a-label'>Acousticness</span>
-                        <meta id='a-value' data-acousticness="{{features['acousticness']}}">
+                    <div id='features'>
+                        <div id='feature-names'>
+                            <span id='a-label'>Acousticness</span>
+                            <meta id='a-value' data-acousticness="{{features['acousticness']}}">
 
-                        <span id='d-label'>Danceability</span>
-                        <meta id='d-value' data-danceability="{{features['danceability']}}">
+                            <span id='d-label'>Danceability</span>
+                            <meta id='d-value' data-danceability="{{features['danceability']}}">
 
-                        <span id='e-label'>Energy</span>
-                        <meta id='e-value' data-energy="{{features['energy']}}">
+                            <span id='e-label'>Energy</span>
+                            <meta id='e-value' data-energy="{{features['energy']}}">
 
-                        <span id='i-label'>Instrumentalness</span>
-                        <meta id='i-value' data-instrumentalness="{{features['instrumentalness']}}">
+                            <span id='i-label'>Instrumentalness</span>
+                            <meta id='i-value' data-instrumentalness="{{features['instrumentalness']}}">
 
-                        <span id='li-label'>Liveness</span>
-                        <meta id='li-value' data-liveness="{{features['liveness']}}">
+                            <span id='li-label'>Liveness</span>
+                            <meta id='li-value' data-liveness="{{features['liveness']}}">
 
-                        <span id='lo-label'>Loudness</span>
-                        <meta id='lo-value' data-loudness="{{features['loudness']}}">
+                            <span id='lo-label'>Loudness</span>
+                            <meta id='lo-value' data-loudness="{{features['loudness']}}">
 
-                        <span id='s-label'>Speechiness</span>
-                        <meta id='s-value' data-speechiness="{{features['speechiness']}}">
+                            <span id='s-label'>Speechiness</span>
+                            <meta id='s-value' data-speechiness="{{features['speechiness']}}">
 
-                        <span id='t-label'>Tempo</span>
-                        <meta id='t-value' data-tempo="{{features['tempo']}}">
+                            <span id='t-label'>Tempo</span>
+                            <meta id='t-value' data-tempo="{{features['tempo']}}">
 
-                        <span id='v-label'>Valence</span>
-                        <meta id='v-value' data-valence="{{features['valence']}}">
+                            <span id='v-label'>Valence</span>
+                            <meta id='v-value' data-valence="{{features['valence']}}">
+                        </div>
+
+                        <div id='category'>
+                            <div id='feature-slider'>
+                                <input type='range' id='slider'>
+                            </div>
+                            <div id='feature-category'>
+                                <span id='low'>Low</span>
+                                <span id='medium'>Medium</span>
+                                <span id='high'>High</span>
+                            </div>
+                        </div>
                     </div>
-
                     <div id='feature-info'>
                         <p id='info'></p>
-                    </div>
-
-                    <div id='feature-slider'>
-                        <input type='range' id='slider'>
-                    </div>
-                    <div id='feature-category'>
-                        <span id='low'>Low</span>
-                        <span id='medium'>Medium</span>
-                        <span id='high'>High</span>
                     </div>
                 </div>
 

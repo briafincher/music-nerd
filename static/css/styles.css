@@ -350,6 +350,14 @@ section {
     width: 110px;
 }
 
+#s-level {
+    width: 100px;
+}
+
+#d-level {
+    width: 115px;
+}
+
 #start, #stop, #login-button, #playlist-button {
     background-color: #1B4145;
     color: #ffffff;
@@ -420,8 +428,8 @@ nav > a {
 #features-section > .section {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    align-items: space-evenly;
 }
 
 #features-image {
@@ -430,9 +438,35 @@ nav > a {
 }
 
 #audio-features {
-    height: 70vh;
     margin-top: auto;
     margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    justify-contents: center;
+    align-items: center;
+    width: calc(100vh - 300px);
+}
+
+#features {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#feature-names {
+    display: flex;
+    flex-direction: column;
+}
+
+#category {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#audio-features > h2 {
+    font-size: 3rem;
 }
 
 .scroll-desc {
@@ -468,6 +502,11 @@ nav > a {
     padding-top: 10px;
     color: #C1E8E6;
     font-size: 1rem;
+}
+
+#related-section {
+    background-color: #CAE9F0;
+    color: #1B4145;
 }
 
     background-color: #2F5255;
