@@ -23,19 +23,22 @@ function categorize(feature, data) {
     }
 
     if (value >= upper) {
-        $('#low').removeClass('bold');
-        $('#medium').removeClass('bold');
-        $('#high').addClass('bold');
+        // $('#low').removeClass('bold');
+        // $('#medium').removeClass('bold');
+        // $('#high').addClass('bold');
+        $('#feature-category').html('HIGH');
         return 'high';
     } else if (value < upper && value >= lower) {
-        $('#low').removeClass('bold');
-        $('#high').removeClass('bold');
-        $('#medium').addClass('bold');
+        // $('#low').removeClass('bold');
+        // $('#high').removeClass('bold');
+        // $('#medium').addClass('bold');
+        $('#feature-category').html('MEDIUM');
         return 'medium';
     } else {
-        $('#medium').removeClass('bold');
-        $('#high').removeClass('bold');
-        $('#low').addClass('bold')
+        // $('#medium').removeClass('bold');
+        // $('#high').removeClass('bold');
+        // $('#low').addClass('bold')
+        $('#feature-category').html('LOW');
         return 'low';
     }
 }
@@ -65,6 +68,8 @@ function find_info(feature) {
 
 // event handlers for audio features
 $('#a-label').on('mouseover', function() {
+    $('#a-label').addClass('highlight');
+
     var info = find_info('acousticness')
     $('#info').html(info)
 
@@ -77,6 +82,7 @@ $('#a-label').on('mouseover', function() {
     var category = categorize('acousticness', aVal);
 });
 $('#d-label').on('mouseover', function() {
+    $('#d-label').addClass('highlight');
     var info = find_info('danceability')
     $('#info').html(info)
 
@@ -89,6 +95,7 @@ $('#d-label').on('mouseover', function() {
     var category = categorize('danceability', dVal);
 });
 $('#e-label').on('mouseover', function() {
+    $('#e-label').addClass('highlight');
     var info = find_info('energy')
     $('#info').html(info)
 
@@ -101,6 +108,7 @@ $('#e-label').on('mouseover', function() {
     var category = categorize('energy', eVal);
 });
 $('#i-label').on('mouseover', function() {
+    $('#i-label').addClass('highlight');
     var info = find_info('instrumentalness')
     $('#info').html(info)
 
@@ -113,6 +121,7 @@ $('#i-label').on('mouseover', function() {
     var category = categorize('instrumentalness', iVal);
 });
 $('#li-label').on('mouseover', function() {
+    $('#li-label').addClass('highlight');
     var info = find_info('liveness')
     $('#info').html(info)
 
@@ -125,6 +134,7 @@ $('#li-label').on('mouseover', function() {
     var category = categorize('liveness', liVal);
 });
 $('#lo-label').on('mouseover', function() {
+    $('#lo-label').addClass('highlight');
     var info = find_info('loudness')
     $('#info').html(info)
 
@@ -138,6 +148,7 @@ $('#lo-label').on('mouseover', function() {
     var category = categorize('loudness', loVal);
 });
 $('#s-label').on('mouseover', function() {
+    $('#s-label').addClass('highlight');
     var info = find_info('speechiness')
     $('#info').html(info)
 
@@ -150,6 +161,7 @@ $('#s-label').on('mouseover', function() {
     var category = categorize('speechiness', sVal);
 });
 $('#t-label').on('mouseover', function() {
+    $('#t-label').addClass('highlight');
     var info = find_info('tempo')
     $('#info').html(info)
 
@@ -163,6 +175,7 @@ $('#t-label').on('mouseover', function() {
     var category = categorize('tempo', tVal);
 });
 $('#v-label').on('mouseover', function() {
+    $('#v-label').addClass('highlight');
     var info = find_info('valence')
     $('#info').html(info)
 
@@ -173,4 +186,41 @@ $('#v-label').on('mouseover', function() {
     $('#slider').trigger('change');
 
     var category = categorize('valence', vVal);
+});
+
+$('#a-label').on('mouseout', function() {
+    $('#a-label').removeClass('highlight');
+
+});
+$('#d-label').on('mouseout', function() {
+    $('#d-label').removeClass('highlight');
+
+});
+$('#e-label').on('mouseout', function() {
+    $('#e-label').removeClass('highlight');
+
+});
+$('#i-label').on('mouseout', function() {
+    $('#i-label').removeClass('highlight');
+
+});
+$('#li-label').on('mouseout', function() {
+    $('#li-label').removeClass('highlight');
+
+});
+$('#lo-label').on('mouseout', function() {
+    $('#lo-label').removeClass('highlight');
+
+});
+$('#s-label').on('mouseout', function() {
+    $('#s-label').removeClass('highlight');
+
+});
+$('#t-label').on('mouseout', function() {
+    $('#t-label').removeClass('highlight');
+
+});
+$('#v-label').on('mouseout', function() {
+    $('#v-label').removeClass('highlight');
+
 });
