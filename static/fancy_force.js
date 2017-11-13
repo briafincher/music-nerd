@@ -9,7 +9,7 @@ var simulation = d3.forceSimulation()
     .force("charge", d3.forceManyBody().strength(-1))
     .force("center", d3.forceCenter(width / 2, height / 2));
 
-var offsetX = $('#params').width() * 2;
+var offsetX = $('#params').width() * 2 -100;
 var offsetY = $('#params').height() / 2;
 
 function loadD3(path) {
@@ -145,6 +145,11 @@ $('#display').on('submit', function(evt) {
           't-level': $('#t-level').val(),
           'v-level': $('#v-level').val()
         };
+
+        // $('#svg').empty();
+        // loadD3('/static/genre_maps/user_created.json');
+        // $('#display').trigger('reset');
+      
 
         $.get('/features', features, function(data) {
           $('#svg').empty()

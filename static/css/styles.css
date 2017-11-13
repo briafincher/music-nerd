@@ -228,6 +228,7 @@ header a {
     border-top-radius: 7px;*/
     text-align: justify;
     color: #1B4145;
+    font-size: 1.2rem;
 }
 
 #params {
@@ -241,6 +242,7 @@ header a {
 /*    background-color: #ffffff;*/
 /*    border-radius: 7px;*/
 /*    border-color: #5A7678;*/
+    width: 360px;
 }
 
 #main {
@@ -309,10 +311,12 @@ section {
 #left-map {
     display: flex;
     flex-direction: column;
-    width: 300px;
+/*    width: 300px;*/
+    width: 438px;   /* new */
 /*    height: 100%;*/
     justify-content: center;
-    margin-left: 5%;
+    /*margin-left: 5%;*/ 
+    margin-left: 12%;    /* new */
 }
 
 #right-map {
@@ -326,6 +330,8 @@ section {
 
 #bottom {
     margin-bottom: 10vh;
+    margin-left: -220px;  /* new */
+    margin-top: 30px; /* new */
 }
 
 #show-genres {
@@ -333,8 +339,12 @@ section {
     color: #ffffff;
 }
 
+#p-bottom {
+    margin-top: 10px;
+}
+
 #intro {
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
 }
 

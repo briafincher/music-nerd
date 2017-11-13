@@ -112,45 +112,46 @@ def show_genre_map():
 def display_features():
     """Generates graph based on user-selected audio feature parameters"""
 
-    parameters = {}
+    # parameters = {}
 
-    a_level = float(request.args.get('a-level'))
-    d_level = float(request.args.get('d-level'))
-    e_level = float(request.args.get('e-level'))
-    i_level = float(request.args.get('i-level'))
-    l_level = float(request.args.get('l-level'))
-    lo_level = float(request.args.get('lo-level'))
-    # m_level = float(request.args.get('m-level'))
-    s_level = float(request.args.get('s-level'))
-    t_level = float(request.args.get('t-level'))
-    v_level = float(request.args.get('v-level'))
+    # a_level = float(request.args.get('a-level'))
+    # d_level = float(request.args.get('d-level'))
+    # e_level = float(request.args.get('e-level'))
+    # i_level = float(request.args.get('i-level'))
+    # l_level = float(request.args.get('l-level'))
+    # lo_level = float(request.args.get('lo-level'))
+    # # m_level = float(request.args.get('m-level'))
+    # s_level = float(request.args.get('s-level'))
+    # t_level = float(request.args.get('t-level'))
+    # v_level = float(request.args.get('v-level'))
 
-    if a_level != .5:
-        parameters['acousticness'] = a_level
-    if d_level != .5:
-        parameters['danceability'] = d_level
-    if e_level != .5:
-        parameters['energy'] = e_level
-    if i_level != .5:
-        parameters['instrumentalness'] = i_level
-    if l_level != .5:
-        parameters['liveness'] = l_level
-    if lo_level != -30:
-        parameters['loudness'] = lo_level
-    # if m_level != .5:
-    #     parameters['mode'] = m_level
-    if s_level != .5:
-        parameters['speechiness'] = s_level
-    if t_level != 150:
-        parameters['tempo'] = t_level
-    if v_level != .5:
-        parameters['valence'] = v_level
+    # if a_level != .5:
+    #     parameters['acousticness'] = a_level
+    # if d_level != .5:
+    #     parameters['danceability'] = d_level
+    # if e_level != .5:
+    #     parameters['energy'] = e_level
+    # if i_level != .5:
+    #     parameters['instrumentalness'] = i_level
+    # if l_level != .5:
+    #     parameters['liveness'] = l_level
+    # if lo_level != -30:
+    #     parameters['loudness'] = lo_level
+    # # if m_level != .5:
+    # #     parameters['mode'] = m_level
+    # if s_level != .5:
+    #     parameters['speechiness'] = s_level
+    # if t_level != 150:
+    #     parameters['tempo'] = t_level
+    # if v_level != .5:
+    #     parameters['valence'] = v_level
 
-    print parameters
+    # print parameters
 
-    path = make_json(parameters)
+    # path = make_json(parameters)
 
-    return path
+    # return path
+    return '/static/genre_maps/acoustic.json'
 
 
 @app.route('/genres/<genre>')
